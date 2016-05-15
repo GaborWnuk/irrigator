@@ -1,7 +1,8 @@
 import React from 'react'
 
 import { SinglePanel } from '../single-panel'
-import { Chart } from '../../vendors/chart.js'
+
+require('../../vendors/chart.js')
 
 export class PlantRow extends React.Component {
     render() {

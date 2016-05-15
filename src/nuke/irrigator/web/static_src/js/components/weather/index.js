@@ -51,6 +51,7 @@ export class Weather extends React.Component {
         var date = new Date();
         const days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
         var formatted_date = ('0' + date.getHours()).slice(-2) + ":" + ('0' + date.getMinutes()).slice(-2)
+
         if (weather.length > 0) {
             return (
                     <SinglePanel title="Weather">
@@ -80,12 +81,7 @@ export class Weather extends React.Component {
                         <div className="clearfix"></div>
 
 
-                        <div className="row weather-days">
-                            {this.state.weather.map(function(weather_day) {
-                                return <WeatherDay key={ weather_day.date_time } date_time={ weather_day.date_time } temperature={ weather_day.temperature } icon={ weather_day.icon } precipitation={ weather_day.precipitation }></WeatherDay>;
-                            })}
-                          <div className="clearfix"></div>
-                        </div>
+
                     </SinglePanel>
                 )
         }

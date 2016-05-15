@@ -10576,8 +10576,6 @@ var App =
 
 	var _singlePanel = __webpack_require__(54);
 
-	var _chart = __webpack_require__(99);
-
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -10585,6 +10583,8 @@ var App =
 	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
 
 	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	__webpack_require__(99);
 
 	var PlantRow = exports.PlantRow = function (_React$Component) {
 	  _inherits(PlantRow, _React$Component);
@@ -10661,7 +10661,7 @@ var App =
 	        backgroundColor.push(plant.color);
 	      });
 
-	      this.state.chart = new _chart.Chart(document.getElementById("plants_chart"), {
+	      this.state.chart = new Chart(document.getElementById("plants_chart"), {
 	        type: 'doughnut',
 	        tooltipFillColor: "rgba(51, 51, 51, 0.55)",
 	        data: {
@@ -10860,6 +10860,7 @@ var App =
 	    var date = new Date();
 	    var days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
 	    var formatted_date = ('0' + date.getHours()).slice(-2) + ":" + ('0' + date.getMinutes()).slice(-2);
+
 	    if (weather.length > 0) {
 	      return _react2.default.createElement(
 	        _singlePanel.SinglePanel,
@@ -10935,15 +10936,7 @@ var App =
 	            )
 	          )
 	        ),
-	        _react2.default.createElement('div', { className: 'clearfix' }),
-	        _react2.default.createElement(
-	          'div',
-	          { className: 'row weather-days' },
-	          this.state.weather.map(function (weather_day) {
-	            return _react2.default.createElement(WeatherDay, { key: weather_day.date_time, date_time: weather_day.date_time, temperature: weather_day.temperature, icon: weather_day.icon, precipitation: weather_day.precipitation });
-	          }),
-	          _react2.default.createElement('div', { className: 'clearfix' })
-	        )
+	        _react2.default.createElement('div', { className: 'clearfix' })
 	      );
 	    } else {
 	      return _react2.default.createElement('div', { className: 'col-md-4 col-sm-6 col-xs-12' });
@@ -11037,6 +11030,7 @@ var App =
 	'use strict';
 
 	exports.__esModule = true;
+	exports.SkyconsIcon = undefined;
 
 	var _react = __webpack_require__(18);
 
@@ -11052,25 +11046,23 @@ var App =
 
 	//import { Skycons } from '../../vendors/skycons.js'
 
-	var SkyconsIcon = function (_React$Component) {
+	var SkyconsIcon = exports.SkyconsIcon = function (_React$Component) {
 	    _inherits(SkyconsIcon, _React$Component);
 
 	    function SkyconsIcon() {
 	        _classCallCheck(this, SkyconsIcon);
 
-	        return _possibleConstructorReturn(this, _React$Component.apply(this, arguments));
+	        var _this = _possibleConstructorReturn(this, _React$Component.call(this));
+
+	        _this.state = { random_id: Math.random().toString(36).substring(7)
+	            //skycons: new Skycons({'color': '#73879C'})
+	        };
+	        return _this;
 	    }
 
-	    SkyconsIcon.prototype.getInitialState = function getInitialState() {
-	        return {
-	            random_id: Math.random().toString(36).substring(7),
-	            skycons: new Skycons({ 'color': '#73879C' })
-	        };
-	    };
-
 	    SkyconsIcon.prototype.componentDidMount = function componentDidMount() {
-	        this.state.skycons.add(document.getElementById(this.state.random_id), this.props.icon);
-	        this.state.skycons.play();
+	        //this.state.skycons.add(document.getElementById(this.state.random_id), this.props.icon);
+	        //this.state.skycons.play()
 	    };
 
 	    SkyconsIcon.prototype.render = function render() {
@@ -11082,9 +11074,6 @@ var App =
 
 	    return SkyconsIcon;
 	}(_react2.default.Component);
-
-	exports.default = SkyconsIcon;
-	module.exports = exports['default'];
 
 /***/ },
 /* 98 */
