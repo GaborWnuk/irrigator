@@ -1,7 +1,7 @@
 import React from 'react'
 
 import { SinglePanel } from '../single-panel'
-import { SkyconsIcon } from '../skycons'
+//import { SkyconsIcon } from '../skycons'
 
 export class WeatherDay extends React.Component {
     render() {
