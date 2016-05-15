@@ -36,7 +36,7 @@ var SkyconsIcon = React.createClass({
 
 var WeatherDay = React.createClass({
     render: function() {
-        var days = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
+        const days = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
         /*
         Date parsing is completely different between Safari and Chrome :)
         I love JavaScript.
@@ -76,7 +76,7 @@ var Weather = React.createClass({
     render: function() {
         var weather = this.state.weather;
         var date = new Date();
-        var days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+        const days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
         var formatted_date = ('0' + date.getHours()).slice(-2) + ":" + ('0' + date.getMinutes()).slice(-2)
         if (weather.length > 0) {
             return (

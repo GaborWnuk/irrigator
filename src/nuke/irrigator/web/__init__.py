@@ -32,23 +32,24 @@ import sqlite3
 from nuke.irrigator import settings
 
 WEB_DIRECTORY = os.path.join(os.path.dirname(os.path.abspath(__file__)))
+WEBSRC_DIRECTORY = os.path.join(os.path.dirname(os.path.abspath(__file__))) + '/../../../web'
 DB_SCHEMA = os.path.join(os.path.dirname(os.path.abspath(__file__))) + '/../../../../irrigator.sql'
 
-DEPENDENCIES = {'https://cdnjs.cloudflare.com/ajax/libs/react/15.0.2/react.js': '%s/static/js/react.js' % WEB_DIRECTORY,
-                'https://cdnjs.cloudflare.com/ajax/libs/react/15.0.2/react-dom.js': '%s/static/js/react.dom.js' % WEB_DIRECTORY,
-                'https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.23/browser.min.js': '%s/static/js/babel.js' % WEB_DIRECTORY,
-                'https://use.fontawesome.com/588e87d716.js': '%s/static/js/fontawesome.js' % WEB_DIRECTORY,
-                'https://code.jquery.com/jquery-2.2.3.min.js': '%s/static/js/jquery.js' % WEB_DIRECTORY,
-                'http://omnipotent.net/jquery.sparkline/2.1.2/jquery.sparkline.min.js': '%s/static/js/jquery.sparkline.js' % WEB_DIRECTORY,
-                'https://raw.githubusercontent.com/flot/flot/master/jquery.flot.js': '%s/static/js/jquery.flot.js' % WEB_DIRECTORY,
-                'https://raw.githubusercontent.com/MichaelZinsmaier/CurvedLines/master/curvedLines.js': '%s/static/js/jquery.flot.curvedlines.js' % WEB_DIRECTORY,
-                'https://raw.githubusercontent.com/chartjs/Chart.js/master/dist/Chart.min.js': '%s/static/js/chart.js' % WEB_DIRECTORY,
-                'https://cdn.socket.io/socket.io-1.4.5.js': '%s/static/js/socket.io.js' % WEB_DIRECTORY,
-                'https://raw.githubusercontent.com/darkskyapp/skycons/master/skycons.js': '%s/static/js/skycons.js' % WEB_DIRECTORY,
+DEPENDENCIES = {'https://cdnjs.cloudflare.com/ajax/libs/react/15.0.2/react.js': '%s/js/vendors/react.js' % WEBSRC_DIRECTORY,
+                'https://cdnjs.cloudflare.com/ajax/libs/react/15.0.2/react-dom.js': '%s/js/vendors/react.dom.js' % WEBSRC_DIRECTORY,
+                'https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.23/browser.js': '%s/js/vendors/babel.js' % WEBSRC_DIRECTORY,
+                'https://use.fontawesome.com/588e87d716.js': '%s/js/vendors/fontawesome.js' % WEBSRC_DIRECTORY,
+                'https://code.jquery.com/jquery-2.2.3.js': '%s/js/vendors/jquery.js' % WEBSRC_DIRECTORY,
+                'http://omnipotent.net/jquery.sparkline/2.1.2/jquery.sparkline.js': '%s/js/vendors/jquery.sparkline.js' % WEBSRC_DIRECTORY,
+                'https://raw.githubusercontent.com/flot/flot/master/jquery.flot.js': '%s/js/vendors/jquery.flot.js' % WEBSRC_DIRECTORY,
+                'https://raw.githubusercontent.com/MichaelZinsmaier/CurvedLines/master/curvedLines.js': '%s/js/vendors/jquery.flot.curvedlines.js' % WEBSRC_DIRECTORY,
+                'https://raw.githubusercontent.com/chartjs/Chart.js/master/dist/Chart.js': '%s/js/vendors/chart.js' % WEBSRC_DIRECTORY,
+                'https://cdn.socket.io/socket.io-1.4.5.js': '%s/js/vendors/socket.io.js' % WEBSRC_DIRECTORY,
+                'https://raw.githubusercontent.com/darkskyapp/skycons/master/skycons.js': '%s/js/vendors/skycons.js' % WEBSRC_DIRECTORY,
 
-                'http://bernii.github.io/gauge.js/dist/gauge.min.js': '%s/static/js/gauge.js' % WEB_DIRECTORY,
-                'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css': '%s/static/css/bootstrap.css' % WEB_DIRECTORY,
-                'https://raw.githubusercontent.com/minddust/bootstrap-progressbar/master/css/bootstrap-progressbar-3.3.4.min.css': '%s/static/css/bootstrap.progressbar.css' % WEB_DIRECTORY}
+                'http://bernii.github.io/gauge.js/dist/gauge.js': '%s/js/vendors/gauge.js' % WEBSRC_DIRECTORY,
+                'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.css': '%s/css/vendors/bootstrap.css' % WEBSRC_DIRECTORY,
+                'https://raw.githubusercontent.com/minddust/bootstrap-progressbar/master/css/bootstrap-progressbar-3.3.4.css': '%s/css/vendors/bootstrap.progressbar.css' % WEBSRC_DIRECTORY}
 
 
 def printf(text):
