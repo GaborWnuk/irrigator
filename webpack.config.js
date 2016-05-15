@@ -2,7 +2,9 @@ module.exports = {
     entry: __dirname + '/src/nuke/irrigator/web/static_src/js/index.jsx',
     output: {
         path: './src/nuke/irrigator/web/static/js',
-        filename: 'bundle.js'
+        filename: 'bundle.js',
+        publicPath: '/static/js/',
+        library: 'App',
     },
     module: {
         loaders: [
@@ -10,7 +12,8 @@ module.exports = {
             { test: /\.jsx?$/,
               exclude: /(node_modules|bower_components)/,
               loader: 'babel',
-              query: { presets: ['react'] }
+              query: { presets: ["es2015-loose", "react"],
+                        plugins: ["add-module-exports"] }
             },
             { test: /\.woff(2)?(\?v=[0-9]\.[0-9]\.[0-9])?$/, loader: "url-loader?limit=10000&mimetype=application/font-woff" },
             { test: /\.(ttf|eot|svg)(\?v=[0-9]\.[0-9]\.[0-9])?$/, loader: "file-loader" }

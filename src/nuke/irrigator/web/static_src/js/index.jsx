@@ -7,10 +7,14 @@ require("expose?$!./vendors/jquery.flot.js");
 import bootstrap from '../css/vendors/bootstrap.css'
 import styles from '../css/s.css'
 
-import { Weather } from './components/weather'
-import { Plants } from './components/plants'
+import { SinglePanel } from './components/single-panel'
+console.log(SinglePanel)
 
-console.log(Weather);
+/*
+import { Weather } from './components/weather'
+console.log(Weather)
+import { Plants } from './components/plants'
+console.log(Plants);
 
 React.render(
   <Weather />,
@@ -21,3 +25,4 @@ React.render(
   <Plants />,
   document.getElementById('plants')
 );
+*/
