@@ -2,7 +2,7 @@
   "name": "nuke-irrigator",
   "version": "0.0.1",
   "description": "",
-  "main": "lib/index.js",
+  "main": "src/nuke/irrigator/web/static/js/bundle.js",
   "scripts": {
 
   },
