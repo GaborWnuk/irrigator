@@ -1,6 +1,8 @@
 *.pyc
 .DS_Store
 
+node_modules/
+
 .installed.cfg
 bin
 develop-eggs
