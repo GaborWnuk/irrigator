@@ -32,7 +32,7 @@ import sqlite3
 from nuke.irrigator import settings
 
 WEB_DIRECTORY = os.path.join(os.path.dirname(os.path.abspath(__file__)))
-WEBSRC_DIRECTORY = os.path.join(os.path.dirname(os.path.abspath(__file__))) + '/../../../web'
+WEBSRC_DIRECTORY = "%s/src" % WEB_DIRECTORY
 DB_SCHEMA = os.path.join(os.path.dirname(os.path.abspath(__file__))) + '/../../../../irrigator.sql'
 
 DEPENDENCIES = {'https://cdnjs.cloudflare.com/ajax/libs/react/15.0.2/react.js': '%s/js/vendors/react.js' % WEBSRC_DIRECTORY,
