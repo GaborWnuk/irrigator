@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <!-- Meta, title, CSS, favicons, etc. -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Roślinki</title>
+    <!-- React + Babel -->
+    <script src="/static/js/react.js"></script>
+    <script src="/static/js/react.dom.js"></script>
+    <script src="/static/js/babel.js"></script>
+    <!-- Font Awesome -->
+    <script src="/static/js/fontawesome.js"></script>
+    <!-- Common -->
+    <script src="/static/js/script.js" type="text/babel"></script>
+    <!-- Bootstrap -->
+    <link href="/static/css/bootstrap.css" rel="stylesheet" >
+    <!-- bootstrap-progressbar -->
+    <link href="/static/css/bootstrap.progressbar.css" rel="stylesheet">
+    <!-- Custom Theme Style -->
+    <link href="/static/css/s.css" rel="stylesheet">
+  </head>
+
+  <body class="nav-md">
+    <div class="container body">
+      <div class="main_container">
+        <div class="col-md-3 left_col">
+          <div class="left_col scroll-view">
+            <div class="navbar nav_title" style="border: 0;">
+              <a href="/" class="site_title"><i class="fa fa-leaf"></i> <span>Roślinki</span></a>
+            </div>
+
+            <div class="clearfix"></div>
+
+            <!-- menu profile quick info -->
+            <div class="profile">
+              <div class="profile_pic">
+                <img src="http://graph.facebook.com/1345849886/picture?width=240&height=240" alt="..." class="img-circle profile_img">
+              </div>
+              <div class="profile_info">
+                <span>Siemka,</span>
+                <h2>Barbara Tadzik</h2>
+              </div>
+            </div>
+            <!-- /menu profile quick info -->
+
+            <br />
+
+            <!-- sidebar menu -->
+            <div id="sidebar-menu" class="main_menu_side hidden-print main_menu">
+              <div class="menu_section">
+                <h3>General</h3>
+                <ul class="nav side-menu">
+                  <li><a><i class="fa fa-home"></i> Home <span class="fa fa-chevron-down"></span></a>
+                    <ul class="nav child_menu">
+                      <li><a href="index3.html">Dashboard</a>
+                      </li>
+                    </ul>
+                  </li>
+                  </li>
+                </ul>
+              </div>
+
+            </div>
+            <!-- /sidebar menu -->
+
+            <!-- /menu footer buttons -->
+            <div class="sidebar-footer hidden-small">
+              <a data-toggle="tooltip" data-placement="top" title="Settings">
+                <span class="glyphicon glyphicon-cog" aria-hidden="true"></span>
+              </a>
+              <a data-toggle="tooltip" data-placement="top" title="FullScreen">
+                <span class="glyphicon glyphicon-fullscreen" aria-hidden="true"></span>
+              </a>
+              <a data-toggle="tooltip" data-placement="top" title="Lock">
+                <span class="glyphicon glyphicon-eye-close" aria-hidden="true"></span>
+              </a>
+              <a data-toggle="tooltip" data-placement="top" title="Logout">
+                <span class="glyphicon glyphicon-off" aria-hidden="true"></span>
+              </a>
+            </div>
+            <!-- /menu footer buttons -->
+          </div>
+        </div>
+
+        <!-- top navigation -->
+        <div class="top_nav">
+
+          <div class="nav_menu">
+            <nav class="" role="navigation">
+              <div class="nav toggle">
+                <a id="menu_toggle"><i class="fa fa-bars"></i></a>
+              </div>
+
+              <ul class="nav navbar-nav navbar-right">
+                <li class="">
+                  <a href="javascript:;" class="user-profile dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                    <img src="http://graph.facebook.com/1345849886/picture?width=240&height=240" alt="">Barbara Tadzik
+                    <span class=" fa fa-angle-down"></span>
+                  </a>
+                  <ul class="dropdown-menu dropdown-usermenu pull-right">
+                    <li><a href="javascript:;">  Profile</a>
+                    </li>
+                    <li>
+                      <a href="javascript:;">
+                        <span class="badge bg-red pull-right">50%</span>
+                        <span>Settings</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="javascript:;">Help</a>
+                    </li>
+                    <li><a href="login.html"><i class="fa fa-sign-out pull-right"></i> Log Out</a>
+                    </li>
+                  </ul>
+                </li>
+
+                <li role="presentation" class="dropdown">
+                  <a href="javascript:;" class="dropdown-toggle info-number" data-toggle="dropdown" aria-expanded="false">
+                    <i class="fa fa-envelope-o"></i>
+                    <span class="badge bg-green">6</span>
+                  </a>
+                  <ul id="menu1" class="dropdown-menu list-unstyled msg_list" role="menu">
+                    <li>
+                      <a>
+                        <span class="image">
+                                          <img src="images/img.jpg" alt="Profile Image" />
+                                      </span>
+                        <span>
+                                          <span>John Smith</span>
+                        <span class="time">3 mins ago</span>
+                        </span>
+                        <span class="message">
+                                          Film festivals used to be do-or-die moments for movie makers. They were where...
+                                      </span>
+                      </a>
+                    </li>
+                    <li>
+                      <a>
+                        <span class="image">
+                                          <img src="images/img.jpg" alt="Profile Image" />
+                                      </span>
+                        <span>
+                                          <span>John Smith</span>
+                        <span class="time">3 mins ago</span>
+                        </span>
+                        <span class="message">
+                                          Film festivals used to be do-or-die moments for movie makers. They were where...
+                                      </span>
+                      </a>
+                    </li>
+                    <li>
+                      <a>
+                        <span class="image">
+                                          <img src="images/img.jpg" alt="Profile Image" />
+                                      </span>
+                        <span>
+                                          <span>John Smith</span>
+                        <span class="time">3 mins ago</span>
+                        </span>
+                        <span class="message">
+                                          Film festivals used to be do-or-die moments for movie makers. They were where...
+                                      </span>
+                      </a>
+                    </li>
+                    <li>
+                      <a>
+                        <span class="image">
+                                          <img src="images/img.jpg" alt="Profile Image" />
+                                      </span>
+                        <span>
+                                          <span>John Smith</span>
+                        <span class="time">3 mins ago</span>
+                        </span>
+                        <span class="message">
+                                          Film festivals used to be do-or-die moments for movie makers. They were where...
+                                      </span>
+                      </a>
+                    </li>
+                    <li>
+                      <div class="text-center">
+                        <a>
+                          <strong>See All Alerts</strong>
+                          <i class="fa fa-angle-right"></i>
+                        </a>
+                      </div>
+                    </li>
+                  </ul>
+                </li>
+
+              </ul>
+            </nav>
+          </div>
+
+        </div>
+        <!-- /top navigation -->
+        <!-- page content -->
+        <div class="right_col" role="main">
+          <div class="">
+
+            <div class="row top_tiles" style="margin: 10px 0;">
+              <div class="col-md-3 col-sm-3 col-xs-6 tile">
+                <span>Użyta woda (litry)</span>
+                <h2>2 174</h2>
+                <span class="sparkline_one" style="height: 160px;">
+                      <canvas width="200" height="60" style="display: inline-block; vertical-align: top; width: 94px; height: 30px;"></canvas>
+                  </span>
+              </div>
+              <div class="col-md-3 col-sm-3 col-xs-6 tile">
+                <span>Ilość podlań</span>
+                <h2>109</h2>
+                <span class="sparkline_one" style="height: 160px;">
+                      <canvas width="200" height="60" style="display: inline-block; vertical-align: top; width: 94px; height: 30px;"></canvas>
+                  </span>
+              </div>
+              <div class="col-md-3 col-sm-3 col-xs-6 tile">
+                <span>Dni deszczowe (ostatnie 30 dni)</span>
+                <h2>11</h2>
+                <span class="sparkline_two" style="height: 160px;">
+                      <canvas width="200" height="60" style="display: inline-block; vertical-align: top; width: 94px; height: 30px;"></canvas>
+                  </span>
+              </div>
+
+            </div>
+            <br />
+
+
+            <div class="row">
+              <div class="col-md-12 col-sm-12 col-xs-12">
+                <div class="dashboard_graph x_panel">
+                  <div class="row x_title">
+                    <div class="col-md-6">
+                      <h3>Wilgotność gleby <small>Dane na podstawie czujnika wilgotności gleby</small></h3>
+                    </div>
+                  </div>
+                  <div class="x_content">
+                    <div class="demo-container" style="height:250px">
+                      <div id="placeholder3xx3" class="demo-placeholder" style="width: 100%; height:250px;"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="row">
+              <!-- start of weather widget -->
+              <div id="weather"></div>
+              <!-- end of weather widget -->
+              <!-- start of weather widget -->
+              <div id="plants"></div>
+              <!-- end of weather widget -->
+
+
+              <div class="col-md-4 col-sm-6 col-xs-12">
+                <div class="x_panel fixed_height_320">
+                  <div class="x_title">
+                    <h2>Status systemu</h2>
+                    <div class="clearfix"></div>
+                  </div>
+                  <div class="x_content">
+                    <div class="dashboard-widget-content">
+                      <ul class="quick-list">
+                        <li><i class="fa fa-line-chart"></i><a href="#">Load: 2.00 2.29 2.35</a></li>
+                        <li><i class="fa fa-thumbs-up"></i><a href="#">Uptime: 5 days</a></li>
+                        <li><i class="fa fa-cog"></i><a href="#">Ustawienia</a></li>
+                        <li><i class="fa fa-area-chart"></i><a href="#">Wyloguj</a></li>
+                      </ul>
+
+                      <div class="sidebar-widget">
+                        <h4>Stan zbiornika</h4>
+                        <canvas width="150" height="80" id="foo" class="" style="width: 160px; height: 100px;"></canvas>
+                        <div class="goal-wrapper">
+                          <span id="gauge-text" class="gauge-value pull-left">31</span>
+                          <span class="gauge-value pull-left"> L</span>
+                          <span id="goal-text" class="goal-value pull-right">50</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- /page content -->
+
+        <!-- footer content -->
+        <footer>
+          <div class="pull-right">
+            nuke.irrigator by <a href="https://github.com/GaborWnuk">Gabor Wnuk</a>
+          </div>
+          <div class="clearfix"></div>
+        </footer>
+        <!-- /footer content -->
+      </div>
+    </div>
+
+    <!-- jQuery -->
+    <script src="/static/js/jquery.js"></script>
+    <!-- Flot -->
+    <script src="/static/js/jquery.flot.js"></script>
+    <script src="/static/js/jquery.flot.curvedlines.js"></script>
+    <!-- jQuery Sparklines -->
+    <script src="/static/js/jquery.sparkline.js"></script>
+    <!-- Chart.js -->
+    <script src="/static/js/chart.js"></script>
+    <!-- gauge.js -->
+    <script src="/static/js/gauge.js"></script>
+    <!-- Skycons -->
+    <script src="/static/js/skycons.js"></script>
+    <!-- Socket.IO -->
+    <script src="/static/js/socket.io.js"></script>
+
+    <!-- Flot -->
+    <script>
+      $(document).ready(function() {
+        //random data
+        var d1 = [
+          [0, 51],
+          [1, 62],
+          [2, 41],
+          [3, 77],
+          [4, 45],
+          [5, 59],
+          [6, 79],
+          [7, 47],
+          [8, 66],
+          [9, 74],
+          [10, 59],
+          [11, 64],
+          [12, 61],
+          [13, 44],
+          [14, 17],
+          [15, 77],
+          [16, 71]
+        ];
+
+        //flot options
+        var options = {
+          series: {
+            curvedLines: {
+              apply: true,
+              active: true,
+              monotonicFit: true
+            }
+          },
+          colors: ["#26B99A"],
+          grid: {
+            borderWidth: {
+              top: 0,
+              right: 0,
+              bottom: 1,
+              left: 1
+            },
+            borderColor: {
+              bottom: "#7F8790",
+              left: "#7F8790"
+            }
+          }
+        };
+        var plot = $.plot($("#placeholder3xx3"), [{
+          label: "% wilgotności gleby",
+          data: d1,
+          lines: {
+            fillColor: "rgba(150, 202, 89, 0.12)"
+          }, //#96CA59 rgba(150, 202, 89, 0.42)
+          points: {
+            fillColor: "#fff"
+          }
+        }], options);
+      });
+    </script>
+    <!-- /Flot -->
+
+    <!-- jQuery Sparklines -->
+    <script>
+      $(document).ready(function() {
+        $(".sparkline_one").sparkline([2, 4, 3, 4, 5, 4, 5, 4, 3, 4, 5, 6, 7, 5, 4, 3, 5, 6], {
+          type: 'bar',
+          height: '40',
+          barWidth: 9,
+          colorMap: {
+            '7': '#a1a1a1'
+          },
+          barSpacing: 2,
+          barColor: '#26B99A'
+        });
+
+        $(".sparkline_two").sparkline([2, 4, 3, 4, 5, 4, 5, 4, 3, 4, 5, 6, 7, 5, 4, 3, 5, 6], {
+          type: 'line',
+          width: '200',
+          height: '40',
+          lineColor: '#26B99A',
+          fillColor: 'rgba(223, 223, 223, 0.57)',
+          lineWidth: 2,
+          spotColor: '#26B99A',
+          minSpotColor: '#26B99A'
+        });
+      });
+    </script>
+    <!-- /jQuery Sparklines -->
+
+    <!-- gauge.js -->
+    <script>
+      var opts = {
+        lines: 12,
+        angle: 0,
+        lineWidth: 0.4,
+        pointer: {
+          length: 0.75,
+          strokeWidth: 0.042,
+          color: '#1D212A'
+        },
+        limitMax: 'false',
+        colorStart: '#1ABC9C',
+        colorStop: '#1ABC9C',
+        strokeColor: '#F0F3F3',
+        generateGradient: true
+      };
+      var target = document.getElementById('foo'),
+          gauge = new Gauge(target).setOptions(opts);
+
+      gauge.maxValue = 50;
+      gauge.animationSpeed = 32;
+      gauge.set(31);
+      gauge.setTextField(document.getElementById("gauge-text"));
+    </script>
+    <!-- /gauge.js -->
+  </body>
+</html>
