@@ -2,7 +2,7 @@ module.exports = {
     entry: __dirname + '/src/nuke/irrigator/web/static_src/js/index.jsx',
     output: {
         path: './src/nuke/irrigator/web/static',
-        filename: 'bundle.js',
+        filename: 'app.js',
         publicPath: '/static/',
         library: 'App',
     },
