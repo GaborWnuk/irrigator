@@ -10,8 +10,8 @@ export class WeatherDay extends React.Component {
         Date parsing is completely different between Safari and Chrome :)
         I love JavaScript.
          */
-        var splitted_date = this.props.date_time.split(/[^0-9]/);
-        var date = new Date (splitted_date[0], splitted_date[1]-1, splitted_date[2],
+        const splitted_date = this.props.date_time.split(/[^0-9]/);
+        const date = new Date (splitted_date[0], splitted_date[1]-1, splitted_date[2],
                              splitted_date[3], splitted_date[4], splitted_date[5]);
 
         return (<div className="col-sm-2">
@@ -47,10 +47,10 @@ export class Weather extends React.Component {
 
     render() {
         console.log("Ble")
-        var weather = this.state.weather;
-        var date = new Date();
+        const weather = this.state.weather;
+        const date = new Date();
         const days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
-        var formatted_date = ('0' + date.getHours()).slice(-2) + ":" + ('0' + date.getMinutes()).slice(-2)
+        const formatted_date = ('0' + date.getHours()).slice(-2) + ":" + ('0' + date.getMinutes()).slice(-2)
 
         if (weather.length > 0) {
             return (
@@ -81,7 +81,12 @@ export class Weather extends React.Component {
                         <div className="clearfix"></div>
 
 
-
+                        <div className="row weather-days">
+                            {this.state.weather.map(function(weather_day) {
+                                return <WeatherDay key={ weather_day.date_time } date_time={ weather_day.date_time } temperature={ weather_day.temperature } icon={ weather_day.icon } precipitation={ weather_day.precipitation }></WeatherDay>;
+                            })}
+                          <div className="clearfix"></div>
+                        </div>
                     </SinglePanel>
                 )
         }

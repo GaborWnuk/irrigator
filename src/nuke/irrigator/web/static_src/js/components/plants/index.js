@@ -6,7 +6,7 @@ require('../../vendors/chart.js')
 
 export class PlantRow extends React.Component {
     render() {
-        var style = { color: this.props.color }
+        const style = { color: this.props.color }
 
         return (<tr>
                   <td><p><i className="fa fa-square" style={style}></i>{ this.props.name } </p></td>
@@ -38,7 +38,7 @@ export class Plants extends React.Component {
     render() {
         if (this.state.plants.length > 0)
         {
-            var labels = [], data = [], backgroundColor = [];
+            let labels = [], data = [], backgroundColor = [];
 
             this.state.plants.forEach( plant => {
                 labels.push(plant.plant_name);

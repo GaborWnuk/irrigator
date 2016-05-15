@@ -10650,32 +10650,36 @@ var App =
 	  };
 
 	  Plants.prototype.render = function render() {
+	    var _this3 = this;
+
 	    if (this.state.plants.length > 0) {
-	      var labels = [],
-	          data = [],
-	          backgroundColor = [];
+	      (function () {
+	        var labels = [],
+	            data = [],
+	            backgroundColor = [];
 
-	      this.state.plants.forEach(function (plant) {
-	        labels.push(plant.plant_name);
-	        data.push(plant.count);
-	        backgroundColor.push(plant.color);
-	      });
+	        _this3.state.plants.forEach(function (plant) {
+	          labels.push(plant.plant_name);
+	          data.push(plant.count);
+	          backgroundColor.push(plant.color);
+	        });
 
-	      this.state.chart = new Chart(document.getElementById("plants_chart"), {
-	        type: 'doughnut',
-	        tooltipFillColor: "rgba(51, 51, 51, 0.55)",
-	        data: {
-	          labels: labels,
-	          datasets: [{
-	            data: data,
-	            backgroundColor: backgroundColor
-	          }]
-	        },
-	        options: {
-	          legend: false,
-	          responsive: false
-	        }
-	      });
+	        _this3.state.chart = new Chart(document.getElementById("plants_chart"), {
+	          type: 'doughnut',
+	          tooltipFillColor: "rgba(51, 51, 51, 0.55)",
+	          data: {
+	            labels: labels,
+	            datasets: [{
+	              data: data,
+	              backgroundColor: backgroundColor
+	            }]
+	          },
+	          options: {
+	            legend: false,
+	            responsive: false
+	          }
+	        });
+	      })();
 	    }
 
 	    return _react2.default.createElement(
@@ -10936,7 +10940,15 @@ var App =
 	            )
 	          )
 	        ),
-	        _react2.default.createElement('div', { className: 'clearfix' })
+	        _react2.default.createElement('div', { className: 'clearfix' }),
+	        _react2.default.createElement(
+	          'div',
+	          { className: 'row weather-days' },
+	          this.state.weather.map(function (weather_day) {
+	            return _react2.default.createElement(WeatherDay, { key: weather_day.date_time, date_time: weather_day.date_time, temperature: weather_day.temperature, icon: weather_day.icon, precipitation: weather_day.precipitation });
+	          }),
+	          _react2.default.createElement('div', { className: 'clearfix' })
+	        )
 	      );
 	    } else {
 	      return _react2.default.createElement('div', { className: 'col-md-4 col-sm-6 col-xs-12' });
