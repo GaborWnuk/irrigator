@@ -38,7 +38,7 @@ var App =
 /******/ 	__webpack_require__.p = "/static/";
 
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 97);
+/******/ 	return __webpack_require__(__webpack_require__.s = 98);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -369,7 +369,7 @@ var App =
 	'use strict';
 
 	var DOMProperty = __webpack_require__(13);
-	var ReactDOMComponentFlags = __webpack_require__(67);
+	var ReactDOMComponentFlags = __webpack_require__(68);
 
 	var invariant = __webpack_require__(1);
 
@@ -1044,9 +1044,9 @@ var App =
 
 	var _assign = __webpack_require__(3);
 
-	var CallbackQueue = __webpack_require__(62);
+	var CallbackQueue = __webpack_require__(63);
 	var PooledClass = __webpack_require__(15);
-	var ReactFeatureFlags = __webpack_require__(71);
+	var ReactFeatureFlags = __webpack_require__(72);
 	var ReactPerf = __webpack_require__(6);
 	var ReactReconciler = __webpack_require__(17);
 	var Transaction = __webpack_require__(41);
@@ -2085,7 +2085,7 @@ var App =
 	'use strict';
 
 	var createMicrosoftUnsafeLocalFunction = __webpack_require__(43);
-	var setTextContent = __webpack_require__(87);
+	var setTextContent = __webpack_require__(88);
 
 	/**
 	 * In IE (8-11) and Edge, appending nodes with no children is dramatically
@@ -2195,7 +2195,7 @@ var App =
 
 	'use strict';
 
-	var ReactRef = __webpack_require__(163);
+	var ReactRef = __webpack_require__(164);
 	var ReactInstrumentation = __webpack_require__(27);
 
 	/**
@@ -2319,6 +2319,16 @@ var App =
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
+	'use strict';
+
+	module.exports = __webpack_require__(131);
+
+
+/***/ },
+/* 19 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
 	/* WEBPACK VAR INJECTION */(function(process) {/**
 	 * Copyright 2013-present, Facebook, Inc.
 	 * All rights reserved.
@@ -2336,8 +2346,8 @@ var App =
 	var EventPluginUtils = __webpack_require__(34);
 	var ReactErrorUtils = __webpack_require__(38);
 
-	var accumulateInto = __webpack_require__(81);
-	var forEachAccumulated = __webpack_require__(82);
+	var accumulateInto = __webpack_require__(82);
+	var forEachAccumulated = __webpack_require__(83);
 	var invariant = __webpack_require__(1);
 
 	/**
@@ -2557,7 +2567,7 @@ var App =
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ },
-/* 19 */
+/* 20 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -2575,11 +2585,11 @@ var App =
 	'use strict';
 
 	var EventConstants = __webpack_require__(10);
-	var EventPluginHub = __webpack_require__(18);
+	var EventPluginHub = __webpack_require__(19);
 	var EventPluginUtils = __webpack_require__(34);
 
-	var accumulateInto = __webpack_require__(81);
-	var forEachAccumulated = __webpack_require__(82);
+	var accumulateInto = __webpack_require__(82);
+	var forEachAccumulated = __webpack_require__(83);
 	var warning = __webpack_require__(2);
 
 	var PropagationPhases = EventConstants.PropagationPhases;
@@ -2701,7 +2711,7 @@ var App =
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ },
-/* 20 */
+/* 21 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -2764,16 +2774,6 @@ var App =
 	SyntheticEvent.augmentClass(SyntheticUIEvent, UIEventInterface);
 
 	module.exports = SyntheticUIEvent;
-
-/***/ },
-/* 21 */
-/***/ function(module, exports, __webpack_require__) {
-
-	"use strict";
-	'use strict';
-
-	module.exports = __webpack_require__(130);
-
 
 /***/ },
 /* 22 */
@@ -3181,10 +3181,10 @@ var App =
 
 	var EventConstants = __webpack_require__(10);
 	var EventPluginRegistry = __webpack_require__(25);
-	var ReactEventEmitterMixin = __webpack_require__(155);
-	var ViewportMetrics = __webpack_require__(80);
+	var ReactEventEmitterMixin = __webpack_require__(156);
+	var ViewportMetrics = __webpack_require__(81);
 
-	var getVendorPrefixedEventName = __webpack_require__(183);
+	var getVendorPrefixedEventName = __webpack_require__(184);
 	var isEventSupported = __webpack_require__(48);
 
 	/**
@@ -3500,7 +3500,7 @@ var App =
 
 	'use strict';
 
-	var ReactDebugTool = __webpack_require__(150);
+	var ReactDebugTool = __webpack_require__(151);
 
 	module.exports = { debugTool: ReactDebugTool };
 
@@ -3581,8 +3581,8 @@ var App =
 
 	'use strict';
 
-	var SyntheticUIEvent = __webpack_require__(20);
-	var ViewportMetrics = __webpack_require__(80);
+	var SyntheticUIEvent = __webpack_require__(21);
+	var ViewportMetrics = __webpack_require__(81);
 
 	var getEventModifierState = __webpack_require__(45);
 
@@ -3704,13 +3704,13 @@ var App =
 	'use strict';
 
 	var DOMLazyTree = __webpack_require__(16);
-	var Danger = __webpack_require__(125);
-	var ReactMultiChildUpdateTypes = __webpack_require__(73);
+	var Danger = __webpack_require__(126);
+	var ReactMultiChildUpdateTypes = __webpack_require__(74);
 	var ReactPerf = __webpack_require__(6);
 
 	var createMicrosoftUnsafeLocalFunction = __webpack_require__(43);
 	var setInnerHTML = __webpack_require__(49);
-	var setTextContent = __webpack_require__(87);
+	var setTextContent = __webpack_require__(88);
 
 	function getNodeAfter(parentNode, node) {
 	  // Special case for text components, which return [open, close] comments
@@ -3869,10 +3869,10 @@ var App =
 	'use strict';
 
 	var DOMProperty = __webpack_require__(13);
-	var ReactDOMInstrumentation = __webpack_require__(143);
+	var ReactDOMInstrumentation = __webpack_require__(144);
 	var ReactPerf = __webpack_require__(6);
 
-	var quoteAttributeValueForBrowser = __webpack_require__(185);
+	var quoteAttributeValueForBrowser = __webpack_require__(186);
 	var warning = __webpack_require__(2);
 
 	var VALID_ATTRIBUTE_NAME_REGEX = new RegExp('^[' + DOMProperty.ATTRIBUTE_NAME_START_CHAR + '][' + DOMProperty.ATTRIBUTE_NAME_CHAR + ']*$');
@@ -4386,7 +4386,7 @@ var App =
 
 	'use strict';
 
-	var ReactPropTypes = __webpack_require__(77);
+	var ReactPropTypes = __webpack_require__(78);
 	var ReactPropTypeLocations = __webpack_require__(29);
 
 	var invariant = __webpack_require__(1);
@@ -4726,19 +4726,19 @@ var App =
 	var ReactBrowserEventEmitter = __webpack_require__(26);
 	var ReactCurrentOwner = __webpack_require__(14);
 	var ReactDOMComponentTree = __webpack_require__(4);
-	var ReactDOMContainerInfo = __webpack_require__(136);
-	var ReactDOMFeatureFlags = __webpack_require__(140);
+	var ReactDOMContainerInfo = __webpack_require__(137);
+	var ReactDOMFeatureFlags = __webpack_require__(141);
 	var ReactElement = __webpack_require__(7);
-	var ReactFeatureFlags = __webpack_require__(71);
+	var ReactFeatureFlags = __webpack_require__(72);
 	var ReactInstrumentation = __webpack_require__(27);
-	var ReactMarkupChecksum = __webpack_require__(159);
+	var ReactMarkupChecksum = __webpack_require__(160);
 	var ReactPerf = __webpack_require__(6);
 	var ReactReconciler = __webpack_require__(17);
-	var ReactUpdateQueue = __webpack_require__(78);
+	var ReactUpdateQueue = __webpack_require__(79);
 	var ReactUpdates = __webpack_require__(9);
 
 	var emptyObject = __webpack_require__(22);
-	var instantiateReactComponent = __webpack_require__(85);
+	var instantiateReactComponent = __webpack_require__(86);
 	var invariant = __webpack_require__(1);
 	var setInnerHTML = __webpack_require__(49);
 	var shouldUpdateReactComponent = __webpack_require__(50);
@@ -6457,6 +6457,66 @@ var App =
 
 /***/ },
 /* 54 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	"use strict";
+
+	exports.__esModule = true;
+	exports.SinglePanel = undefined;
+
+	var _react = __webpack_require__(18);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	var SinglePanel = exports.SinglePanel = function (_React$Component) {
+	  _inherits(SinglePanel, _React$Component);
+
+	  function SinglePanel() {
+	    _classCallCheck(this, SinglePanel);
+
+	    return _possibleConstructorReturn(this, _React$Component.apply(this, arguments));
+	  }
+
+	  SinglePanel.prototype.render = function render() {
+	    return _react2.default.createElement(
+	      "div",
+	      { className: "col-md-4 col-sm-6 col-xs-12" },
+	      _react2.default.createElement(
+	        "div",
+	        { className: "x_panel" },
+	        _react2.default.createElement(
+	          "div",
+	          { className: "x_title" },
+	          _react2.default.createElement(
+	            "h2",
+	            null,
+	            this.props.title
+	          ),
+	          _react2.default.createElement("div", { className: "clearfix" })
+	        ),
+	        _react2.default.createElement(
+	          "div",
+	          { className: "x_content" },
+	          this.props.children
+	        )
+	      )
+	    );
+	  };
+
+	  return SinglePanel;
+	}(_react2.default.Component);
+
+/***/ },
+/* 55 */
 /***/ function(module, exports) {
 
 	/*
@@ -6512,7 +6572,7 @@ var App =
 
 
 /***/ },
-/* 55 */
+/* 56 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -6602,7 +6662,7 @@ var App =
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ },
-/* 56 */
+/* 57 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -6634,7 +6694,7 @@ var App =
 	module.exports = focusNode;
 
 /***/ },
-/* 57 */
+/* 58 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -6674,7 +6734,7 @@ var App =
 	module.exports = getActiveElement;
 
 /***/ },
-/* 58 */
+/* 59 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -6775,7 +6835,7 @@ var App =
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ },
-/* 59 */
+/* 60 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -6847,13 +6907,13 @@ var App =
 	module.exports = shallowEqual;
 
 /***/ },
-/* 60 */
+/* 61 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "f4769f9bdb7466be65088239c12046d1.eot";
 
 /***/ },
-/* 61 */
+/* 62 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -7007,7 +7067,7 @@ var App =
 	module.exports = CSSProperty;
 
 /***/ },
-/* 62 */
+/* 63 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -7119,7 +7179,7 @@ var App =
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ },
-/* 63 */
+/* 64 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -7308,7 +7368,7 @@ var App =
 	module.exports = ReactChildren;
 
 /***/ },
-/* 64 */
+/* 65 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -7327,11 +7387,11 @@ var App =
 
 	var _assign = __webpack_require__(3);
 
-	var ReactComponent = __webpack_require__(65);
+	var ReactComponent = __webpack_require__(66);
 	var ReactElement = __webpack_require__(7);
 	var ReactPropTypeLocations = __webpack_require__(29);
 	var ReactPropTypeLocationNames = __webpack_require__(28);
-	var ReactNoopUpdateQueue = __webpack_require__(76);
+	var ReactNoopUpdateQueue = __webpack_require__(77);
 
 	var emptyObject = __webpack_require__(22);
 	var invariant = __webpack_require__(1);
@@ -8038,7 +8098,7 @@ var App =
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ },
-/* 65 */
+/* 66 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -8055,7 +8115,7 @@ var App =
 
 	'use strict';
 
-	var ReactNoopUpdateQueue = __webpack_require__(76);
+	var ReactNoopUpdateQueue = __webpack_require__(77);
 	var ReactInstrumentation = __webpack_require__(27);
 
 	var canDefineProperty = __webpack_require__(42);
@@ -8166,7 +8226,7 @@ var App =
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ },
-/* 66 */
+/* 67 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -8184,7 +8244,7 @@ var App =
 	'use strict';
 
 	var DOMChildrenOperations = __webpack_require__(32);
-	var ReactDOMIDOperations = __webpack_require__(141);
+	var ReactDOMIDOperations = __webpack_require__(142);
 	var ReactPerf = __webpack_require__(6);
 
 	/**
@@ -8216,7 +8276,7 @@ var App =
 	module.exports = ReactComponentBrowserEnvironment;
 
 /***/ },
-/* 67 */
+/* 68 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -8240,7 +8300,7 @@ var App =
 	module.exports = ReactDOMComponentFlags;
 
 /***/ },
-/* 68 */
+/* 69 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -8460,7 +8520,7 @@ var App =
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ },
-/* 69 */
+/* 70 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -8748,7 +8808,7 @@ var App =
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ },
-/* 70 */
+/* 71 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -8784,7 +8844,7 @@ var App =
 	module.exports = ReactEmptyComponent;
 
 /***/ },
-/* 71 */
+/* 72 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -8811,7 +8871,7 @@ var App =
 	module.exports = ReactFeatureFlags;
 
 /***/ },
-/* 72 */
+/* 73 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -8828,11 +8888,11 @@ var App =
 
 	'use strict';
 
-	var ReactDOMSelection = __webpack_require__(145);
+	var ReactDOMSelection = __webpack_require__(146);
 
-	var containsNode = __webpack_require__(106);
-	var focusNode = __webpack_require__(56);
-	var getActiveElement = __webpack_require__(57);
+	var containsNode = __webpack_require__(107);
+	var focusNode = __webpack_require__(57);
+	var getActiveElement = __webpack_require__(58);
 
 	function isInDocument(node) {
 	  return containsNode(document.documentElement, node);
@@ -8941,7 +9001,7 @@ var App =
 	module.exports = ReactInputSelection;
 
 /***/ },
-/* 73 */
+/* 74 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -8979,7 +9039,7 @@ var App =
 	module.exports = ReactMultiChildUpdateTypes;
 
 /***/ },
-/* 74 */
+/* 75 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -9081,7 +9141,7 @@ var App =
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ },
-/* 75 */
+/* 76 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -9125,7 +9185,7 @@ var App =
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ },
-/* 76 */
+/* 77 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -9227,7 +9287,7 @@ var App =
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ },
-/* 77 */
+/* 78 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -9613,7 +9673,7 @@ var App =
 	module.exports = ReactPropTypes;
 
 /***/ },
-/* 78 */
+/* 79 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -9835,7 +9895,7 @@ var App =
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ },
-/* 79 */
+/* 80 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -9855,7 +9915,7 @@ var App =
 	module.exports = '15.0.2';
 
 /***/ },
-/* 80 */
+/* 81 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -9888,7 +9948,7 @@ var App =
 	module.exports = ViewportMetrics;
 
 /***/ },
-/* 81 */
+/* 82 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -9954,7 +10014,7 @@ var App =
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ },
-/* 82 */
+/* 83 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -9990,7 +10050,7 @@ var App =
 	module.exports = forEachAccumulated;
 
 /***/ },
-/* 83 */
+/* 84 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -10007,7 +10067,7 @@ var App =
 
 	'use strict';
 
-	var ReactNodeTypes = __webpack_require__(75);
+	var ReactNodeTypes = __webpack_require__(76);
 
 	function getNativeComponentFromComposite(inst) {
 	  var type;
@@ -10026,7 +10086,7 @@ var App =
 	module.exports = getNativeComponentFromComposite;
 
 /***/ },
-/* 84 */
+/* 85 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -10065,7 +10125,7 @@ var App =
 	module.exports = getTextContentAccessor;
 
 /***/ },
-/* 85 */
+/* 86 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -10084,9 +10144,9 @@ var App =
 
 	var _assign = __webpack_require__(3);
 
-	var ReactCompositeComponent = __webpack_require__(132);
-	var ReactEmptyComponent = __webpack_require__(70);
-	var ReactNativeComponent = __webpack_require__(74);
+	var ReactCompositeComponent = __webpack_require__(133);
+	var ReactEmptyComponent = __webpack_require__(71);
+	var ReactNativeComponent = __webpack_require__(75);
 
 	var invariant = __webpack_require__(1);
 	var warning = __webpack_require__(2);
@@ -10183,7 +10243,7 @@ var App =
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ },
-/* 86 */
+/* 87 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -10230,7 +10290,7 @@ var App =
 	module.exports = isTextInputElement;
 
 /***/ },
-/* 87 */
+/* 88 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -10276,7 +10336,7 @@ var App =
 	module.exports = setTextContent;
 
 /***/ },
-/* 88 */
+/* 89 */
 /***/ function(module, exports) {
 
 	/*
@@ -10501,22 +10561,216 @@ var App =
 
 
 /***/ },
-/* 89 */
+/* 90 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	'use strict';
 
 	exports.__esModule = true;
-	exports.WeatherDay = undefined;
+	exports.Plants = exports.PlantRow = undefined;
 
-	var _react = __webpack_require__(21);
+	var _react = __webpack_require__(18);
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _singlePanel = __webpack_require__(95);
+	var _singlePanel = __webpack_require__(54);
 
-	var _skycons = __webpack_require__(96);
+	var _chart = __webpack_require__(99);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	var PlantRow = exports.PlantRow = function (_React$Component) {
+	  _inherits(PlantRow, _React$Component);
+
+	  function PlantRow() {
+	    _classCallCheck(this, PlantRow);
+
+	    return _possibleConstructorReturn(this, _React$Component.apply(this, arguments));
+	  }
+
+	  PlantRow.prototype.render = function render() {
+	    var style = { color: this.props.color };
+
+	    return _react2.default.createElement(
+	      'tr',
+	      null,
+	      _react2.default.createElement(
+	        'td',
+	        null,
+	        _react2.default.createElement(
+	          'p',
+	          null,
+	          _react2.default.createElement('i', { className: 'fa fa-square', style: style }),
+	          this.props.name,
+	          ' '
+	        )
+	      ),
+	      _react2.default.createElement(
+	        'td',
+	        null,
+	        this.props.count
+	      )
+	    );
+	  };
+
+	  return PlantRow;
+	}(_react2.default.Component);
+
+	var Plants = exports.Plants = function (_React$Component2) {
+	  _inherits(Plants, _React$Component2);
+
+	  function Plants() {
+	    _classCallCheck(this, Plants);
+
+	    var _this2 = _possibleConstructorReturn(this, _React$Component2.call(this));
+
+	    _this2.state = { plants: [] };
+	    return _this2;
+	  }
+
+	  Plants.prototype.componentDidMount = function componentDidMount() {
+	    jQuery.ajax({
+	      url: 'api/plants',
+	      dataType: 'json',
+	      cache: false,
+	      success: function (plants) {
+	        this.setState({ "plants": plants });
+	      }.bind(this),
+	      error: function (xhr, status, err) {
+	        console.error('/api/plants', status, err.toString());
+	      }.bind(this)
+	    });
+	  };
+
+	  Plants.prototype.render = function render() {
+	    if (this.state.plants.length > 0) {
+	      var labels = [],
+	          data = [],
+	          backgroundColor = [];
+
+	      this.state.plants.forEach(function (plant) {
+	        labels.push(plant.plant_name);
+	        data.push(plant.count);
+	        backgroundColor.push(plant.color);
+	      });
+
+	      this.state.chart = new _chart.Chart(document.getElementById("plants_chart"), {
+	        type: 'doughnut',
+	        tooltipFillColor: "rgba(51, 51, 51, 0.55)",
+	        data: {
+	          labels: labels,
+	          datasets: [{
+	            data: data,
+	            backgroundColor: backgroundColor
+	          }]
+	        },
+	        options: {
+	          legend: false,
+	          responsive: false
+	        }
+	      });
+	    }
+
+	    return _react2.default.createElement(
+	      _singlePanel.SinglePanel,
+	      { title: 'Plants' },
+	      _react2.default.createElement(
+	        'table',
+	        { className: 'plants' },
+	        _react2.default.createElement(
+	          'tbody',
+	          null,
+	          _react2.default.createElement(
+	            'tr',
+	            null,
+	            _react2.default.createElement(
+	              'th',
+	              { className: 'top5' },
+	              _react2.default.createElement(
+	                'p',
+	                null,
+	                'Top 5'
+	              )
+	            ),
+	            _react2.default.createElement(
+	              'th',
+	              null,
+	              _react2.default.createElement(
+	                'div',
+	                { className: 'col-lg-7 col-md-7 col-sm-7 col-xs-7' },
+	                _react2.default.createElement(
+	                  'p',
+	                  { className: '' },
+	                  'Name'
+	                )
+	              ),
+	              _react2.default.createElement(
+	                'div',
+	                { className: 'col-lg-5 col-md-5 col-sm-5 col-xs-5 right' },
+	                _react2.default.createElement(
+	                  'p',
+	                  { className: '' },
+	                  'Count'
+	                )
+	              )
+	            )
+	          ),
+	          _react2.default.createElement(
+	            'tr',
+	            null,
+	            _react2.default.createElement(
+	              'td',
+	              null,
+	              _react2.default.createElement('canvas', { id: 'plants_chart', height: '140', width: '140' })
+	            ),
+	            _react2.default.createElement(
+	              'td',
+	              null,
+	              _react2.default.createElement(
+	                'table',
+	                { className: 'tile_info' },
+	                _react2.default.createElement(
+	                  'tbody',
+	                  null,
+	                  this.state.plants.map(function (plant) {
+	                    return _react2.default.createElement(PlantRow, { key: plant.plant_name, name: plant.plant_name, color: plant.color, count: plant.count });
+	                  })
+	                )
+	              )
+	            )
+	          )
+	        )
+	      )
+	    );
+	  };
+
+	  return Plants;
+	}(_react2.default.Component);
+
+/***/ },
+/* 91 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	'use strict';
+
+	exports.__esModule = true;
+	exports.Weather = exports.WeatherDay = undefined;
+
+	var _react = __webpack_require__(18);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _singlePanel = __webpack_require__(54);
+
+	var _skycons = __webpack_require__(97);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -10527,158 +10781,213 @@ var App =
 	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
 	var WeatherDay = exports.WeatherDay = function (_React$Component) {
-	    _inherits(WeatherDay, _React$Component);
+	  _inherits(WeatherDay, _React$Component);
 
-	    function WeatherDay() {
-	        _classCallCheck(this, WeatherDay);
+	  function WeatherDay() {
+	    _classCallCheck(this, WeatherDay);
 
-	        return _possibleConstructorReturn(this, _React$Component.apply(this, arguments));
-	    }
+	    return _possibleConstructorReturn(this, _React$Component.apply(this, arguments));
+	  }
 
-	    WeatherDay.prototype.render = function render() {
-	        var days = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
-	        /*
-	        Date parsing is completely different between Safari and Chrome :)
-	        I love JavaScript.
-	         */
-	        var splitted_date = this.props.date_time.split(/[^0-9]/);
-	        var date = new Date(splitted_date[0], splitted_date[1] - 1, splitted_date[2], splitted_date[3], splitted_date[4], splitted_date[5]);
+	  WeatherDay.prototype.render = function render() {
+	    var days = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
+	    /*
+	    Date parsing is completely different between Safari and Chrome :)
+	    I love JavaScript.
+	     */
+	    var splitted_date = this.props.date_time.split(/[^0-9]/);
+	    var date = new Date(splitted_date[0], splitted_date[1] - 1, splitted_date[2], splitted_date[3], splitted_date[4], splitted_date[5]);
 
-	        return _react2.default.createElement(
-	            'div',
-	            { className: 'col-sm-2' },
-	            _react2.default.createElement(
-	                'div',
-	                { className: 'daily-weather' },
-	                _react2.default.createElement(
-	                    'h2',
-	                    { className: 'day' },
-	                    days[date.getDay()]
-	                ),
-	                _react2.default.createElement(
-	                    'h3',
-	                    { className: 'degrees' },
-	                    this.props.temperature
-	                ),
-	                _react2.default.createElement(_skycons.SkyconsIcon, { height: '32', width: '32', icon: this.props.icon }),
-	                _react2.default.createElement(
-	                    'h5',
-	                    null,
-	                    this.props.precipitation,
-	                    '%'
-	                )
-	            )
-	        );
-	    };
+	    return _react2.default.createElement(
+	      'div',
+	      { className: 'col-sm-2' },
+	      _react2.default.createElement(
+	        'div',
+	        { className: 'daily-weather' },
+	        _react2.default.createElement(
+	          'h2',
+	          { className: 'day' },
+	          days[date.getDay()]
+	        ),
+	        _react2.default.createElement(
+	          'h3',
+	          { className: 'degrees' },
+	          this.props.temperature
+	        ),
+	        _react2.default.createElement(_skycons.SkyconsIcon, { height: '32', width: '32', icon: this.props.icon }),
+	        _react2.default.createElement(
+	          'h5',
+	          null,
+	          this.props.precipitation,
+	          '%'
+	        )
+	      )
+	    );
+	  };
 
-	    return WeatherDay;
+	  return WeatherDay;
 	}(_react2.default.Component);
 
-	/*
-	export class Weather extends React.Component {
-	    getInitialState() {
-	        return { weather: [] };
-	    }
+	var Weather = exports.Weather = function (_React$Component2) {
+	  _inherits(Weather, _React$Component2);
 
-	    componentDidMount() {
-	        $.ajax({
-	            url: 'api/weather',
-	            dataType: 'json',
-	            cache: false,
-	            success: function(weather) {
-	                this.setState({"weather": weather})
-	            }.bind(this),
-	            error: function(xhr, status, err) {
-	                console.error('/api/weather', status, err.toString());
-	            }.bind(this)
-	        });
-	    }
+	  function Weather() {
+	    _classCallCheck(this, Weather);
 
-	    render() {
-	        var weather = this.state.weather;
-	        var date = new Date();
-	        const days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
-	        var formatted_date = ('0' + date.getHours()).slice(-2) + ":" + ('0' + date.getMinutes()).slice(-2)
-	        if (weather.length > 0) {
-	            return (
-	                    <SinglePanel title="Weather">
-	                        <div className="row">
-	                          <div className="col-sm-12">
-	                            <div className="temperature"><b>{days[date.getDay()]}</b>, {formatted_date}
-	                            </div>
-	                          </div>
-	                        </div>
-	                        <div className="row">
-	                          <div className="col-sm-4">
-	                            <div className="weather-icon">
-	                              <span><SkyconsIcon height="84" width="84" icon={ weather[0].icon }></SkyconsIcon></span>
-	                            </div>
-	                          </div>
-	                          <div className="col-sm-8">
-	                            <div className="weather-text">
-	                              <h2>{ weather[0].city_name }<p><i>Częściowe zachmurzenie</i></p></h2>
-	                            </div>
-	                          </div>
-	                        </div>
-	                        <div className="col-sm-12">
-	                          <div className="weather-text pull-right">
-	                            <h3 className="degrees">{ weather[0].temperature }</h3>
-	                          </div>
-	                        </div>
-	                        <div className="clearfix"></div>
+	    var _this2 = _possibleConstructorReturn(this, _React$Component2.call(this));
 
+	    _this2.state = { weather: [] };
+	    return _this2;
+	  }
 
-	                        <div className="row weather-days">
-	                            {this.state.weather.map(function(weather_day) {
-	                                return <WeatherDay key={ weather_day.date_time } date_time={ weather_day.date_time } temperature={ weather_day.temperature } icon={ weather_day.icon } precipitation={ weather_day.precipitation }></WeatherDay>;
-	                            })}
-	                          <div className="clearfix"></div>
-	                        </div>
-	                    </SinglePanel>
+	  Weather.prototype.componentDidMount = function componentDidMount() {
+	    jQuery.ajax({
+	      url: 'api/weather',
+	      dataType: 'json',
+	      cache: false,
+	      success: function (weather) {
+	        this.setState({ "weather": weather });
+	      }.bind(this),
+	      error: function (xhr, status, err) {
+	        console.error('/api/weather', status, err.toString());
+	      }.bind(this)
+	    });
+	  };
+
+	  Weather.prototype.render = function render() {
+	    console.log("Ble");
+	    var weather = this.state.weather;
+	    var date = new Date();
+	    var days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+	    var formatted_date = ('0' + date.getHours()).slice(-2) + ":" + ('0' + date.getMinutes()).slice(-2);
+	    if (weather.length > 0) {
+	      return _react2.default.createElement(
+	        _singlePanel.SinglePanel,
+	        { title: 'Weather' },
+	        _react2.default.createElement(
+	          'div',
+	          { className: 'row' },
+	          _react2.default.createElement(
+	            'div',
+	            { className: 'col-sm-12' },
+	            _react2.default.createElement(
+	              'div',
+	              { className: 'temperature' },
+	              _react2.default.createElement(
+	                'b',
+	                null,
+	                days[date.getDay()]
+	              ),
+	              ', ',
+	              formatted_date
+	            )
+	          )
+	        ),
+	        _react2.default.createElement(
+	          'div',
+	          { className: 'row' },
+	          _react2.default.createElement(
+	            'div',
+	            { className: 'col-sm-4' },
+	            _react2.default.createElement(
+	              'div',
+	              { className: 'weather-icon' },
+	              _react2.default.createElement(
+	                'span',
+	                null,
+	                _react2.default.createElement(_skycons.SkyconsIcon, { height: '84', width: '84', icon: weather[0].icon })
+	              )
+	            )
+	          ),
+	          _react2.default.createElement(
+	            'div',
+	            { className: 'col-sm-8' },
+	            _react2.default.createElement(
+	              'div',
+	              { className: 'weather-text' },
+	              _react2.default.createElement(
+	                'h2',
+	                null,
+	                weather[0].city_name,
+	                _react2.default.createElement(
+	                  'p',
+	                  null,
+	                  _react2.default.createElement(
+	                    'i',
+	                    null,
+	                    'Częściowe zachmurzenie'
+	                  )
 	                )
-	        }
-	        else {
-	            return ( <div className="col-md-4 col-sm-6 col-xs-12"></div> )
-	        }
+	              )
+	            )
+	          )
+	        ),
+	        _react2.default.createElement(
+	          'div',
+	          { className: 'col-sm-12' },
+	          _react2.default.createElement(
+	            'div',
+	            { className: 'weather-text pull-right' },
+	            _react2.default.createElement(
+	              'h3',
+	              { className: 'degrees' },
+	              weather[0].temperature
+	            )
+	          )
+	        ),
+	        _react2.default.createElement('div', { className: 'clearfix' }),
+	        _react2.default.createElement(
+	          'div',
+	          { className: 'row weather-days' },
+	          this.state.weather.map(function (weather_day) {
+	            return _react2.default.createElement(WeatherDay, { key: weather_day.date_time, date_time: weather_day.date_time, temperature: weather_day.temperature, icon: weather_day.icon, precipitation: weather_day.precipitation });
+	          }),
+	          _react2.default.createElement('div', { className: 'clearfix' })
+	        )
+	      );
+	    } else {
+	      return _react2.default.createElement('div', { className: 'col-md-4 col-sm-6 col-xs-12' });
 	    }
-	}
-	*/
+	  };
 
-/***/ },
-/* 90 */
-/***/ function(module, exports, __webpack_require__) {
-
-	/* WEBPACK VAR INJECTION */(function(global) {module.exports = global["$"] = __webpack_require__(98);
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(53)))
-
-/***/ },
-/* 91 */
-/***/ function(module, exports, __webpack_require__) {
-
-	/* WEBPACK VAR INJECTION */(function(global) {module.exports = global["$"] = __webpack_require__(103);
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(53)))
+	  return Weather;
+	}(_react2.default.Component);
 
 /***/ },
 /* 92 */
 /***/ function(module, exports, __webpack_require__) {
 
-	"use strict";
-	'use strict';
-
-	module.exports = __webpack_require__(133);
-
+	/* WEBPACK VAR INJECTION */(function(global) {module.exports = global["$"] = __webpack_require__(100);
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(53)))
 
 /***/ },
 /* 93 */
 /***/ function(module, exports, __webpack_require__) {
 
+	/* WEBPACK VAR INJECTION */(function(global) {module.exports = global["$"] = __webpack_require__(104);
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(53)))
+
+/***/ },
+/* 94 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	'use strict';
+
+	module.exports = __webpack_require__(134);
+
+
+/***/ },
+/* 95 */
+/***/ function(module, exports, __webpack_require__) {
+
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 
 	// load the styles
-	var content = __webpack_require__(101);
+	var content = __webpack_require__(102);
 	if(typeof content === 'string') content = [[module.i, content, '']];
 	// add the styles to the DOM
-	var update = __webpack_require__(88)(content, {});
+	var update = __webpack_require__(89)(content, {});
 	if(content.locals) module.exports = content.locals;
 	// Hot Module Replacement
 	if(false) {
@@ -10695,16 +11004,16 @@ var App =
 	}
 
 /***/ },
-/* 94 */
+/* 96 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 
 	// load the styles
-	var content = __webpack_require__(102);
+	var content = __webpack_require__(103);
 	if(typeof content === 'string') content = [[module.i, content, '']];
 	// add the styles to the DOM
-	var update = __webpack_require__(88)(content, {});
+	var update = __webpack_require__(89)(content, {});
 	if(content.locals) module.exports = content.locals;
 	// Hot Module Replacement
 	if(false) {
@@ -10721,67 +11030,7 @@ var App =
 	}
 
 /***/ },
-/* 95 */
-/***/ function(module, exports, __webpack_require__) {
-
-	"use strict";
-	"use strict";
-
-	exports.__esModule = true;
-	exports.SinglePanel = undefined;
-
-	var _react = __webpack_require__(21);
-
-	var _react2 = _interopRequireDefault(_react);
-
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-	var SinglePanel = exports.SinglePanel = function (_React$Component) {
-	  _inherits(SinglePanel, _React$Component);
-
-	  function SinglePanel() {
-	    _classCallCheck(this, SinglePanel);
-
-	    return _possibleConstructorReturn(this, _React$Component.apply(this, arguments));
-	  }
-
-	  SinglePanel.prototype.render = function render() {
-	    return _react2.default.createElement(
-	      "div",
-	      { className: "col-md-4 col-sm-6 col-xs-12" },
-	      _react2.default.createElement(
-	        "div",
-	        { className: "x_panel" },
-	        _react2.default.createElement(
-	          "div",
-	          { className: "x_title" },
-	          _react2.default.createElement(
-	            "h2",
-	            null,
-	            this.props.title
-	          ),
-	          _react2.default.createElement("div", { className: "clearfix" })
-	        ),
-	        _react2.default.createElement(
-	          "div",
-	          { className: "x_content" },
-	          this.props.children
-	        )
-	      )
-	    );
-	  };
-
-	  return SinglePanel;
-	}(_react2.default.Component);
-
-/***/ },
-/* 96 */
+/* 97 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -10789,11 +11038,9 @@ var App =
 
 	exports.__esModule = true;
 
-	var _react = __webpack_require__(21);
+	var _react = __webpack_require__(18);
 
 	var _react2 = _interopRequireDefault(_react);
-
-	var _skycons = __webpack_require__(100);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -10802,6 +11049,8 @@ var App =
 	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
 
 	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	//import { Skycons } from '../../vendors/skycons.js'
 
 	var SkyconsIcon = function (_React$Component) {
 	    _inherits(SkyconsIcon, _React$Component);
@@ -10815,7 +11064,7 @@ var App =
 	    SkyconsIcon.prototype.getInitialState = function getInitialState() {
 	        return {
 	            random_id: Math.random().toString(36).substring(7),
-	            skycons: new _skycons.Skycons({ 'color': '#73879C' })
+	            skycons: new Skycons({ 'color': '#73879C' })
 	        };
 	    };
 
@@ -10838,54 +11087,894 @@ var App =
 	module.exports = exports['default'];
 
 /***/ },
-/* 97 */
+/* 98 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	'use strict';
 
-	var _react = __webpack_require__(21);
+	var _react = __webpack_require__(18);
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _reactDom = __webpack_require__(92);
+	var _reactDom = __webpack_require__(94);
 
 	var _reactDom2 = _interopRequireDefault(_reactDom);
 
-	var _bootstrap = __webpack_require__(94);
+	var _bootstrap = __webpack_require__(96);
 
 	var _bootstrap2 = _interopRequireDefault(_bootstrap);
 
-	var _s = __webpack_require__(93);
+	var _s = __webpack_require__(95);
 
 	var _s2 = _interopRequireDefault(_s);
 
-	var _weather = __webpack_require__(89);
+	var _weather = __webpack_require__(91);
+
+	var _plants = __webpack_require__(90);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-	__webpack_require__(91);
-	__webpack_require__(90);
+	__webpack_require__(93);
+	__webpack_require__(92);
 
-	console.log(_weather.Weather);
+	_reactDom2.default.render(_react2.default.createElement(_weather.Weather, null), document.getElementById('weather'));
 
-	/*
-	import { Plants } from './components/plants'
-	console.log(Plants);
-
-	React.render(
-	  <Weather />,
-	  document.getElementById('weather')
-	);
-
-	React.render(
-	  <Plants />,
-	  document.getElementById('plants')
-	);
-	*/
+	_reactDom2.default.render(_react2.default.createElement(_plants.Plants, null), document.getElementById('plants'));
 
 /***/ },
-/* 98 */
+/* 99 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	var require;var require;"use strict";var _typeof=typeof Symbol==="function"&&typeof Symbol.iterator==="symbol"?function(obj){return typeof obj;}:function(obj){return obj&&typeof Symbol==="function"&&obj.constructor===Symbol?"symbol":typeof obj;}; /*!
+	 * Chart.js
+	 * http://chartjs.org/
+	 * Version: 2.1.3
+	 *
+	 * Copyright 2016 Nick Downie
+	 * Released under the MIT license
+	 * https://github.com/chartjs/Chart.js/blob/master/LICENSE.md
+	 */(function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof require=="function"&&require;if(!u&&a)return require(o,!0);if(i)return i(o,!0);var f=new Error("Cannot find module '"+o+"'");throw f.code="MODULE_NOT_FOUND",f;}var l=n[o]={exports:{}};t[o][0].call(l.exports,function(e){var n=t[o][1][e];return s(n?n:e);},l,l.exports,e,t,n,r);}return n[o].exports;}var i=typeof require=="function"&&require;for(var o=0;o<r.length;o++){s(r[o]);}return s;})({1:[function(require,module,exports){},{}],2:[function(require,module,exports){ /* MIT license */var colorNames=require('color-name');module.exports={getRgba:getRgba,getHsla:getHsla,getRgb:getRgb,getHsl:getHsl,getHwb:getHwb,getAlpha:getAlpha,hexString:hexString,rgbString:rgbString,rgbaString:rgbaString,percentString:percentString,percentaString:percentaString,hslString:hslString,hslaString:hslaString,hwbString:hwbString,keyword:keyword};function getRgba(string){if(!string){return;}var abbr=/^#([a-fA-F0-9]{3})$/,hex=/^#([a-fA-F0-9]{6})$/,rgba=/^rgba?\(\s*([+-]?\d+)\s*,\s*([+-]?\d+)\s*,\s*([+-]?\d+)\s*(?:,\s*([+-]?[\d\.]+)\s*)?\)$/,per=/^rgba?\(\s*([+-]?[\d\.]+)\%\s*,\s*([+-]?[\d\.]+)\%\s*,\s*([+-]?[\d\.]+)\%\s*(?:,\s*([+-]?[\d\.]+)\s*)?\)$/,keyword=/(\w+)/;var rgb=[0,0,0],a=1,match=string.match(abbr);if(match){match=match[1];for(var i=0;i<rgb.length;i++){rgb[i]=parseInt(match[i]+match[i],16);}}else if(match=string.match(hex)){match=match[1];for(var i=0;i<rgb.length;i++){rgb[i]=parseInt(match.slice(i*2,i*2+2),16);}}else if(match=string.match(rgba)){for(var i=0;i<rgb.length;i++){rgb[i]=parseInt(match[i+1]);}a=parseFloat(match[4]);}else if(match=string.match(per)){for(var i=0;i<rgb.length;i++){rgb[i]=Math.round(parseFloat(match[i+1])*2.55);}a=parseFloat(match[4]);}else if(match=string.match(keyword)){if(match[1]=="transparent"){return [0,0,0,0];}rgb=colorNames[match[1]];if(!rgb){return;}}for(var i=0;i<rgb.length;i++){rgb[i]=scale(rgb[i],0,255);}if(!a&&a!=0){a=1;}else {a=scale(a,0,1);}rgb[3]=a;return rgb;}function getHsla(string){if(!string){return;}var hsl=/^hsla?\(\s*([+-]?\d+)(?:deg)?\s*,\s*([+-]?[\d\.]+)%\s*,\s*([+-]?[\d\.]+)%\s*(?:,\s*([+-]?[\d\.]+)\s*)?\)/;var match=string.match(hsl);if(match){var alpha=parseFloat(match[4]);var h=scale(parseInt(match[1]),0,360),s=scale(parseFloat(match[2]),0,100),l=scale(parseFloat(match[3]),0,100),a=scale(isNaN(alpha)?1:alpha,0,1);return [h,s,l,a];}}function getHwb(string){if(!string){return;}var hwb=/^hwb\(\s*([+-]?\d+)(?:deg)?\s*,\s*([+-]?[\d\.]+)%\s*,\s*([+-]?[\d\.]+)%\s*(?:,\s*([+-]?[\d\.]+)\s*)?\)/;var match=string.match(hwb);if(match){var alpha=parseFloat(match[4]);var h=scale(parseInt(match[1]),0,360),w=scale(parseFloat(match[2]),0,100),b=scale(parseFloat(match[3]),0,100),a=scale(isNaN(alpha)?1:alpha,0,1);return [h,w,b,a];}}function getRgb(string){var rgba=getRgba(string);return rgba&&rgba.slice(0,3);}function getHsl(string){var hsla=getHsla(string);return hsla&&hsla.slice(0,3);}function getAlpha(string){var vals=getRgba(string);if(vals){return vals[3];}else if(vals=getHsla(string)){return vals[3];}else if(vals=getHwb(string)){return vals[3];}} // generators
+	function hexString(rgb){return "#"+hexDouble(rgb[0])+hexDouble(rgb[1])+hexDouble(rgb[2]);}function rgbString(rgba,alpha){if(alpha<1||rgba[3]&&rgba[3]<1){return rgbaString(rgba,alpha);}return "rgb("+rgba[0]+", "+rgba[1]+", "+rgba[2]+")";}function rgbaString(rgba,alpha){if(alpha===undefined){alpha=rgba[3]!==undefined?rgba[3]:1;}return "rgba("+rgba[0]+", "+rgba[1]+", "+rgba[2]+", "+alpha+")";}function percentString(rgba,alpha){if(alpha<1||rgba[3]&&rgba[3]<1){return percentaString(rgba,alpha);}var r=Math.round(rgba[0]/255*100),g=Math.round(rgba[1]/255*100),b=Math.round(rgba[2]/255*100);return "rgb("+r+"%, "+g+"%, "+b+"%)";}function percentaString(rgba,alpha){var r=Math.round(rgba[0]/255*100),g=Math.round(rgba[1]/255*100),b=Math.round(rgba[2]/255*100);return "rgba("+r+"%, "+g+"%, "+b+"%, "+(alpha||rgba[3]||1)+")";}function hslString(hsla,alpha){if(alpha<1||hsla[3]&&hsla[3]<1){return hslaString(hsla,alpha);}return "hsl("+hsla[0]+", "+hsla[1]+"%, "+hsla[2]+"%)";}function hslaString(hsla,alpha){if(alpha===undefined){alpha=hsla[3]!==undefined?hsla[3]:1;}return "hsla("+hsla[0]+", "+hsla[1]+"%, "+hsla[2]+"%, "+alpha+")";} // hwb is a bit different than rgb(a) & hsl(a) since there is no alpha specific syntax
+	// (hwb have alpha optional & 1 is default value)
+	function hwbString(hwb,alpha){if(alpha===undefined){alpha=hwb[3]!==undefined?hwb[3]:1;}return "hwb("+hwb[0]+", "+hwb[1]+"%, "+hwb[2]+"%"+(alpha!==undefined&&alpha!==1?", "+alpha:"")+")";}function keyword(rgb){return reverseNames[rgb.slice(0,3)];} // helpers
+	function scale(num,min,max){return Math.min(Math.max(min,num),max);}function hexDouble(num){var str=num.toString(16).toUpperCase();return str.length<2?"0"+str:str;} //create a list of reverse color names
+	var reverseNames={};for(var name in colorNames){reverseNames[colorNames[name]]=name;}},{"color-name":6}],3:[function(require,module,exports){ /* MIT license */var convert=require("color-convert"),string=require("chartjs-color-string");var Color=function Color(obj){if(obj instanceof Color)return obj;if(!(this instanceof Color))return new Color(obj);this.values={rgb:[0,0,0],hsl:[0,0,0],hsv:[0,0,0],hwb:[0,0,0],cmyk:[0,0,0,0],alpha:1}; // parse Color() argument
+	if(typeof obj=="string"){var vals=string.getRgba(obj);if(vals){this.setValues("rgb",vals);}else if(vals=string.getHsla(obj)){this.setValues("hsl",vals);}else if(vals=string.getHwb(obj)){this.setValues("hwb",vals);}else {throw new Error("Unable to parse color from string \""+obj+"\"");}}else if((typeof obj==="undefined"?"undefined":_typeof(obj))=="object"){var vals=obj;if(vals["r"]!==undefined||vals["red"]!==undefined){this.setValues("rgb",vals);}else if(vals["l"]!==undefined||vals["lightness"]!==undefined){this.setValues("hsl",vals);}else if(vals["v"]!==undefined||vals["value"]!==undefined){this.setValues("hsv",vals);}else if(vals["w"]!==undefined||vals["whiteness"]!==undefined){this.setValues("hwb",vals);}else if(vals["c"]!==undefined||vals["cyan"]!==undefined){this.setValues("cmyk",vals);}else {throw new Error("Unable to parse color from object "+JSON.stringify(obj));}}};Color.prototype={rgb:function rgb(vals){return this.setSpace("rgb",arguments);},hsl:function hsl(vals){return this.setSpace("hsl",arguments);},hsv:function hsv(vals){return this.setSpace("hsv",arguments);},hwb:function hwb(vals){return this.setSpace("hwb",arguments);},cmyk:function cmyk(vals){return this.setSpace("cmyk",arguments);},rgbArray:function rgbArray(){return this.values.rgb;},hslArray:function hslArray(){return this.values.hsl;},hsvArray:function hsvArray(){return this.values.hsv;},hwbArray:function hwbArray(){if(this.values.alpha!==1){return this.values.hwb.concat([this.values.alpha]);}return this.values.hwb;},cmykArray:function cmykArray(){return this.values.cmyk;},rgbaArray:function rgbaArray(){var rgb=this.values.rgb;return rgb.concat([this.values.alpha]);},hslaArray:function hslaArray(){var hsl=this.values.hsl;return hsl.concat([this.values.alpha]);},alpha:function alpha(val){if(val===undefined){return this.values.alpha;}this.setValues("alpha",val);return this;},red:function red(val){return this.setChannel("rgb",0,val);},green:function green(val){return this.setChannel("rgb",1,val);},blue:function blue(val){return this.setChannel("rgb",2,val);},hue:function hue(val){return this.setChannel("hsl",0,val);},saturation:function saturation(val){return this.setChannel("hsl",1,val);},lightness:function lightness(val){return this.setChannel("hsl",2,val);},saturationv:function saturationv(val){return this.setChannel("hsv",1,val);},whiteness:function whiteness(val){return this.setChannel("hwb",1,val);},blackness:function blackness(val){return this.setChannel("hwb",2,val);},value:function value(val){return this.setChannel("hsv",2,val);},cyan:function cyan(val){return this.setChannel("cmyk",0,val);},magenta:function magenta(val){return this.setChannel("cmyk",1,val);},yellow:function yellow(val){return this.setChannel("cmyk",2,val);},black:function black(val){return this.setChannel("cmyk",3,val);},hexString:function hexString(){return string.hexString(this.values.rgb);},rgbString:function rgbString(){return string.rgbString(this.values.rgb,this.values.alpha);},rgbaString:function rgbaString(){return string.rgbaString(this.values.rgb,this.values.alpha);},percentString:function percentString(){return string.percentString(this.values.rgb,this.values.alpha);},hslString:function hslString(){return string.hslString(this.values.hsl,this.values.alpha);},hslaString:function hslaString(){return string.hslaString(this.values.hsl,this.values.alpha);},hwbString:function hwbString(){return string.hwbString(this.values.hwb,this.values.alpha);},keyword:function keyword(){return string.keyword(this.values.rgb,this.values.alpha);},rgbNumber:function rgbNumber(){return this.values.rgb[0]<<16|this.values.rgb[1]<<8|this.values.rgb[2];},luminosity:function luminosity(){ // http://www.w3.org/TR/WCAG20/#relativeluminancedef
+	var rgb=this.values.rgb;var lum=[];for(var i=0;i<rgb.length;i++){var chan=rgb[i]/255;lum[i]=chan<=0.03928?chan/12.92:Math.pow((chan+0.055)/1.055,2.4);}return 0.2126*lum[0]+0.7152*lum[1]+0.0722*lum[2];},contrast:function contrast(color2){ // http://www.w3.org/TR/WCAG20/#contrast-ratiodef
+	var lum1=this.luminosity();var lum2=color2.luminosity();if(lum1>lum2){return (lum1+0.05)/(lum2+0.05);};return (lum2+0.05)/(lum1+0.05);},level:function level(color2){var contrastRatio=this.contrast(color2);return contrastRatio>=7.1?'AAA':contrastRatio>=4.5?'AA':'';},dark:function dark(){ // YIQ equation from http://24ways.org/2010/calculating-color-contrast
+	var rgb=this.values.rgb,yiq=(rgb[0]*299+rgb[1]*587+rgb[2]*114)/1000;return yiq<128;},light:function light(){return !this.dark();},negate:function negate(){var rgb=[];for(var i=0;i<3;i++){rgb[i]=255-this.values.rgb[i];}this.setValues("rgb",rgb);return this;},lighten:function lighten(ratio){this.values.hsl[2]+=this.values.hsl[2]*ratio;this.setValues("hsl",this.values.hsl);return this;},darken:function darken(ratio){this.values.hsl[2]-=this.values.hsl[2]*ratio;this.setValues("hsl",this.values.hsl);return this;},saturate:function saturate(ratio){this.values.hsl[1]+=this.values.hsl[1]*ratio;this.setValues("hsl",this.values.hsl);return this;},desaturate:function desaturate(ratio){this.values.hsl[1]-=this.values.hsl[1]*ratio;this.setValues("hsl",this.values.hsl);return this;},whiten:function whiten(ratio){this.values.hwb[1]+=this.values.hwb[1]*ratio;this.setValues("hwb",this.values.hwb);return this;},blacken:function blacken(ratio){this.values.hwb[2]+=this.values.hwb[2]*ratio;this.setValues("hwb",this.values.hwb);return this;},greyscale:function greyscale(){var rgb=this.values.rgb; // http://en.wikipedia.org/wiki/Grayscale#Converting_color_to_grayscale
+	var val=rgb[0]*0.3+rgb[1]*0.59+rgb[2]*0.11;this.setValues("rgb",[val,val,val]);return this;},clearer:function clearer(ratio){this.setValues("alpha",this.values.alpha-this.values.alpha*ratio);return this;},opaquer:function opaquer(ratio){this.setValues("alpha",this.values.alpha+this.values.alpha*ratio);return this;},rotate:function rotate(degrees){var hue=this.values.hsl[0];hue=(hue+degrees)%360;hue=hue<0?360+hue:hue;this.values.hsl[0]=hue;this.setValues("hsl",this.values.hsl);return this;},mix:function mix(color2,weight){weight=1-(weight==null?0.5:weight); // algorithm from Sass's mix(). Ratio of first color in mix is
+	// determined by the alphas of both colors and the weight
+	var t1=weight*2-1,d=this.alpha()-color2.alpha();var weight1=((t1*d==-1?t1:(t1+d)/(1+t1*d))+1)/2;var weight2=1-weight1;var rgb=this.rgbArray();var rgb2=color2.rgbArray();for(var i=0;i<rgb.length;i++){rgb[i]=rgb[i]*weight1+rgb2[i]*weight2;}this.setValues("rgb",rgb);var alpha=this.alpha()*weight+color2.alpha()*(1-weight);this.setValues("alpha",alpha);return this;},toJSON:function toJSON(){return this.rgb();},clone:function clone(){return new Color(this.rgb());}};Color.prototype.getValues=function(space){var vals={};for(var i=0;i<space.length;i++){vals[space.charAt(i)]=this.values[space][i];}if(this.values.alpha!=1){vals["a"]=this.values.alpha;} // {r: 255, g: 255, b: 255, a: 0.4}
+	return vals;};Color.prototype.setValues=function(space,vals){var spaces={"rgb":["red","green","blue"],"hsl":["hue","saturation","lightness"],"hsv":["hue","saturation","value"],"hwb":["hue","whiteness","blackness"],"cmyk":["cyan","magenta","yellow","black"]};var maxes={"rgb":[255,255,255],"hsl":[360,100,100],"hsv":[360,100,100],"hwb":[360,100,100],"cmyk":[100,100,100,100]};var alpha=1;if(space=="alpha"){alpha=vals;}else if(vals.length){ // [10, 10, 10]
+	this.values[space]=vals.slice(0,space.length);alpha=vals[space.length];}else if(vals[space.charAt(0)]!==undefined){ // {r: 10, g: 10, b: 10}
+	for(var i=0;i<space.length;i++){this.values[space][i]=vals[space.charAt(i)];}alpha=vals.a;}else if(vals[spaces[space][0]]!==undefined){ // {red: 10, green: 10, blue: 10}
+	var chans=spaces[space];for(var i=0;i<space.length;i++){this.values[space][i]=vals[chans[i]];}alpha=vals.alpha;}this.values.alpha=Math.max(0,Math.min(1,alpha!==undefined?alpha:this.values.alpha));if(space=="alpha"){return;} // cap values of the space prior converting all values
+	for(var i=0;i<space.length;i++){var capped=Math.max(0,Math.min(maxes[space][i],this.values[space][i]));this.values[space][i]=Math.round(capped);} // convert to all the other color spaces
+	for(var sname in spaces){if(sname!=space){this.values[sname]=convert[space][sname](this.values[space]);} // cap values
+	for(var i=0;i<sname.length;i++){var capped=Math.max(0,Math.min(maxes[sname][i],this.values[sname][i]));this.values[sname][i]=Math.round(capped);}}return true;};Color.prototype.setSpace=function(space,args){var vals=args[0];if(vals===undefined){ // color.rgb()
+	return this.getValues(space);} // color.rgb(10, 10, 10)
+	if(typeof vals=="number"){vals=Array.prototype.slice.call(args);}this.setValues(space,vals);return this;};Color.prototype.setChannel=function(space,index,val){if(val===undefined){ // color.red()
+	return this.values[space][index];} // color.red(100)
+	this.values[space][index]=val;this.setValues(space,this.values[space]);return this;};window.Color=module.exports=Color;},{"chartjs-color-string":2,"color-convert":5}],4:[function(require,module,exports){ /* MIT license */module.exports={rgb2hsl:rgb2hsl,rgb2hsv:rgb2hsv,rgb2hwb:rgb2hwb,rgb2cmyk:rgb2cmyk,rgb2keyword:rgb2keyword,rgb2xyz:rgb2xyz,rgb2lab:rgb2lab,rgb2lch:rgb2lch,hsl2rgb:hsl2rgb,hsl2hsv:hsl2hsv,hsl2hwb:hsl2hwb,hsl2cmyk:hsl2cmyk,hsl2keyword:hsl2keyword,hsv2rgb:hsv2rgb,hsv2hsl:hsv2hsl,hsv2hwb:hsv2hwb,hsv2cmyk:hsv2cmyk,hsv2keyword:hsv2keyword,hwb2rgb:hwb2rgb,hwb2hsl:hwb2hsl,hwb2hsv:hwb2hsv,hwb2cmyk:hwb2cmyk,hwb2keyword:hwb2keyword,cmyk2rgb:cmyk2rgb,cmyk2hsl:cmyk2hsl,cmyk2hsv:cmyk2hsv,cmyk2hwb:cmyk2hwb,cmyk2keyword:cmyk2keyword,keyword2rgb:keyword2rgb,keyword2hsl:keyword2hsl,keyword2hsv:keyword2hsv,keyword2hwb:keyword2hwb,keyword2cmyk:keyword2cmyk,keyword2lab:keyword2lab,keyword2xyz:keyword2xyz,xyz2rgb:xyz2rgb,xyz2lab:xyz2lab,xyz2lch:xyz2lch,lab2xyz:lab2xyz,lab2rgb:lab2rgb,lab2lch:lab2lch,lch2lab:lch2lab,lch2xyz:lch2xyz,lch2rgb:lch2rgb};function rgb2hsl(rgb){var r=rgb[0]/255,g=rgb[1]/255,b=rgb[2]/255,min=Math.min(r,g,b),max=Math.max(r,g,b),delta=max-min,h,s,l;if(max==min)h=0;else if(r==max)h=(g-b)/delta;else if(g==max)h=2+(b-r)/delta;else if(b==max)h=4+(r-g)/delta;h=Math.min(h*60,360);if(h<0)h+=360;l=(min+max)/2;if(max==min)s=0;else if(l<=0.5)s=delta/(max+min);else s=delta/(2-max-min);return [h,s*100,l*100];}function rgb2hsv(rgb){var r=rgb[0],g=rgb[1],b=rgb[2],min=Math.min(r,g,b),max=Math.max(r,g,b),delta=max-min,h,s,v;if(max==0)s=0;else s=delta/max*1000/10;if(max==min)h=0;else if(r==max)h=(g-b)/delta;else if(g==max)h=2+(b-r)/delta;else if(b==max)h=4+(r-g)/delta;h=Math.min(h*60,360);if(h<0)h+=360;v=max/255*1000/10;return [h,s,v];}function rgb2hwb(rgb){var r=rgb[0],g=rgb[1],b=rgb[2],h=rgb2hsl(rgb)[0],w=1/255*Math.min(r,Math.min(g,b)),b=1-1/255*Math.max(r,Math.max(g,b));return [h,w*100,b*100];}function rgb2cmyk(rgb){var r=rgb[0]/255,g=rgb[1]/255,b=rgb[2]/255,c,m,y,k;k=Math.min(1-r,1-g,1-b);c=(1-r-k)/(1-k)||0;m=(1-g-k)/(1-k)||0;y=(1-b-k)/(1-k)||0;return [c*100,m*100,y*100,k*100];}function rgb2keyword(rgb){return reverseKeywords[JSON.stringify(rgb)];}function rgb2xyz(rgb){var r=rgb[0]/255,g=rgb[1]/255,b=rgb[2]/255; // assume sRGB
+	r=r>0.04045?Math.pow((r+0.055)/1.055,2.4):r/12.92;g=g>0.04045?Math.pow((g+0.055)/1.055,2.4):g/12.92;b=b>0.04045?Math.pow((b+0.055)/1.055,2.4):b/12.92;var x=r*0.4124+g*0.3576+b*0.1805;var y=r*0.2126+g*0.7152+b*0.0722;var z=r*0.0193+g*0.1192+b*0.9505;return [x*100,y*100,z*100];}function rgb2lab(rgb){var xyz=rgb2xyz(rgb),x=xyz[0],y=xyz[1],z=xyz[2],l,a,b;x/=95.047;y/=100;z/=108.883;x=x>0.008856?Math.pow(x,1/3):7.787*x+16/116;y=y>0.008856?Math.pow(y,1/3):7.787*y+16/116;z=z>0.008856?Math.pow(z,1/3):7.787*z+16/116;l=116*y-16;a=500*(x-y);b=200*(y-z);return [l,a,b];}function rgb2lch(args){return lab2lch(rgb2lab(args));}function hsl2rgb(hsl){var h=hsl[0]/360,s=hsl[1]/100,l=hsl[2]/100,t1,t2,t3,rgb,val;if(s==0){val=l*255;return [val,val,val];}if(l<0.5)t2=l*(1+s);else t2=l+s-l*s;t1=2*l-t2;rgb=[0,0,0];for(var i=0;i<3;i++){t3=h+1/3*-(i-1);t3<0&&t3++;t3>1&&t3--;if(6*t3<1)val=t1+(t2-t1)*6*t3;else if(2*t3<1)val=t2;else if(3*t3<2)val=t1+(t2-t1)*(2/3-t3)*6;else val=t1;rgb[i]=val*255;}return rgb;}function hsl2hsv(hsl){var h=hsl[0],s=hsl[1]/100,l=hsl[2]/100,sv,v;if(l===0){ // no need to do calc on black
+	// also avoids divide by 0 error
+	return [0,0,0];}l*=2;s*=l<=1?l:2-l;v=(l+s)/2;sv=2*s/(l+s);return [h,sv*100,v*100];}function hsl2hwb(args){return rgb2hwb(hsl2rgb(args));}function hsl2cmyk(args){return rgb2cmyk(hsl2rgb(args));}function hsl2keyword(args){return rgb2keyword(hsl2rgb(args));}function hsv2rgb(hsv){var h=hsv[0]/60,s=hsv[1]/100,v=hsv[2]/100,hi=Math.floor(h)%6;var f=h-Math.floor(h),p=255*v*(1-s),q=255*v*(1-s*f),t=255*v*(1-s*(1-f)),v=255*v;switch(hi){case 0:return [v,t,p];case 1:return [q,v,p];case 2:return [p,v,t];case 3:return [p,q,v];case 4:return [t,p,v];case 5:return [v,p,q];}}function hsv2hsl(hsv){var h=hsv[0],s=hsv[1]/100,v=hsv[2]/100,sl,l;l=(2-s)*v;sl=s*v;sl/=l<=1?l:2-l;sl=sl||0;l/=2;return [h,sl*100,l*100];}function hsv2hwb(args){return rgb2hwb(hsv2rgb(args));}function hsv2cmyk(args){return rgb2cmyk(hsv2rgb(args));}function hsv2keyword(args){return rgb2keyword(hsv2rgb(args));} // http://dev.w3.org/csswg/css-color/#hwb-to-rgb
+	function hwb2rgb(hwb){var h=hwb[0]/360,wh=hwb[1]/100,bl=hwb[2]/100,ratio=wh+bl,i,v,f,n; // wh + bl cant be > 1
+	if(ratio>1){wh/=ratio;bl/=ratio;}i=Math.floor(6*h);v=1-bl;f=6*h-i;if((i&0x01)!=0){f=1-f;}n=wh+f*(v-wh); // linear interpolation
+	switch(i){default:case 6:case 0:r=v;g=n;b=wh;break;case 1:r=n;g=v;b=wh;break;case 2:r=wh;g=v;b=n;break;case 3:r=wh;g=n;b=v;break;case 4:r=n;g=wh;b=v;break;case 5:r=v;g=wh;b=n;break;}return [r*255,g*255,b*255];}function hwb2hsl(args){return rgb2hsl(hwb2rgb(args));}function hwb2hsv(args){return rgb2hsv(hwb2rgb(args));}function hwb2cmyk(args){return rgb2cmyk(hwb2rgb(args));}function hwb2keyword(args){return rgb2keyword(hwb2rgb(args));}function cmyk2rgb(cmyk){var c=cmyk[0]/100,m=cmyk[1]/100,y=cmyk[2]/100,k=cmyk[3]/100,r,g,b;r=1-Math.min(1,c*(1-k)+k);g=1-Math.min(1,m*(1-k)+k);b=1-Math.min(1,y*(1-k)+k);return [r*255,g*255,b*255];}function cmyk2hsl(args){return rgb2hsl(cmyk2rgb(args));}function cmyk2hsv(args){return rgb2hsv(cmyk2rgb(args));}function cmyk2hwb(args){return rgb2hwb(cmyk2rgb(args));}function cmyk2keyword(args){return rgb2keyword(cmyk2rgb(args));}function xyz2rgb(xyz){var x=xyz[0]/100,y=xyz[1]/100,z=xyz[2]/100,r,g,b;r=x*3.2406+y*-1.5372+z*-0.4986;g=x*-0.9689+y*1.8758+z*0.0415;b=x*0.0557+y*-0.2040+z*1.0570; // assume sRGB
+	r=r>0.0031308?1.055*Math.pow(r,1.0/2.4)-0.055:r=r*12.92;g=g>0.0031308?1.055*Math.pow(g,1.0/2.4)-0.055:g=g*12.92;b=b>0.0031308?1.055*Math.pow(b,1.0/2.4)-0.055:b=b*12.92;r=Math.min(Math.max(0,r),1);g=Math.min(Math.max(0,g),1);b=Math.min(Math.max(0,b),1);return [r*255,g*255,b*255];}function xyz2lab(xyz){var x=xyz[0],y=xyz[1],z=xyz[2],l,a,b;x/=95.047;y/=100;z/=108.883;x=x>0.008856?Math.pow(x,1/3):7.787*x+16/116;y=y>0.008856?Math.pow(y,1/3):7.787*y+16/116;z=z>0.008856?Math.pow(z,1/3):7.787*z+16/116;l=116*y-16;a=500*(x-y);b=200*(y-z);return [l,a,b];}function xyz2lch(args){return lab2lch(xyz2lab(args));}function lab2xyz(lab){var l=lab[0],a=lab[1],b=lab[2],x,y,z,y2;if(l<=8){y=l*100/903.3;y2=7.787*(y/100)+16/116;}else {y=100*Math.pow((l+16)/116,3);y2=Math.pow(y/100,1/3);}x=x/95.047<=0.008856?x=95.047*(a/500+y2-16/116)/7.787:95.047*Math.pow(a/500+y2,3);z=z/108.883<=0.008859?z=108.883*(y2-b/200-16/116)/7.787:108.883*Math.pow(y2-b/200,3);return [x,y,z];}function lab2lch(lab){var l=lab[0],a=lab[1],b=lab[2],hr,h,c;hr=Math.atan2(b,a);h=hr*360/2/Math.PI;if(h<0){h+=360;}c=Math.sqrt(a*a+b*b);return [l,c,h];}function lab2rgb(args){return xyz2rgb(lab2xyz(args));}function lch2lab(lch){var l=lch[0],c=lch[1],h=lch[2],a,b,hr;hr=h/360*2*Math.PI;a=c*Math.cos(hr);b=c*Math.sin(hr);return [l,a,b];}function lch2xyz(args){return lab2xyz(lch2lab(args));}function lch2rgb(args){return lab2rgb(lch2lab(args));}function keyword2rgb(keyword){return cssKeywords[keyword];}function keyword2hsl(args){return rgb2hsl(keyword2rgb(args));}function keyword2hsv(args){return rgb2hsv(keyword2rgb(args));}function keyword2hwb(args){return rgb2hwb(keyword2rgb(args));}function keyword2cmyk(args){return rgb2cmyk(keyword2rgb(args));}function keyword2lab(args){return rgb2lab(keyword2rgb(args));}function keyword2xyz(args){return rgb2xyz(keyword2rgb(args));}var cssKeywords={aliceblue:[240,248,255],antiquewhite:[250,235,215],aqua:[0,255,255],aquamarine:[127,255,212],azure:[240,255,255],beige:[245,245,220],bisque:[255,228,196],black:[0,0,0],blanchedalmond:[255,235,205],blue:[0,0,255],blueviolet:[138,43,226],brown:[165,42,42],burlywood:[222,184,135],cadetblue:[95,158,160],chartreuse:[127,255,0],chocolate:[210,105,30],coral:[255,127,80],cornflowerblue:[100,149,237],cornsilk:[255,248,220],crimson:[220,20,60],cyan:[0,255,255],darkblue:[0,0,139],darkcyan:[0,139,139],darkgoldenrod:[184,134,11],darkgray:[169,169,169],darkgreen:[0,100,0],darkgrey:[169,169,169],darkkhaki:[189,183,107],darkmagenta:[139,0,139],darkolivegreen:[85,107,47],darkorange:[255,140,0],darkorchid:[153,50,204],darkred:[139,0,0],darksalmon:[233,150,122],darkseagreen:[143,188,143],darkslateblue:[72,61,139],darkslategray:[47,79,79],darkslategrey:[47,79,79],darkturquoise:[0,206,209],darkviolet:[148,0,211],deeppink:[255,20,147],deepskyblue:[0,191,255],dimgray:[105,105,105],dimgrey:[105,105,105],dodgerblue:[30,144,255],firebrick:[178,34,34],floralwhite:[255,250,240],forestgreen:[34,139,34],fuchsia:[255,0,255],gainsboro:[220,220,220],ghostwhite:[248,248,255],gold:[255,215,0],goldenrod:[218,165,32],gray:[128,128,128],green:[0,128,0],greenyellow:[173,255,47],grey:[128,128,128],honeydew:[240,255,240],hotpink:[255,105,180],indianred:[205,92,92],indigo:[75,0,130],ivory:[255,255,240],khaki:[240,230,140],lavender:[230,230,250],lavenderblush:[255,240,245],lawngreen:[124,252,0],lemonchiffon:[255,250,205],lightblue:[173,216,230],lightcoral:[240,128,128],lightcyan:[224,255,255],lightgoldenrodyellow:[250,250,210],lightgray:[211,211,211],lightgreen:[144,238,144],lightgrey:[211,211,211],lightpink:[255,182,193],lightsalmon:[255,160,122],lightseagreen:[32,178,170],lightskyblue:[135,206,250],lightslategray:[119,136,153],lightslategrey:[119,136,153],lightsteelblue:[176,196,222],lightyellow:[255,255,224],lime:[0,255,0],limegreen:[50,205,50],linen:[250,240,230],magenta:[255,0,255],maroon:[128,0,0],mediumaquamarine:[102,205,170],mediumblue:[0,0,205],mediumorchid:[186,85,211],mediumpurple:[147,112,219],mediumseagreen:[60,179,113],mediumslateblue:[123,104,238],mediumspringgreen:[0,250,154],mediumturquoise:[72,209,204],mediumvioletred:[199,21,133],midnightblue:[25,25,112],mintcream:[245,255,250],mistyrose:[255,228,225],moccasin:[255,228,181],navajowhite:[255,222,173],navy:[0,0,128],oldlace:[253,245,230],olive:[128,128,0],olivedrab:[107,142,35],orange:[255,165,0],orangered:[255,69,0],orchid:[218,112,214],palegoldenrod:[238,232,170],palegreen:[152,251,152],paleturquoise:[175,238,238],palevioletred:[219,112,147],papayawhip:[255,239,213],peachpuff:[255,218,185],peru:[205,133,63],pink:[255,192,203],plum:[221,160,221],powderblue:[176,224,230],purple:[128,0,128],rebeccapurple:[102,51,153],red:[255,0,0],rosybrown:[188,143,143],royalblue:[65,105,225],saddlebrown:[139,69,19],salmon:[250,128,114],sandybrown:[244,164,96],seagreen:[46,139,87],seashell:[255,245,238],sienna:[160,82,45],silver:[192,192,192],skyblue:[135,206,235],slateblue:[106,90,205],slategray:[112,128,144],slategrey:[112,128,144],snow:[255,250,250],springgreen:[0,255,127],steelblue:[70,130,180],tan:[210,180,140],teal:[0,128,128],thistle:[216,191,216],tomato:[255,99,71],turquoise:[64,224,208],violet:[238,130,238],wheat:[245,222,179],white:[255,255,255],whitesmoke:[245,245,245],yellow:[255,255,0],yellowgreen:[154,205,50]};var reverseKeywords={};for(var key in cssKeywords){reverseKeywords[JSON.stringify(cssKeywords[key])]=key;}},{}],5:[function(require,module,exports){var conversions=require("./conversions");var convert=function convert(){return new Converter();};for(var func in conversions){ // export Raw versions
+	convert[func+"Raw"]=function(func){ // accept array or plain args
+	return function(arg){if(typeof arg=="number")arg=Array.prototype.slice.call(arguments);return conversions[func](arg);};}(func);var pair=/(\w+)2(\w+)/.exec(func),from=pair[1],to=pair[2]; // export rgb2hsl and ["rgb"]["hsl"]
+	convert[from]=convert[from]||{};convert[from][to]=convert[func]=function(func){return function(arg){if(typeof arg=="number")arg=Array.prototype.slice.call(arguments);var val=conversions[func](arg);if(typeof val=="string"||val===undefined)return val; // keyword
+	for(var i=0;i<val.length;i++){val[i]=Math.round(val[i]);}return val;};}(func);} /* Converter does lazy conversion and caching */var Converter=function Converter(){this.convs={};}; /* Either get the values for a space or
+	  set the values for a space, depending on args */Converter.prototype.routeSpace=function(space,args){var values=args[0];if(values===undefined){ // color.rgb()
+	return this.getValues(space);} // color.rgb(10, 10, 10)
+	if(typeof values=="number"){values=Array.prototype.slice.call(args);}return this.setValues(space,values);}; /* Set the values for a space, invalidating cache */Converter.prototype.setValues=function(space,values){this.space=space;this.convs={};this.convs[space]=values;return this;}; /* Get the values for a space. If there's already
+	  a conversion for the space, fetch it, otherwise
+	  compute it */Converter.prototype.getValues=function(space){var vals=this.convs[space];if(!vals){var fspace=this.space,from=this.convs[fspace];vals=convert[fspace][space](from);this.convs[space]=vals;}return vals;};["rgb","hsl","hsv","cmyk","keyword"].forEach(function(space){Converter.prototype[space]=function(vals){return this.routeSpace(space,arguments);};});module.exports=convert;},{"./conversions":4}],6:[function(require,module,exports){module.exports={"aliceblue":[240,248,255],"antiquewhite":[250,235,215],"aqua":[0,255,255],"aquamarine":[127,255,212],"azure":[240,255,255],"beige":[245,245,220],"bisque":[255,228,196],"black":[0,0,0],"blanchedalmond":[255,235,205],"blue":[0,0,255],"blueviolet":[138,43,226],"brown":[165,42,42],"burlywood":[222,184,135],"cadetblue":[95,158,160],"chartreuse":[127,255,0],"chocolate":[210,105,30],"coral":[255,127,80],"cornflowerblue":[100,149,237],"cornsilk":[255,248,220],"crimson":[220,20,60],"cyan":[0,255,255],"darkblue":[0,0,139],"darkcyan":[0,139,139],"darkgoldenrod":[184,134,11],"darkgray":[169,169,169],"darkgreen":[0,100,0],"darkgrey":[169,169,169],"darkkhaki":[189,183,107],"darkmagenta":[139,0,139],"darkolivegreen":[85,107,47],"darkorange":[255,140,0],"darkorchid":[153,50,204],"darkred":[139,0,0],"darksalmon":[233,150,122],"darkseagreen":[143,188,143],"darkslateblue":[72,61,139],"darkslategray":[47,79,79],"darkslategrey":[47,79,79],"darkturquoise":[0,206,209],"darkviolet":[148,0,211],"deeppink":[255,20,147],"deepskyblue":[0,191,255],"dimgray":[105,105,105],"dimgrey":[105,105,105],"dodgerblue":[30,144,255],"firebrick":[178,34,34],"floralwhite":[255,250,240],"forestgreen":[34,139,34],"fuchsia":[255,0,255],"gainsboro":[220,220,220],"ghostwhite":[248,248,255],"gold":[255,215,0],"goldenrod":[218,165,32],"gray":[128,128,128],"green":[0,128,0],"greenyellow":[173,255,47],"grey":[128,128,128],"honeydew":[240,255,240],"hotpink":[255,105,180],"indianred":[205,92,92],"indigo":[75,0,130],"ivory":[255,255,240],"khaki":[240,230,140],"lavender":[230,230,250],"lavenderblush":[255,240,245],"lawngreen":[124,252,0],"lemonchiffon":[255,250,205],"lightblue":[173,216,230],"lightcoral":[240,128,128],"lightcyan":[224,255,255],"lightgoldenrodyellow":[250,250,210],"lightgray":[211,211,211],"lightgreen":[144,238,144],"lightgrey":[211,211,211],"lightpink":[255,182,193],"lightsalmon":[255,160,122],"lightseagreen":[32,178,170],"lightskyblue":[135,206,250],"lightslategray":[119,136,153],"lightslategrey":[119,136,153],"lightsteelblue":[176,196,222],"lightyellow":[255,255,224],"lime":[0,255,0],"limegreen":[50,205,50],"linen":[250,240,230],"magenta":[255,0,255],"maroon":[128,0,0],"mediumaquamarine":[102,205,170],"mediumblue":[0,0,205],"mediumorchid":[186,85,211],"mediumpurple":[147,112,219],"mediumseagreen":[60,179,113],"mediumslateblue":[123,104,238],"mediumspringgreen":[0,250,154],"mediumturquoise":[72,209,204],"mediumvioletred":[199,21,133],"midnightblue":[25,25,112],"mintcream":[245,255,250],"mistyrose":[255,228,225],"moccasin":[255,228,181],"navajowhite":[255,222,173],"navy":[0,0,128],"oldlace":[253,245,230],"olive":[128,128,0],"olivedrab":[107,142,35],"orange":[255,165,0],"orangered":[255,69,0],"orchid":[218,112,214],"palegoldenrod":[238,232,170],"palegreen":[152,251,152],"paleturquoise":[175,238,238],"palevioletred":[219,112,147],"papayawhip":[255,239,213],"peachpuff":[255,218,185],"peru":[205,133,63],"pink":[255,192,203],"plum":[221,160,221],"powderblue":[176,224,230],"purple":[128,0,128],"rebeccapurple":[102,51,153],"red":[255,0,0],"rosybrown":[188,143,143],"royalblue":[65,105,225],"saddlebrown":[139,69,19],"salmon":[250,128,114],"sandybrown":[244,164,96],"seagreen":[46,139,87],"seashell":[255,245,238],"sienna":[160,82,45],"silver":[192,192,192],"skyblue":[135,206,235],"slateblue":[106,90,205],"slategray":[112,128,144],"slategrey":[112,128,144],"snow":[255,250,250],"springgreen":[0,255,127],"steelblue":[70,130,180],"tan":[210,180,140],"teal":[0,128,128],"thistle":[216,191,216],"tomato":[255,99,71],"turquoise":[64,224,208],"violet":[238,130,238],"wheat":[245,222,179],"white":[255,255,255],"whitesmoke":[245,245,245],"yellow":[255,255,0],"yellowgreen":[154,205,50]};},{}],7:[function(require,module,exports){var Chart=require('./core/core.js')();require('./core/core.helpers')(Chart);require('./core/core.element')(Chart);require('./core/core.animation')(Chart);require('./core/core.controller')(Chart);require('./core/core.datasetController')(Chart);require('./core/core.layoutService')(Chart);require('./core/core.legend')(Chart);require('./core/core.plugin.js')(Chart);require('./core/core.scale')(Chart);require('./core/core.scaleService')(Chart);require('./core/core.title')(Chart);require('./core/core.tooltip')(Chart);require('./controllers/controller.bar')(Chart);require('./controllers/controller.bubble')(Chart);require('./controllers/controller.doughnut')(Chart);require('./controllers/controller.line')(Chart);require('./controllers/controller.polarArea')(Chart);require('./controllers/controller.radar')(Chart);require('./scales/scale.category')(Chart);require('./scales/scale.linear')(Chart);require('./scales/scale.logarithmic')(Chart);require('./scales/scale.radialLinear')(Chart);require('./scales/scale.time')(Chart);require('./elements/element.arc')(Chart);require('./elements/element.line')(Chart);require('./elements/element.point')(Chart);require('./elements/element.rectangle')(Chart);require('./charts/Chart.Bar')(Chart);require('./charts/Chart.Bubble')(Chart);require('./charts/Chart.Doughnut')(Chart);require('./charts/Chart.Line')(Chart);require('./charts/Chart.PolarArea')(Chart);require('./charts/Chart.Radar')(Chart);require('./charts/Chart.Scatter')(Chart);window.Chart=module.exports=Chart;},{"./charts/Chart.Bar":8,"./charts/Chart.Bubble":9,"./charts/Chart.Doughnut":10,"./charts/Chart.Line":11,"./charts/Chart.PolarArea":12,"./charts/Chart.Radar":13,"./charts/Chart.Scatter":14,"./controllers/controller.bar":15,"./controllers/controller.bubble":16,"./controllers/controller.doughnut":17,"./controllers/controller.line":18,"./controllers/controller.polarArea":19,"./controllers/controller.radar":20,"./core/core.animation":21,"./core/core.controller":22,"./core/core.datasetController":23,"./core/core.element":24,"./core/core.helpers":25,"./core/core.js":26,"./core/core.layoutService":27,"./core/core.legend":28,"./core/core.plugin.js":29,"./core/core.scale":30,"./core/core.scaleService":31,"./core/core.title":32,"./core/core.tooltip":33,"./elements/element.arc":34,"./elements/element.line":35,"./elements/element.point":36,"./elements/element.rectangle":37,"./scales/scale.category":38,"./scales/scale.linear":39,"./scales/scale.logarithmic":40,"./scales/scale.radialLinear":41,"./scales/scale.time":42}],8:[function(require,module,exports){"use strict";module.exports=function(Chart){Chart.Bar=function(context,config){config.type='bar';return new Chart(context,config);};};},{}],9:[function(require,module,exports){"use strict";module.exports=function(Chart){Chart.Bubble=function(context,config){config.type='bubble';return new Chart(context,config);};};},{}],10:[function(require,module,exports){"use strict";module.exports=function(Chart){Chart.Doughnut=function(context,config){config.type='doughnut';return new Chart(context,config);};};},{}],11:[function(require,module,exports){"use strict";module.exports=function(Chart){Chart.Line=function(context,config){config.type='line';return new Chart(context,config);};};},{}],12:[function(require,module,exports){"use strict";module.exports=function(Chart){Chart.PolarArea=function(context,config){config.type='polarArea';return new Chart(context,config);};};},{}],13:[function(require,module,exports){"use strict";module.exports=function(Chart){var helpers=Chart.helpers;var defaultConfig={aspectRatio:1};Chart.Radar=function(context,config){config.options=helpers.configMerge(defaultConfig,config.options);config.type='radar';return new Chart(context,config);};};},{}],14:[function(require,module,exports){"use strict";module.exports=function(Chart){var defaultConfig={hover:{mode:'single'},scales:{xAxes:[{type:"linear", // scatter should not use a category axis
+	position:"bottom",id:"x-axis-1" // need an ID so datasets can reference the scale
+	}],yAxes:[{type:"linear",position:"left",id:"y-axis-1"}]},tooltips:{callbacks:{title:function title(tooltipItems,data){ // Title doesn't make sense for scatter since we format the data as a point
+	return '';},label:function label(tooltipItem,data){return '('+tooltipItem.xLabel+', '+tooltipItem.yLabel+')';}}}}; // Register the default config for this type
+	Chart.defaults.scatter=defaultConfig; // Scatter charts use line controllers
+	Chart.controllers.scatter=Chart.controllers.line;Chart.Scatter=function(context,config){config.type='scatter';return new Chart(context,config);};};},{}],15:[function(require,module,exports){"use strict";module.exports=function(Chart){var helpers=Chart.helpers;Chart.defaults.bar={hover:{mode:"label"},scales:{xAxes:[{type:"category", // Specific to Bar Controller
+	categoryPercentage:0.8,barPercentage:0.9, // grid line settings
+	gridLines:{offsetGridLines:true}}],yAxes:[{type:"linear"}]}};Chart.controllers.bar=Chart.DatasetController.extend({initialize:function initialize(chart,datasetIndex){Chart.DatasetController.prototype.initialize.call(this,chart,datasetIndex); // Use this to indicate that this is a bar dataset.
+	this.getMeta().bar=true;}, // Get the number of datasets that display bars. We use this to correctly calculate the bar width
+	getBarCount:function getBarCount(){var barCount=0;helpers.each(this.chart.data.datasets,function(dataset,datasetIndex){var meta=this.chart.getDatasetMeta(datasetIndex);if(meta.bar&&this.chart.isDatasetVisible(datasetIndex)){++barCount;}},this);return barCount;},addElements:function addElements(){var meta=this.getMeta();helpers.each(this.getDataset().data,function(value,index){meta.data[index]=meta.data[index]||new Chart.elements.Rectangle({_chart:this.chart.chart,_datasetIndex:this.index,_index:index});},this);},addElementAndReset:function addElementAndReset(index){var rectangle=new Chart.elements.Rectangle({_chart:this.chart.chart,_datasetIndex:this.index,_index:index});var numBars=this.getBarCount(); // Add to the points array and reset it
+	this.getMeta().data.splice(index,0,rectangle);this.updateElement(rectangle,index,true,numBars);},update:function update(reset){var numBars=this.getBarCount();helpers.each(this.getMeta().data,function(rectangle,index){this.updateElement(rectangle,index,reset,numBars);},this);},updateElement:function updateElement(rectangle,index,reset,numBars){var meta=this.getMeta();var xScale=this.getScaleForId(meta.xAxisID);var yScale=this.getScaleForId(meta.yAxisID);var yScalePoint;if(yScale.min<0&&yScale.max<0){ // all less than 0. use the top
+	yScalePoint=yScale.getPixelForValue(yScale.max);}else if(yScale.min>0&&yScale.max>0){yScalePoint=yScale.getPixelForValue(yScale.min);}else {yScalePoint=yScale.getPixelForValue(0);}helpers.extend(rectangle,{ // Utility
+	_chart:this.chart.chart,_xScale:xScale,_yScale:yScale,_datasetIndex:this.index,_index:index, // Desired view properties
+	_model:{x:this.calculateBarX(index,this.index),y:reset?yScalePoint:this.calculateBarY(index,this.index), // Tooltip
+	label:this.chart.data.labels[index],datasetLabel:this.getDataset().label, // Appearance
+	base:reset?yScalePoint:this.calculateBarBase(this.index,index),width:this.calculateBarWidth(numBars),backgroundColor:rectangle.custom&&rectangle.custom.backgroundColor?rectangle.custom.backgroundColor:helpers.getValueAtIndexOrDefault(this.getDataset().backgroundColor,index,this.chart.options.elements.rectangle.backgroundColor),borderSkipped:rectangle.custom&&rectangle.custom.borderSkipped?rectangle.custom.borderSkipped:this.chart.options.elements.rectangle.borderSkipped,borderColor:rectangle.custom&&rectangle.custom.borderColor?rectangle.custom.borderColor:helpers.getValueAtIndexOrDefault(this.getDataset().borderColor,index,this.chart.options.elements.rectangle.borderColor),borderWidth:rectangle.custom&&rectangle.custom.borderWidth?rectangle.custom.borderWidth:helpers.getValueAtIndexOrDefault(this.getDataset().borderWidth,index,this.chart.options.elements.rectangle.borderWidth)}});rectangle.pivot();},calculateBarBase:function calculateBarBase(datasetIndex,index){var meta=this.getMeta();var xScale=this.getScaleForId(meta.xAxisID);var yScale=this.getScaleForId(meta.yAxisID);var base=0;if(yScale.options.stacked){var value=this.chart.data.datasets[datasetIndex].data[index];if(value<0){for(var i=0;i<datasetIndex;i++){var negDS=this.chart.data.datasets[i];var negDSMeta=this.chart.getDatasetMeta(i);if(negDSMeta.bar&&negDSMeta.yAxisID===yScale.id&&this.chart.isDatasetVisible(i)){base+=negDS.data[index]<0?negDS.data[index]:0;}}}else {for(var j=0;j<datasetIndex;j++){var posDS=this.chart.data.datasets[j];var posDSMeta=this.chart.getDatasetMeta(j);if(posDSMeta.bar&&posDSMeta.yAxisID===yScale.id&&this.chart.isDatasetVisible(j)){base+=posDS.data[index]>0?posDS.data[index]:0;}}}return yScale.getPixelForValue(base);}base=yScale.getPixelForValue(yScale.min);if(yScale.beginAtZero||yScale.min<=0&&yScale.max>=0||yScale.min>=0&&yScale.max<=0){base=yScale.getPixelForValue(0,0); //base += yScale.options.gridLines.lineWidth;
+	}else if(yScale.min<0&&yScale.max<0){ // All values are negative. Use the top as the base
+	base=yScale.getPixelForValue(yScale.max);}return base;},getRuler:function getRuler(){var meta=this.getMeta();var xScale=this.getScaleForId(meta.xAxisID);var yScale=this.getScaleForId(meta.yAxisID);var datasetCount=this.getBarCount();var tickWidth=function(){var min=xScale.getPixelForTick(1)-xScale.getPixelForTick(0);for(var i=2;i<xScale.ticks.length;i++){min=Math.min(xScale.getPixelForTick(i)-xScale.getPixelForTick(i-1),min);}return min;}.call(this);var categoryWidth=tickWidth*xScale.options.categoryPercentage;var categorySpacing=(tickWidth-tickWidth*xScale.options.categoryPercentage)/2;var fullBarWidth=categoryWidth/datasetCount;if(xScale.ticks.length!==this.chart.data.labels.length){var perc=xScale.ticks.length/this.chart.data.labels.length;fullBarWidth=fullBarWidth*perc;}var barWidth=fullBarWidth*xScale.options.barPercentage;var barSpacing=fullBarWidth-fullBarWidth*xScale.options.barPercentage;return {datasetCount:datasetCount,tickWidth:tickWidth,categoryWidth:categoryWidth,categorySpacing:categorySpacing,fullBarWidth:fullBarWidth,barWidth:barWidth,barSpacing:barSpacing};},calculateBarWidth:function calculateBarWidth(){var xScale=this.getScaleForId(this.getMeta().xAxisID);var ruler=this.getRuler();return xScale.options.stacked?ruler.categoryWidth:ruler.barWidth;}, // Get bar index from the given dataset index accounting for the fact that not all bars are visible
+	getBarIndex:function getBarIndex(datasetIndex){var barIndex=0;var meta,j;for(j=0;j<datasetIndex;++j){meta=this.chart.getDatasetMeta(j);if(meta.bar&&this.chart.isDatasetVisible(j)){++barIndex;}}return barIndex;},calculateBarX:function calculateBarX(index,datasetIndex){var meta=this.getMeta();var yScale=this.getScaleForId(meta.yAxisID);var xScale=this.getScaleForId(meta.xAxisID);var barIndex=this.getBarIndex(datasetIndex);var ruler=this.getRuler();var leftTick=xScale.getPixelForValue(null,index,datasetIndex,this.chart.isCombo);leftTick-=this.chart.isCombo?ruler.tickWidth/2:0;if(xScale.options.stacked){return leftTick+ruler.categoryWidth/2+ruler.categorySpacing;}return leftTick+ruler.barWidth/2+ruler.categorySpacing+ruler.barWidth*barIndex+ruler.barSpacing/2+ruler.barSpacing*barIndex;},calculateBarY:function calculateBarY(index,datasetIndex){var meta=this.getMeta();var xScale=this.getScaleForId(meta.xAxisID);var yScale=this.getScaleForId(meta.yAxisID);var value=this.getDataset().data[index];if(yScale.options.stacked){var sumPos=0,sumNeg=0;for(var i=0;i<datasetIndex;i++){var ds=this.chart.data.datasets[i];var dsMeta=this.chart.getDatasetMeta(i);if(dsMeta.bar&&dsMeta.yAxisID===yScale.id&&this.chart.isDatasetVisible(i)){if(ds.data[index]<0){sumNeg+=ds.data[index]||0;}else {sumPos+=ds.data[index]||0;}}}if(value<0){return yScale.getPixelForValue(sumNeg+value);}else {return yScale.getPixelForValue(sumPos+value);}}return yScale.getPixelForValue(value);},draw:function draw(ease){var easingDecimal=ease||1;helpers.each(this.getMeta().data,function(rectangle,index){var d=this.getDataset().data[index];if(d!==null&&d!==undefined&&!isNaN(d)){rectangle.transition(easingDecimal).draw();}},this);},setHoverStyle:function setHoverStyle(rectangle){var dataset=this.chart.data.datasets[rectangle._datasetIndex];var index=rectangle._index;rectangle._model.backgroundColor=rectangle.custom&&rectangle.custom.hoverBackgroundColor?rectangle.custom.hoverBackgroundColor:helpers.getValueAtIndexOrDefault(dataset.hoverBackgroundColor,index,helpers.getHoverColor(rectangle._model.backgroundColor));rectangle._model.borderColor=rectangle.custom&&rectangle.custom.hoverBorderColor?rectangle.custom.hoverBorderColor:helpers.getValueAtIndexOrDefault(dataset.hoverBorderColor,index,helpers.getHoverColor(rectangle._model.borderColor));rectangle._model.borderWidth=rectangle.custom&&rectangle.custom.hoverBorderWidth?rectangle.custom.hoverBorderWidth:helpers.getValueAtIndexOrDefault(dataset.hoverBorderWidth,index,rectangle._model.borderWidth);},removeHoverStyle:function removeHoverStyle(rectangle){var dataset=this.chart.data.datasets[rectangle._datasetIndex];var index=rectangle._index;rectangle._model.backgroundColor=rectangle.custom&&rectangle.custom.backgroundColor?rectangle.custom.backgroundColor:helpers.getValueAtIndexOrDefault(this.getDataset().backgroundColor,index,this.chart.options.elements.rectangle.backgroundColor);rectangle._model.borderColor=rectangle.custom&&rectangle.custom.borderColor?rectangle.custom.borderColor:helpers.getValueAtIndexOrDefault(this.getDataset().borderColor,index,this.chart.options.elements.rectangle.borderColor);rectangle._model.borderWidth=rectangle.custom&&rectangle.custom.borderWidth?rectangle.custom.borderWidth:helpers.getValueAtIndexOrDefault(this.getDataset().borderWidth,index,this.chart.options.elements.rectangle.borderWidth);}}); // including horizontalBar in the bar file, instead of a file of its own
+	// it extends bar (like pie extends doughnut)
+	Chart.defaults.horizontalBar={hover:{mode:"label"},scales:{xAxes:[{type:"linear",position:"bottom"}],yAxes:[{position:"left",type:"category", // Specific to Horizontal Bar Controller
+	categoryPercentage:0.8,barPercentage:0.9, // grid line settings
+	gridLines:{offsetGridLines:true}}]}};Chart.controllers.horizontalBar=Chart.controllers.bar.extend({updateElement:function updateElement(rectangle,index,reset,numBars){var meta=this.getMeta();var xScale=this.getScaleForId(meta.xAxisID);var yScale=this.getScaleForId(meta.yAxisID);var xScalePoint;if(xScale.min<0&&xScale.max<0){ // all less than 0. use the right
+	xScalePoint=xScale.getPixelForValue(xScale.max);}else if(xScale.min>0&&xScale.max>0){xScalePoint=xScale.getPixelForValue(xScale.min);}else {xScalePoint=xScale.getPixelForValue(0);}helpers.extend(rectangle,{ // Utility
+	_chart:this.chart.chart,_xScale:xScale,_yScale:yScale,_datasetIndex:this.index,_index:index, // Desired view properties
+	_model:{x:reset?xScalePoint:this.calculateBarX(index,this.index),y:this.calculateBarY(index,this.index), // Tooltip
+	label:this.chart.data.labels[index],datasetLabel:this.getDataset().label, // Appearance
+	base:reset?xScalePoint:this.calculateBarBase(this.index,index),height:this.calculateBarHeight(numBars),backgroundColor:rectangle.custom&&rectangle.custom.backgroundColor?rectangle.custom.backgroundColor:helpers.getValueAtIndexOrDefault(this.getDataset().backgroundColor,index,this.chart.options.elements.rectangle.backgroundColor),borderSkipped:rectangle.custom&&rectangle.custom.borderSkipped?rectangle.custom.borderSkipped:this.chart.options.elements.rectangle.borderSkipped,borderColor:rectangle.custom&&rectangle.custom.borderColor?rectangle.custom.borderColor:helpers.getValueAtIndexOrDefault(this.getDataset().borderColor,index,this.chart.options.elements.rectangle.borderColor),borderWidth:rectangle.custom&&rectangle.custom.borderWidth?rectangle.custom.borderWidth:helpers.getValueAtIndexOrDefault(this.getDataset().borderWidth,index,this.chart.options.elements.rectangle.borderWidth)},draw:function draw(){var ctx=this._chart.ctx;var vm=this._view;var halfHeight=vm.height/2,topY=vm.y-halfHeight,bottomY=vm.y+halfHeight,right=vm.base-(vm.base-vm.x),halfStroke=vm.borderWidth/2; // Canvas doesn't allow us to stroke inside the width so we can
+	// adjust the sizes to fit if we're setting a stroke on the line
+	if(vm.borderWidth){topY+=halfStroke;bottomY-=halfStroke;right+=halfStroke;}ctx.beginPath();ctx.fillStyle=vm.backgroundColor;ctx.strokeStyle=vm.borderColor;ctx.lineWidth=vm.borderWidth; // Corner points, from bottom-left to bottom-right clockwise
+	// | 1 2 |
+	// | 0 3 |
+	var corners=[[vm.base,bottomY],[vm.base,topY],[right,topY],[right,bottomY]]; // Find first (starting) corner with fallback to 'bottom'
+	var borders=['bottom','left','top','right'];var startCorner=borders.indexOf(vm.borderSkipped,0);if(startCorner===-1)startCorner=0;function cornerAt(index){return corners[(startCorner+index)%4];} // Draw rectangle from 'startCorner'
+	ctx.moveTo.apply(ctx,cornerAt(0));for(var i=1;i<4;i++){ctx.lineTo.apply(ctx,cornerAt(i));}ctx.fill();if(vm.borderWidth){ctx.stroke();}},inRange:function inRange(mouseX,mouseY){var vm=this._view;var inRange=false;if(vm){if(vm.x<vm.base){inRange=mouseY>=vm.y-vm.height/2&&mouseY<=vm.y+vm.height/2&&mouseX>=vm.x&&mouseX<=vm.base;}else {inRange=mouseY>=vm.y-vm.height/2&&mouseY<=vm.y+vm.height/2&&mouseX>=vm.base&&mouseX<=vm.x;}}return inRange;}});rectangle.pivot();},calculateBarBase:function calculateBarBase(datasetIndex,index){var meta=this.getMeta();var xScale=this.getScaleForId(meta.xAxisID);var yScale=this.getScaleForId(meta.yAxisID);var base=0;if(xScale.options.stacked){var value=this.chart.data.datasets[datasetIndex].data[index];if(value<0){for(var i=0;i<datasetIndex;i++){var negDS=this.chart.data.datasets[i];var negDSMeta=this.chart.getDatasetMeta(i);if(negDSMeta.bar&&negDSMeta.xAxisID===xScale.id&&this.chart.isDatasetVisible(i)){base+=negDS.data[index]<0?negDS.data[index]:0;}}}else {for(var j=0;j<datasetIndex;j++){var posDS=this.chart.data.datasets[j];var posDSMeta=this.chart.getDatasetMeta(j);if(posDSMeta.bar&&posDSMeta.xAxisID===xScale.id&&this.chart.isDatasetVisible(j)){base+=posDS.data[index]>0?posDS.data[index]:0;}}}return xScale.getPixelForValue(base);}base=xScale.getPixelForValue(xScale.min);if(xScale.beginAtZero||xScale.min<=0&&xScale.max>=0||xScale.min>=0&&xScale.max<=0){base=xScale.getPixelForValue(0,0);}else if(xScale.min<0&&xScale.max<0){ // All values are negative. Use the right as the base
+	base=xScale.getPixelForValue(xScale.max);}return base;},getRuler:function getRuler(){var meta=this.getMeta();var xScale=this.getScaleForId(meta.xAxisID);var yScale=this.getScaleForId(meta.yAxisID);var datasetCount=this.getBarCount();var tickHeight=function(){var min=yScale.getPixelForTick(1)-yScale.getPixelForTick(0);for(var i=2;i<this.getDataset().data.length;i++){min=Math.min(yScale.getPixelForTick(i)-yScale.getPixelForTick(i-1),min);}return min;}.call(this);var categoryHeight=tickHeight*yScale.options.categoryPercentage;var categorySpacing=(tickHeight-tickHeight*yScale.options.categoryPercentage)/2;var fullBarHeight=categoryHeight/datasetCount;if(yScale.ticks.length!==this.chart.data.labels.length){var perc=yScale.ticks.length/this.chart.data.labels.length;fullBarHeight=fullBarHeight*perc;}var barHeight=fullBarHeight*yScale.options.barPercentage;var barSpacing=fullBarHeight-fullBarHeight*yScale.options.barPercentage;return {datasetCount:datasetCount,tickHeight:tickHeight,categoryHeight:categoryHeight,categorySpacing:categorySpacing,fullBarHeight:fullBarHeight,barHeight:barHeight,barSpacing:barSpacing};},calculateBarHeight:function calculateBarHeight(){var yScale=this.getScaleForId(this.getMeta().yAxisID);var ruler=this.getRuler();return yScale.options.stacked?ruler.categoryHeight:ruler.barHeight;},calculateBarX:function calculateBarX(index,datasetIndex){var meta=this.getMeta();var xScale=this.getScaleForId(meta.xAxisID);var yScale=this.getScaleForId(meta.yAxisID);var value=this.getDataset().data[index];if(xScale.options.stacked){var sumPos=0,sumNeg=0;for(var i=0;i<datasetIndex;i++){var ds=this.chart.data.datasets[i];var dsMeta=this.chart.getDatasetMeta(i);if(dsMeta.bar&&dsMeta.xAxisID===xScale.id&&this.chart.isDatasetVisible(i)){if(ds.data[index]<0){sumNeg+=ds.data[index]||0;}else {sumPos+=ds.data[index]||0;}}}if(value<0){return xScale.getPixelForValue(sumNeg+value);}else {return xScale.getPixelForValue(sumPos+value);}}return xScale.getPixelForValue(value);},calculateBarY:function calculateBarY(index,datasetIndex){var meta=this.getMeta();var yScale=this.getScaleForId(meta.yAxisID);var xScale=this.getScaleForId(meta.xAxisID);var barIndex=this.getBarIndex(datasetIndex);var ruler=this.getRuler();var topTick=yScale.getPixelForValue(null,index,datasetIndex,this.chart.isCombo);topTick-=this.chart.isCombo?ruler.tickHeight/2:0;if(yScale.options.stacked){return topTick+ruler.categoryHeight/2+ruler.categorySpacing;}return topTick+ruler.barHeight/2+ruler.categorySpacing+ruler.barHeight*barIndex+ruler.barSpacing/2+ruler.barSpacing*barIndex;}});};},{}],16:[function(require,module,exports){"use strict";module.exports=function(Chart){var helpers=Chart.helpers;Chart.defaults.bubble={hover:{mode:"single"},scales:{xAxes:[{type:"linear", // bubble should probably use a linear scale by default
+	position:"bottom",id:"x-axis-0" // need an ID so datasets can reference the scale
+	}],yAxes:[{type:"linear",position:"left",id:"y-axis-0"}]},tooltips:{callbacks:{title:function title(tooltipItems,data){ // Title doesn't make sense for scatter since we format the data as a point
+	return '';},label:function label(tooltipItem,data){var datasetLabel=data.datasets[tooltipItem.datasetIndex].label||'';var dataPoint=data.datasets[tooltipItem.datasetIndex].data[tooltipItem.index];return datasetLabel+': ('+dataPoint.x+', '+dataPoint.y+', '+dataPoint.r+')';}}}};Chart.controllers.bubble=Chart.DatasetController.extend({addElements:function addElements(){var meta=this.getMeta();helpers.each(this.getDataset().data,function(value,index){meta.data[index]=meta.data[index]||new Chart.elements.Point({_chart:this.chart.chart,_datasetIndex:this.index,_index:index});},this);},addElementAndReset:function addElementAndReset(index){var point=new Chart.elements.Point({_chart:this.chart.chart,_datasetIndex:this.index,_index:index}); // Add to the points array and reset it
+	this.getMeta().data.splice(index,0,point);this.updateElement(point,index,true);},update:function update(reset){var meta=this.getMeta();var points=meta.data;var yScale=this.getScaleForId(meta.yAxisID);var xScale=this.getScaleForId(meta.xAxisID);var scaleBase;if(yScale.min<0&&yScale.max<0){scaleBase=yScale.getPixelForValue(yScale.max);}else if(yScale.min>0&&yScale.max>0){scaleBase=yScale.getPixelForValue(yScale.min);}else {scaleBase=yScale.getPixelForValue(0);} // Update Points
+	helpers.each(points,function(point,index){this.updateElement(point,index,reset);},this);},updateElement:function updateElement(point,index,reset){var meta=this.getMeta();var yScale=this.getScaleForId(meta.yAxisID);var xScale=this.getScaleForId(meta.xAxisID);var scaleBase;if(yScale.min<0&&yScale.max<0){scaleBase=yScale.getPixelForValue(yScale.max);}else if(yScale.min>0&&yScale.max>0){scaleBase=yScale.getPixelForValue(yScale.min);}else {scaleBase=yScale.getPixelForValue(0);}helpers.extend(point,{ // Utility
+	_chart:this.chart.chart,_xScale:xScale,_yScale:yScale,_datasetIndex:this.index,_index:index, // Desired view properties
+	_model:{x:reset?xScale.getPixelForDecimal(0.5):xScale.getPixelForValue(this.getDataset().data[index],index,this.index,this.chart.isCombo),y:reset?scaleBase:yScale.getPixelForValue(this.getDataset().data[index],index,this.index), // Appearance
+	radius:reset?0:point.custom&&point.custom.radius?point.custom.radius:this.getRadius(this.getDataset().data[index]),backgroundColor:point.custom&&point.custom.backgroundColor?point.custom.backgroundColor:helpers.getValueAtIndexOrDefault(this.getDataset().backgroundColor,index,this.chart.options.elements.point.backgroundColor),borderColor:point.custom&&point.custom.borderColor?point.custom.borderColor:helpers.getValueAtIndexOrDefault(this.getDataset().borderColor,index,this.chart.options.elements.point.borderColor),borderWidth:point.custom&&point.custom.borderWidth?point.custom.borderWidth:helpers.getValueAtIndexOrDefault(this.getDataset().borderWidth,index,this.chart.options.elements.point.borderWidth), // Tooltip
+	hitRadius:point.custom&&point.custom.hitRadius?point.custom.hitRadius:helpers.getValueAtIndexOrDefault(this.getDataset().hitRadius,index,this.chart.options.elements.point.hitRadius)}});point._model.skip=point.custom&&point.custom.skip?point.custom.skip:isNaN(point._model.x)||isNaN(point._model.y);point.pivot();},getRadius:function getRadius(value){return value.r||this.chart.options.elements.point.radius;},draw:function draw(ease){var easingDecimal=ease||1; // Transition and Draw the Points
+	helpers.each(this.getMeta().data,function(point,index){point.transition(easingDecimal);point.draw();});},setHoverStyle:function setHoverStyle(point){ // Point
+	var dataset=this.chart.data.datasets[point._datasetIndex];var index=point._index;point._model.radius=point.custom&&point.custom.hoverRadius?point.custom.hoverRadius:helpers.getValueAtIndexOrDefault(dataset.hoverRadius,index,this.chart.options.elements.point.hoverRadius)+this.getRadius(this.getDataset().data[point._index]);point._model.backgroundColor=point.custom&&point.custom.hoverBackgroundColor?point.custom.hoverBackgroundColor:helpers.getValueAtIndexOrDefault(dataset.hoverBackgroundColor,index,helpers.getHoverColor(point._model.backgroundColor));point._model.borderColor=point.custom&&point.custom.hoverBorderColor?point.custom.hoverBorderColor:helpers.getValueAtIndexOrDefault(dataset.hoverBorderColor,index,helpers.getHoverColor(point._model.borderColor));point._model.borderWidth=point.custom&&point.custom.hoverBorderWidth?point.custom.hoverBorderWidth:helpers.getValueAtIndexOrDefault(dataset.hoverBorderWidth,index,point._model.borderWidth);},removeHoverStyle:function removeHoverStyle(point){var dataset=this.chart.data.datasets[point._datasetIndex];var index=point._index;point._model.radius=point.custom&&point.custom.radius?point.custom.radius:this.getRadius(this.getDataset().data[point._index]);point._model.backgroundColor=point.custom&&point.custom.backgroundColor?point.custom.backgroundColor:helpers.getValueAtIndexOrDefault(this.getDataset().backgroundColor,index,this.chart.options.elements.point.backgroundColor);point._model.borderColor=point.custom&&point.custom.borderColor?point.custom.borderColor:helpers.getValueAtIndexOrDefault(this.getDataset().borderColor,index,this.chart.options.elements.point.borderColor);point._model.borderWidth=point.custom&&point.custom.borderWidth?point.custom.borderWidth:helpers.getValueAtIndexOrDefault(this.getDataset().borderWidth,index,this.chart.options.elements.point.borderWidth);}});};},{}],17:[function(require,module,exports){"use strict";module.exports=function(Chart){var helpers=Chart.helpers;Chart.defaults.doughnut={animation:{ //Boolean - Whether we animate the rotation of the Doughnut
+	animateRotate:true, //Boolean - Whether we animate scaling the Doughnut from the centre
+	animateScale:false},aspectRatio:1,hover:{mode:'single'},legendCallback:function legendCallback(chart){var text=[];text.push('<ul class="'+chart.id+'-legend">');if(chart.data.datasets.length){for(var i=0;i<chart.data.datasets[0].data.length;++i){text.push('<li><span style="background-color:'+chart.data.datasets[0].backgroundColor[i]+'"></span>');if(chart.data.labels[i]){text.push(chart.data.labels[i]);}text.push('</li>');}}text.push('</ul>');return text.join("");},legend:{labels:{generateLabels:function generateLabels(chart){var data=chart.data;if(data.labels.length&&data.datasets.length){return data.labels.map(function(label,i){var meta=chart.getDatasetMeta(0);var ds=data.datasets[0];var arc=meta.data[i];var fill=arc.custom&&arc.custom.backgroundColor?arc.custom.backgroundColor:helpers.getValueAtIndexOrDefault(ds.backgroundColor,i,this.chart.options.elements.arc.backgroundColor);var stroke=arc.custom&&arc.custom.borderColor?arc.custom.borderColor:helpers.getValueAtIndexOrDefault(ds.borderColor,i,this.chart.options.elements.arc.borderColor);var bw=arc.custom&&arc.custom.borderWidth?arc.custom.borderWidth:helpers.getValueAtIndexOrDefault(ds.borderWidth,i,this.chart.options.elements.arc.borderWidth);return {text:label,fillStyle:fill,strokeStyle:stroke,lineWidth:bw,hidden:isNaN(ds.data[i])||meta.data[i].hidden, // Extra data used for toggling the correct item
+	index:i};},this);}else {return [];}}},onClick:function onClick(e,legendItem){var index=legendItem.index;var chart=this.chart;var i,ilen,meta;for(i=0,ilen=(chart.data.datasets||[]).length;i<ilen;++i){meta=chart.getDatasetMeta(i);meta.data[index].hidden=!meta.data[index].hidden;}chart.update();}}, //The percentage of the chart that we cut out of the middle.
+	cutoutPercentage:50, //The rotation of the chart, where the first data arc begins.
+	rotation:Math.PI*-0.5, //The total circumference of the chart.
+	circumference:Math.PI*2.0, // Need to override these to give a nice default
+	tooltips:{callbacks:{title:function title(){return '';},label:function label(tooltipItem,data){return data.labels[tooltipItem.index]+': '+data.datasets[tooltipItem.datasetIndex].data[tooltipItem.index];}}}};Chart.defaults.pie=helpers.clone(Chart.defaults.doughnut);helpers.extend(Chart.defaults.pie,{cutoutPercentage:0});Chart.controllers.doughnut=Chart.controllers.pie=Chart.DatasetController.extend({linkScales:function linkScales(){ // no scales for doughnut
+	},addElements:function addElements(){var meta=this.getMeta();helpers.each(this.getDataset().data,function(value,index){meta.data[index]=meta.data[index]||new Chart.elements.Arc({_chart:this.chart.chart,_datasetIndex:this.index,_index:index});},this);},addElementAndReset:function addElementAndReset(index,colorForNewElement){var arc=new Chart.elements.Arc({_chart:this.chart.chart,_datasetIndex:this.index,_index:index});if(colorForNewElement&&helpers.isArray(this.getDataset().backgroundColor)){this.getDataset().backgroundColor.splice(index,0,colorForNewElement);} // Add to the points array and reset it
+	this.getMeta().data.splice(index,0,arc);this.updateElement(arc,index,true);}, // Get index of the dataset in relation to the visible datasets. This allows determining the inner and outer radius correctly
+	getRingIndex:function getRingIndex(datasetIndex){var ringIndex=0;for(var j=0;j<datasetIndex;++j){if(this.chart.isDatasetVisible(j)){++ringIndex;}}return ringIndex;},update:function update(reset){var availableWidth=this.chart.chartArea.right-this.chart.chartArea.left-this.chart.options.elements.arc.borderWidth;var availableHeight=this.chart.chartArea.bottom-this.chart.chartArea.top-this.chart.options.elements.arc.borderWidth;var minSize=Math.min(availableWidth,availableHeight);var offset={x:0,y:0}; // If the chart's circumference isn't a full circle, calculate minSize as a ratio of the width/height of the arc
+	if(this.chart.options.circumference<Math.PI*2.0){var startAngle=this.chart.options.rotation%(Math.PI*2.0);startAngle+=Math.PI*2.0*(startAngle>=Math.PI?-1:startAngle<-Math.PI?1:0);var endAngle=startAngle+this.chart.options.circumference;var start={x:Math.cos(startAngle),y:Math.sin(startAngle)};var end={x:Math.cos(endAngle),y:Math.sin(endAngle)};var contains0=startAngle<=0&&0<=endAngle||startAngle<=Math.PI*2.0&&Math.PI*2.0<=endAngle;var contains90=startAngle<=Math.PI*0.5&&Math.PI*0.5<=endAngle||startAngle<=Math.PI*2.5&&Math.PI*2.5<=endAngle;var contains180=startAngle<=-Math.PI&&-Math.PI<=endAngle||startAngle<=Math.PI&&Math.PI<=endAngle;var contains270=startAngle<=-Math.PI*0.5&&-Math.PI*0.5<=endAngle||startAngle<=Math.PI*1.5&&Math.PI*1.5<=endAngle;var cutout=this.chart.options.cutoutPercentage/100.0;var min={x:contains180?-1:Math.min(start.x*(start.x<0?1:cutout),end.x*(end.x<0?1:cutout)),y:contains270?-1:Math.min(start.y*(start.y<0?1:cutout),end.y*(end.y<0?1:cutout))};var max={x:contains0?1:Math.max(start.x*(start.x>0?1:cutout),end.x*(end.x>0?1:cutout)),y:contains90?1:Math.max(start.y*(start.y>0?1:cutout),end.y*(end.y>0?1:cutout))};var size={width:(max.x-min.x)*0.5,height:(max.y-min.y)*0.5};minSize=Math.min(availableWidth/size.width,availableHeight/size.height);offset={x:(max.x+min.x)*-0.5,y:(max.y+min.y)*-0.5};}this.chart.outerRadius=Math.max(minSize/2,0);this.chart.innerRadius=Math.max(this.chart.options.cutoutPercentage?this.chart.outerRadius/100*this.chart.options.cutoutPercentage:1,0);this.chart.radiusLength=(this.chart.outerRadius-this.chart.innerRadius)/this.chart.getVisibleDatasetCount();this.chart.offsetX=offset.x*this.chart.outerRadius;this.chart.offsetY=offset.y*this.chart.outerRadius;this.getMeta().total=this.calculateTotal();this.outerRadius=this.chart.outerRadius-this.chart.radiusLength*this.getRingIndex(this.index);this.innerRadius=this.outerRadius-this.chart.radiusLength;helpers.each(this.getMeta().data,function(arc,index){this.updateElement(arc,index,reset);},this);},updateElement:function updateElement(arc,index,reset){var centerX=(this.chart.chartArea.left+this.chart.chartArea.right)/2;var centerY=(this.chart.chartArea.top+this.chart.chartArea.bottom)/2;var startAngle=this.chart.options.rotation; // non reset case handled later
+	var endAngle=this.chart.options.rotation; // non reset case handled later
+	var circumference=reset&&this.chart.options.animation.animateRotate?0:arc.hidden?0:this.calculateCircumference(this.getDataset().data[index])*(this.chart.options.circumference/(2.0*Math.PI));var innerRadius=reset&&this.chart.options.animation.animateScale?0:this.innerRadius;var outerRadius=reset&&this.chart.options.animation.animateScale?0:this.outerRadius;helpers.extend(arc,{ // Utility
+	_chart:this.chart.chart,_datasetIndex:this.index,_index:index, // Desired view properties
+	_model:{x:centerX+this.chart.offsetX,y:centerY+this.chart.offsetY,startAngle:startAngle,endAngle:endAngle,circumference:circumference,outerRadius:outerRadius,innerRadius:innerRadius,backgroundColor:arc.custom&&arc.custom.backgroundColor?arc.custom.backgroundColor:helpers.getValueAtIndexOrDefault(this.getDataset().backgroundColor,index,this.chart.options.elements.arc.backgroundColor),hoverBackgroundColor:arc.custom&&arc.custom.hoverBackgroundColor?arc.custom.hoverBackgroundColor:helpers.getValueAtIndexOrDefault(this.getDataset().hoverBackgroundColor,index,this.chart.options.elements.arc.hoverBackgroundColor),borderWidth:arc.custom&&arc.custom.borderWidth?arc.custom.borderWidth:helpers.getValueAtIndexOrDefault(this.getDataset().borderWidth,index,this.chart.options.elements.arc.borderWidth),borderColor:arc.custom&&arc.custom.borderColor?arc.custom.borderColor:helpers.getValueAtIndexOrDefault(this.getDataset().borderColor,index,this.chart.options.elements.arc.borderColor),label:helpers.getValueAtIndexOrDefault(this.getDataset().label,index,this.chart.data.labels[index])}}); // Set correct angles if not resetting
+	if(!reset||!this.chart.options.animation.animateRotate){if(index===0){arc._model.startAngle=this.chart.options.rotation;}else {arc._model.startAngle=this.getMeta().data[index-1]._model.endAngle;}arc._model.endAngle=arc._model.startAngle+arc._model.circumference;}arc.pivot();},draw:function draw(ease){var easingDecimal=ease||1;helpers.each(this.getMeta().data,function(arc,index){arc.transition(easingDecimal).draw();});},setHoverStyle:function setHoverStyle(arc){var dataset=this.chart.data.datasets[arc._datasetIndex];var index=arc._index;arc._model.backgroundColor=arc.custom&&arc.custom.hoverBackgroundColor?arc.custom.hoverBackgroundColor:helpers.getValueAtIndexOrDefault(dataset.hoverBackgroundColor,index,helpers.getHoverColor(arc._model.backgroundColor));arc._model.borderColor=arc.custom&&arc.custom.hoverBorderColor?arc.custom.hoverBorderColor:helpers.getValueAtIndexOrDefault(dataset.hoverBorderColor,index,helpers.getHoverColor(arc._model.borderColor));arc._model.borderWidth=arc.custom&&arc.custom.hoverBorderWidth?arc.custom.hoverBorderWidth:helpers.getValueAtIndexOrDefault(dataset.hoverBorderWidth,index,arc._model.borderWidth);},removeHoverStyle:function removeHoverStyle(arc){var dataset=this.chart.data.datasets[arc._datasetIndex];var index=arc._index;arc._model.backgroundColor=arc.custom&&arc.custom.backgroundColor?arc.custom.backgroundColor:helpers.getValueAtIndexOrDefault(this.getDataset().backgroundColor,index,this.chart.options.elements.arc.backgroundColor);arc._model.borderColor=arc.custom&&arc.custom.borderColor?arc.custom.borderColor:helpers.getValueAtIndexOrDefault(this.getDataset().borderColor,index,this.chart.options.elements.arc.borderColor);arc._model.borderWidth=arc.custom&&arc.custom.borderWidth?arc.custom.borderWidth:helpers.getValueAtIndexOrDefault(this.getDataset().borderWidth,index,this.chart.options.elements.arc.borderWidth);},calculateTotal:function calculateTotal(){var dataset=this.getDataset();var meta=this.getMeta();var total=0;var value;helpers.each(meta.data,function(element,index){value=dataset.data[index];if(!isNaN(value)&&!element.hidden){total+=Math.abs(value);}});return total;},calculateCircumference:function calculateCircumference(value){var total=this.getMeta().total;if(total>0&&!isNaN(value)){return Math.PI*2.0*(value/total);}else {return 0;}}});};},{}],18:[function(require,module,exports){"use strict";module.exports=function(Chart){var helpers=Chart.helpers;Chart.defaults.line={showLines:true,hover:{mode:"label"},scales:{xAxes:[{type:"category",id:'x-axis-0'}],yAxes:[{type:"linear",id:'y-axis-0'}]}};Chart.controllers.line=Chart.DatasetController.extend({addElements:function addElements(){var meta=this.getMeta();meta.dataset=meta.dataset||new Chart.elements.Line({_chart:this.chart.chart,_datasetIndex:this.index,_points:meta.data});helpers.each(this.getDataset().data,function(value,index){meta.data[index]=meta.data[index]||new Chart.elements.Point({_chart:this.chart.chart,_datasetIndex:this.index,_index:index});},this);},addElementAndReset:function addElementAndReset(index){var point=new Chart.elements.Point({_chart:this.chart.chart,_datasetIndex:this.index,_index:index}); // Add to the points array and reset it
+	this.getMeta().data.splice(index,0,point);this.updateElement(point,index,true); // Make sure bezier control points are updated
+	if(this.chart.options.showLines&&this.chart.options.elements.line.tension!==0)this.updateBezierControlPoints();},update:function update(reset){var meta=this.getMeta();var line=meta.dataset;var points=meta.data;var yScale=this.getScaleForId(meta.yAxisID);var xScale=this.getScaleForId(meta.xAxisID);var scaleBase;if(yScale.min<0&&yScale.max<0){scaleBase=yScale.getPixelForValue(yScale.max);}else if(yScale.min>0&&yScale.max>0){scaleBase=yScale.getPixelForValue(yScale.min);}else {scaleBase=yScale.getPixelForValue(0);} // Update Line
+	if(this.chart.options.showLines){ // Utility
+	line._scale=yScale;line._datasetIndex=this.index; // Data
+	line._children=points; // Model
+	// Compatibility: If the properties are defined with only the old name, use those values
+	if(this.getDataset().tension!==undefined&&this.getDataset().lineTension===undefined){this.getDataset().lineTension=this.getDataset().tension;}line._model={ // Appearance
+	tension:line.custom&&line.custom.tension?line.custom.tension:helpers.getValueOrDefault(this.getDataset().lineTension,this.chart.options.elements.line.tension),backgroundColor:line.custom&&line.custom.backgroundColor?line.custom.backgroundColor:this.getDataset().backgroundColor||this.chart.options.elements.line.backgroundColor,borderWidth:line.custom&&line.custom.borderWidth?line.custom.borderWidth:this.getDataset().borderWidth||this.chart.options.elements.line.borderWidth,borderColor:line.custom&&line.custom.borderColor?line.custom.borderColor:this.getDataset().borderColor||this.chart.options.elements.line.borderColor,borderCapStyle:line.custom&&line.custom.borderCapStyle?line.custom.borderCapStyle:this.getDataset().borderCapStyle||this.chart.options.elements.line.borderCapStyle,borderDash:line.custom&&line.custom.borderDash?line.custom.borderDash:this.getDataset().borderDash||this.chart.options.elements.line.borderDash,borderDashOffset:line.custom&&line.custom.borderDashOffset?line.custom.borderDashOffset:this.getDataset().borderDashOffset||this.chart.options.elements.line.borderDashOffset,borderJoinStyle:line.custom&&line.custom.borderJoinStyle?line.custom.borderJoinStyle:this.getDataset().borderJoinStyle||this.chart.options.elements.line.borderJoinStyle,fill:line.custom&&line.custom.fill?line.custom.fill:this.getDataset().fill!==undefined?this.getDataset().fill:this.chart.options.elements.line.fill, // Scale
+	scaleTop:yScale.top,scaleBottom:yScale.bottom,scaleZero:scaleBase};line.pivot();} // Update Points
+	helpers.each(points,function(point,index){this.updateElement(point,index,reset);},this);if(this.chart.options.showLines&&this.chart.options.elements.line.tension!==0)this.updateBezierControlPoints();},getPointBackgroundColor:function getPointBackgroundColor(point,index){var backgroundColor=this.chart.options.elements.point.backgroundColor;var dataset=this.getDataset();if(point.custom&&point.custom.backgroundColor){backgroundColor=point.custom.backgroundColor;}else if(dataset.pointBackgroundColor){backgroundColor=helpers.getValueAtIndexOrDefault(dataset.pointBackgroundColor,index,backgroundColor);}else if(dataset.backgroundColor){backgroundColor=dataset.backgroundColor;}return backgroundColor;},getPointBorderColor:function getPointBorderColor(point,index){var borderColor=this.chart.options.elements.point.borderColor;var dataset=this.getDataset();if(point.custom&&point.custom.borderColor){borderColor=point.custom.borderColor;}else if(dataset.pointBorderColor){borderColor=helpers.getValueAtIndexOrDefault(this.getDataset().pointBorderColor,index,borderColor);}else if(dataset.borderColor){borderColor=dataset.borderColor;}return borderColor;},getPointBorderWidth:function getPointBorderWidth(point,index){var borderWidth=this.chart.options.elements.point.borderWidth;var dataset=this.getDataset();if(point.custom&&point.custom.borderWidth!==undefined){borderWidth=point.custom.borderWidth;}else if(dataset.pointBorderWidth!==undefined){borderWidth=helpers.getValueAtIndexOrDefault(dataset.pointBorderWidth,index,borderWidth);}else if(dataset.borderWidth!==undefined){borderWidth=dataset.borderWidth;}return borderWidth;},updateElement:function updateElement(point,index,reset){var meta=this.getMeta();var yScale=this.getScaleForId(meta.yAxisID);var xScale=this.getScaleForId(meta.xAxisID);var scaleBase;if(yScale.min<0&&yScale.max<0){scaleBase=yScale.getPixelForValue(yScale.max);}else if(yScale.min>0&&yScale.max>0){scaleBase=yScale.getPixelForValue(yScale.min);}else {scaleBase=yScale.getPixelForValue(0);} // Utility
+	point._chart=this.chart.chart;point._xScale=xScale;point._yScale=yScale;point._datasetIndex=this.index;point._index=index; // Desired view properties
+	// Compatibility: If the properties are defined with only the old name, use those values
+	if(this.getDataset().radius!==undefined&&this.getDataset().pointRadius===undefined){this.getDataset().pointRadius=this.getDataset().radius;}if(this.getDataset().hitRadius!==undefined&&this.getDataset().pointHitRadius===undefined){this.getDataset().pointHitRadius=this.getDataset().hitRadius;}point._model={x:xScale.getPixelForValue(this.getDataset().data[index],index,this.index,this.chart.isCombo),y:reset?scaleBase:this.calculatePointY(this.getDataset().data[index],index,this.index,this.chart.isCombo), // Appearance
+	radius:point.custom&&point.custom.radius?point.custom.radius:helpers.getValueAtIndexOrDefault(this.getDataset().pointRadius,index,this.chart.options.elements.point.radius),pointStyle:point.custom&&point.custom.pointStyle?point.custom.pointStyle:helpers.getValueAtIndexOrDefault(this.getDataset().pointStyle,index,this.chart.options.elements.point.pointStyle),backgroundColor:this.getPointBackgroundColor(point,index),borderColor:this.getPointBorderColor(point,index),borderWidth:this.getPointBorderWidth(point,index),tension:meta.dataset._model?meta.dataset._model.tension:0, // Tooltip
+	hitRadius:point.custom&&point.custom.hitRadius?point.custom.hitRadius:helpers.getValueAtIndexOrDefault(this.getDataset().pointHitRadius,index,this.chart.options.elements.point.hitRadius)};point._model.skip=point.custom&&point.custom.skip?point.custom.skip:isNaN(point._model.x)||isNaN(point._model.y);},calculatePointY:function calculatePointY(value,index,datasetIndex,isCombo){var meta=this.getMeta();var xScale=this.getScaleForId(meta.xAxisID);var yScale=this.getScaleForId(meta.yAxisID);if(yScale.options.stacked){var sumPos=0,sumNeg=0;for(var i=0;i<datasetIndex;i++){var ds=this.chart.data.datasets[i];var dsMeta=this.chart.getDatasetMeta(i);if(dsMeta.type==='line'&&this.chart.isDatasetVisible(i)){if(ds.data[index]<0){sumNeg+=ds.data[index]||0;}else {sumPos+=ds.data[index]||0;}}}if(value<0){return yScale.getPixelForValue(sumNeg+value);}else {return yScale.getPixelForValue(sumPos+value);}}return yScale.getPixelForValue(value);},updateBezierControlPoints:function updateBezierControlPoints(){ // Update bezier control points
+	var meta=this.getMeta();helpers.each(meta.data,function(point,index){var controlPoints=helpers.splineCurve(helpers.previousItem(meta.data,index)._model,point._model,helpers.nextItem(meta.data,index)._model,meta.dataset._model.tension); // Prevent the bezier going outside of the bounds of the graph
+	point._model.controlPointPreviousX=Math.max(Math.min(controlPoints.previous.x,this.chart.chartArea.right),this.chart.chartArea.left);point._model.controlPointPreviousY=Math.max(Math.min(controlPoints.previous.y,this.chart.chartArea.bottom),this.chart.chartArea.top);point._model.controlPointNextX=Math.max(Math.min(controlPoints.next.x,this.chart.chartArea.right),this.chart.chartArea.left);point._model.controlPointNextY=Math.max(Math.min(controlPoints.next.y,this.chart.chartArea.bottom),this.chart.chartArea.top); // Now pivot the point for animation
+	point.pivot();},this);},draw:function draw(ease){var meta=this.getMeta();var easingDecimal=ease||1; // Transition Point Locations
+	helpers.each(meta.data,function(point){point.transition(easingDecimal);}); // Transition and Draw the line
+	if(this.chart.options.showLines)meta.dataset.transition(easingDecimal).draw(); // Draw the points
+	helpers.each(meta.data,function(point){point.draw();});},setHoverStyle:function setHoverStyle(point){ // Point
+	var dataset=this.chart.data.datasets[point._datasetIndex];var index=point._index;point._model.radius=point.custom&&point.custom.hoverRadius?point.custom.hoverRadius:helpers.getValueAtIndexOrDefault(dataset.pointHoverRadius,index,this.chart.options.elements.point.hoverRadius);point._model.backgroundColor=point.custom&&point.custom.hoverBackgroundColor?point.custom.hoverBackgroundColor:helpers.getValueAtIndexOrDefault(dataset.pointHoverBackgroundColor,index,helpers.getHoverColor(point._model.backgroundColor));point._model.borderColor=point.custom&&point.custom.hoverBorderColor?point.custom.hoverBorderColor:helpers.getValueAtIndexOrDefault(dataset.pointHoverBorderColor,index,helpers.getHoverColor(point._model.borderColor));point._model.borderWidth=point.custom&&point.custom.hoverBorderWidth?point.custom.hoverBorderWidth:helpers.getValueAtIndexOrDefault(dataset.pointHoverBorderWidth,index,point._model.borderWidth);},removeHoverStyle:function removeHoverStyle(point){var dataset=this.chart.data.datasets[point._datasetIndex];var index=point._index; // Compatibility: If the properties are defined with only the old name, use those values
+	if(this.getDataset().radius!==undefined&&this.getDataset().pointRadius===undefined){this.getDataset().pointRadius=this.getDataset().radius;}point._model.radius=point.custom&&point.custom.radius?point.custom.radius:helpers.getValueAtIndexOrDefault(this.getDataset().pointRadius,index,this.chart.options.elements.point.radius);point._model.backgroundColor=this.getPointBackgroundColor(point,index);point._model.borderColor=this.getPointBorderColor(point,index);point._model.borderWidth=this.getPointBorderWidth(point,index);}});};},{}],19:[function(require,module,exports){"use strict";module.exports=function(Chart){var helpers=Chart.helpers;Chart.defaults.polarArea={scale:{type:"radialLinear",lineArc:true // so that lines are circular
+	}, //Boolean - Whether to animate the rotation of the chart
+	animation:{animateRotate:true,animateScale:true},aspectRatio:1,legendCallback:function legendCallback(chart){var text=[];text.push('<ul class="'+chart.id+'-legend">');if(chart.data.datasets.length){for(var i=0;i<chart.data.datasets[0].data.length;++i){text.push('<li><span style="background-color:'+chart.data.datasets[0].backgroundColor[i]+'">');if(chart.data.labels[i]){text.push(chart.data.labels[i]);}text.push('</span></li>');}}text.push('</ul>');return text.join("");},legend:{labels:{generateLabels:function generateLabels(chart){var data=chart.data;if(data.labels.length&&data.datasets.length){return data.labels.map(function(label,i){var meta=chart.getDatasetMeta(0);var ds=data.datasets[0];var arc=meta.data[i];var fill=arc.custom&&arc.custom.backgroundColor?arc.custom.backgroundColor:helpers.getValueAtIndexOrDefault(ds.backgroundColor,i,this.chart.options.elements.arc.backgroundColor);var stroke=arc.custom&&arc.custom.borderColor?arc.custom.borderColor:helpers.getValueAtIndexOrDefault(ds.borderColor,i,this.chart.options.elements.arc.borderColor);var bw=arc.custom&&arc.custom.borderWidth?arc.custom.borderWidth:helpers.getValueAtIndexOrDefault(ds.borderWidth,i,this.chart.options.elements.arc.borderWidth);return {text:label,fillStyle:fill,strokeStyle:stroke,lineWidth:bw,hidden:isNaN(ds.data[i])||meta.data[i].hidden, // Extra data used for toggling the correct item
+	index:i};},this);}else {return [];}}},onClick:function onClick(e,legendItem){var index=legendItem.index;var chart=this.chart;var i,ilen,meta;for(i=0,ilen=(chart.data.datasets||[]).length;i<ilen;++i){meta=chart.getDatasetMeta(i);meta.data[index].hidden=!meta.data[index].hidden;}chart.update();}}, // Need to override these to give a nice default
+	tooltips:{callbacks:{title:function title(){return '';},label:function label(tooltipItem,data){return data.labels[tooltipItem.index]+': '+tooltipItem.yLabel;}}}};Chart.controllers.polarArea=Chart.DatasetController.extend({linkScales:function linkScales(){ // no scales for doughnut
+	},addElements:function addElements(){var meta=this.getMeta();helpers.each(this.getDataset().data,function(value,index){meta.data[index]=meta.data[index]||new Chart.elements.Arc({_chart:this.chart.chart,_datasetIndex:this.index,_index:index});},this);},addElementAndReset:function addElementAndReset(index){var arc=new Chart.elements.Arc({_chart:this.chart.chart,_datasetIndex:this.index,_index:index}); // Add to the points array and reset it
+	this.getMeta().data.splice(index,0,arc);this.updateElement(arc,index,true);},update:function update(reset){var meta=this.getMeta();var minSize=Math.min(this.chart.chartArea.right-this.chart.chartArea.left,this.chart.chartArea.bottom-this.chart.chartArea.top);this.chart.outerRadius=Math.max((minSize-this.chart.options.elements.arc.borderWidth/2)/2,0);this.chart.innerRadius=Math.max(this.chart.options.cutoutPercentage?this.chart.outerRadius/100*this.chart.options.cutoutPercentage:1,0);this.chart.radiusLength=(this.chart.outerRadius-this.chart.innerRadius)/this.chart.getVisibleDatasetCount();this.outerRadius=this.chart.outerRadius-this.chart.radiusLength*this.index;this.innerRadius=this.outerRadius-this.chart.radiusLength;meta.count=this.countVisibleElements();helpers.each(meta.data,function(arc,index){this.updateElement(arc,index,reset);},this);},updateElement:function updateElement(arc,index,reset){var circumference=this.calculateCircumference(this.getDataset().data[index]);var centerX=(this.chart.chartArea.left+this.chart.chartArea.right)/2;var centerY=(this.chart.chartArea.top+this.chart.chartArea.bottom)/2; // If there is NaN data before us, we need to calculate the starting angle correctly.
+	// We could be way more efficient here, but its unlikely that the polar area chart will have a lot of data
+	var visibleCount=0;var meta=this.getMeta();for(var i=0;i<index;++i){if(!isNaN(this.getDataset().data[i])&&!meta.data[i].hidden){++visibleCount;}}var distance=arc.hidden?0:this.chart.scale.getDistanceFromCenterForValue(this.getDataset().data[index]);var startAngle=-0.5*Math.PI+circumference*visibleCount;var endAngle=startAngle+(arc.hidden?0:circumference);var resetModel={x:centerX,y:centerY,innerRadius:0,outerRadius:this.chart.options.animation.animateScale?0:this.chart.scale.getDistanceFromCenterForValue(this.getDataset().data[index]),startAngle:this.chart.options.animation.animateRotate?Math.PI*-0.5:startAngle,endAngle:this.chart.options.animation.animateRotate?Math.PI*-0.5:endAngle,backgroundColor:arc.custom&&arc.custom.backgroundColor?arc.custom.backgroundColor:helpers.getValueAtIndexOrDefault(this.getDataset().backgroundColor,index,this.chart.options.elements.arc.backgroundColor),borderWidth:arc.custom&&arc.custom.borderWidth?arc.custom.borderWidth:helpers.getValueAtIndexOrDefault(this.getDataset().borderWidth,index,this.chart.options.elements.arc.borderWidth),borderColor:arc.custom&&arc.custom.borderColor?arc.custom.borderColor:helpers.getValueAtIndexOrDefault(this.getDataset().borderColor,index,this.chart.options.elements.arc.borderColor),label:helpers.getValueAtIndexOrDefault(this.chart.data.labels,index,this.chart.data.labels[index])};helpers.extend(arc,{ // Utility
+	_chart:this.chart.chart,_datasetIndex:this.index,_index:index,_scale:this.chart.scale, // Desired view properties
+	_model:reset?resetModel:{x:centerX,y:centerY,innerRadius:0,outerRadius:distance,startAngle:startAngle,endAngle:endAngle,backgroundColor:arc.custom&&arc.custom.backgroundColor?arc.custom.backgroundColor:helpers.getValueAtIndexOrDefault(this.getDataset().backgroundColor,index,this.chart.options.elements.arc.backgroundColor),borderWidth:arc.custom&&arc.custom.borderWidth?arc.custom.borderWidth:helpers.getValueAtIndexOrDefault(this.getDataset().borderWidth,index,this.chart.options.elements.arc.borderWidth),borderColor:arc.custom&&arc.custom.borderColor?arc.custom.borderColor:helpers.getValueAtIndexOrDefault(this.getDataset().borderColor,index,this.chart.options.elements.arc.borderColor),label:helpers.getValueAtIndexOrDefault(this.chart.data.labels,index,this.chart.data.labels[index])}});arc.pivot();},draw:function draw(ease){var easingDecimal=ease||1;helpers.each(this.getMeta().data,function(arc,index){arc.transition(easingDecimal).draw();});},setHoverStyle:function setHoverStyle(arc){var dataset=this.chart.data.datasets[arc._datasetIndex];var index=arc._index;arc._model.backgroundColor=arc.custom&&arc.custom.hoverBackgroundColor?arc.custom.hoverBackgroundColor:helpers.getValueAtIndexOrDefault(dataset.hoverBackgroundColor,index,helpers.getHoverColor(arc._model.backgroundColor));arc._model.borderColor=arc.custom&&arc.custom.hoverBorderColor?arc.custom.hoverBorderColor:helpers.getValueAtIndexOrDefault(dataset.hoverBorderColor,index,helpers.getHoverColor(arc._model.borderColor));arc._model.borderWidth=arc.custom&&arc.custom.hoverBorderWidth?arc.custom.hoverBorderWidth:helpers.getValueAtIndexOrDefault(dataset.hoverBorderWidth,index,arc._model.borderWidth);},removeHoverStyle:function removeHoverStyle(arc){var dataset=this.chart.data.datasets[arc._datasetIndex];var index=arc._index;arc._model.backgroundColor=arc.custom&&arc.custom.backgroundColor?arc.custom.backgroundColor:helpers.getValueAtIndexOrDefault(this.getDataset().backgroundColor,index,this.chart.options.elements.arc.backgroundColor);arc._model.borderColor=arc.custom&&arc.custom.borderColor?arc.custom.borderColor:helpers.getValueAtIndexOrDefault(this.getDataset().borderColor,index,this.chart.options.elements.arc.borderColor);arc._model.borderWidth=arc.custom&&arc.custom.borderWidth?arc.custom.borderWidth:helpers.getValueAtIndexOrDefault(this.getDataset().borderWidth,index,this.chart.options.elements.arc.borderWidth);},countVisibleElements:function countVisibleElements(){var dataset=this.getDataset();var meta=this.getMeta();var count=0;helpers.each(meta.data,function(element,index){if(!isNaN(dataset.data[index])&&!element.hidden){count++;}});return count;},calculateCircumference:function calculateCircumference(value){var count=this.getMeta().count;if(count>0&&!isNaN(value)){return 2*Math.PI/count;}else {return 0;}}});};},{}],20:[function(require,module,exports){"use strict";module.exports=function(Chart){var helpers=Chart.helpers;Chart.defaults.radar={scale:{type:"radialLinear"},elements:{line:{tension:0 // no bezier in radar
+	}}};Chart.controllers.radar=Chart.DatasetController.extend({linkScales:function linkScales(){ // No need. Single scale only
+	},addElements:function addElements(){var meta=this.getMeta();meta.dataset=meta.dataset||new Chart.elements.Line({_chart:this.chart.chart,_datasetIndex:this.index,_points:meta.data,_loop:true});helpers.each(this.getDataset().data,function(value,index){meta.data[index]=meta.data[index]||new Chart.elements.Point({_chart:this.chart.chart,_datasetIndex:this.index,_index:index,_model:{x:0, //xScale.getPixelForValue(null, index, true),
+	y:0 //this.chartArea.bottom,
+	}});},this);},addElementAndReset:function addElementAndReset(index){var point=new Chart.elements.Point({_chart:this.chart.chart,_datasetIndex:this.index,_index:index}); // Add to the points array and reset it
+	this.getMeta().data.splice(index,0,point);this.updateElement(point,index,true); // Make sure bezier control points are updated
+	this.updateBezierControlPoints();},update:function update(reset){var meta=this.getMeta();var line=meta.dataset;var points=meta.data;var scale=this.chart.scale;var scaleBase;if(scale.min<0&&scale.max<0){scaleBase=scale.getPointPositionForValue(0,scale.max);}else if(scale.min>0&&scale.max>0){scaleBase=scale.getPointPositionForValue(0,scale.min);}else {scaleBase=scale.getPointPositionForValue(0,0);} // Compatibility: If the properties are defined with only the old name, use those values
+	if(this.getDataset().tension!==undefined&&this.getDataset().lineTension===undefined){this.getDataset().lineTension=this.getDataset().tension;}helpers.extend(meta.dataset,{ // Utility
+	_datasetIndex:this.index, // Data
+	_children:points, // Model
+	_model:{ // Appearance
+	tension:line.custom&&line.custom.tension?line.custom.tension:helpers.getValueOrDefault(this.getDataset().lineTension,this.chart.options.elements.line.tension),backgroundColor:line.custom&&line.custom.backgroundColor?line.custom.backgroundColor:this.getDataset().backgroundColor||this.chart.options.elements.line.backgroundColor,borderWidth:line.custom&&line.custom.borderWidth?line.custom.borderWidth:this.getDataset().borderWidth||this.chart.options.elements.line.borderWidth,borderColor:line.custom&&line.custom.borderColor?line.custom.borderColor:this.getDataset().borderColor||this.chart.options.elements.line.borderColor,fill:line.custom&&line.custom.fill?line.custom.fill:this.getDataset().fill!==undefined?this.getDataset().fill:this.chart.options.elements.line.fill,borderCapStyle:line.custom&&line.custom.borderCapStyle?line.custom.borderCapStyle:this.getDataset().borderCapStyle||this.chart.options.elements.line.borderCapStyle,borderDash:line.custom&&line.custom.borderDash?line.custom.borderDash:this.getDataset().borderDash||this.chart.options.elements.line.borderDash,borderDashOffset:line.custom&&line.custom.borderDashOffset?line.custom.borderDashOffset:this.getDataset().borderDashOffset||this.chart.options.elements.line.borderDashOffset,borderJoinStyle:line.custom&&line.custom.borderJoinStyle?line.custom.borderJoinStyle:this.getDataset().borderJoinStyle||this.chart.options.elements.line.borderJoinStyle, // Scale
+	scaleTop:scale.top,scaleBottom:scale.bottom,scaleZero:scaleBase}});meta.dataset.pivot(); // Update Points
+	helpers.each(points,function(point,index){this.updateElement(point,index,reset);},this); // Update bezier control points
+	this.updateBezierControlPoints();},updateElement:function updateElement(point,index,reset){var pointPosition=this.chart.scale.getPointPositionForValue(index,this.getDataset().data[index]);helpers.extend(point,{ // Utility
+	_datasetIndex:this.index,_index:index,_scale:this.chart.scale, // Desired view properties
+	_model:{x:reset?this.chart.scale.xCenter:pointPosition.x, // value not used in dataset scale, but we want a consistent API between scales
+	y:reset?this.chart.scale.yCenter:pointPosition.y, // Appearance
+	tension:point.custom&&point.custom.tension?point.custom.tension:helpers.getValueOrDefault(this.getDataset().tension,this.chart.options.elements.line.tension),radius:point.custom&&point.custom.radius?point.custom.radius:helpers.getValueAtIndexOrDefault(this.getDataset().pointRadius,index,this.chart.options.elements.point.radius),backgroundColor:point.custom&&point.custom.backgroundColor?point.custom.backgroundColor:helpers.getValueAtIndexOrDefault(this.getDataset().pointBackgroundColor,index,this.chart.options.elements.point.backgroundColor),borderColor:point.custom&&point.custom.borderColor?point.custom.borderColor:helpers.getValueAtIndexOrDefault(this.getDataset().pointBorderColor,index,this.chart.options.elements.point.borderColor),borderWidth:point.custom&&point.custom.borderWidth?point.custom.borderWidth:helpers.getValueAtIndexOrDefault(this.getDataset().pointBorderWidth,index,this.chart.options.elements.point.borderWidth),pointStyle:point.custom&&point.custom.pointStyle?point.custom.pointStyle:helpers.getValueAtIndexOrDefault(this.getDataset().pointStyle,index,this.chart.options.elements.point.pointStyle), // Tooltip
+	hitRadius:point.custom&&point.custom.hitRadius?point.custom.hitRadius:helpers.getValueAtIndexOrDefault(this.getDataset().hitRadius,index,this.chart.options.elements.point.hitRadius)}});point._model.skip=point.custom&&point.custom.skip?point.custom.skip:isNaN(point._model.x)||isNaN(point._model.y);},updateBezierControlPoints:function updateBezierControlPoints(){var meta=this.getMeta();helpers.each(meta.data,function(point,index){var controlPoints=helpers.splineCurve(helpers.previousItem(meta.data,index,true)._model,point._model,helpers.nextItem(meta.data,index,true)._model,point._model.tension); // Prevent the bezier going outside of the bounds of the graph
+	point._model.controlPointPreviousX=Math.max(Math.min(controlPoints.previous.x,this.chart.chartArea.right),this.chart.chartArea.left);point._model.controlPointPreviousY=Math.max(Math.min(controlPoints.previous.y,this.chart.chartArea.bottom),this.chart.chartArea.top);point._model.controlPointNextX=Math.max(Math.min(controlPoints.next.x,this.chart.chartArea.right),this.chart.chartArea.left);point._model.controlPointNextY=Math.max(Math.min(controlPoints.next.y,this.chart.chartArea.bottom),this.chart.chartArea.top); // Now pivot the point for animation
+	point.pivot();},this);},draw:function draw(ease){var meta=this.getMeta();var easingDecimal=ease||1; // Transition Point Locations
+	helpers.each(meta.data,function(point,index){point.transition(easingDecimal);}); // Transition and Draw the line
+	meta.dataset.transition(easingDecimal).draw(); // Draw the points
+	helpers.each(meta.data,function(point){point.draw();});},setHoverStyle:function setHoverStyle(point){ // Point
+	var dataset=this.chart.data.datasets[point._datasetIndex];var index=point._index;point._model.radius=point.custom&&point.custom.hoverRadius?point.custom.hoverRadius:helpers.getValueAtIndexOrDefault(dataset.pointHoverRadius,index,this.chart.options.elements.point.hoverRadius);point._model.backgroundColor=point.custom&&point.custom.hoverBackgroundColor?point.custom.hoverBackgroundColor:helpers.getValueAtIndexOrDefault(dataset.pointHoverBackgroundColor,index,helpers.getHoverColor(point._model.backgroundColor));point._model.borderColor=point.custom&&point.custom.hoverBorderColor?point.custom.hoverBorderColor:helpers.getValueAtIndexOrDefault(dataset.pointHoverBorderColor,index,helpers.getHoverColor(point._model.borderColor));point._model.borderWidth=point.custom&&point.custom.hoverBorderWidth?point.custom.hoverBorderWidth:helpers.getValueAtIndexOrDefault(dataset.pointHoverBorderWidth,index,point._model.borderWidth);},removeHoverStyle:function removeHoverStyle(point){var dataset=this.chart.data.datasets[point._datasetIndex];var index=point._index;point._model.radius=point.custom&&point.custom.radius?point.custom.radius:helpers.getValueAtIndexOrDefault(this.getDataset().radius,index,this.chart.options.elements.point.radius);point._model.backgroundColor=point.custom&&point.custom.backgroundColor?point.custom.backgroundColor:helpers.getValueAtIndexOrDefault(this.getDataset().pointBackgroundColor,index,this.chart.options.elements.point.backgroundColor);point._model.borderColor=point.custom&&point.custom.borderColor?point.custom.borderColor:helpers.getValueAtIndexOrDefault(this.getDataset().pointBorderColor,index,this.chart.options.elements.point.borderColor);point._model.borderWidth=point.custom&&point.custom.borderWidth?point.custom.borderWidth:helpers.getValueAtIndexOrDefault(this.getDataset().pointBorderWidth,index,this.chart.options.elements.point.borderWidth);}});};},{}],21:[function(require,module,exports){ /*global window: false */"use strict";module.exports=function(Chart){var helpers=Chart.helpers;Chart.defaults.global.animation={duration:1000,easing:"easeOutQuart",onProgress:helpers.noop,onComplete:helpers.noop};Chart.Animation=Chart.Element.extend({currentStep:null, // the current animation step
+	numSteps:60, // default number of steps
+	easing:"", // the easing to use for this animation
+	render:null, // render function used by the animation service
+	onAnimationProgress:null, // user specified callback to fire on each step of the animation
+	onAnimationComplete:null // user specified callback to fire when the animation finishes
+	});Chart.animationService={frameDuration:17,animations:[],dropFrames:0,request:null,addAnimation:function addAnimation(chartInstance,animationObject,duration,lazy){if(!lazy){chartInstance.animating=true;}for(var index=0;index<this.animations.length;++index){if(this.animations[index].chartInstance===chartInstance){ // replacing an in progress animation
+	this.animations[index].animationObject=animationObject;return;}}this.animations.push({chartInstance:chartInstance,animationObject:animationObject}); // If there are no animations queued, manually kickstart a digest, for lack of a better word
+	if(this.animations.length===1){this.requestAnimationFrame();}}, // Cancel the animation for a given chart instance
+	cancelAnimation:function cancelAnimation(chartInstance){var index=helpers.findIndex(this.animations,function(animationWrapper){return animationWrapper.chartInstance===chartInstance;});if(index!==-1){this.animations.splice(index,1);chartInstance.animating=false;}},requestAnimationFrame:function requestAnimationFrame(){var me=this;if(me.request===null){ // Skip animation frame requests until the active one is executed.
+	// This can happen when processing mouse events, e.g. 'mousemove'
+	// and 'mouseout' events will trigger multiple renders.
+	me.request=helpers.requestAnimFrame.call(window,function(){me.request=null;me.startDigest();});}},startDigest:function startDigest(){var startTime=Date.now();var framesToDrop=0;if(this.dropFrames>1){framesToDrop=Math.floor(this.dropFrames);this.dropFrames=this.dropFrames%1;}var i=0;while(i<this.animations.length){if(this.animations[i].animationObject.currentStep===null){this.animations[i].animationObject.currentStep=0;}this.animations[i].animationObject.currentStep+=1+framesToDrop;if(this.animations[i].animationObject.currentStep>this.animations[i].animationObject.numSteps){this.animations[i].animationObject.currentStep=this.animations[i].animationObject.numSteps;}this.animations[i].animationObject.render(this.animations[i].chartInstance,this.animations[i].animationObject);if(this.animations[i].animationObject.onAnimationProgress&&this.animations[i].animationObject.onAnimationProgress.call){this.animations[i].animationObject.onAnimationProgress.call(this.animations[i].chartInstance,this.animations[i]);}if(this.animations[i].animationObject.currentStep===this.animations[i].animationObject.numSteps){if(this.animations[i].animationObject.onAnimationComplete&&this.animations[i].animationObject.onAnimationComplete.call){this.animations[i].animationObject.onAnimationComplete.call(this.animations[i].chartInstance,this.animations[i]);} // executed the last frame. Remove the animation.
+	this.animations[i].chartInstance.animating=false;this.animations.splice(i,1);}else {++i;}}var endTime=Date.now();var dropFrames=(endTime-startTime)/this.frameDuration;this.dropFrames+=dropFrames; // Do we have more stuff to animate?
+	if(this.animations.length>0){this.requestAnimationFrame();}}};};},{}],22:[function(require,module,exports){"use strict";module.exports=function(Chart){var helpers=Chart.helpers; //Create a dictionary of chart types, to allow for extension of existing types
+	Chart.types={}; //Store a reference to each instance - allowing us to globally resize chart instances on window resize.
+	//Destroy method on the chart will remove the instance of the chart from this reference.
+	Chart.instances={}; // Controllers available for dataset visualization eg. bar, line, slice, etc.
+	Chart.controllers={}; // The main controller of a chart
+	Chart.Controller=function(instance){this.chart=instance;this.config=instance.config;this.options=this.config.options=helpers.configMerge(Chart.defaults.global,Chart.defaults[this.config.type],this.config.options||{});this.id=helpers.uid();Object.defineProperty(this,'data',{get:function get(){return this.config.data;}}); //Add the chart instance to the global namespace
+	Chart.instances[this.id]=this;if(this.options.responsive){ // Silent resize before chart draws
+	this.resize(true);}this.initialize();return this;};helpers.extend(Chart.Controller.prototype,{initialize:function initialize(){ // Before init plugin notification
+	Chart.pluginService.notifyPlugins('beforeInit',[this]);this.bindEvents(); // Make sure controllers are built first so that each dataset is bound to an axis before the scales
+	// are built
+	this.ensureScalesHaveIDs();this.buildOrUpdateControllers();this.buildScales();this.buildSurroundingItems();this.updateLayout();this.resetElements();this.initToolTip();this.update(); // After init plugin notification
+	Chart.pluginService.notifyPlugins('afterInit',[this]);return this;},clear:function clear(){helpers.clear(this.chart);return this;},stop:function stop(){ // Stops any current animation loop occuring
+	Chart.animationService.cancelAnimation(this);return this;},resize:function resize(silent){var canvas=this.chart.canvas;var newWidth=helpers.getMaximumWidth(this.chart.canvas);var newHeight=this.options.maintainAspectRatio&&isNaN(this.chart.aspectRatio)===false&&isFinite(this.chart.aspectRatio)&&this.chart.aspectRatio!==0?newWidth/this.chart.aspectRatio:helpers.getMaximumHeight(this.chart.canvas);var sizeChanged=this.chart.width!==newWidth||this.chart.height!==newHeight;if(!sizeChanged)return this;canvas.width=this.chart.width=newWidth;canvas.height=this.chart.height=newHeight;helpers.retinaScale(this.chart);if(!silent){this.stop();this.update(this.options.responsiveAnimationDuration);}return this;},ensureScalesHaveIDs:function ensureScalesHaveIDs(){var defaultXAxisID='x-axis-';var defaultYAxisID='y-axis-';if(this.options.scales){if(this.options.scales.xAxes&&this.options.scales.xAxes.length){helpers.each(this.options.scales.xAxes,function(xAxisOptions,index){xAxisOptions.id=xAxisOptions.id||defaultXAxisID+index;});}if(this.options.scales.yAxes&&this.options.scales.yAxes.length){ // Build the y axes
+	helpers.each(this.options.scales.yAxes,function(yAxisOptions,index){yAxisOptions.id=yAxisOptions.id||defaultYAxisID+index;});}}},buildScales:function buildScales(){ // Map of scale ID to scale object so we can lookup later
+	this.scales={}; // Build the x axes
+	if(this.options.scales){if(this.options.scales.xAxes&&this.options.scales.xAxes.length){helpers.each(this.options.scales.xAxes,function(xAxisOptions,index){var xType=helpers.getValueOrDefault(xAxisOptions.type,'category');var ScaleClass=Chart.scaleService.getScaleConstructor(xType);if(ScaleClass){var scale=new ScaleClass({ctx:this.chart.ctx,options:xAxisOptions,chart:this,id:xAxisOptions.id});this.scales[scale.id]=scale;}},this);}if(this.options.scales.yAxes&&this.options.scales.yAxes.length){ // Build the y axes
+	helpers.each(this.options.scales.yAxes,function(yAxisOptions,index){var yType=helpers.getValueOrDefault(yAxisOptions.type,'linear');var ScaleClass=Chart.scaleService.getScaleConstructor(yType);if(ScaleClass){var scale=new ScaleClass({ctx:this.chart.ctx,options:yAxisOptions,chart:this,id:yAxisOptions.id});this.scales[scale.id]=scale;}},this);}}if(this.options.scale){ // Build radial axes
+	var ScaleClass=Chart.scaleService.getScaleConstructor(this.options.scale.type);if(ScaleClass){var scale=new ScaleClass({ctx:this.chart.ctx,options:this.options.scale,chart:this});this.scale=scale;this.scales.radialScale=scale;}}Chart.scaleService.addScalesToLayout(this);},buildSurroundingItems:function buildSurroundingItems(){if(this.options.title){this.titleBlock=new Chart.Title({ctx:this.chart.ctx,options:this.options.title,chart:this});Chart.layoutService.addBox(this,this.titleBlock);}if(this.options.legend){this.legend=new Chart.Legend({ctx:this.chart.ctx,options:this.options.legend,chart:this});Chart.layoutService.addBox(this,this.legend);}},updateLayout:function updateLayout(){Chart.layoutService.update(this,this.chart.width,this.chart.height);},buildOrUpdateControllers:function buildOrUpdateControllers(){var types=[];var newControllers=[];helpers.each(this.data.datasets,function(dataset,datasetIndex){var meta=this.getDatasetMeta(datasetIndex);if(!meta.type){meta.type=dataset.type||this.config.type;}types.push(meta.type);if(meta.controller){meta.controller.updateIndex(datasetIndex);}else {meta.controller=new Chart.controllers[meta.type](this,datasetIndex);newControllers.push(meta.controller);}},this);if(types.length>1){for(var i=1;i<types.length;i++){if(types[i]!==types[i-1]){this.isCombo=true;break;}}}return newControllers;},resetElements:function resetElements(){helpers.each(this.data.datasets,function(dataset,datasetIndex){this.getDatasetMeta(datasetIndex).controller.reset();},this);},update:function update(animationDuration,lazy){Chart.pluginService.notifyPlugins('beforeUpdate',[this]); // In case the entire data object changed
+	this.tooltip._data=this.data; // Make sure dataset controllers are updated and new controllers are reset
+	var newControllers=this.buildOrUpdateControllers(); // Make sure all dataset controllers have correct meta data counts
+	helpers.each(this.data.datasets,function(dataset,datasetIndex){this.getDatasetMeta(datasetIndex).controller.buildOrUpdateElements();},this);Chart.layoutService.update(this,this.chart.width,this.chart.height); // Apply changes to the dataets that require the scales to have been calculated i.e BorderColor chages
+	Chart.pluginService.notifyPlugins('afterScaleUpdate',[this]); // Can only reset the new controllers after the scales have been updated
+	helpers.each(newControllers,function(controller){controller.reset();}); // This will loop through any data and do the appropriate element update for the type
+	helpers.each(this.data.datasets,function(dataset,datasetIndex){this.getDatasetMeta(datasetIndex).controller.update();},this); // Do this before render so that any plugins that need final scale updates can use it
+	Chart.pluginService.notifyPlugins('afterUpdate',[this]);this.render(animationDuration,lazy);},render:function render(duration,lazy){Chart.pluginService.notifyPlugins('beforeRender',[this]);if(this.options.animation&&(typeof duration!=='undefined'&&duration!==0||typeof duration==='undefined'&&this.options.animation.duration!==0)){var animation=new Chart.Animation();animation.numSteps=(duration||this.options.animation.duration)/16.66; //60 fps
+	animation.easing=this.options.animation.easing; // render function
+	animation.render=function(chartInstance,animationObject){var easingFunction=helpers.easingEffects[animationObject.easing];var stepDecimal=animationObject.currentStep/animationObject.numSteps;var easeDecimal=easingFunction(stepDecimal);chartInstance.draw(easeDecimal,stepDecimal,animationObject.currentStep);}; // user events
+	animation.onAnimationProgress=this.options.animation.onProgress;animation.onAnimationComplete=this.options.animation.onComplete;Chart.animationService.addAnimation(this,animation,duration,lazy);}else {this.draw();if(this.options.animation&&this.options.animation.onComplete&&this.options.animation.onComplete.call){this.options.animation.onComplete.call(this);}}return this;},draw:function draw(ease){var easingDecimal=ease||1;this.clear();Chart.pluginService.notifyPlugins('beforeDraw',[this,easingDecimal]); // Draw all the scales
+	helpers.each(this.boxes,function(box){box.draw(this.chartArea);},this);if(this.scale){this.scale.draw();} // Clip out the chart area so that anything outside does not draw. This is necessary for zoom and pan to function
+	this.chart.ctx.save();this.chart.ctx.beginPath();this.chart.ctx.rect(this.chartArea.left,this.chartArea.top,this.chartArea.right-this.chartArea.left,this.chartArea.bottom-this.chartArea.top);this.chart.ctx.clip(); // Draw each dataset via its respective controller (reversed to support proper line stacking)
+	helpers.each(this.data.datasets,function(dataset,datasetIndex){if(this.isDatasetVisible(datasetIndex)){this.getDatasetMeta(datasetIndex).controller.draw(ease);}},this,true); // Restore from the clipping operation
+	this.chart.ctx.restore(); // Finally draw the tooltip
+	this.tooltip.transition(easingDecimal).draw();Chart.pluginService.notifyPlugins('afterDraw',[this,easingDecimal]);}, // Get the single element that was clicked on
+	// @return : An object containing the dataset index and element index of the matching element. Also contains the rectangle that was draw
+	getElementAtEvent:function getElementAtEvent(e){var eventPosition=helpers.getRelativePosition(e,this.chart);var elementsArray=[];helpers.each(this.data.datasets,function(dataset,datasetIndex){if(this.isDatasetVisible(datasetIndex)){var meta=this.getDatasetMeta(datasetIndex);helpers.each(meta.data,function(element,index){if(element.inRange(eventPosition.x,eventPosition.y)){elementsArray.push(element);return elementsArray;}});}},this);return elementsArray;},getElementsAtEvent:function getElementsAtEvent(e){var eventPosition=helpers.getRelativePosition(e,this.chart);var elementsArray=[];var found=function(){if(this.data.datasets){for(var i=0;i<this.data.datasets.length;i++){var meta=this.getDatasetMeta(i);if(this.isDatasetVisible(i)){for(var j=0;j<meta.data.length;j++){if(meta.data[j].inRange(eventPosition.x,eventPosition.y)){return meta.data[j];}}}}}}.call(this);if(!found){return elementsArray;}helpers.each(this.data.datasets,function(dataset,datasetIndex){if(this.isDatasetVisible(datasetIndex)){var meta=this.getDatasetMeta(datasetIndex);elementsArray.push(meta.data[found._index]);}},this);return elementsArray;},getDatasetAtEvent:function getDatasetAtEvent(e){var elementsArray=this.getElementAtEvent(e);if(elementsArray.length>0){elementsArray=this.getDatasetMeta(elementsArray[0]._datasetIndex).data;}return elementsArray;},getDatasetMeta:function getDatasetMeta(datasetIndex){var dataset=this.data.datasets[datasetIndex];if(!dataset._meta){dataset._meta={};}var meta=dataset._meta[this.id];if(!meta){meta=dataset._meta[this.id]={type:null,data:[],dataset:null,controller:null,hidden:null, // See isDatasetVisible() comment
+	xAxisID:null,yAxisID:null};}return meta;},getVisibleDatasetCount:function getVisibleDatasetCount(){var count=0;for(var i=0,ilen=this.data.datasets.length;i<ilen;++i){if(this.isDatasetVisible(i)){count++;}}return count;},isDatasetVisible:function isDatasetVisible(datasetIndex){var meta=this.getDatasetMeta(datasetIndex); // meta.hidden is a per chart dataset hidden flag override with 3 states: if true or false,
+	// the dataset.hidden value is ignored, else if null, the dataset hidden state is returned.
+	return typeof meta.hidden==='boolean'?!meta.hidden:!this.data.datasets[datasetIndex].hidden;},generateLegend:function generateLegend(){return this.options.legendCallback(this);},destroy:function destroy(){this.clear();helpers.unbindEvents(this,this.events);helpers.removeResizeListener(this.chart.canvas.parentNode); // Reset canvas height/width attributes
+	var canvas=this.chart.canvas;canvas.width=this.chart.width;canvas.height=this.chart.height; // if we scaled the canvas in response to a devicePixelRatio !== 1, we need to undo that transform here
+	if(this.chart.originalDevicePixelRatio!==undefined){this.chart.ctx.scale(1/this.chart.originalDevicePixelRatio,1/this.chart.originalDevicePixelRatio);} // Reset to the old style since it may have been changed by the device pixel ratio changes
+	canvas.style.width=this.chart.originalCanvasStyleWidth;canvas.style.height=this.chart.originalCanvasStyleHeight;Chart.pluginService.notifyPlugins('destroy',[this]);delete Chart.instances[this.id];},toBase64Image:function toBase64Image(){return this.chart.canvas.toDataURL.apply(this.chart.canvas,arguments);},initToolTip:function initToolTip(){this.tooltip=new Chart.Tooltip({_chart:this.chart,_chartInstance:this,_data:this.data,_options:this.options},this);},bindEvents:function bindEvents(){helpers.bindEvents(this,this.options.events,function(evt){this.eventHandler(evt);});},eventHandler:function eventHandler(e){this.lastActive=this.lastActive||[];this.lastTooltipActive=this.lastTooltipActive||[]; // Find Active Elements for hover and tooltips
+	if(e.type==='mouseout'){this.active=[];this.tooltipActive=[];}else {var _this=this;var getItemsForMode=function getItemsForMode(mode){switch(mode){case 'single':return _this.getElementAtEvent(e);case 'label':return _this.getElementsAtEvent(e);case 'dataset':return _this.getDatasetAtEvent(e);default:return e;}};this.active=getItemsForMode(this.options.hover.mode);this.tooltipActive=getItemsForMode(this.options.tooltips.mode);} // On Hover hook
+	if(this.options.hover.onHover){this.options.hover.onHover.call(this,this.active);}if(e.type==='mouseup'||e.type==='click'){if(this.options.onClick){this.options.onClick.call(this,e,this.active);}if(this.legend&&this.legend.handleEvent){this.legend.handleEvent(e);}} // Remove styling for last active (even if it may still be active)
+	if(this.lastActive.length){switch(this.options.hover.mode){case 'single':this.getDatasetMeta(this.lastActive[0]._datasetIndex).controller.removeHoverStyle(this.lastActive[0],this.lastActive[0]._datasetIndex,this.lastActive[0]._index);break;case 'label':case 'dataset':for(var i=0;i<this.lastActive.length;i++){if(this.lastActive[i])this.getDatasetMeta(this.lastActive[i]._datasetIndex).controller.removeHoverStyle(this.lastActive[i],this.lastActive[i]._datasetIndex,this.lastActive[i]._index);}break;default: // Don't change anything
+	}} // Built in hover styling
+	if(this.active.length&&this.options.hover.mode){switch(this.options.hover.mode){case 'single':this.getDatasetMeta(this.active[0]._datasetIndex).controller.setHoverStyle(this.active[0]);break;case 'label':case 'dataset':for(var j=0;j<this.active.length;j++){if(this.active[j])this.getDatasetMeta(this.active[j]._datasetIndex).controller.setHoverStyle(this.active[j]);}break;default: // Don't change anything
+	}} // Built in Tooltips
+	if(this.options.tooltips.enabled||this.options.tooltips.custom){ // The usual updates
+	this.tooltip.initialize();this.tooltip._active=this.tooltipActive;this.tooltip.update(true);} // Hover animations
+	this.tooltip.pivot();if(!this.animating){var changed;helpers.each(this.active,function(element,index){if(element!==this.lastActive[index]){changed=true;}},this);helpers.each(this.tooltipActive,function(element,index){if(element!==this.lastTooltipActive[index]){changed=true;}},this); // If entering, leaving, or changing elements, animate the change via pivot
+	if(this.lastActive.length!==this.active.length||this.lastTooltipActive.length!==this.tooltipActive.length||changed){this.stop();if(this.options.tooltips.enabled||this.options.tooltips.custom){this.tooltip.update(true);} // We only need to render at this point. Updating will cause scales to be recomputed generating flicker & using more
+	// memory than necessary.
+	this.render(this.options.hover.animationDuration,true);}} // Remember Last Actives
+	this.lastActive=this.active;this.lastTooltipActive=this.tooltipActive;return this;}});};},{}],23:[function(require,module,exports){"use strict";module.exports=function(Chart){var helpers=Chart.helpers;var noop=helpers.noop; // Base class for all dataset controllers (line, bar, etc)
+	Chart.DatasetController=function(chart,datasetIndex){this.initialize.call(this,chart,datasetIndex);};helpers.extend(Chart.DatasetController.prototype,{initialize:function initialize(chart,datasetIndex){this.chart=chart;this.index=datasetIndex;this.linkScales();this.addElements();},updateIndex:function updateIndex(datasetIndex){this.index=datasetIndex;},linkScales:function linkScales(){var meta=this.getMeta();var dataset=this.getDataset();if(meta.xAxisID===null){meta.xAxisID=dataset.xAxisID||this.chart.options.scales.xAxes[0].id;}if(meta.yAxisID===null){meta.yAxisID=dataset.yAxisID||this.chart.options.scales.yAxes[0].id;}},getDataset:function getDataset(){return this.chart.data.datasets[this.index];},getMeta:function getMeta(){return this.chart.getDatasetMeta(this.index);},getScaleForId:function getScaleForId(scaleID){return this.chart.scales[scaleID];},reset:function reset(){this.update(true);},buildOrUpdateElements:function buildOrUpdateElements(){ // Handle the number of data points changing
+	var meta=this.getMeta(),md=meta.data,numData=this.getDataset().data.length,numMetaData=md.length; // Make sure that we handle number of datapoints changing
+	if(numData<numMetaData){ // Remove excess bars for data points that have been removed
+	md.splice(numData,numMetaData-numData);}else if(numData>numMetaData){ // Add new elements
+	for(var index=numMetaData;index<numData;++index){this.addElementAndReset(index);}}}, // Controllers should implement the following
+	addElements:noop,addElementAndReset:noop,draw:noop,removeHoverStyle:noop,setHoverStyle:noop,update:noop});Chart.DatasetController.extend=helpers.inherits;};},{}],24:[function(require,module,exports){"use strict";module.exports=function(Chart){var helpers=Chart.helpers;Chart.elements={};Chart.Element=function(configuration){helpers.extend(this,configuration);this.initialize.apply(this,arguments);};helpers.extend(Chart.Element.prototype,{initialize:function initialize(){this.hidden=false;},pivot:function pivot(){if(!this._view){this._view=helpers.clone(this._model);}this._start=helpers.clone(this._view);return this;},transition:function transition(ease){if(!this._view){this._view=helpers.clone(this._model);} // No animation -> No Transition
+	if(ease===1){this._view=this._model;this._start=null;return this;}if(!this._start){this.pivot();}helpers.each(this._model,function(value,key){if(key[0]==='_'||!this._model.hasOwnProperty(key)){} // Only non-underscored properties
+	// Init if doesn't exist
+	else if(!this._view.hasOwnProperty(key)){if(typeof value==='number'&&!isNaN(this._view[key])){this._view[key]=value*ease;}else {this._view[key]=value;}} // No unnecessary computations
+	else if(value===this._view[key]){} // It's the same! Woohoo!
+	// Color transitions if possible
+	else if(typeof value==='string'){try{var color=helpers.color(this._start[key]).mix(helpers.color(this._model[key]),ease);this._view[key]=color.rgbString();}catch(err){this._view[key]=value;}} // Number transitions
+	else if(typeof value==='number'){var startVal=this._start[key]!==undefined&&isNaN(this._start[key])===false?this._start[key]:0;this._view[key]=(this._model[key]-startVal)*ease+startVal;} // Everything else
+	else {this._view[key]=value;}},this);return this;},tooltipPosition:function tooltipPosition(){return {x:this._model.x,y:this._model.y};},hasValue:function hasValue(){return helpers.isNumber(this._model.x)&&helpers.isNumber(this._model.y);}});Chart.Element.extend=helpers.inherits;};},{}],25:[function(require,module,exports){ /*global window: false */ /*global document: false */"use strict";var color=require('chartjs-color');module.exports=function(Chart){ //Global Chart helpers object for utility methods and classes
+	var helpers=Chart.helpers={}; //-- Basic js utility methods
+	helpers.each=function(loopable,callback,self,reverse){ // Check to see if null or undefined firstly.
+	var i,len;if(helpers.isArray(loopable)){len=loopable.length;if(reverse){for(i=len-1;i>=0;i--){callback.call(self,loopable[i],i);}}else {for(i=0;i<len;i++){callback.call(self,loopable[i],i);}}}else if((typeof loopable==="undefined"?"undefined":_typeof(loopable))==='object'){var keys=Object.keys(loopable);len=keys.length;for(i=0;i<len;i++){callback.call(self,loopable[keys[i]],keys[i]);}}};helpers.clone=function(obj){var objClone={};helpers.each(obj,function(value,key){if(obj.hasOwnProperty(key)){if(helpers.isArray(value)){objClone[key]=value.slice(0);}else if((typeof value==="undefined"?"undefined":_typeof(value))==='object'&&value!==null){objClone[key]=helpers.clone(value);}else {objClone[key]=value;}}});return objClone;};helpers.extend=function(base){var len=arguments.length;var additionalArgs=[];for(var i=1;i<len;i++){additionalArgs.push(arguments[i]);}helpers.each(additionalArgs,function(extensionObject){helpers.each(extensionObject,function(value,key){if(extensionObject.hasOwnProperty(key)){base[key]=value;}});});return base;}; // Need a special merge function to chart configs since they are now grouped
+	helpers.configMerge=function(_base){var base=helpers.clone(_base);helpers.each(Array.prototype.slice.call(arguments,1),function(extension){helpers.each(extension,function(value,key){if(extension.hasOwnProperty(key)){if(key==='scales'){ // Scale config merging is complex. Add out own function here for that
+	base[key]=helpers.scaleMerge(base.hasOwnProperty(key)?base[key]:{},value);}else if(key==='scale'){ // Used in polar area & radar charts since there is only one scale
+	base[key]=helpers.configMerge(base.hasOwnProperty(key)?base[key]:{},Chart.scaleService.getScaleDefaults(value.type),value);}else if(base.hasOwnProperty(key)&&helpers.isArray(base[key])&&helpers.isArray(value)){ // In this case we have an array of objects replacing another array. Rather than doing a strict replace,
+	// merge. This allows easy scale option merging
+	var baseArray=base[key];helpers.each(value,function(valueObj,index){if(index<baseArray.length){if(_typeof(baseArray[index])==='object'&&baseArray[index]!==null&&(typeof valueObj==="undefined"?"undefined":_typeof(valueObj))==='object'&&valueObj!==null){ // Two objects are coming together. Do a merge of them.
+	baseArray[index]=helpers.configMerge(baseArray[index],valueObj);}else { // Just overwrite in this case since there is nothing to merge
+	baseArray[index]=valueObj;}}else {baseArray.push(valueObj); // nothing to merge
+	}});}else if(base.hasOwnProperty(key)&&_typeof(base[key])==="object"&&base[key]!==null&&(typeof value==="undefined"?"undefined":_typeof(value))==="object"){ // If we are overwriting an object with an object, do a merge of the properties.
+	base[key]=helpers.configMerge(base[key],value);}else { // can just overwrite the value in this case
+	base[key]=value;}}});});return base;};helpers.extendDeep=function(_base){return _extendDeep.apply(this,arguments);function _extendDeep(dst){helpers.each(arguments,function(obj){if(obj!==dst){helpers.each(obj,function(value,key){if(dst[key]&&dst[key].constructor&&dst[key].constructor===Object){_extendDeep(dst[key],value);}else {dst[key]=value;}});}});return dst;}};helpers.scaleMerge=function(_base,extension){var base=helpers.clone(_base);helpers.each(extension,function(value,key){if(extension.hasOwnProperty(key)){if(key==='xAxes'||key==='yAxes'){ // These properties are arrays of items
+	if(base.hasOwnProperty(key)){helpers.each(value,function(valueObj,index){var axisType=helpers.getValueOrDefault(valueObj.type,key==='xAxes'?'category':'linear');var axisDefaults=Chart.scaleService.getScaleDefaults(axisType);if(index>=base[key].length||!base[key][index].type){base[key].push(helpers.configMerge(axisDefaults,valueObj));}else if(valueObj.type&&valueObj.type!==base[key][index].type){ // Type changed. Bring in the new defaults before we bring in valueObj so that valueObj can override the correct scale defaults
+	base[key][index]=helpers.configMerge(base[key][index],axisDefaults,valueObj);}else { // Type is the same
+	base[key][index]=helpers.configMerge(base[key][index],valueObj);}});}else {base[key]=[];helpers.each(value,function(valueObj){var axisType=helpers.getValueOrDefault(valueObj.type,key==='xAxes'?'category':'linear');base[key].push(helpers.configMerge(Chart.scaleService.getScaleDefaults(axisType),valueObj));});}}else if(base.hasOwnProperty(key)&&_typeof(base[key])==="object"&&base[key]!==null&&(typeof value==="undefined"?"undefined":_typeof(value))==="object"){ // If we are overwriting an object with an object, do a merge of the properties.
+	base[key]=helpers.configMerge(base[key],value);}else { // can just overwrite the value in this case
+	base[key]=value;}}});return base;};helpers.getValueAtIndexOrDefault=function(value,index,defaultValue){if(value===undefined||value===null){return defaultValue;}if(helpers.isArray(value)){return index<value.length?value[index]:defaultValue;}return value;};helpers.getValueOrDefault=function(value,defaultValue){return value===undefined?defaultValue:value;};helpers.indexOf=function(arrayToSearch,item){if(Array.prototype.indexOf){return arrayToSearch.indexOf(item);}else {for(var i=0;i<arrayToSearch.length;i++){if(arrayToSearch[i]===item)return i;}return -1;}};helpers.where=function(collection,filterCallback){var filtered=[];helpers.each(collection,function(item){if(filterCallback(item)){filtered.push(item);}});return filtered;};helpers.findIndex=function(arrayToSearch,callback,thisArg){var index=-1;if(Array.prototype.findIndex){index=arrayToSearch.findIndex(callback,thisArg);}else {for(var i=0;i<arrayToSearch.length;++i){thisArg=thisArg!==undefined?thisArg:arrayToSearch;if(callback.call(thisArg,arrayToSearch[i],i,arrayToSearch)){index=i;break;}}}return index;};helpers.findNextWhere=function(arrayToSearch,filterCallback,startIndex){ // Default to start of the array
+	if(startIndex===undefined||startIndex===null){startIndex=-1;}for(var i=startIndex+1;i<arrayToSearch.length;i++){var currentItem=arrayToSearch[i];if(filterCallback(currentItem)){return currentItem;}}};helpers.findPreviousWhere=function(arrayToSearch,filterCallback,startIndex){ // Default to end of the array
+	if(startIndex===undefined||startIndex===null){startIndex=arrayToSearch.length;}for(var i=startIndex-1;i>=0;i--){var currentItem=arrayToSearch[i];if(filterCallback(currentItem)){return currentItem;}}};helpers.inherits=function(extensions){ //Basic javascript inheritance based on the model created in Backbone.js
+	var parent=this;var ChartElement=extensions&&extensions.hasOwnProperty("constructor")?extensions.constructor:function(){return parent.apply(this,arguments);};var Surrogate=function Surrogate(){this.constructor=ChartElement;};Surrogate.prototype=parent.prototype;ChartElement.prototype=new Surrogate();ChartElement.extend=helpers.inherits;if(extensions){helpers.extend(ChartElement.prototype,extensions);}ChartElement.__super__=parent.prototype;return ChartElement;};helpers.noop=function(){};helpers.uid=function(){var id=0;return function(){return id++;};}();helpers.warn=function(str){ //Method for warning of errors
+	if(console&&typeof console.warn==="function"){console.warn(str);}}; //-- Math methods
+	helpers.isNumber=function(n){return !isNaN(parseFloat(n))&&isFinite(n);};helpers.almostEquals=function(x,y,epsilon){return Math.abs(x-y)<epsilon;};helpers.max=function(array){return array.reduce(function(max,value){if(!isNaN(value)){return Math.max(max,value);}else {return max;}},Number.NEGATIVE_INFINITY);};helpers.min=function(array){return array.reduce(function(min,value){if(!isNaN(value)){return Math.min(min,value);}else {return min;}},Number.POSITIVE_INFINITY);};helpers.sign=function(x){if(Math.sign){return Math.sign(x);}else {x=+x; // convert to a number
+	if(x===0||isNaN(x)){return x;}return x>0?1:-1;}};helpers.log10=function(x){if(Math.log10){return Math.log10(x);}else {return Math.log(x)/Math.LN10;}};helpers.toRadians=function(degrees){return degrees*(Math.PI/180);};helpers.toDegrees=function(radians){return radians*(180/Math.PI);}; // Gets the angle from vertical upright to the point about a centre.
+	helpers.getAngleFromPoint=function(centrePoint,anglePoint){var distanceFromXCenter=anglePoint.x-centrePoint.x,distanceFromYCenter=anglePoint.y-centrePoint.y,radialDistanceFromCenter=Math.sqrt(distanceFromXCenter*distanceFromXCenter+distanceFromYCenter*distanceFromYCenter);var angle=Math.atan2(distanceFromYCenter,distanceFromXCenter);if(angle<-0.5*Math.PI){angle+=2.0*Math.PI; // make sure the returned angle is in the range of (-PI/2, 3PI/2]
+	}return {angle:angle,distance:radialDistanceFromCenter};};helpers.aliasPixel=function(pixelWidth){return pixelWidth%2===0?0:0.5;};helpers.splineCurve=function(firstPoint,middlePoint,afterPoint,t){ //Props to Rob Spencer at scaled innovation for his post on splining between points
+	//http://scaledinnovation.com/analytics/splines/aboutSplines.html
+	// This function must also respect "skipped" points
+	var previous=firstPoint.skip?middlePoint:firstPoint,current=middlePoint,next=afterPoint.skip?middlePoint:afterPoint;var d01=Math.sqrt(Math.pow(current.x-previous.x,2)+Math.pow(current.y-previous.y,2));var d12=Math.sqrt(Math.pow(next.x-current.x,2)+Math.pow(next.y-current.y,2));var s01=d01/(d01+d12);var s12=d12/(d01+d12); // If all points are the same, s01 & s02 will be inf
+	s01=isNaN(s01)?0:s01;s12=isNaN(s12)?0:s12;var fa=t*s01; // scaling factor for triangle Ta
+	var fb=t*s12;return {previous:{x:current.x-fa*(next.x-previous.x),y:current.y-fa*(next.y-previous.y)},next:{x:current.x+fb*(next.x-previous.x),y:current.y+fb*(next.y-previous.y)}};};helpers.nextItem=function(collection,index,loop){if(loop){return index>=collection.length-1?collection[0]:collection[index+1];}return index>=collection.length-1?collection[collection.length-1]:collection[index+1];};helpers.previousItem=function(collection,index,loop){if(loop){return index<=0?collection[collection.length-1]:collection[index-1];}return index<=0?collection[0]:collection[index-1];}; // Implementation of the nice number algorithm used in determining where axis labels will go
+	helpers.niceNum=function(range,round){var exponent=Math.floor(helpers.log10(range));var fraction=range/Math.pow(10,exponent);var niceFraction;if(round){if(fraction<1.5){niceFraction=1;}else if(fraction<3){niceFraction=2;}else if(fraction<7){niceFraction=5;}else {niceFraction=10;}}else {if(fraction<=1.0){niceFraction=1;}else if(fraction<=2){niceFraction=2;}else if(fraction<=5){niceFraction=5;}else {niceFraction=10;}}return niceFraction*Math.pow(10,exponent);}; //Easing functions adapted from Robert Penner's easing equations
+	//http://www.robertpenner.com/easing/
+	var easingEffects=helpers.easingEffects={linear:function linear(t){return t;},easeInQuad:function easeInQuad(t){return t*t;},easeOutQuad:function easeOutQuad(t){return -1*t*(t-2);},easeInOutQuad:function easeInOutQuad(t){if((t/=1/2)<1){return 1/2*t*t;}return -1/2*(--t*(t-2)-1);},easeInCubic:function easeInCubic(t){return t*t*t;},easeOutCubic:function easeOutCubic(t){return 1*((t=t/1-1)*t*t+1);},easeInOutCubic:function easeInOutCubic(t){if((t/=1/2)<1){return 1/2*t*t*t;}return 1/2*((t-=2)*t*t+2);},easeInQuart:function easeInQuart(t){return t*t*t*t;},easeOutQuart:function easeOutQuart(t){return -1*((t=t/1-1)*t*t*t-1);},easeInOutQuart:function easeInOutQuart(t){if((t/=1/2)<1){return 1/2*t*t*t*t;}return -1/2*((t-=2)*t*t*t-2);},easeInQuint:function easeInQuint(t){return 1*(t/=1)*t*t*t*t;},easeOutQuint:function easeOutQuint(t){return 1*((t=t/1-1)*t*t*t*t+1);},easeInOutQuint:function easeInOutQuint(t){if((t/=1/2)<1){return 1/2*t*t*t*t*t;}return 1/2*((t-=2)*t*t*t*t+2);},easeInSine:function easeInSine(t){return -1*Math.cos(t/1*(Math.PI/2))+1;},easeOutSine:function easeOutSine(t){return 1*Math.sin(t/1*(Math.PI/2));},easeInOutSine:function easeInOutSine(t){return -1/2*(Math.cos(Math.PI*t/1)-1);},easeInExpo:function easeInExpo(t){return t===0?1:1*Math.pow(2,10*(t/1-1));},easeOutExpo:function easeOutExpo(t){return t===1?1:1*(-Math.pow(2,-10*t/1)+1);},easeInOutExpo:function easeInOutExpo(t){if(t===0){return 0;}if(t===1){return 1;}if((t/=1/2)<1){return 1/2*Math.pow(2,10*(t-1));}return 1/2*(-Math.pow(2,-10*--t)+2);},easeInCirc:function easeInCirc(t){if(t>=1){return t;}return -1*(Math.sqrt(1-(t/=1)*t)-1);},easeOutCirc:function easeOutCirc(t){return 1*Math.sqrt(1-(t=t/1-1)*t);},easeInOutCirc:function easeInOutCirc(t){if((t/=1/2)<1){return -1/2*(Math.sqrt(1-t*t)-1);}return 1/2*(Math.sqrt(1-(t-=2)*t)+1);},easeInElastic:function easeInElastic(t){var s=1.70158;var p=0;var a=1;if(t===0){return 0;}if((t/=1)===1){return 1;}if(!p){p=1*0.3;}if(a<Math.abs(1)){a=1;s=p/4;}else {s=p/(2*Math.PI)*Math.asin(1/a);}return -(a*Math.pow(2,10*(t-=1))*Math.sin((t*1-s)*(2*Math.PI)/p));},easeOutElastic:function easeOutElastic(t){var s=1.70158;var p=0;var a=1;if(t===0){return 0;}if((t/=1)===1){return 1;}if(!p){p=1*0.3;}if(a<Math.abs(1)){a=1;s=p/4;}else {s=p/(2*Math.PI)*Math.asin(1/a);}return a*Math.pow(2,-10*t)*Math.sin((t*1-s)*(2*Math.PI)/p)+1;},easeInOutElastic:function easeInOutElastic(t){var s=1.70158;var p=0;var a=1;if(t===0){return 0;}if((t/=1/2)===2){return 1;}if(!p){p=1*(0.3*1.5);}if(a<Math.abs(1)){a=1;s=p/4;}else {s=p/(2*Math.PI)*Math.asin(1/a);}if(t<1){return -0.5*(a*Math.pow(2,10*(t-=1))*Math.sin((t*1-s)*(2*Math.PI)/p));}return a*Math.pow(2,-10*(t-=1))*Math.sin((t*1-s)*(2*Math.PI)/p)*0.5+1;},easeInBack:function easeInBack(t){var s=1.70158;return 1*(t/=1)*t*((s+1)*t-s);},easeOutBack:function easeOutBack(t){var s=1.70158;return 1*((t=t/1-1)*t*((s+1)*t+s)+1);},easeInOutBack:function easeInOutBack(t){var s=1.70158;if((t/=1/2)<1){return 1/2*(t*t*(((s*=1.525)+1)*t-s));}return 1/2*((t-=2)*t*(((s*=1.525)+1)*t+s)+2);},easeInBounce:function easeInBounce(t){return 1-easingEffects.easeOutBounce(1-t);},easeOutBounce:function easeOutBounce(t){if((t/=1)<1/2.75){return 1*(7.5625*t*t);}else if(t<2/2.75){return 1*(7.5625*(t-=1.5/2.75)*t+0.75);}else if(t<2.5/2.75){return 1*(7.5625*(t-=2.25/2.75)*t+0.9375);}else {return 1*(7.5625*(t-=2.625/2.75)*t+0.984375);}},easeInOutBounce:function easeInOutBounce(t){if(t<1/2){return easingEffects.easeInBounce(t*2)*0.5;}return easingEffects.easeOutBounce(t*2-1)*0.5+1*0.5;}}; //Request animation polyfill - http://www.paulirish.com/2011/requestanimationframe-for-smart-animating/
+	helpers.requestAnimFrame=function(){return window.requestAnimationFrame||window.webkitRequestAnimationFrame||window.mozRequestAnimationFrame||window.oRequestAnimationFrame||window.msRequestAnimationFrame||function(callback){return window.setTimeout(callback,1000/60);};}();helpers.cancelAnimFrame=function(){return window.cancelAnimationFrame||window.webkitCancelAnimationFrame||window.mozCancelAnimationFrame||window.oCancelAnimationFrame||window.msCancelAnimationFrame||function(callback){return window.clearTimeout(callback,1000/60);};}(); //-- DOM methods
+	helpers.getRelativePosition=function(evt,chart){var mouseX,mouseY;var e=evt.originalEvent||evt,canvas=evt.currentTarget||evt.srcElement,boundingRect=canvas.getBoundingClientRect();if(e.touches&&e.touches.length>0){mouseX=e.touches[0].clientX;mouseY=e.touches[0].clientY;}else {mouseX=e.clientX;mouseY=e.clientY;} // Scale mouse coordinates into canvas coordinates
+	// by following the pattern laid out by 'jerryj' in the comments of
+	// http://www.html5canvastutorials.com/advanced/html5-canvas-mouse-coordinates/
+	var paddingLeft=parseFloat(helpers.getStyle(canvas,'padding-left'));var paddingTop=parseFloat(helpers.getStyle(canvas,'padding-top'));var paddingRight=parseFloat(helpers.getStyle(canvas,'padding-right'));var paddingBottom=parseFloat(helpers.getStyle(canvas,'padding-bottom'));var width=boundingRect.right-boundingRect.left-paddingLeft-paddingRight;var height=boundingRect.bottom-boundingRect.top-paddingTop-paddingBottom; // We divide by the current device pixel ratio, because the canvas is scaled up by that amount in each direction. However
+	// the backend model is in unscaled coordinates. Since we are going to deal with our model coordinates, we go back here
+	mouseX=Math.round((mouseX-boundingRect.left-paddingLeft)/width*canvas.width/chart.currentDevicePixelRatio);mouseY=Math.round((mouseY-boundingRect.top-paddingTop)/height*canvas.height/chart.currentDevicePixelRatio);return {x:mouseX,y:mouseY};};helpers.addEvent=function(node,eventType,method){if(node.addEventListener){node.addEventListener(eventType,method);}else if(node.attachEvent){node.attachEvent("on"+eventType,method);}else {node["on"+eventType]=method;}};helpers.removeEvent=function(node,eventType,handler){if(node.removeEventListener){node.removeEventListener(eventType,handler,false);}else if(node.detachEvent){node.detachEvent("on"+eventType,handler);}else {node["on"+eventType]=helpers.noop;}};helpers.bindEvents=function(chartInstance,arrayOfEvents,handler){ // Create the events object if it's not already present
+	if(!chartInstance.events)chartInstance.events={};helpers.each(arrayOfEvents,function(eventName){chartInstance.events[eventName]=function(){handler.apply(chartInstance,arguments);};helpers.addEvent(chartInstance.chart.canvas,eventName,chartInstance.events[eventName]);});};helpers.unbindEvents=function(chartInstance,arrayOfEvents){helpers.each(arrayOfEvents,function(handler,eventName){helpers.removeEvent(chartInstance.chart.canvas,eventName,handler);});}; // Private helper function to convert max-width/max-height values that may be percentages into a number
+	function parseMaxStyle(styleValue,node,parentProperty){var valueInPixels;if(typeof styleValue==='string'){valueInPixels=parseInt(styleValue,10);if(styleValue.indexOf('%')!=-1){ // percentage * size in dimension
+	valueInPixels=valueInPixels/100*node.parentNode[parentProperty];}}else {valueInPixels=styleValue;}return valueInPixels;} // Private helper to get a constraint dimension
+	// @param domNode : the node to check the constraint on
+	// @param maxStyle : the style that defines the maximum for the direction we are using (max-width / max-height)
+	// @param percentageProperty : property of parent to use when calculating width as a percentage
+	function getConstraintDimension(domNode,maxStyle,percentageProperty){var constrainedDimension;var constrainedNode=document.defaultView.getComputedStyle(domNode)[maxStyle];var constrainedContainer=document.defaultView.getComputedStyle(domNode.parentNode)[maxStyle];var hasCNode=constrainedNode!==null&&constrainedNode!=="none";var hasCContainer=constrainedContainer!==null&&constrainedContainer!=="none";if(hasCNode||hasCContainer){constrainedDimension=Math.min(hasCNode?parseMaxStyle(constrainedNode,domNode,percentageProperty):Number.POSITIVE_INFINITY,hasCContainer?parseMaxStyle(constrainedContainer,domNode.parentNode,percentageProperty):Number.POSITIVE_INFINITY);}return constrainedDimension;} // returns Number or undefined if no constraint
+	helpers.getConstraintWidth=function(domNode){return getConstraintDimension(domNode,'max-width','clientWidth');}; // returns Number or undefined if no constraint
+	helpers.getConstraintHeight=function(domNode){return getConstraintDimension(domNode,'max-height','clientHeight');};helpers.getMaximumWidth=function(domNode){var container=domNode.parentNode;var padding=parseInt(helpers.getStyle(container,'padding-left'))+parseInt(helpers.getStyle(container,'padding-right'));var w=container.clientWidth-padding;var cw=helpers.getConstraintWidth(domNode);if(cw!==undefined){w=Math.min(w,cw);}return w;};helpers.getMaximumHeight=function(domNode){var container=domNode.parentNode;var padding=parseInt(helpers.getStyle(container,'padding-top'))+parseInt(helpers.getStyle(container,'padding-bottom'));var h=container.clientHeight-padding;var ch=helpers.getConstraintHeight(domNode);if(ch!==undefined){h=Math.min(h,ch);}return h;};helpers.getStyle=function(el,property){return el.currentStyle?el.currentStyle[property]:document.defaultView.getComputedStyle(el,null).getPropertyValue(property);};helpers.retinaScale=function(chart){var ctx=chart.ctx;var width=chart.canvas.width;var height=chart.canvas.height;var pixelRatio=chart.currentDevicePixelRatio=window.devicePixelRatio||1;if(pixelRatio!==1){ctx.canvas.height=height*pixelRatio;ctx.canvas.width=width*pixelRatio;ctx.scale(pixelRatio,pixelRatio); // Store the device pixel ratio so that we can go backwards in `destroy`.
+	// The devicePixelRatio changes with zoom, so there are no guarantees that it is the same
+	// when destroy is called
+	chart.originalDevicePixelRatio=chart.originalDevicePixelRatio||pixelRatio;}ctx.canvas.style.width=width+'px';ctx.canvas.style.height=height+'px';}; //-- Canvas methods
+	helpers.clear=function(chart){chart.ctx.clearRect(0,0,chart.width,chart.height);};helpers.fontString=function(pixelSize,fontStyle,fontFamily){return fontStyle+" "+pixelSize+"px "+fontFamily;};helpers.longestText=function(ctx,font,arrayOfStrings,cache){cache=cache||{};cache.data=cache.data||{};cache.garbageCollect=cache.garbageCollect||[];if(cache.font!==font){cache.data={};cache.garbageCollect=[];cache.font=font;}ctx.font=font;var longest=0;helpers.each(arrayOfStrings,function(string){ // Undefined strings should not be measured
+	if(string!==undefined&&string!==null){var textWidth=cache.data[string];if(!textWidth){textWidth=cache.data[string]=ctx.measureText(string).width;cache.garbageCollect.push(string);}if(textWidth>longest){longest=textWidth;}}});var gcLen=cache.garbageCollect.length/2;if(gcLen>arrayOfStrings.length){for(var i=0;i<gcLen;i++){delete cache.data[cache.garbageCollect[i]];}cache.garbageCollect.splice(0,gcLen);}return longest;};helpers.drawRoundedRectangle=function(ctx,x,y,width,height,radius){ctx.beginPath();ctx.moveTo(x+radius,y);ctx.lineTo(x+width-radius,y);ctx.quadraticCurveTo(x+width,y,x+width,y+radius);ctx.lineTo(x+width,y+height-radius);ctx.quadraticCurveTo(x+width,y+height,x+width-radius,y+height);ctx.lineTo(x+radius,y+height);ctx.quadraticCurveTo(x,y+height,x,y+height-radius);ctx.lineTo(x,y+radius);ctx.quadraticCurveTo(x,y,x+radius,y);ctx.closePath();};helpers.color=function(c){if(!color){console.log('Color.js not found!');return c;} /* global CanvasGradient */if(c instanceof CanvasGradient){return color(Chart.defaults.global.defaultColor);}return color(c);};helpers.addResizeListener=function(node,callback){ // Hide an iframe before the node
+	var hiddenIframe=document.createElement('iframe');var hiddenIframeClass='chartjs-hidden-iframe';if(hiddenIframe.classlist){ // can use classlist
+	hiddenIframe.classlist.add(hiddenIframeClass);}else {hiddenIframe.setAttribute('class',hiddenIframeClass);} // Set the style
+	hiddenIframe.style.width='100%';hiddenIframe.style.display='block';hiddenIframe.style.border=0;hiddenIframe.style.height=0;hiddenIframe.style.margin=0;hiddenIframe.style.position='absolute';hiddenIframe.style.left=0;hiddenIframe.style.right=0;hiddenIframe.style.top=0;hiddenIframe.style.bottom=0; // Insert the iframe so that contentWindow is available
+	node.insertBefore(hiddenIframe,node.firstChild);(hiddenIframe.contentWindow||hiddenIframe).onresize=function(){if(callback){callback();}};};helpers.removeResizeListener=function(node){var hiddenIframe=node.querySelector('.chartjs-hidden-iframe'); // Remove the resize detect iframe
+	if(hiddenIframe){hiddenIframe.parentNode.removeChild(hiddenIframe);}};helpers.isArray=function(obj){if(!Array.isArray){return Object.prototype.toString.call(obj)==='[object Array]';}return Array.isArray(obj);};helpers.pushAllIfDefined=function(element,array){if(typeof element==="undefined"){return;}if(helpers.isArray(element)){array.push.apply(array,element);}else {array.push(element);}};helpers.callCallback=function(fn,args,_tArg){if(fn&&typeof fn.call==='function'){fn.apply(_tArg,args);}};helpers.getHoverColor=function(color){ /* global CanvasPattern */return color instanceof CanvasPattern?color:helpers.color(color).saturate(0.5).darken(0.1).rgbString();};};},{"chartjs-color":3}],26:[function(require,module,exports){"use strict";module.exports=function(){ //Occupy the global variable of Chart, and create a simple base class
+	var Chart=function Chart(context,config){this.config=config; // Support a jQuery'd canvas element
+	if(context.length&&context[0].getContext){context=context[0];} // Support a canvas domnode
+	if(context.getContext){context=context.getContext("2d");}this.ctx=context;this.canvas=context.canvas; // Figure out what the size of the chart will be.
+	// If the canvas has a specified width and height, we use those else
+	// we look to see if the canvas node has a CSS width and height.
+	// If there is still no height, fill the parent container
+	this.width=context.canvas.width||parseInt(Chart.helpers.getStyle(context.canvas,'width'))||Chart.helpers.getMaximumWidth(context.canvas);this.height=context.canvas.height||parseInt(Chart.helpers.getStyle(context.canvas,'height'))||Chart.helpers.getMaximumHeight(context.canvas);this.aspectRatio=this.width/this.height;if(isNaN(this.aspectRatio)||isFinite(this.aspectRatio)===false){ // If the canvas has no size, try and figure out what the aspect ratio will be.
+	// Some charts prefer square canvases (pie, radar, etc). If that is specified, use that
+	// else use the canvas default ratio of 2
+	this.aspectRatio=config.aspectRatio!==undefined?config.aspectRatio:2;} // Store the original style of the element so we can set it back
+	this.originalCanvasStyleWidth=context.canvas.style.width;this.originalCanvasStyleHeight=context.canvas.style.height; // High pixel density displays - multiply the size of the canvas height/width by the device pixel ratio, then scale.
+	Chart.helpers.retinaScale(this);if(config){this.controller=new Chart.Controller(this);} // Always bind this so that if the responsive state changes we still work
+	var _this=this;Chart.helpers.addResizeListener(context.canvas.parentNode,function(){if(_this.controller&&_this.controller.config.options.responsive){_this.controller.resize();}});return this.controller?this.controller:this;}; //Globally expose the defaults to allow for user updating/changing
+	Chart.defaults={global:{responsive:true,responsiveAnimationDuration:0,maintainAspectRatio:true,events:["mousemove","mouseout","click","touchstart","touchmove"],hover:{onHover:null,mode:'single',animationDuration:400},onClick:null,defaultColor:'rgba(0,0,0,0.1)',defaultFontColor:'#666',defaultFontFamily:"'Helvetica Neue', 'Helvetica', 'Arial', sans-serif",defaultFontSize:12,defaultFontStyle:'normal',showLines:true, // Element defaults defined in element extensions
+	elements:{}, // Legend callback string
+	legendCallback:function legendCallback(chart){var text=[];text.push('<ul class="'+chart.id+'-legend">');for(var i=0;i<chart.data.datasets.length;i++){text.push('<li><span style="background-color:'+chart.data.datasets[i].backgroundColor+'"></span>');if(chart.data.datasets[i].label){text.push(chart.data.datasets[i].label);}text.push('</li>');}text.push('</ul>');return text.join("");}}};return Chart;};},{}],27:[function(require,module,exports){"use strict";module.exports=function(Chart){var helpers=Chart.helpers; // The layout service is very self explanatory.  It's responsible for the layout within a chart.
+	// Scales, Legends and Plugins all rely on the layout service and can easily register to be placed anywhere they need
+	// It is this service's responsibility of carrying out that layout.
+	Chart.layoutService={defaults:{}, // Register a box to a chartInstance. A box is simply a reference to an object that requires layout. eg. Scales, Legend, Plugins.
+	addBox:function addBox(chartInstance,box){if(!chartInstance.boxes){chartInstance.boxes=[];}chartInstance.boxes.push(box);},removeBox:function removeBox(chartInstance,box){if(!chartInstance.boxes){return;}chartInstance.boxes.splice(chartInstance.boxes.indexOf(box),1);}, // The most important function
+	update:function update(chartInstance,width,height){if(!chartInstance){return;}var xPadding=0;var yPadding=0;var leftBoxes=helpers.where(chartInstance.boxes,function(box){return box.options.position==="left";});var rightBoxes=helpers.where(chartInstance.boxes,function(box){return box.options.position==="right";});var topBoxes=helpers.where(chartInstance.boxes,function(box){return box.options.position==="top";});var bottomBoxes=helpers.where(chartInstance.boxes,function(box){return box.options.position==="bottom";}); // Boxes that overlay the chartarea such as the radialLinear scale
+	var chartAreaBoxes=helpers.where(chartInstance.boxes,function(box){return box.options.position==="chartArea";}); // Ensure that full width boxes are at the very top / bottom
+	topBoxes.sort(function(a,b){return (b.options.fullWidth?1:0)-(a.options.fullWidth?1:0);});bottomBoxes.sort(function(a,b){return (a.options.fullWidth?1:0)-(b.options.fullWidth?1:0);}); // Essentially we now have any number of boxes on each of the 4 sides.
+	// Our canvas looks like the following.
+	// The areas L1 and L2 are the left axes. R1 is the right axis, T1 is the top axis and
+	// B1 is the bottom axis
+	// There are also 4 quadrant-like locations (left to right instead of clockwise) reserved for chart overlays
+	// These locations are single-box locations only, when trying to register a chartArea location that is already taken,
+	// an error will be thrown.
+	//
+	// |----------------------------------------------------|
+	// |                  T1 (Full Width)                   |
+	// |----------------------------------------------------|
+	// |    |    |                 T2                  |    |
+	// |    |----|-------------------------------------|----|
+	// |    |    | C1 |                           | C2 |    |
+	// |    |    |----|                           |----|    |
+	// |    |    |                                     |    |
+	// | L1 | L2 |           ChartArea (C0)            | R1 |
+	// |    |    |                                     |    |
+	// |    |    |----|                           |----|    |
+	// |    |    | C3 |                           | C4 |    |
+	// |    |----|-------------------------------------|----|
+	// |    |    |                 B1                  |    |
+	// |----------------------------------------------------|
+	// |                  B2 (Full Width)                   |
+	// |----------------------------------------------------|
+	//
+	// What we do to find the best sizing, we do the following
+	// 1. Determine the minimum size of the chart area.
+	// 2. Split the remaining width equally between each vertical axis
+	// 3. Split the remaining height equally between each horizontal axis
+	// 4. Give each layout the maximum size it can be. The layout will return it's minimum size
+	// 5. Adjust the sizes of each axis based on it's minimum reported size.
+	// 6. Refit each axis
+	// 7. Position each axis in the final location
+	// 8. Tell the chart the final location of the chart area
+	// 9. Tell any axes that overlay the chart area the positions of the chart area
+	// Step 1
+	var chartWidth=width-2*xPadding;var chartHeight=height-2*yPadding;var chartAreaWidth=chartWidth/2; // min 50%
+	var chartAreaHeight=chartHeight/2; // min 50%
+	// Step 2
+	var verticalBoxWidth=(width-chartAreaWidth)/(leftBoxes.length+rightBoxes.length); // Step 3
+	var horizontalBoxHeight=(height-chartAreaHeight)/(topBoxes.length+bottomBoxes.length); // Step 4
+	var maxChartAreaWidth=chartWidth;var maxChartAreaHeight=chartHeight;var minBoxSizes=[];helpers.each(leftBoxes.concat(rightBoxes,topBoxes,bottomBoxes),getMinimumBoxSize);function getMinimumBoxSize(box){var minSize;var isHorizontal=box.isHorizontal();if(isHorizontal){minSize=box.update(box.options.fullWidth?chartWidth:maxChartAreaWidth,horizontalBoxHeight);maxChartAreaHeight-=minSize.height;}else {minSize=box.update(verticalBoxWidth,chartAreaHeight);maxChartAreaWidth-=minSize.width;}minBoxSizes.push({horizontal:isHorizontal,minSize:minSize,box:box});} // At this point, maxChartAreaHeight and maxChartAreaWidth are the size the chart area could
+	// be if the axes are drawn at their minimum sizes.
+	// Steps 5 & 6
+	var totalLeftBoxesWidth=xPadding;var totalRightBoxesWidth=xPadding;var totalTopBoxesHeight=yPadding;var totalBottomBoxesHeight=yPadding; // Update, and calculate the left and right margins for the horizontal boxes
+	helpers.each(leftBoxes.concat(rightBoxes),fitBox);helpers.each(leftBoxes,function(box){totalLeftBoxesWidth+=box.width;});helpers.each(rightBoxes,function(box){totalRightBoxesWidth+=box.width;}); // Set the Left and Right margins for the horizontal boxes
+	helpers.each(topBoxes.concat(bottomBoxes),fitBox); // Function to fit a box
+	function fitBox(box){var minBoxSize=helpers.findNextWhere(minBoxSizes,function(minBoxSize){return minBoxSize.box===box;});if(minBoxSize){if(box.isHorizontal()){var scaleMargin={left:totalLeftBoxesWidth,right:totalRightBoxesWidth,top:0,bottom:0}; // Don't use min size here because of label rotation. When the labels are rotated, their rotation highly depends
+	// on the margin. Sometimes they need to increase in size slightly
+	box.update(box.options.fullWidth?chartWidth:maxChartAreaWidth,chartHeight/2,scaleMargin);}else {box.update(minBoxSize.minSize.width,maxChartAreaHeight);}}} // Figure out how much margin is on the top and bottom of the vertical boxes
+	helpers.each(topBoxes,function(box){totalTopBoxesHeight+=box.height;});helpers.each(bottomBoxes,function(box){totalBottomBoxesHeight+=box.height;}); // Let the left layout know the final margin
+	helpers.each(leftBoxes.concat(rightBoxes),finalFitVerticalBox);function finalFitVerticalBox(box){var minBoxSize=helpers.findNextWhere(minBoxSizes,function(minBoxSize){return minBoxSize.box===box;});var scaleMargin={left:0,right:0,top:totalTopBoxesHeight,bottom:totalBottomBoxesHeight};if(minBoxSize){box.update(minBoxSize.minSize.width,maxChartAreaHeight,scaleMargin);}} // Recalculate because the size of each layout might have changed slightly due to the margins (label rotation for instance)
+	totalLeftBoxesWidth=xPadding;totalRightBoxesWidth=xPadding;totalTopBoxesHeight=yPadding;totalBottomBoxesHeight=yPadding;helpers.each(leftBoxes,function(box){totalLeftBoxesWidth+=box.width;});helpers.each(rightBoxes,function(box){totalRightBoxesWidth+=box.width;});helpers.each(topBoxes,function(box){totalTopBoxesHeight+=box.height;});helpers.each(bottomBoxes,function(box){totalBottomBoxesHeight+=box.height;}); // Figure out if our chart area changed. This would occur if the dataset layout label rotation
+	// changed due to the application of the margins in step 6. Since we can only get bigger, this is safe to do
+	// without calling `fit` again
+	var newMaxChartAreaHeight=height-totalTopBoxesHeight-totalBottomBoxesHeight;var newMaxChartAreaWidth=width-totalLeftBoxesWidth-totalRightBoxesWidth;if(newMaxChartAreaWidth!==maxChartAreaWidth||newMaxChartAreaHeight!==maxChartAreaHeight){helpers.each(leftBoxes,function(box){box.height=newMaxChartAreaHeight;});helpers.each(rightBoxes,function(box){box.height=newMaxChartAreaHeight;});helpers.each(topBoxes,function(box){if(!box.options.fullWidth){box.width=newMaxChartAreaWidth;}});helpers.each(bottomBoxes,function(box){if(!box.options.fullWidth){box.width=newMaxChartAreaWidth;}});maxChartAreaHeight=newMaxChartAreaHeight;maxChartAreaWidth=newMaxChartAreaWidth;} // Step 7 - Position the boxes
+	var left=xPadding;var top=yPadding;var right=0;var bottom=0;helpers.each(leftBoxes.concat(topBoxes),placeBox); // Account for chart width and height
+	left+=maxChartAreaWidth;top+=maxChartAreaHeight;helpers.each(rightBoxes,placeBox);helpers.each(bottomBoxes,placeBox);function placeBox(box){if(box.isHorizontal()){box.left=box.options.fullWidth?xPadding:totalLeftBoxesWidth;box.right=box.options.fullWidth?width-xPadding:totalLeftBoxesWidth+maxChartAreaWidth;box.top=top;box.bottom=top+box.height; // Move to next point
+	top=box.bottom;}else {box.left=left;box.right=left+box.width;box.top=totalTopBoxesHeight;box.bottom=totalTopBoxesHeight+maxChartAreaHeight; // Move to next point
+	left=box.right;}} // Step 8
+	chartInstance.chartArea={left:totalLeftBoxesWidth,top:totalTopBoxesHeight,right:totalLeftBoxesWidth+maxChartAreaWidth,bottom:totalTopBoxesHeight+maxChartAreaHeight}; // Step 9
+	helpers.each(chartAreaBoxes,function(box){box.left=chartInstance.chartArea.left;box.top=chartInstance.chartArea.top;box.right=chartInstance.chartArea.right;box.bottom=chartInstance.chartArea.bottom;box.update(maxChartAreaWidth,maxChartAreaHeight);});}};};},{}],28:[function(require,module,exports){"use strict";module.exports=function(Chart){var helpers=Chart.helpers;var noop=helpers.noop;Chart.defaults.global.legend={display:true,position:'top',fullWidth:true, // marks that this box should take the full width of the canvas (pushing down other boxes)
+	reverse:false, // a callback that will handle
+	onClick:function onClick(e,legendItem){var index=legendItem.datasetIndex;var ci=this.chart;var meta=ci.getDatasetMeta(index); // See controller.isDatasetVisible comment
+	meta.hidden=meta.hidden===null?!ci.data.datasets[index].hidden:null; // We hid a dataset ... rerender the chart
+	ci.update();},labels:{boxWidth:40,padding:10, // Generates labels shown in the legend
+	// Valid properties to return:
+	// text : text to display
+	// fillStyle : fill of coloured box
+	// strokeStyle: stroke of coloured box
+	// hidden : if this legend item refers to a hidden item
+	// lineCap : cap style for line
+	// lineDash
+	// lineDashOffset :
+	// lineJoin :
+	// lineWidth :
+	generateLabels:function generateLabels(chart){var data=chart.data;return helpers.isArray(data.datasets)?data.datasets.map(function(dataset,i){return {text:dataset.label,fillStyle:dataset.backgroundColor,hidden:!chart.isDatasetVisible(i),lineCap:dataset.borderCapStyle,lineDash:dataset.borderDash,lineDashOffset:dataset.borderDashOffset,lineJoin:dataset.borderJoinStyle,lineWidth:dataset.borderWidth,strokeStyle:dataset.borderColor, // Below is extra data used for toggling the datasets
+	datasetIndex:i};},this):[];}}};Chart.Legend=Chart.Element.extend({initialize:function initialize(config){helpers.extend(this,config); // Contains hit boxes for each dataset (in dataset order)
+	this.legendHitBoxes=[]; // Are we in doughnut mode which has a different data type
+	this.doughnutMode=false;}, // These methods are ordered by lifecyle. Utilities then follow.
+	// Any function defined here is inherited by all legend types.
+	// Any function can be extended by the legend type
+	beforeUpdate:noop,update:function update(maxWidth,maxHeight,margins){ // Update Lifecycle - Probably don't want to ever extend or overwrite this function ;)
+	this.beforeUpdate(); // Absorb the master measurements
+	this.maxWidth=maxWidth;this.maxHeight=maxHeight;this.margins=margins; // Dimensions
+	this.beforeSetDimensions();this.setDimensions();this.afterSetDimensions(); // Labels
+	this.beforeBuildLabels();this.buildLabels();this.afterBuildLabels(); // Fit
+	this.beforeFit();this.fit();this.afterFit(); //
+	this.afterUpdate();return this.minSize;},afterUpdate:noop, //
+	beforeSetDimensions:noop,setDimensions:function setDimensions(){ // Set the unconstrained dimension before label rotation
+	if(this.isHorizontal()){ // Reset position before calculating rotation
+	this.width=this.maxWidth;this.left=0;this.right=this.width;}else {this.height=this.maxHeight; // Reset position before calculating rotation
+	this.top=0;this.bottom=this.height;} // Reset padding
+	this.paddingLeft=0;this.paddingTop=0;this.paddingRight=0;this.paddingBottom=0; // Reset minSize
+	this.minSize={width:0,height:0};},afterSetDimensions:noop, //
+	beforeBuildLabels:noop,buildLabels:function buildLabels(){this.legendItems=this.options.labels.generateLabels.call(this,this.chart);if(this.options.reverse){this.legendItems.reverse();}},afterBuildLabels:noop, //
+	beforeFit:noop,fit:function fit(){var opts=this.options;var labelOpts=opts.labels;var display=opts.display;var ctx=this.ctx;var globalDefault=Chart.defaults.global,itemOrDefault=helpers.getValueOrDefault,fontSize=itemOrDefault(labelOpts.fontSize,globalDefault.defaultFontSize),fontStyle=itemOrDefault(labelOpts.fontStyle,globalDefault.defaultFontStyle),fontFamily=itemOrDefault(labelOpts.fontFamily,globalDefault.defaultFontFamily),labelFont=helpers.fontString(fontSize,fontStyle,fontFamily); // Reset hit boxes
+	var hitboxes=this.legendHitBoxes=[];var minSize=this.minSize;var isHorizontal=this.isHorizontal();if(isHorizontal){minSize.width=this.maxWidth; // fill all the width
+	minSize.height=display?10:0;}else {minSize.width=display?10:0;minSize.height=this.maxHeight; // fill all the height
+	} // Increase sizes here
+	if(display){if(isHorizontal){ // Labels
+	// Width of each line of legend boxes. Labels wrap onto multiple lines when there are too many to fit on one
+	var lineWidths=this.lineWidths=[0];var totalHeight=this.legendItems.length?fontSize+labelOpts.padding:0;ctx.textAlign="left";ctx.textBaseline='top';ctx.font=labelFont;helpers.each(this.legendItems,function(legendItem,i){var width=labelOpts.boxWidth+fontSize/2+ctx.measureText(legendItem.text).width;if(lineWidths[lineWidths.length-1]+width+labelOpts.padding>=this.width){totalHeight+=fontSize+labelOpts.padding;lineWidths[lineWidths.length]=this.left;} // Store the hitbox width and height here. Final position will be updated in `draw`
+	hitboxes[i]={left:0,top:0,width:width,height:fontSize};lineWidths[lineWidths.length-1]+=width+labelOpts.padding;},this);minSize.height+=totalHeight;}else { // TODO vertical
+	}}this.width=minSize.width;this.height=minSize.height;},afterFit:noop, // Shared Methods
+	isHorizontal:function isHorizontal(){return this.options.position==="top"||this.options.position==="bottom";}, // Actualy draw the legend on the canvas
+	draw:function draw(){var opts=this.options;var labelOpts=opts.labels;var globalDefault=Chart.defaults.global,lineDefault=globalDefault.elements.line,legendWidth=this.width,lineWidths=this.lineWidths;if(opts.display){var ctx=this.ctx,cursor={x:this.left+(legendWidth-lineWidths[0])/2,y:this.top+labelOpts.padding,line:0},itemOrDefault=helpers.getValueOrDefault,fontColor=itemOrDefault(labelOpts.fontColor,globalDefault.defaultFontColor),fontSize=itemOrDefault(labelOpts.fontSize,globalDefault.defaultFontSize),fontStyle=itemOrDefault(labelOpts.fontStyle,globalDefault.defaultFontStyle),fontFamily=itemOrDefault(labelOpts.fontFamily,globalDefault.defaultFontFamily),labelFont=helpers.fontString(fontSize,fontStyle,fontFamily); // Horizontal
+	if(this.isHorizontal()){ // Labels
+	ctx.textAlign="left";ctx.textBaseline='top';ctx.lineWidth=0.5;ctx.strokeStyle=fontColor; // for strikethrough effect
+	ctx.fillStyle=fontColor; // render in correct colour
+	ctx.font=labelFont;var boxWidth=labelOpts.boxWidth,hitboxes=this.legendHitBoxes;helpers.each(this.legendItems,function(legendItem,i){var textWidth=ctx.measureText(legendItem.text).width,width=boxWidth+fontSize/2+textWidth,x=cursor.x,y=cursor.y;if(x+width>=legendWidth){y=cursor.y+=fontSize+labelOpts.padding;cursor.line++;x=cursor.x=this.left+(legendWidth-lineWidths[cursor.line])/2;} // Set the ctx for the box
+	ctx.save();ctx.fillStyle=itemOrDefault(legendItem.fillStyle,globalDefault.defaultColor);ctx.lineCap=itemOrDefault(legendItem.lineCap,lineDefault.borderCapStyle);ctx.lineDashOffset=itemOrDefault(legendItem.lineDashOffset,lineDefault.borderDashOffset);ctx.lineJoin=itemOrDefault(legendItem.lineJoin,lineDefault.borderJoinStyle);ctx.lineWidth=itemOrDefault(legendItem.lineWidth,lineDefault.borderWidth);ctx.strokeStyle=itemOrDefault(legendItem.strokeStyle,globalDefault.defaultColor);if(ctx.setLineDash){ // IE 9 and 10 do not support line dash
+	ctx.setLineDash(itemOrDefault(legendItem.lineDash,lineDefault.borderDash));} // Draw the box
+	ctx.strokeRect(x,y,boxWidth,fontSize);ctx.fillRect(x,y,boxWidth,fontSize);ctx.restore();hitboxes[i].left=x;hitboxes[i].top=y; // Fill the actual label
+	ctx.fillText(legendItem.text,boxWidth+fontSize/2+x,y);if(legendItem.hidden){ // Strikethrough the text if hidden
+	ctx.beginPath();ctx.lineWidth=2;ctx.moveTo(boxWidth+fontSize/2+x,y+fontSize/2);ctx.lineTo(boxWidth+fontSize/2+x+textWidth,y+fontSize/2);ctx.stroke();}cursor.x+=width+labelOpts.padding;},this);}else {}}}, // Handle an event
+	handleEvent:function handleEvent(e){var position=helpers.getRelativePosition(e,this.chart.chart),x=position.x,y=position.y,opts=this.options;if(x>=this.left&&x<=this.right&&y>=this.top&&y<=this.bottom){ // See if we are touching one of the dataset boxes
+	var lh=this.legendHitBoxes;for(var i=0;i<lh.length;++i){var hitBox=lh[i];if(x>=hitBox.left&&x<=hitBox.left+hitBox.width&&y>=hitBox.top&&y<=hitBox.top+hitBox.height){ // Touching an element
+	if(opts.onClick){opts.onClick.call(this,e,this.legendItems[i]);}break;}}}}});};},{}],29:[function(require,module,exports){"use strict";module.exports=function(Chart){var helpers=Chart.helpers; // Plugins are stored here
+	Chart.plugins=[];Chart.pluginService={ // Register a new plugin
+	register:function register(plugin){var p=Chart.plugins;if(p.indexOf(plugin)===-1){p.push(plugin);}}, // Remove a registered plugin
+	remove:function remove(plugin){var p=Chart.plugins;var idx=p.indexOf(plugin);if(idx!==-1){p.splice(idx,1);}}, // Iterate over all plugins
+	notifyPlugins:function notifyPlugins(method,args,scope){helpers.each(Chart.plugins,function(plugin){if(plugin[method]&&typeof plugin[method]==='function'){plugin[method].apply(scope,args);}},scope);}};var noop=helpers.noop;Chart.PluginBase=Chart.Element.extend({ // Plugin methods. All functions are passed the chart instance
+	// Called at start of chart init
+	beforeInit:noop, // Called at end of chart init
+	afterInit:noop, // Called at start of update
+	beforeUpdate:noop, // Called at end of update
+	afterUpdate:noop, // Called at start of draw
+	beforeDraw:noop, // Called at end of draw
+	afterDraw:noop, // Called during destroy
+	destroy:noop});};},{}],30:[function(require,module,exports){"use strict";module.exports=function(Chart){var helpers=Chart.helpers;Chart.defaults.scale={display:true,position:"left", // grid line settings
+	gridLines:{display:true,color:"rgba(0, 0, 0, 0.1)",lineWidth:1,drawOnChartArea:true,drawTicks:true,tickMarkLength:10,zeroLineWidth:1,zeroLineColor:"rgba(0,0,0,0.25)",offsetGridLines:false}, // scale label
+	scaleLabel:{ // actual label
+	labelString:'', // display property
+	display:false}, // label settings
+	ticks:{beginAtZero:false,minRotation:0,maxRotation:50,mirror:false,padding:10,reverse:false,display:true,autoSkip:true,autoSkipPadding:0,labelOffset:0,callback:function callback(value){return ''+value;}}};Chart.Scale=Chart.Element.extend({ // These methods are ordered by lifecyle. Utilities then follow.
+	// Any function defined here is inherited by all scale types.
+	// Any function can be extended by the scale type
+	beforeUpdate:function beforeUpdate(){helpers.callCallback(this.options.beforeUpdate,[this]);},update:function update(maxWidth,maxHeight,margins){ // Update Lifecycle - Probably don't want to ever extend or overwrite this function ;)
+	this.beforeUpdate(); // Absorb the master measurements
+	this.maxWidth=maxWidth;this.maxHeight=maxHeight;this.margins=helpers.extend({left:0,right:0,top:0,bottom:0},margins); // Dimensions
+	this.beforeSetDimensions();this.setDimensions();this.afterSetDimensions(); // Data min/max
+	this.beforeDataLimits();this.determineDataLimits();this.afterDataLimits(); // Ticks
+	this.beforeBuildTicks();this.buildTicks();this.afterBuildTicks();this.beforeTickToLabelConversion();this.convertTicksToLabels();this.afterTickToLabelConversion(); // Tick Rotation
+	this.beforeCalculateTickRotation();this.calculateTickRotation();this.afterCalculateTickRotation(); // Fit
+	this.beforeFit();this.fit();this.afterFit(); //
+	this.afterUpdate();return this.minSize;},afterUpdate:function afterUpdate(){helpers.callCallback(this.options.afterUpdate,[this]);}, //
+	beforeSetDimensions:function beforeSetDimensions(){helpers.callCallback(this.options.beforeSetDimensions,[this]);},setDimensions:function setDimensions(){ // Set the unconstrained dimension before label rotation
+	if(this.isHorizontal()){ // Reset position before calculating rotation
+	this.width=this.maxWidth;this.left=0;this.right=this.width;}else {this.height=this.maxHeight; // Reset position before calculating rotation
+	this.top=0;this.bottom=this.height;} // Reset padding
+	this.paddingLeft=0;this.paddingTop=0;this.paddingRight=0;this.paddingBottom=0;},afterSetDimensions:function afterSetDimensions(){helpers.callCallback(this.options.afterSetDimensions,[this]);}, // Data limits
+	beforeDataLimits:function beforeDataLimits(){helpers.callCallback(this.options.beforeDataLimits,[this]);},determineDataLimits:helpers.noop,afterDataLimits:function afterDataLimits(){helpers.callCallback(this.options.afterDataLimits,[this]);}, //
+	beforeBuildTicks:function beforeBuildTicks(){helpers.callCallback(this.options.beforeBuildTicks,[this]);},buildTicks:helpers.noop,afterBuildTicks:function afterBuildTicks(){helpers.callCallback(this.options.afterBuildTicks,[this]);},beforeTickToLabelConversion:function beforeTickToLabelConversion(){helpers.callCallback(this.options.beforeTickToLabelConversion,[this]);},convertTicksToLabels:function convertTicksToLabels(){ // Convert ticks to strings
+	this.ticks=this.ticks.map(function(numericalTick,index,ticks){if(this.options.ticks.userCallback){return this.options.ticks.userCallback(numericalTick,index,ticks);}return this.options.ticks.callback(numericalTick,index,ticks);},this);},afterTickToLabelConversion:function afterTickToLabelConversion(){helpers.callCallback(this.options.afterTickToLabelConversion,[this]);}, //
+	beforeCalculateTickRotation:function beforeCalculateTickRotation(){helpers.callCallback(this.options.beforeCalculateTickRotation,[this]);},calculateTickRotation:function calculateTickRotation(){ //Get the width of each grid by calculating the difference
+	//between x offsets between 0 and 1.
+	var tickFontSize=helpers.getValueOrDefault(this.options.ticks.fontSize,Chart.defaults.global.defaultFontSize);var tickFontStyle=helpers.getValueOrDefault(this.options.ticks.fontStyle,Chart.defaults.global.defaultFontStyle);var tickFontFamily=helpers.getValueOrDefault(this.options.ticks.fontFamily,Chart.defaults.global.defaultFontFamily);var tickLabelFont=helpers.fontString(tickFontSize,tickFontStyle,tickFontFamily);this.ctx.font=tickLabelFont;var firstWidth=this.ctx.measureText(this.ticks[0]).width;var lastWidth=this.ctx.measureText(this.ticks[this.ticks.length-1]).width;var firstRotated;this.labelRotation=this.options.ticks.minRotation||0;this.paddingRight=0;this.paddingLeft=0;if(this.options.display){if(this.isHorizontal()){this.paddingRight=lastWidth/2+3;this.paddingLeft=firstWidth/2+3;if(!this.longestTextCache){this.longestTextCache={};}var originalLabelWidth=helpers.longestText(this.ctx,tickLabelFont,this.ticks,this.longestTextCache);var labelWidth=originalLabelWidth;var cosRotation;var sinRotation; // Allow 3 pixels x2 padding either side for label readability
+	// only the index matters for a dataset scale, but we want a consistent interface between scales
+	var tickWidth=this.getPixelForTick(1)-this.getPixelForTick(0)-6; //Max label rotation can be set or default to 90 - also act as a loop counter
+	while(labelWidth>tickWidth&&this.labelRotation<this.options.ticks.maxRotation){cosRotation=Math.cos(helpers.toRadians(this.labelRotation));sinRotation=Math.sin(helpers.toRadians(this.labelRotation));firstRotated=cosRotation*firstWidth; // We're right aligning the text now.
+	if(firstRotated+tickFontSize/2>this.yLabelWidth){this.paddingLeft=firstRotated+tickFontSize/2;}this.paddingRight=tickFontSize/2;if(sinRotation*originalLabelWidth>this.maxHeight){ // go back one step
+	this.labelRotation--;break;}this.labelRotation++;labelWidth=cosRotation*originalLabelWidth;}}}if(this.margins){this.paddingLeft=Math.max(this.paddingLeft-this.margins.left,0);this.paddingRight=Math.max(this.paddingRight-this.margins.right,0);}},afterCalculateTickRotation:function afterCalculateTickRotation(){helpers.callCallback(this.options.afterCalculateTickRotation,[this]);}, //
+	beforeFit:function beforeFit(){helpers.callCallback(this.options.beforeFit,[this]);},fit:function fit(){ // Reset
+	var minSize=this.minSize={width:0,height:0};var opts=this.options;var tickOpts=opts.ticks;var scaleLabelOpts=opts.scaleLabel;var globalOpts=Chart.defaults.global;var display=opts.display;var isHorizontal=this.isHorizontal();var tickFontSize=helpers.getValueOrDefault(tickOpts.fontSize,globalOpts.defaultFontSize);var tickFontStyle=helpers.getValueOrDefault(tickOpts.fontStyle,globalOpts.defaultFontStyle);var tickFontFamily=helpers.getValueOrDefault(tickOpts.fontFamily,globalOpts.defaultFontFamily);var tickLabelFont=helpers.fontString(tickFontSize,tickFontStyle,tickFontFamily);var scaleLabelFontSize=helpers.getValueOrDefault(scaleLabelOpts.fontSize,globalOpts.defaultFontSize);var scaleLabelFontStyle=helpers.getValueOrDefault(scaleLabelOpts.fontStyle,globalOpts.defaultFontStyle);var scaleLabelFontFamily=helpers.getValueOrDefault(scaleLabelOpts.fontFamily,globalOpts.defaultFontFamily);var scaleLabelFont=helpers.fontString(scaleLabelFontSize,scaleLabelFontStyle,scaleLabelFontFamily);var tickMarkLength=opts.gridLines.tickMarkLength; // Width
+	if(isHorizontal){ // subtract the margins to line up with the chartArea if we are a full width scale
+	minSize.width=this.isFullWidth()?this.maxWidth-this.margins.left-this.margins.right:this.maxWidth;}else {minSize.width=display?tickMarkLength:0;} // height
+	if(isHorizontal){minSize.height=display?tickMarkLength:0;}else {minSize.height=this.maxHeight; // fill all the height
+	} // Are we showing a title for the scale?
+	if(scaleLabelOpts.display&&display){if(isHorizontal){minSize.height+=scaleLabelFontSize*1.5;}else {minSize.width+=scaleLabelFontSize*1.5;}}if(tickOpts.display&&display){ // Don't bother fitting the ticks if we are not showing them
+	if(!this.longestTextCache){this.longestTextCache={};}var largestTextWidth=helpers.longestText(this.ctx,tickLabelFont,this.ticks,this.longestTextCache);if(isHorizontal){ // A horizontal axis is more constrained by the height.
+	this.longestLabelWidth=largestTextWidth; // TODO - improve this calculation
+	var labelHeight=Math.sin(helpers.toRadians(this.labelRotation))*this.longestLabelWidth+1.5*tickFontSize;minSize.height=Math.min(this.maxHeight,minSize.height+labelHeight);this.ctx.font=tickLabelFont;var firstLabelWidth=this.ctx.measureText(this.ticks[0]).width;var lastLabelWidth=this.ctx.measureText(this.ticks[this.ticks.length-1]).width; // Ensure that our ticks are always inside the canvas. When rotated, ticks are right aligned which means that the right padding is dominated
+	// by the font height
+	var cosRotation=Math.cos(helpers.toRadians(this.labelRotation));var sinRotation=Math.sin(helpers.toRadians(this.labelRotation));this.paddingLeft=this.labelRotation!==0?cosRotation*firstLabelWidth+3:firstLabelWidth/2+3; // add 3 px to move away from canvas edges
+	this.paddingRight=this.labelRotation!==0?sinRotation*(tickFontSize/2)+3:lastLabelWidth/2+3; // when rotated
+	}else { // A vertical axis is more constrained by the width. Labels are the dominant factor here, so get that length first
+	var maxLabelWidth=this.maxWidth-minSize.width; // Account for padding
+	var mirror=tickOpts.mirror;if(!mirror){largestTextWidth+=this.options.ticks.padding;}else { // If mirrored text is on the inside so don't expand
+	largestTextWidth=0;}if(largestTextWidth<maxLabelWidth){ // We don't need all the room
+	minSize.width+=largestTextWidth;}else { // Expand to max size
+	minSize.width=this.maxWidth;}this.paddingTop=tickFontSize/2;this.paddingBottom=tickFontSize/2;}}if(this.margins){this.paddingLeft=Math.max(this.paddingLeft-this.margins.left,0);this.paddingTop=Math.max(this.paddingTop-this.margins.top,0);this.paddingRight=Math.max(this.paddingRight-this.margins.right,0);this.paddingBottom=Math.max(this.paddingBottom-this.margins.bottom,0);}this.width=minSize.width;this.height=minSize.height;},afterFit:function afterFit(){helpers.callCallback(this.options.afterFit,[this]);}, // Shared Methods
+	isHorizontal:function isHorizontal(){return this.options.position==="top"||this.options.position==="bottom";},isFullWidth:function isFullWidth(){return this.options.fullWidth;}, // Get the correct value. NaN bad inputs, If the value type is object get the x or y based on whether we are horizontal or not
+	getRightValue:function getRightValue(rawValue){ // Null and undefined values first
+	if(rawValue===null||typeof rawValue==='undefined'){return NaN;} // isNaN(object) returns true, so make sure NaN is checking for a number
+	if(typeof rawValue==='number'&&isNaN(rawValue)){return NaN;} // If it is in fact an object, dive in one more level
+	if((typeof rawValue==="undefined"?"undefined":_typeof(rawValue))==="object"){if(rawValue instanceof Date){return rawValue;}else {return getRightValue(this.isHorizontal()?rawValue.x:rawValue.y);}} // Value is good, return it
+	return rawValue;}, // Used to get the value to display in the tooltip for the data at the given index
+	// function getLabelForIndex(index, datasetIndex)
+	getLabelForIndex:helpers.noop, // Used to get data value locations.  Value can either be an index or a numerical value
+	getPixelForValue:helpers.noop, // Used to get the data value from a given pixel. This is the inverse of getPixelForValue
+	getValueForPixel:helpers.noop, // Used for tick location, should
+	getPixelForTick:function getPixelForTick(index,includeOffset){if(this.isHorizontal()){var innerWidth=this.width-(this.paddingLeft+this.paddingRight);var tickWidth=innerWidth/Math.max(this.ticks.length-(this.options.gridLines.offsetGridLines?0:1),1);var pixel=tickWidth*index+this.paddingLeft;if(includeOffset){pixel+=tickWidth/2;}var finalVal=this.left+Math.round(pixel);finalVal+=this.isFullWidth()?this.margins.left:0;return finalVal;}else {var innerHeight=this.height-(this.paddingTop+this.paddingBottom);return this.top+index*(innerHeight/(this.ticks.length-1));}}, // Utility for getting the pixel location of a percentage of scale
+	getPixelForDecimal:function getPixelForDecimal(decimal /*, includeOffset*/){if(this.isHorizontal()){var innerWidth=this.width-(this.paddingLeft+this.paddingRight);var valueOffset=innerWidth*decimal+this.paddingLeft;var finalVal=this.left+Math.round(valueOffset);finalVal+=this.isFullWidth()?this.margins.left:0;return finalVal;}else {return this.top+decimal*this.height;}}, // Actualy draw the scale on the canvas
+	// @param {rectangle} chartArea : the area of the chart to draw full grid lines on
+	draw:function draw(chartArea){if(this.options.display){var setContextLineSettings;var isRotated=this.labelRotation!==0;var skipRatio;var scaleLabelX;var scaleLabelY;var useAutoskipper=this.options.ticks.autoSkip; // figure out the maximum number of gridlines to show
+	var maxTicks;if(this.options.ticks.maxTicksLimit){maxTicks=this.options.ticks.maxTicksLimit;}var tickFontColor=helpers.getValueOrDefault(this.options.ticks.fontColor,Chart.defaults.global.defaultFontColor);var tickFontSize=helpers.getValueOrDefault(this.options.ticks.fontSize,Chart.defaults.global.defaultFontSize);var tickFontStyle=helpers.getValueOrDefault(this.options.ticks.fontStyle,Chart.defaults.global.defaultFontStyle);var tickFontFamily=helpers.getValueOrDefault(this.options.ticks.fontFamily,Chart.defaults.global.defaultFontFamily);var tickLabelFont=helpers.fontString(tickFontSize,tickFontStyle,tickFontFamily);var tl=this.options.gridLines.tickMarkLength;var scaleLabelFontColor=helpers.getValueOrDefault(this.options.scaleLabel.fontColor,Chart.defaults.global.defaultFontColor);var scaleLabelFontSize=helpers.getValueOrDefault(this.options.scaleLabel.fontSize,Chart.defaults.global.defaultFontSize);var scaleLabelFontStyle=helpers.getValueOrDefault(this.options.scaleLabel.fontStyle,Chart.defaults.global.defaultFontStyle);var scaleLabelFontFamily=helpers.getValueOrDefault(this.options.scaleLabel.fontFamily,Chart.defaults.global.defaultFontFamily);var scaleLabelFont=helpers.fontString(scaleLabelFontSize,scaleLabelFontStyle,scaleLabelFontFamily);var cosRotation=Math.cos(helpers.toRadians(this.labelRotation));var sinRotation=Math.sin(helpers.toRadians(this.labelRotation));var longestRotatedLabel=this.longestLabelWidth*cosRotation;var rotatedLabelHeight=tickFontSize*sinRotation; // Make sure we draw text in the correct color and font
+	this.ctx.fillStyle=tickFontColor;if(this.isHorizontal()){setContextLineSettings=true;var yTickStart=this.options.position==="bottom"?this.top:this.bottom-tl;var yTickEnd=this.options.position==="bottom"?this.top+tl:this.bottom;skipRatio=false;if((longestRotatedLabel/2+this.options.ticks.autoSkipPadding)*this.ticks.length>this.width-(this.paddingLeft+this.paddingRight)){skipRatio=1+Math.floor((longestRotatedLabel/2+this.options.ticks.autoSkipPadding)*this.ticks.length/(this.width-(this.paddingLeft+this.paddingRight)));} // if they defined a max number of ticks,
+	// increase skipRatio until that number is met
+	if(maxTicks&&this.ticks.length>maxTicks){while(!skipRatio||this.ticks.length/(skipRatio||1)>maxTicks){if(!skipRatio){skipRatio=1;}skipRatio+=1;}}if(!useAutoskipper){skipRatio=false;}helpers.each(this.ticks,function(label,index){ // Blank ticks
+	var isLastTick=this.ticks.length===index+1; // Since we always show the last tick,we need may need to hide the last shown one before
+	var shouldSkip=skipRatio>1&&index%skipRatio>0||index%skipRatio===0&&index+skipRatio>this.ticks.length;if(shouldSkip&&!isLastTick||label===undefined||label===null){return;}var xLineValue=this.getPixelForTick(index); // xvalues for grid lines
+	var xLabelValue=this.getPixelForTick(index,this.options.gridLines.offsetGridLines); // x values for ticks (need to consider offsetLabel option)
+	if(this.options.gridLines.display){if(index===(typeof this.zeroLineIndex!=='undefined'?this.zeroLineIndex:0)){ // Draw the first index specially
+	this.ctx.lineWidth=this.options.gridLines.zeroLineWidth;this.ctx.strokeStyle=this.options.gridLines.zeroLineColor;setContextLineSettings=true; // reset next time
+	}else if(setContextLineSettings){this.ctx.lineWidth=this.options.gridLines.lineWidth;this.ctx.strokeStyle=this.options.gridLines.color;setContextLineSettings=false;}xLineValue+=helpers.aliasPixel(this.ctx.lineWidth); // Draw the label area
+	this.ctx.beginPath();if(this.options.gridLines.drawTicks){this.ctx.moveTo(xLineValue,yTickStart);this.ctx.lineTo(xLineValue,yTickEnd);} // Draw the chart area
+	if(this.options.gridLines.drawOnChartArea){this.ctx.moveTo(xLineValue,chartArea.top);this.ctx.lineTo(xLineValue,chartArea.bottom);} // Need to stroke in the loop because we are potentially changing line widths & colours
+	this.ctx.stroke();}if(this.options.ticks.display){this.ctx.save();this.ctx.translate(xLabelValue+this.options.ticks.labelOffset,isRotated?this.top+12:this.options.position==="top"?this.bottom-tl:this.top+tl);this.ctx.rotate(helpers.toRadians(this.labelRotation)*-1);this.ctx.font=tickLabelFont;this.ctx.textAlign=isRotated?"right":"center";this.ctx.textBaseline=isRotated?"middle":this.options.position==="top"?"bottom":"top";this.ctx.fillText(label,0,0);this.ctx.restore();}},this);if(this.options.scaleLabel.display){ // Draw the scale label
+	this.ctx.textAlign="center";this.ctx.textBaseline='middle';this.ctx.fillStyle=scaleLabelFontColor; // render in correct colour
+	this.ctx.font=scaleLabelFont;scaleLabelX=this.left+(this.right-this.left)/2; // midpoint of the width
+	scaleLabelY=this.options.position==='bottom'?this.bottom-scaleLabelFontSize/2:this.top+scaleLabelFontSize/2;this.ctx.fillText(this.options.scaleLabel.labelString,scaleLabelX,scaleLabelY);}}else {setContextLineSettings=true;var xTickStart=this.options.position==="right"?this.left:this.right-5;var xTickEnd=this.options.position==="right"?this.left+5:this.right;helpers.each(this.ticks,function(label,index){ // If the callback returned a null or undefined value, do not draw this line
+	if(label===undefined||label===null){return;}var yLineValue=this.getPixelForTick(index); // xvalues for grid lines
+	if(this.options.gridLines.display){if(index===(typeof this.zeroLineIndex!=='undefined'?this.zeroLineIndex:0)){ // Draw the first index specially
+	this.ctx.lineWidth=this.options.gridLines.zeroLineWidth;this.ctx.strokeStyle=this.options.gridLines.zeroLineColor;setContextLineSettings=true; // reset next time
+	}else if(setContextLineSettings){this.ctx.lineWidth=this.options.gridLines.lineWidth;this.ctx.strokeStyle=this.options.gridLines.color;setContextLineSettings=false;}yLineValue+=helpers.aliasPixel(this.ctx.lineWidth); // Draw the label area
+	this.ctx.beginPath();if(this.options.gridLines.drawTicks){this.ctx.moveTo(xTickStart,yLineValue);this.ctx.lineTo(xTickEnd,yLineValue);} // Draw the chart area
+	if(this.options.gridLines.drawOnChartArea){this.ctx.moveTo(chartArea.left,yLineValue);this.ctx.lineTo(chartArea.right,yLineValue);} // Need to stroke in the loop because we are potentially changing line widths & colours
+	this.ctx.stroke();}if(this.options.ticks.display){var xLabelValue;var yLabelValue=this.getPixelForTick(index,this.options.gridLines.offsetGridLines); // x values for ticks (need to consider offsetLabel option)
+	this.ctx.save();if(this.options.position==="left"){if(this.options.ticks.mirror){xLabelValue=this.right+this.options.ticks.padding;this.ctx.textAlign="left";}else {xLabelValue=this.right-this.options.ticks.padding;this.ctx.textAlign="right";}}else { // right side
+	if(this.options.ticks.mirror){xLabelValue=this.left-this.options.ticks.padding;this.ctx.textAlign="right";}else {xLabelValue=this.left+this.options.ticks.padding;this.ctx.textAlign="left";}}this.ctx.translate(xLabelValue,yLabelValue+this.options.ticks.labelOffset);this.ctx.rotate(helpers.toRadians(this.labelRotation)*-1);this.ctx.font=tickLabelFont;this.ctx.textBaseline="middle";this.ctx.fillText(label,0,0);this.ctx.restore();}},this);if(this.options.scaleLabel.display){ // Draw the scale label
+	scaleLabelX=this.options.position==='left'?this.left+scaleLabelFontSize/2:this.right-scaleLabelFontSize/2;scaleLabelY=this.top+(this.bottom-this.top)/2;var rotation=this.options.position==='left'?-0.5*Math.PI:0.5*Math.PI;this.ctx.save();this.ctx.translate(scaleLabelX,scaleLabelY);this.ctx.rotate(rotation);this.ctx.textAlign="center";this.ctx.fillStyle=scaleLabelFontColor; // render in correct colour
+	this.ctx.font=scaleLabelFont;this.ctx.textBaseline='middle';this.ctx.fillText(this.options.scaleLabel.labelString,0,0);this.ctx.restore();}} // Draw the line at the edge of the axis
+	this.ctx.lineWidth=this.options.gridLines.lineWidth;this.ctx.strokeStyle=this.options.gridLines.color;var x1=this.left,x2=this.right,y1=this.top,y2=this.bottom;if(this.isHorizontal()){y1=y2=this.options.position==='top'?this.bottom:this.top;y1+=helpers.aliasPixel(this.ctx.lineWidth);y2+=helpers.aliasPixel(this.ctx.lineWidth);}else {x1=x2=this.options.position==='left'?this.right:this.left;x1+=helpers.aliasPixel(this.ctx.lineWidth);x2+=helpers.aliasPixel(this.ctx.lineWidth);}this.ctx.beginPath();this.ctx.moveTo(x1,y1);this.ctx.lineTo(x2,y2);this.ctx.stroke();}}});};},{}],31:[function(require,module,exports){"use strict";module.exports=function(Chart){var helpers=Chart.helpers;Chart.scaleService={ // Scale registration object. Extensions can register new scale types (such as log or DB scales) and then
+	// use the new chart options to grab the correct scale
+	constructors:{}, // Use a registration function so that we can move to an ES6 map when we no longer need to support
+	// old browsers
+	// Scale config defaults
+	defaults:{},registerScaleType:function registerScaleType(type,scaleConstructor,defaults){this.constructors[type]=scaleConstructor;this.defaults[type]=helpers.clone(defaults);},getScaleConstructor:function getScaleConstructor(type){return this.constructors.hasOwnProperty(type)?this.constructors[type]:undefined;},getScaleDefaults:function getScaleDefaults(type){ // Return the scale defaults merged with the global settings so that we always use the latest ones
+	return this.defaults.hasOwnProperty(type)?helpers.scaleMerge(Chart.defaults.scale,this.defaults[type]):{};},updateScaleDefaults:function updateScaleDefaults(type,additions){var defaults=this.defaults;if(defaults.hasOwnProperty(type)){defaults[type]=helpers.extend(defaults[type],additions);}},addScalesToLayout:function addScalesToLayout(chartInstance){ // Adds each scale to the chart.boxes array to be sized accordingly
+	helpers.each(chartInstance.scales,function(scale){Chart.layoutService.addBox(chartInstance,scale);});}};};},{}],32:[function(require,module,exports){"use strict";module.exports=function(Chart){var helpers=Chart.helpers;Chart.defaults.global.title={display:false,position:'top',fullWidth:true, // marks that this box should take the full width of the canvas (pushing down other boxes)
+	fontStyle:'bold',padding:10, // actual title
+	text:''};var noop=helpers.noop;Chart.Title=Chart.Element.extend({initialize:function initialize(config){helpers.extend(this,config);this.options=helpers.configMerge(Chart.defaults.global.title,config.options); // Contains hit boxes for each dataset (in dataset order)
+	this.legendHitBoxes=[];}, // These methods are ordered by lifecyle. Utilities then follow.
+	beforeUpdate:noop,update:function update(maxWidth,maxHeight,margins){ // Update Lifecycle - Probably don't want to ever extend or overwrite this function ;)
+	this.beforeUpdate(); // Absorb the master measurements
+	this.maxWidth=maxWidth;this.maxHeight=maxHeight;this.margins=margins; // Dimensions
+	this.beforeSetDimensions();this.setDimensions();this.afterSetDimensions(); // Labels
+	this.beforeBuildLabels();this.buildLabels();this.afterBuildLabels(); // Fit
+	this.beforeFit();this.fit();this.afterFit(); //
+	this.afterUpdate();return this.minSize;},afterUpdate:noop, //
+	beforeSetDimensions:noop,setDimensions:function setDimensions(){ // Set the unconstrained dimension before label rotation
+	if(this.isHorizontal()){ // Reset position before calculating rotation
+	this.width=this.maxWidth;this.left=0;this.right=this.width;}else {this.height=this.maxHeight; // Reset position before calculating rotation
+	this.top=0;this.bottom=this.height;} // Reset padding
+	this.paddingLeft=0;this.paddingTop=0;this.paddingRight=0;this.paddingBottom=0; // Reset minSize
+	this.minSize={width:0,height:0};},afterSetDimensions:noop, //
+	beforeBuildLabels:noop,buildLabels:noop,afterBuildLabels:noop, //
+	beforeFit:noop,fit:function fit(){var ctx=this.ctx,valueOrDefault=helpers.getValueOrDefault,opts=this.options,globalDefaults=Chart.defaults.global,display=opts.display,fontSize=valueOrDefault(opts.fontSize,globalDefaults.defaultFontSize),minSize=this.minSize;if(this.isHorizontal()){minSize.width=this.maxWidth; // fill all the width
+	minSize.height=display?fontSize+opts.padding*2:0;}else {minSize.width=display?fontSize+opts.padding*2:0;minSize.height=this.maxHeight; // fill all the height
+	}this.width=minSize.width;this.height=minSize.height;},afterFit:noop, // Shared Methods
+	isHorizontal:function isHorizontal(){var pos=this.options.position;return pos==="top"||pos==="bottom";}, // Actualy draw the title block on the canvas
+	draw:function draw(){var ctx=this.ctx,valueOrDefault=helpers.getValueOrDefault,opts=this.options,globalDefaults=Chart.defaults.global;if(opts.display){var fontSize=valueOrDefault(opts.fontSize,globalDefaults.defaultFontSize),fontStyle=valueOrDefault(opts.fontStyle,globalDefaults.defaultFontStyle),fontFamily=valueOrDefault(opts.fontFamily,globalDefaults.defaultFontFamily),titleFont=helpers.fontString(fontSize,fontStyle,fontFamily),rotation=0,titleX,titleY;ctx.fillStyle=valueOrDefault(opts.fontColor,globalDefaults.defaultFontColor); // render in correct colour
+	ctx.font=titleFont; // Horizontal
+	if(this.isHorizontal()){titleX=this.left+(this.right-this.left)/2; // midpoint of the width
+	titleY=this.top+(this.bottom-this.top)/2; // midpoint of the height
+	}else {titleX=opts.position==='left'?this.left+fontSize/2:this.right-fontSize/2;titleY=this.top+(this.bottom-this.top)/2;rotation=Math.PI*(opts.position==='left'?-0.5:0.5);}ctx.save();ctx.translate(titleX,titleY);ctx.rotate(rotation);ctx.textAlign='center';ctx.textBaseline='middle';ctx.fillText(opts.text,0,0);ctx.restore();}}});};},{}],33:[function(require,module,exports){"use strict";module.exports=function(Chart){var helpers=Chart.helpers;Chart.defaults.global.tooltips={enabled:true,custom:null,mode:'single',backgroundColor:"rgba(0,0,0,0.8)",titleFontStyle:"bold",titleSpacing:2,titleMarginBottom:6,titleColor:"#fff",titleAlign:"left",bodySpacing:2,bodyColor:"#fff",bodyAlign:"left",footerFontStyle:"bold",footerSpacing:2,footerMarginTop:6,footerColor:"#fff",footerAlign:"left",yPadding:6,xPadding:6,yAlign:'center',xAlign:'center',caretSize:5,cornerRadius:6,multiKeyBackground:'#fff',callbacks:{ // Args are: (tooltipItems, data)
+	beforeTitle:helpers.noop,title:function title(tooltipItems,data){ // Pick first xLabel for now
+	var title='';if(tooltipItems.length>0){if(tooltipItems[0].xLabel){title=tooltipItems[0].xLabel;}else if(data.labels.length>0&&tooltipItems[0].index<data.labels.length){title=data.labels[tooltipItems[0].index];}}return title;},afterTitle:helpers.noop, // Args are: (tooltipItems, data)
+	beforeBody:helpers.noop, // Args are: (tooltipItem, data)
+	beforeLabel:helpers.noop,label:function label(tooltipItem,data){var datasetLabel=data.datasets[tooltipItem.datasetIndex].label||'';return datasetLabel+': '+tooltipItem.yLabel;},afterLabel:helpers.noop, // Args are: (tooltipItems, data)
+	afterBody:helpers.noop, // Args are: (tooltipItems, data)
+	beforeFooter:helpers.noop,footer:helpers.noop,afterFooter:helpers.noop}}; // Helper to push or concat based on if the 2nd parameter is an array or not
+	function pushOrConcat(base,toPush){if(toPush){if(helpers.isArray(toPush)){base=base.concat(toPush);}else {base.push(toPush);}}return base;}Chart.Tooltip=Chart.Element.extend({initialize:function initialize(){var options=this._options;helpers.extend(this,{_model:{ // Positioning
+	xPadding:options.tooltips.xPadding,yPadding:options.tooltips.yPadding,xAlign:options.tooltips.yAlign,yAlign:options.tooltips.xAlign, // Body
+	bodyColor:options.tooltips.bodyColor,_bodyFontFamily:helpers.getValueOrDefault(options.tooltips.bodyFontFamily,Chart.defaults.global.defaultFontFamily),_bodyFontStyle:helpers.getValueOrDefault(options.tooltips.bodyFontStyle,Chart.defaults.global.defaultFontStyle),_bodyAlign:options.tooltips.bodyAlign,bodyFontSize:helpers.getValueOrDefault(options.tooltips.bodyFontSize,Chart.defaults.global.defaultFontSize),bodySpacing:options.tooltips.bodySpacing, // Title
+	titleColor:options.tooltips.titleColor,_titleFontFamily:helpers.getValueOrDefault(options.tooltips.titleFontFamily,Chart.defaults.global.defaultFontFamily),_titleFontStyle:helpers.getValueOrDefault(options.tooltips.titleFontStyle,Chart.defaults.global.defaultFontStyle),titleFontSize:helpers.getValueOrDefault(options.tooltips.titleFontSize,Chart.defaults.global.defaultFontSize),_titleAlign:options.tooltips.titleAlign,titleSpacing:options.tooltips.titleSpacing,titleMarginBottom:options.tooltips.titleMarginBottom, // Footer
+	footerColor:options.tooltips.footerColor,_footerFontFamily:helpers.getValueOrDefault(options.tooltips.footerFontFamily,Chart.defaults.global.defaultFontFamily),_footerFontStyle:helpers.getValueOrDefault(options.tooltips.footerFontStyle,Chart.defaults.global.defaultFontStyle),footerFontSize:helpers.getValueOrDefault(options.tooltips.footerFontSize,Chart.defaults.global.defaultFontSize),_footerAlign:options.tooltips.footerAlign,footerSpacing:options.tooltips.footerSpacing,footerMarginTop:options.tooltips.footerMarginTop, // Appearance
+	caretSize:options.tooltips.caretSize,cornerRadius:options.tooltips.cornerRadius,backgroundColor:options.tooltips.backgroundColor,opacity:0,legendColorBackground:options.tooltips.multiKeyBackground}});}, // Get the title
+	// Args are: (tooltipItem, data)
+	getTitle:function getTitle(){var beforeTitle=this._options.tooltips.callbacks.beforeTitle.apply(this,arguments),title=this._options.tooltips.callbacks.title.apply(this,arguments),afterTitle=this._options.tooltips.callbacks.afterTitle.apply(this,arguments);var lines=[];lines=pushOrConcat(lines,beforeTitle);lines=pushOrConcat(lines,title);lines=pushOrConcat(lines,afterTitle);return lines;}, // Args are: (tooltipItem, data)
+	getBeforeBody:function getBeforeBody(){var lines=this._options.tooltips.callbacks.beforeBody.apply(this,arguments);return helpers.isArray(lines)?lines:lines!==undefined?[lines]:[];}, // Args are: (tooltipItem, data)
+	getBody:function getBody(tooltipItems,data){var lines=[];helpers.each(tooltipItems,function(bodyItem){helpers.pushAllIfDefined(this._options.tooltips.callbacks.beforeLabel.call(this,bodyItem,data),lines);helpers.pushAllIfDefined(this._options.tooltips.callbacks.label.call(this,bodyItem,data),lines);helpers.pushAllIfDefined(this._options.tooltips.callbacks.afterLabel.call(this,bodyItem,data),lines);},this);return lines;}, // Args are: (tooltipItem, data)
+	getAfterBody:function getAfterBody(){var lines=this._options.tooltips.callbacks.afterBody.apply(this,arguments);return helpers.isArray(lines)?lines:lines!==undefined?[lines]:[];}, // Get the footer and beforeFooter and afterFooter lines
+	// Args are: (tooltipItem, data)
+	getFooter:function getFooter(){var beforeFooter=this._options.tooltips.callbacks.beforeFooter.apply(this,arguments);var footer=this._options.tooltips.callbacks.footer.apply(this,arguments);var afterFooter=this._options.tooltips.callbacks.afterFooter.apply(this,arguments);var lines=[];lines=pushOrConcat(lines,beforeFooter);lines=pushOrConcat(lines,footer);lines=pushOrConcat(lines,afterFooter);return lines;},getAveragePosition:function getAveragePosition(elements){if(!elements.length){return false;}var xPositions=[];var yPositions=[];helpers.each(elements,function(el){if(el){var pos=el.tooltipPosition();xPositions.push(pos.x);yPositions.push(pos.y);}});var x=0,y=0;for(var i=0;i<xPositions.length;i++){x+=xPositions[i];y+=yPositions[i];}return {x:Math.round(x/xPositions.length),y:Math.round(y/xPositions.length)};},update:function update(changed){if(this._active.length){this._model.opacity=1;var element=this._active[0],labelColors=[],tooltipPosition;var tooltipItems=[];if(this._options.tooltips.mode==='single'){var yScale=element._yScale||element._scale; // handle radar || polarArea charts
+	tooltipItems.push({xLabel:element._xScale?element._xScale.getLabelForIndex(element._index,element._datasetIndex):'',yLabel:yScale?yScale.getLabelForIndex(element._index,element._datasetIndex):'',index:element._index,datasetIndex:element._datasetIndex});tooltipPosition=this.getAveragePosition(this._active);}else {helpers.each(this._data.datasets,function(dataset,datasetIndex){if(!this._chartInstance.isDatasetVisible(datasetIndex)){return;}var meta=this._chartInstance.getDatasetMeta(datasetIndex);var currentElement=meta.data[element._index];if(currentElement){var yScale=element._yScale||element._scale; // handle radar || polarArea charts
+	tooltipItems.push({xLabel:currentElement._xScale?currentElement._xScale.getLabelForIndex(currentElement._index,currentElement._datasetIndex):'',yLabel:yScale?yScale.getLabelForIndex(currentElement._index,currentElement._datasetIndex):'',index:element._index,datasetIndex:datasetIndex});}},this);helpers.each(this._active,function(active){if(active){labelColors.push({borderColor:active._view.borderColor,backgroundColor:active._view.backgroundColor});}},null);tooltipPosition=this.getAveragePosition(this._active);} // Build the Text Lines
+	helpers.extend(this._model,{title:this.getTitle(tooltipItems,this._data),beforeBody:this.getBeforeBody(tooltipItems,this._data),body:this.getBody(tooltipItems,this._data),afterBody:this.getAfterBody(tooltipItems,this._data),footer:this.getFooter(tooltipItems,this._data)});helpers.extend(this._model,{x:Math.round(tooltipPosition.x),y:Math.round(tooltipPosition.y),caretPadding:helpers.getValueOrDefault(tooltipPosition.padding,2),labelColors:labelColors}); // We need to determine alignment of
+	var tooltipSize=this.getTooltipSize(this._model);this.determineAlignment(tooltipSize); // Smart Tooltip placement to stay on the canvas
+	helpers.extend(this._model,this.getBackgroundPoint(this._model,tooltipSize));}else {this._model.opacity=0;}if(changed&&this._options.tooltips.custom){this._options.tooltips.custom.call(this,this._model);}return this;},getTooltipSize:function getTooltipSize(vm){var ctx=this._chart.ctx;var size={height:vm.yPadding*2, // Tooltip Padding
+	width:0};var combinedBodyLength=vm.body.length+vm.beforeBody.length+vm.afterBody.length;size.height+=vm.title.length*vm.titleFontSize; // Title Lines
+	size.height+=(vm.title.length-1)*vm.titleSpacing; // Title Line Spacing
+	size.height+=vm.title.length?vm.titleMarginBottom:0; // Title's bottom Margin
+	size.height+=combinedBodyLength*vm.bodyFontSize; // Body Lines
+	size.height+=combinedBodyLength?(combinedBodyLength-1)*vm.bodySpacing:0; // Body Line Spacing
+	size.height+=vm.footer.length?vm.footerMarginTop:0; // Footer Margin
+	size.height+=vm.footer.length*vm.footerFontSize; // Footer Lines
+	size.height+=vm.footer.length?(vm.footer.length-1)*vm.footerSpacing:0; // Footer Line Spacing
+	// Width
+	ctx.font=helpers.fontString(vm.titleFontSize,vm._titleFontStyle,vm._titleFontFamily);helpers.each(vm.title,function(line){size.width=Math.max(size.width,ctx.measureText(line).width);});ctx.font=helpers.fontString(vm.bodyFontSize,vm._bodyFontStyle,vm._bodyFontFamily);helpers.each(vm.beforeBody.concat(vm.afterBody),function(line){size.width=Math.max(size.width,ctx.measureText(line).width);});helpers.each(vm.body,function(line){size.width=Math.max(size.width,ctx.measureText(line).width+(this._options.tooltips.mode!=='single'?vm.bodyFontSize+2:0));},this);ctx.font=helpers.fontString(vm.footerFontSize,vm._footerFontStyle,vm._footerFontFamily);helpers.each(vm.footer,function(line){size.width=Math.max(size.width,ctx.measureText(line).width);});size.width+=2*vm.xPadding;return size;},determineAlignment:function determineAlignment(size){if(this._model.y<size.height){this._model.yAlign='top';}else if(this._model.y>this._chart.height-size.height){this._model.yAlign='bottom';}var lf,rf; // functions to determine left, right alignment
+	var olf,orf; // functions to determine if left/right alignment causes tooltip to go outside chart
+	var yf; // function to get the y alignment if the tooltip goes outside of the left or right edges
+	var _this=this;var midX=(this._chartInstance.chartArea.left+this._chartInstance.chartArea.right)/2;var midY=(this._chartInstance.chartArea.top+this._chartInstance.chartArea.bottom)/2;if(this._model.yAlign==='center'){lf=function lf(x){return x<=midX;};rf=function rf(x){return x>midX;};}else {lf=function lf(x){return x<=size.width/2;};rf=function rf(x){return x>=_this._chart.width-size.width/2;};}olf=function olf(x){return x+size.width>_this._chart.width;};orf=function orf(x){return x-size.width<0;};yf=function yf(y){return y<=midY?'top':'bottom';};if(lf(this._model.x)){this._model.xAlign='left'; // Is tooltip too wide and goes over the right side of the chart.?
+	if(olf(this._model.x)){this._model.xAlign='center';this._model.yAlign=yf(this._model.y);}}else if(rf(this._model.x)){this._model.xAlign='right'; // Is tooltip too wide and goes outside left edge of canvas?
+	if(orf(this._model.x)){this._model.xAlign='center';this._model.yAlign=yf(this._model.y);}}},getBackgroundPoint:function getBackgroundPoint(vm,size){ // Background Position
+	var pt={x:vm.x,y:vm.y};if(vm.xAlign==='right'){pt.x-=size.width;}else if(vm.xAlign==='center'){pt.x-=size.width/2;}if(vm.yAlign==='top'){pt.y+=vm.caretPadding+vm.caretSize;}else if(vm.yAlign==='bottom'){pt.y-=size.height+vm.caretPadding+vm.caretSize;}else {pt.y-=size.height/2;}if(vm.yAlign==='center'){if(vm.xAlign==='left'){pt.x+=vm.caretPadding+vm.caretSize;}else if(vm.xAlign==='right'){pt.x-=vm.caretPadding+vm.caretSize;}}else {if(vm.xAlign==='left'){pt.x-=vm.cornerRadius+vm.caretPadding;}else if(vm.xAlign==='right'){pt.x+=vm.cornerRadius+vm.caretPadding;}}return pt;},drawCaret:function drawCaret(tooltipPoint,size,opacity,caretPadding){var vm=this._view;var ctx=this._chart.ctx;var x1,x2,x3;var y1,y2,y3;if(vm.yAlign==='center'){ // Left or right side
+	if(vm.xAlign==='left'){x1=tooltipPoint.x;x2=x1-vm.caretSize;x3=x1;}else {x1=tooltipPoint.x+size.width;x2=x1+vm.caretSize;x3=x1;}y2=tooltipPoint.y+size.height/2;y1=y2-vm.caretSize;y3=y2+vm.caretSize;}else {if(vm.xAlign==='left'){x1=tooltipPoint.x+vm.cornerRadius;x2=x1+vm.caretSize;x3=x2+vm.caretSize;}else if(vm.xAlign==='right'){x1=tooltipPoint.x+size.width-vm.cornerRadius;x2=x1-vm.caretSize;x3=x2-vm.caretSize;}else {x2=tooltipPoint.x+size.width/2;x1=x2-vm.caretSize;x3=x2+vm.caretSize;}if(vm.yAlign==='top'){y1=tooltipPoint.y;y2=y1-vm.caretSize;y3=y1;}else {y1=tooltipPoint.y+size.height;y2=y1+vm.caretSize;y3=y1;}}var bgColor=helpers.color(vm.backgroundColor);ctx.fillStyle=bgColor.alpha(opacity*bgColor.alpha()).rgbString();ctx.beginPath();ctx.moveTo(x1,y1);ctx.lineTo(x2,y2);ctx.lineTo(x3,y3);ctx.closePath();ctx.fill();},drawTitle:function drawTitle(pt,vm,ctx,opacity){if(vm.title.length){ctx.textAlign=vm._titleAlign;ctx.textBaseline="top";var titleColor=helpers.color(vm.titleColor);ctx.fillStyle=titleColor.alpha(opacity*titleColor.alpha()).rgbString();ctx.font=helpers.fontString(vm.titleFontSize,vm._titleFontStyle,vm._titleFontFamily);helpers.each(vm.title,function(title,i){ctx.fillText(title,pt.x,pt.y);pt.y+=vm.titleFontSize+vm.titleSpacing; // Line Height and spacing
+	if(i+1===vm.title.length){pt.y+=vm.titleMarginBottom-vm.titleSpacing; // If Last, add margin, remove spacing
+	}});}},drawBody:function drawBody(pt,vm,ctx,opacity){ctx.textAlign=vm._bodyAlign;ctx.textBaseline="top";var bodyColor=helpers.color(vm.bodyColor);ctx.fillStyle=bodyColor.alpha(opacity*bodyColor.alpha()).rgbString();ctx.font=helpers.fontString(vm.bodyFontSize,vm._bodyFontStyle,vm._bodyFontFamily); // Before Body
+	helpers.each(vm.beforeBody,function(beforeBody){ctx.fillText(beforeBody,pt.x,pt.y);pt.y+=vm.bodyFontSize+vm.bodySpacing;});helpers.each(vm.body,function(body,i){ // Draw Legend-like boxes if needed
+	if(this._options.tooltips.mode!=='single'){ // Fill a white rect so that colours merge nicely if the opacity is < 1
+	ctx.fillStyle=helpers.color(vm.legendColorBackground).alpha(opacity).rgbaString();ctx.fillRect(pt.x,pt.y,vm.bodyFontSize,vm.bodyFontSize); // Border
+	ctx.strokeStyle=helpers.color(vm.labelColors[i].borderColor).alpha(opacity).rgbaString();ctx.strokeRect(pt.x,pt.y,vm.bodyFontSize,vm.bodyFontSize); // Inner square
+	ctx.fillStyle=helpers.color(vm.labelColors[i].backgroundColor).alpha(opacity).rgbaString();ctx.fillRect(pt.x+1,pt.y+1,vm.bodyFontSize-2,vm.bodyFontSize-2);ctx.fillStyle=helpers.color(vm.bodyColor).alpha(opacity).rgbaString(); // Return fill style for text
+	} // Body Line
+	ctx.fillText(body,pt.x+(this._options.tooltips.mode!=='single'?vm.bodyFontSize+2:0),pt.y);pt.y+=vm.bodyFontSize+vm.bodySpacing;},this); // After Body
+	helpers.each(vm.afterBody,function(afterBody){ctx.fillText(afterBody,pt.x,pt.y);pt.y+=vm.bodyFontSize;});pt.y-=vm.bodySpacing; // Remove last body spacing
+	},drawFooter:function drawFooter(pt,vm,ctx,opacity){if(vm.footer.length){pt.y+=vm.footerMarginTop;ctx.textAlign=vm._footerAlign;ctx.textBaseline="top";var footerColor=helpers.color(vm.footerColor);ctx.fillStyle=footerColor.alpha(opacity*footerColor.alpha()).rgbString();ctx.font=helpers.fontString(vm.footerFontSize,vm._footerFontStyle,vm._footerFontFamily);helpers.each(vm.footer,function(footer){ctx.fillText(footer,pt.x,pt.y);pt.y+=vm.footerFontSize+vm.footerSpacing;});}},draw:function draw(){var ctx=this._chart.ctx;var vm=this._view;if(vm.opacity===0){return;}var caretPadding=vm.caretPadding;var tooltipSize=this.getTooltipSize(vm);var pt={x:vm.x,y:vm.y}; // IE11/Edge does not like very small opacities, so snap to 0
+	var opacity=Math.abs(vm.opacity<1e-3)?0:vm.opacity;if(this._options.tooltips.enabled){ // Draw Background
+	var bgColor=helpers.color(vm.backgroundColor);ctx.fillStyle=bgColor.alpha(opacity*bgColor.alpha()).rgbString();helpers.drawRoundedRectangle(ctx,pt.x,pt.y,tooltipSize.width,tooltipSize.height,vm.cornerRadius);ctx.fill(); // Draw Caret
+	this.drawCaret(pt,tooltipSize,opacity,caretPadding); // Draw Title, Body, and Footer
+	pt.x+=vm.xPadding;pt.y+=vm.yPadding; // Titles
+	this.drawTitle(pt,vm,ctx,opacity); // Body
+	this.drawBody(pt,vm,ctx,opacity); // Footer
+	this.drawFooter(pt,vm,ctx,opacity);}}});};},{}],34:[function(require,module,exports){"use strict";module.exports=function(Chart,moment){var helpers=Chart.helpers,globalOpts=Chart.defaults.global;globalOpts.elements.arc={backgroundColor:globalOpts.defaultColor,borderColor:"#fff",borderWidth:2};Chart.elements.Arc=Chart.Element.extend({inLabelRange:function inLabelRange(mouseX){var vm=this._view;if(vm){return Math.pow(mouseX-vm.x,2)<Math.pow(vm.radius+vm.hoverRadius,2);}else {return false;}},inRange:function inRange(chartX,chartY){var vm=this._view;if(vm){var pointRelativePosition=helpers.getAngleFromPoint(vm,{x:chartX,y:chartY}),angle=pointRelativePosition.angle,distance=pointRelativePosition.distance; //Sanitise angle range
+	var startAngle=vm.startAngle;var endAngle=vm.endAngle;while(endAngle<startAngle){endAngle+=2.0*Math.PI;}while(angle>endAngle){angle-=2.0*Math.PI;}while(angle<startAngle){angle+=2.0*Math.PI;} //Check if within the range of the open/close angle
+	var betweenAngles=angle>=startAngle&&angle<=endAngle,withinRadius=distance>=vm.innerRadius&&distance<=vm.outerRadius;return betweenAngles&&withinRadius;}else {return false;}},tooltipPosition:function tooltipPosition(){var vm=this._view;var centreAngle=vm.startAngle+(vm.endAngle-vm.startAngle)/2,rangeFromCentre=(vm.outerRadius-vm.innerRadius)/2+vm.innerRadius;return {x:vm.x+Math.cos(centreAngle)*rangeFromCentre,y:vm.y+Math.sin(centreAngle)*rangeFromCentre};},draw:function draw(){var ctx=this._chart.ctx,vm=this._view,sA=vm.startAngle,eA=vm.endAngle;ctx.beginPath();ctx.arc(vm.x,vm.y,vm.outerRadius,sA,eA);ctx.arc(vm.x,vm.y,vm.innerRadius,eA,sA,true);ctx.closePath();ctx.strokeStyle=vm.borderColor;ctx.lineWidth=vm.borderWidth;ctx.fillStyle=vm.backgroundColor;ctx.fill();ctx.lineJoin='bevel';if(vm.borderWidth){ctx.stroke();}}});};},{}],35:[function(require,module,exports){"use strict";module.exports=function(Chart){var helpers=Chart.helpers;Chart.defaults.global.elements.line={tension:0.4,backgroundColor:Chart.defaults.global.defaultColor,borderWidth:3,borderColor:Chart.defaults.global.defaultColor,borderCapStyle:'butt',borderDash:[],borderDashOffset:0.0,borderJoinStyle:'miter',fill:true // do we fill in the area between the line and its base axis
+	};Chart.elements.Line=Chart.Element.extend({lineToNextPoint:function lineToNextPoint(previousPoint,point,nextPoint,skipHandler,previousSkipHandler){var ctx=this._chart.ctx;if(point._view.skip){skipHandler.call(this,previousPoint,point,nextPoint);}else if(previousPoint._view.skip){previousSkipHandler.call(this,previousPoint,point,nextPoint);}else if(point._view.tension===0){ctx.lineTo(point._view.x,point._view.y);}else { // Line between points
+	ctx.bezierCurveTo(previousPoint._view.controlPointNextX,previousPoint._view.controlPointNextY,point._view.controlPointPreviousX,point._view.controlPointPreviousY,point._view.x,point._view.y);}},draw:function draw(){var _this=this;var vm=this._view;var ctx=this._chart.ctx;var first=this._children[0];var last=this._children[this._children.length-1];function loopBackToStart(drawLineToCenter){if(!first._view.skip&&!last._view.skip){ // Draw a bezier line from last to first
+	ctx.bezierCurveTo(last._view.controlPointNextX,last._view.controlPointNextY,first._view.controlPointPreviousX,first._view.controlPointPreviousY,first._view.x,first._view.y);}else if(drawLineToCenter){ // Go to center
+	ctx.lineTo(_this._view.scaleZero.x,_this._view.scaleZero.y);}}ctx.save(); // If we had points and want to fill this line, do so.
+	if(this._children.length>0&&vm.fill){ // Draw the background first (so the border is always on top)
+	ctx.beginPath();helpers.each(this._children,function(point,index){var previous=helpers.previousItem(this._children,index);var next=helpers.nextItem(this._children,index); // First point moves to it's starting position no matter what
+	if(index===0){if(this._loop){ctx.moveTo(vm.scaleZero.x,vm.scaleZero.y);}else {ctx.moveTo(point._view.x,vm.scaleZero);}if(point._view.skip){if(!this._loop){ctx.moveTo(next._view.x,this._view.scaleZero);}}else {ctx.lineTo(point._view.x,point._view.y);}}else {this.lineToNextPoint(previous,point,next,function(previousPoint,point,nextPoint){if(this._loop){ // Go to center
+	ctx.lineTo(this._view.scaleZero.x,this._view.scaleZero.y);}else {ctx.lineTo(previousPoint._view.x,this._view.scaleZero);ctx.moveTo(nextPoint._view.x,this._view.scaleZero);}},function(previousPoint,point){ // If we skipped the last point, draw a line to ourselves so that the fill is nice
+	ctx.lineTo(point._view.x,point._view.y);});}},this); // For radial scales, loop back around to the first point
+	if(this._loop){loopBackToStart(true);}else { //Round off the line by going to the base of the chart, back to the start, then fill.
+	ctx.lineTo(this._children[this._children.length-1]._view.x,vm.scaleZero);ctx.lineTo(this._children[0]._view.x,vm.scaleZero);}ctx.fillStyle=vm.backgroundColor||Chart.defaults.global.defaultColor;ctx.closePath();ctx.fill();} // Now draw the line between all the points with any borders
+	ctx.lineCap=vm.borderCapStyle||Chart.defaults.global.elements.line.borderCapStyle; // IE 9 and 10 do not support line dash
+	if(ctx.setLineDash){ctx.setLineDash(vm.borderDash||Chart.defaults.global.elements.line.borderDash);}ctx.lineDashOffset=vm.borderDashOffset||Chart.defaults.global.elements.line.borderDashOffset;ctx.lineJoin=vm.borderJoinStyle||Chart.defaults.global.elements.line.borderJoinStyle;ctx.lineWidth=vm.borderWidth||Chart.defaults.global.elements.line.borderWidth;ctx.strokeStyle=vm.borderColor||Chart.defaults.global.defaultColor;ctx.beginPath();helpers.each(this._children,function(point,index){var previous=helpers.previousItem(this._children,index);var next=helpers.nextItem(this._children,index);if(index===0){ctx.moveTo(point._view.x,point._view.y);}else {this.lineToNextPoint(previous,point,next,function(previousPoint,point,nextPoint){ctx.moveTo(nextPoint._view.x,nextPoint._view.y);},function(previousPoint,point){ // If we skipped the last point, move up to our point preventing a line from being drawn
+	ctx.moveTo(point._view.x,point._view.y);});}},this);if(this._loop&&this._children.length>0){loopBackToStart();}ctx.stroke();ctx.restore();}});};},{}],36:[function(require,module,exports){"use strict";module.exports=function(Chart){var helpers=Chart.helpers,globalOpts=Chart.defaults.global;globalOpts.elements.point={radius:3,pointStyle:'circle',backgroundColor:globalOpts.defaultColor,borderWidth:1,borderColor:globalOpts.defaultColor, // Hover
+	hitRadius:1,hoverRadius:4,hoverBorderWidth:1};Chart.elements.Point=Chart.Element.extend({inRange:function inRange(mouseX,mouseY){var vm=this._view;return vm?Math.pow(mouseX-vm.x,2)+Math.pow(mouseY-vm.y,2)<Math.pow(vm.hitRadius+vm.radius,2):false;},inLabelRange:function inLabelRange(mouseX){var vm=this._view;return vm?Math.pow(mouseX-vm.x,2)<Math.pow(vm.radius+vm.hitRadius,2):false;},tooltipPosition:function tooltipPosition(){var vm=this._view;return {x:vm.x,y:vm.y,padding:vm.radius+vm.borderWidth};},draw:function draw(){var vm=this._view,x=vm.x,y=vm.y;var ctx=this._chart.ctx;if(vm.skip){return;}var pointStyle=vm.pointStyle;if((typeof pointStyle==="undefined"?"undefined":_typeof(pointStyle))==='object'&&(pointStyle.toString()==='[object HTMLImageElement]'||pointStyle.toString()==='[object HTMLCanvasElement]')){ctx.drawImage(pointStyle,x-pointStyle.width/2,y-pointStyle.height/2);return;}if(!isNaN(vm.radius)&&vm.radius>0){ctx.strokeStyle=vm.borderColor||Chart.defaults.global.defaultColor;ctx.lineWidth=helpers.getValueOrDefault(vm.borderWidth,Chart.defaults.global.elements.point.borderWidth);ctx.fillStyle=vm.backgroundColor||Chart.defaults.global.defaultColor;var radius=vm.radius;var xOffset,yOffset;switch(pointStyle){ // Default includes circle
+	default:ctx.beginPath();ctx.arc(x,y,radius,0,Math.PI*2);ctx.closePath();ctx.fill();break;case 'triangle':ctx.beginPath();var edgeLength=3*radius/Math.sqrt(3);var height=edgeLength*Math.sqrt(3)/2;ctx.moveTo(x-edgeLength/2,y+height/3);ctx.lineTo(x+edgeLength/2,y+height/3);ctx.lineTo(x,y-2*height/3);ctx.closePath();ctx.fill();break;case 'rect':ctx.fillRect(x-1/Math.SQRT2*radius,y-1/Math.SQRT2*radius,2/Math.SQRT2*radius,2/Math.SQRT2*radius);ctx.strokeRect(x-1/Math.SQRT2*radius,y-1/Math.SQRT2*radius,2/Math.SQRT2*radius,2/Math.SQRT2*radius);break;case 'rectRot':ctx.translate(x,y);ctx.rotate(Math.PI/4);ctx.fillRect(-1/Math.SQRT2*radius,-1/Math.SQRT2*radius,2/Math.SQRT2*radius,2/Math.SQRT2*radius);ctx.strokeRect(-1/Math.SQRT2*radius,-1/Math.SQRT2*radius,2/Math.SQRT2*radius,2/Math.SQRT2*radius);ctx.setTransform(1,0,0,1,0,0);break;case 'cross':ctx.beginPath();ctx.moveTo(x,y+radius);ctx.lineTo(x,y-radius);ctx.moveTo(x-radius,y);ctx.lineTo(x+radius,y);ctx.closePath();break;case 'crossRot':ctx.beginPath();xOffset=Math.cos(Math.PI/4)*radius;yOffset=Math.sin(Math.PI/4)*radius;ctx.moveTo(x-xOffset,y-yOffset);ctx.lineTo(x+xOffset,y+yOffset);ctx.moveTo(x-xOffset,y+yOffset);ctx.lineTo(x+xOffset,y-yOffset);ctx.closePath();break;case 'star':ctx.beginPath();ctx.moveTo(x,y+radius);ctx.lineTo(x,y-radius);ctx.moveTo(x-radius,y);ctx.lineTo(x+radius,y);xOffset=Math.cos(Math.PI/4)*radius;yOffset=Math.sin(Math.PI/4)*radius;ctx.moveTo(x-xOffset,y-yOffset);ctx.lineTo(x+xOffset,y+yOffset);ctx.moveTo(x-xOffset,y+yOffset);ctx.lineTo(x+xOffset,y-yOffset);ctx.closePath();break;case 'line':ctx.beginPath();ctx.moveTo(x-radius,y);ctx.lineTo(x+radius,y);ctx.closePath();break;case 'dash':ctx.beginPath();ctx.moveTo(x,y);ctx.lineTo(x+radius,y);ctx.closePath();break;}ctx.stroke();}}});};},{}],37:[function(require,module,exports){"use strict";module.exports=function(Chart){var helpers=Chart.helpers,globalOpts=Chart.defaults.global;globalOpts.elements.rectangle={backgroundColor:globalOpts.defaultColor,borderWidth:0,borderColor:globalOpts.defaultColor,borderSkipped:'bottom'};Chart.elements.Rectangle=Chart.Element.extend({draw:function draw(){var ctx=this._chart.ctx;var vm=this._view;var halfWidth=vm.width/2,leftX=vm.x-halfWidth,rightX=vm.x+halfWidth,top=vm.base-(vm.base-vm.y),halfStroke=vm.borderWidth/2; // Canvas doesn't allow us to stroke inside the width so we can
+	// adjust the sizes to fit if we're setting a stroke on the line
+	if(vm.borderWidth){leftX+=halfStroke;rightX-=halfStroke;top+=halfStroke;}ctx.beginPath();ctx.fillStyle=vm.backgroundColor;ctx.strokeStyle=vm.borderColor;ctx.lineWidth=vm.borderWidth; // Corner points, from bottom-left to bottom-right clockwise
+	// | 1 2 |
+	// | 0 3 |
+	var corners=[[leftX,vm.base],[leftX,top],[rightX,top],[rightX,vm.base]]; // Find first (starting) corner with fallback to 'bottom' 
+	var borders=['bottom','left','top','right'];var startCorner=borders.indexOf(vm.borderSkipped,0);if(startCorner===-1)startCorner=0;function cornerAt(index){return corners[(startCorner+index)%4];} // Draw rectangle from 'startCorner'
+	ctx.moveTo.apply(ctx,cornerAt(0));for(var i=1;i<4;i++){ctx.lineTo.apply(ctx,cornerAt(i));}ctx.fill();if(vm.borderWidth){ctx.stroke();}},height:function height(){var vm=this._view;return vm.base-vm.y;},inRange:function inRange(mouseX,mouseY){var vm=this._view;return vm?vm.y<vm.base?mouseX>=vm.x-vm.width/2&&mouseX<=vm.x+vm.width/2&&mouseY>=vm.y&&mouseY<=vm.base:mouseX>=vm.x-vm.width/2&&mouseX<=vm.x+vm.width/2&&mouseY>=vm.base&&mouseY<=vm.y:false;},inLabelRange:function inLabelRange(mouseX){var vm=this._view;return vm?mouseX>=vm.x-vm.width/2&&mouseX<=vm.x+vm.width/2:false;},tooltipPosition:function tooltipPosition(){var vm=this._view;return {x:vm.x,y:vm.y};}});};},{}],38:[function(require,module,exports){"use strict";module.exports=function(Chart){var helpers=Chart.helpers; // Default config for a category scale
+	var defaultConfig={position:"bottom"};var DatasetScale=Chart.Scale.extend({ // Implement this so that 
+	determineDataLimits:function determineDataLimits(){this.minIndex=0;this.maxIndex=this.chart.data.labels.length-1;var findIndex;if(this.options.ticks.min!==undefined){ // user specified min value
+	findIndex=helpers.indexOf(this.chart.data.labels,this.options.ticks.min);this.minIndex=findIndex!==-1?findIndex:this.minIndex;}if(this.options.ticks.max!==undefined){ // user specified max value
+	findIndex=helpers.indexOf(this.chart.data.labels,this.options.ticks.max);this.maxIndex=findIndex!==-1?findIndex:this.maxIndex;}this.min=this.chart.data.labels[this.minIndex];this.max=this.chart.data.labels[this.maxIndex];},buildTicks:function buildTicks(index){ // If we are viewing some subset of labels, slice the original array
+	this.ticks=this.minIndex===0&&this.maxIndex===this.chart.data.labels.length-1?this.chart.data.labels:this.chart.data.labels.slice(this.minIndex,this.maxIndex+1);},getLabelForIndex:function getLabelForIndex(index,datasetIndex){return this.ticks[index];}, // Used to get data value locations.  Value can either be an index or a numerical value
+	getPixelForValue:function getPixelForValue(value,index,datasetIndex,includeOffset){ // 1 is added because we need the length but we have the indexes
+	var offsetAmt=Math.max(this.maxIndex+1-this.minIndex-(this.options.gridLines.offsetGridLines?0:1),1);if(this.isHorizontal()){var innerWidth=this.width-(this.paddingLeft+this.paddingRight);var valueWidth=innerWidth/offsetAmt;var widthOffset=valueWidth*(index-this.minIndex)+this.paddingLeft;if(this.options.gridLines.offsetGridLines&&includeOffset){widthOffset+=valueWidth/2;}return this.left+Math.round(widthOffset);}else {var innerHeight=this.height-(this.paddingTop+this.paddingBottom);var valueHeight=innerHeight/offsetAmt;var heightOffset=valueHeight*(index-this.minIndex)+this.paddingTop;if(this.options.gridLines.offsetGridLines&&includeOffset){heightOffset+=valueHeight/2;}return this.top+Math.round(heightOffset);}},getPixelForTick:function getPixelForTick(index,includeOffset){return this.getPixelForValue(this.ticks[index],index+this.minIndex,null,includeOffset);},getValueForPixel:function getValueForPixel(pixel){var value;var offsetAmt=Math.max(this.ticks.length-(this.options.gridLines.offsetGridLines?0:1),1);var horz=this.isHorizontal();var innerDimension=horz?this.width-(this.paddingLeft+this.paddingRight):this.height-(this.paddingTop+this.paddingBottom);var valueDimension=innerDimension/offsetAmt;if(this.options.gridLines.offsetGridLines){pixel-=valueDimension/2;}pixel-=horz?this.paddingLeft:this.paddingTop;if(pixel<=0){value=0;}else {value=Math.round(pixel/valueDimension);}return value;}});Chart.scaleService.registerScaleType("category",DatasetScale,defaultConfig);};},{}],39:[function(require,module,exports){"use strict";module.exports=function(Chart){var helpers=Chart.helpers;var defaultConfig={position:"left",ticks:{callback:function callback(tickValue,index,ticks){ // If we have lots of ticks, don't use the ones
+	var delta=ticks.length>3?ticks[2]-ticks[1]:ticks[1]-ticks[0]; // If we have a number like 2.5 as the delta, figure out how many decimal places we need
+	if(Math.abs(delta)>1){if(tickValue!==Math.floor(tickValue)){ // not an integer
+	delta=tickValue-Math.floor(tickValue);}}var logDelta=helpers.log10(Math.abs(delta));var tickString='';if(tickValue!==0){var numDecimal=-1*Math.floor(logDelta);numDecimal=Math.max(Math.min(numDecimal,20),0); // toFixed has a max of 20 decimal places
+	tickString=tickValue.toFixed(numDecimal);}else {tickString='0'; // never show decimal places for 0
+	}return tickString;}}};var LinearScale=Chart.Scale.extend({determineDataLimits:function determineDataLimits(){ // First Calculate the range
+	this.min=null;this.max=null;if(this.options.stacked){var valuesPerType={};var hasPositiveValues=false;var hasNegativeValues=false;helpers.each(this.chart.data.datasets,function(dataset,datasetIndex){var meta=this.chart.getDatasetMeta(datasetIndex);if(valuesPerType[meta.type]===undefined){valuesPerType[meta.type]={positiveValues:[],negativeValues:[]};} // Store these per type
+	var positiveValues=valuesPerType[meta.type].positiveValues;var negativeValues=valuesPerType[meta.type].negativeValues;if(this.chart.isDatasetVisible(datasetIndex)&&(this.isHorizontal()?meta.xAxisID===this.id:meta.yAxisID===this.id)){helpers.each(dataset.data,function(rawValue,index){var value=+this.getRightValue(rawValue);if(isNaN(value)||meta.data[index].hidden){return;}positiveValues[index]=positiveValues[index]||0;negativeValues[index]=negativeValues[index]||0;if(this.options.relativePoints){positiveValues[index]=100;}else {if(value<0){hasNegativeValues=true;negativeValues[index]+=value;}else {hasPositiveValues=true;positiveValues[index]+=value;}}},this);}},this);helpers.each(valuesPerType,function(valuesForType){var values=valuesForType.positiveValues.concat(valuesForType.negativeValues);var minVal=helpers.min(values);var maxVal=helpers.max(values);this.min=this.min===null?minVal:Math.min(this.min,minVal);this.max=this.max===null?maxVal:Math.max(this.max,maxVal);},this);}else {helpers.each(this.chart.data.datasets,function(dataset,datasetIndex){var meta=this.chart.getDatasetMeta(datasetIndex);if(this.chart.isDatasetVisible(datasetIndex)&&(this.isHorizontal()?meta.xAxisID===this.id:meta.yAxisID===this.id)){helpers.each(dataset.data,function(rawValue,index){var value=+this.getRightValue(rawValue);if(isNaN(value)||meta.data[index].hidden){return;}if(this.min===null){this.min=value;}else if(value<this.min){this.min=value;}if(this.max===null){this.max=value;}else if(value>this.max){this.max=value;}},this);}},this);} // If we are forcing it to begin at 0, but 0 will already be rendered on the chart,
+	// do nothing since that would make the chart weird. If the user really wants a weird chart
+	// axis, they can manually override it
+	if(this.options.ticks.beginAtZero){var minSign=helpers.sign(this.min);var maxSign=helpers.sign(this.max);if(minSign<0&&maxSign<0){ // move the top up to 0
+	this.max=0;}else if(minSign>0&&maxSign>0){ // move the botttom down to 0
+	this.min=0;}}if(this.options.ticks.min!==undefined){this.min=this.options.ticks.min;}else if(this.options.ticks.suggestedMin!==undefined){this.min=Math.min(this.min,this.options.ticks.suggestedMin);}if(this.options.ticks.max!==undefined){this.max=this.options.ticks.max;}else if(this.options.ticks.suggestedMax!==undefined){this.max=Math.max(this.max,this.options.ticks.suggestedMax);}if(this.min===this.max){this.max++;if(!this.options.ticks.beginAtZero){this.min--;}}},buildTicks:function buildTicks(){ // Then calulate the ticks
+	this.ticks=[]; // Figure out what the max number of ticks we can support it is based on the size of
+	// the axis area. For now, we say that the minimum tick spacing in pixels must be 50
+	// We also limit the maximum number of ticks to 11 which gives a nice 10 squares on
+	// the graph
+	var maxTicks;if(this.isHorizontal()){maxTicks=Math.min(this.options.ticks.maxTicksLimit?this.options.ticks.maxTicksLimit:11,Math.ceil(this.width/50));}else { // The factor of 2 used to scale the font size has been experimentally determined.
+	var tickFontSize=helpers.getValueOrDefault(this.options.ticks.fontSize,Chart.defaults.global.defaultFontSize);maxTicks=Math.min(this.options.ticks.maxTicksLimit?this.options.ticks.maxTicksLimit:11,Math.ceil(this.height/(2*tickFontSize)));} // Make sure we always have at least 2 ticks
+	maxTicks=Math.max(2,maxTicks); // To get a "nice" value for the tick spacing, we will use the appropriately named
+	// "nice number" algorithm. See http://stackoverflow.com/questions/8506881/nice-label-algorithm-for-charts-with-minimum-ticks
+	// for details.
+	var spacing;var fixedStepSizeSet=this.options.ticks.fixedStepSize&&this.options.ticks.fixedStepSize>0||this.options.ticks.stepSize&&this.options.ticks.stepSize>0;if(fixedStepSizeSet){spacing=helpers.getValueOrDefault(this.options.ticks.fixedStepSize,this.options.ticks.stepSize);}else {var niceRange=helpers.niceNum(this.max-this.min,false);spacing=helpers.niceNum(niceRange/(maxTicks-1),true);}var niceMin=Math.floor(this.min/spacing)*spacing;var niceMax=Math.ceil(this.max/spacing)*spacing;var numSpaces=(niceMax-niceMin)/spacing; // If very close to our rounded value, use it.
+	if(helpers.almostEquals(numSpaces,Math.round(numSpaces),spacing/1000)){numSpaces=Math.round(numSpaces);}else {numSpaces=Math.ceil(numSpaces);} // Put the values into the ticks array
+	this.ticks.push(this.options.ticks.min!==undefined?this.options.ticks.min:niceMin);for(var j=1;j<numSpaces;++j){this.ticks.push(niceMin+j*spacing);}this.ticks.push(this.options.ticks.max!==undefined?this.options.ticks.max:niceMax);if(this.options.position==="left"||this.options.position==="right"){ // We are in a vertical orientation. The top value is the highest. So reverse the array
+	this.ticks.reverse();} // At this point, we need to update our max and min given the tick values since we have expanded the
+	// range of the scale
+	this.max=helpers.max(this.ticks);this.min=helpers.min(this.ticks);if(this.options.ticks.reverse){this.ticks.reverse();this.start=this.max;this.end=this.min;}else {this.start=this.min;this.end=this.max;}},getLabelForIndex:function getLabelForIndex(index,datasetIndex){return +this.getRightValue(this.chart.data.datasets[datasetIndex].data[index]);},convertTicksToLabels:function convertTicksToLabels(){this.ticksAsNumbers=this.ticks.slice();this.zeroLineIndex=this.ticks.indexOf(0);Chart.Scale.prototype.convertTicksToLabels.call(this);}, // Utils
+	getPixelForValue:function getPixelForValue(value,index,datasetIndex,includeOffset){ // This must be called after fit has been run so that
+	//      this.left, this.top, this.right, and this.bottom have been defined
+	var rightValue=+this.getRightValue(value);var pixel;var range=this.end-this.start;if(this.isHorizontal()){var innerWidth=this.width-(this.paddingLeft+this.paddingRight);pixel=this.left+innerWidth/range*(rightValue-this.start);return Math.round(pixel+this.paddingLeft);}else {var innerHeight=this.height-(this.paddingTop+this.paddingBottom);pixel=this.bottom-this.paddingBottom-innerHeight/range*(rightValue-this.start);return Math.round(pixel);}},getValueForPixel:function getValueForPixel(pixel){var offset;if(this.isHorizontal()){var innerWidth=this.width-(this.paddingLeft+this.paddingRight);offset=(pixel-this.left-this.paddingLeft)/innerWidth;}else {var innerHeight=this.height-(this.paddingTop+this.paddingBottom);offset=(this.bottom-this.paddingBottom-pixel)/innerHeight;}return this.start+(this.end-this.start)*offset;},getPixelForTick:function getPixelForTick(index,includeOffset){return this.getPixelForValue(this.ticksAsNumbers[index],null,null,includeOffset);}});Chart.scaleService.registerScaleType("linear",LinearScale,defaultConfig);};},{}],40:[function(require,module,exports){"use strict";module.exports=function(Chart){var helpers=Chart.helpers;var defaultConfig={position:"left", // label settings
+	ticks:{callback:function callback(value,index,arr){var remain=value/Math.pow(10,Math.floor(Chart.helpers.log10(value)));if(remain===1||remain===2||remain===5||index===0||index===arr.length-1){return value.toExponential();}else {return '';}}}};var LogarithmicScale=Chart.Scale.extend({determineDataLimits:function determineDataLimits(){ // Calculate Range
+	this.min=null;this.max=null;if(this.options.stacked){var valuesPerType={};helpers.each(this.chart.data.datasets,function(dataset,datasetIndex){var meta=this.chart.getDatasetMeta(datasetIndex);if(this.chart.isDatasetVisible(datasetIndex)&&(this.isHorizontal()?meta.xAxisID===this.id:meta.yAxisID===this.id)){if(valuesPerType[meta.type]===undefined){valuesPerType[meta.type]=[];}helpers.each(dataset.data,function(rawValue,index){var values=valuesPerType[meta.type];var value=+this.getRightValue(rawValue);if(isNaN(value)||meta.data[index].hidden){return;}values[index]=values[index]||0;if(this.options.relativePoints){values[index]=100;}else { // Don't need to split positive and negative since the log scale can't handle a 0 crossing
+	values[index]+=value;}},this);}},this);helpers.each(valuesPerType,function(valuesForType){var minVal=helpers.min(valuesForType);var maxVal=helpers.max(valuesForType);this.min=this.min===null?minVal:Math.min(this.min,minVal);this.max=this.max===null?maxVal:Math.max(this.max,maxVal);},this);}else {helpers.each(this.chart.data.datasets,function(dataset,datasetIndex){var meta=this.chart.getDatasetMeta(datasetIndex);if(this.chart.isDatasetVisible(datasetIndex)&&(this.isHorizontal()?meta.xAxisID===this.id:meta.yAxisID===this.id)){helpers.each(dataset.data,function(rawValue,index){var value=+this.getRightValue(rawValue);if(isNaN(value)||meta.data[index].hidden){return;}if(this.min===null){this.min=value;}else if(value<this.min){this.min=value;}if(this.max===null){this.max=value;}else if(value>this.max){this.max=value;}},this);}},this);}this.min=this.options.ticks.min!==undefined?this.options.ticks.min:this.min;this.max=this.options.ticks.max!==undefined?this.options.ticks.max:this.max;if(this.min===this.max){if(this.min!==0&&this.min!==null){this.min=Math.pow(10,Math.floor(helpers.log10(this.min))-1);this.max=Math.pow(10,Math.floor(helpers.log10(this.max))+1);}else {this.min=1;this.max=10;}}},buildTicks:function buildTicks(){ // Reset the ticks array. Later on, we will draw a grid line at these positions
+	// The array simply contains the numerical value of the spots where ticks will be
+	this.ticks=[]; // Figure out what the max number of ticks we can support it is based on the size of
+	// the axis area. For now, we say that the minimum tick spacing in pixels must be 50
+	// We also limit the maximum number of ticks to 11 which gives a nice 10 squares on
+	// the graph
+	var tickVal=this.options.ticks.min!==undefined?this.options.ticks.min:Math.pow(10,Math.floor(helpers.log10(this.min)));while(tickVal<this.max){this.ticks.push(tickVal);var exp=Math.floor(helpers.log10(tickVal));var significand=Math.floor(tickVal/Math.pow(10,exp))+1;if(significand===10){significand=1;++exp;}tickVal=significand*Math.pow(10,exp);}var lastTick=this.options.ticks.max!==undefined?this.options.ticks.max:tickVal;this.ticks.push(lastTick);if(this.options.position==="left"||this.options.position==="right"){ // We are in a vertical orientation. The top value is the highest. So reverse the array
+	this.ticks.reverse();} // At this point, we need to update our max and min given the tick values since we have expanded the
+	// range of the scale
+	this.max=helpers.max(this.ticks);this.min=helpers.min(this.ticks);if(this.options.ticks.reverse){this.ticks.reverse();this.start=this.max;this.end=this.min;}else {this.start=this.min;this.end=this.max;}},convertTicksToLabels:function convertTicksToLabels(){this.tickValues=this.ticks.slice();Chart.Scale.prototype.convertTicksToLabels.call(this);}, // Get the correct tooltip label
+	getLabelForIndex:function getLabelForIndex(index,datasetIndex){return +this.getRightValue(this.chart.data.datasets[datasetIndex].data[index]);},getPixelForTick:function getPixelForTick(index,includeOffset){return this.getPixelForValue(this.tickValues[index],null,null,includeOffset);},getPixelForValue:function getPixelForValue(value,index,datasetIndex,includeOffset){var pixel;var newVal=+this.getRightValue(value);var range=helpers.log10(this.end)-helpers.log10(this.start);if(this.isHorizontal()){if(newVal===0){pixel=this.left+this.paddingLeft;}else {var innerWidth=this.width-(this.paddingLeft+this.paddingRight);pixel=this.left+innerWidth/range*(helpers.log10(newVal)-helpers.log10(this.start));pixel+=this.paddingLeft;}}else { // Bottom - top since pixels increase downard on a screen
+	if(newVal===0){pixel=this.top+this.paddingTop;}else {var innerHeight=this.height-(this.paddingTop+this.paddingBottom);pixel=this.bottom-this.paddingBottom-innerHeight/range*(helpers.log10(newVal)-helpers.log10(this.start));}}return pixel;},getValueForPixel:function getValueForPixel(pixel){var offset;var range=helpers.log10(this.end)-helpers.log10(this.start);var value;if(this.isHorizontal()){var innerWidth=this.width-(this.paddingLeft+this.paddingRight);value=this.start*Math.pow(10,(pixel-this.left-this.paddingLeft)*range/innerWidth);}else {var innerHeight=this.height-(this.paddingTop+this.paddingBottom);value=Math.pow(10,(this.bottom-this.paddingBottom-pixel)*range/innerHeight)/this.start;}return value;}});Chart.scaleService.registerScaleType("logarithmic",LogarithmicScale,defaultConfig);};},{}],41:[function(require,module,exports){"use strict";module.exports=function(Chart){var helpers=Chart.helpers;var defaultConfig={display:true, //Boolean - Whether to animate scaling the chart from the centre
+	animate:true,lineArc:false,position:"chartArea",angleLines:{display:true,color:"rgba(0, 0, 0, 0.1)",lineWidth:1}, // label settings
+	ticks:{ //Boolean - Show a backdrop to the scale label
+	showLabelBackdrop:true, //String - The colour of the label backdrop
+	backdropColor:"rgba(255,255,255,0.75)", //Number - The backdrop padding above & below the label in pixels
+	backdropPaddingY:2, //Number - The backdrop padding to the side of the label in pixels
+	backdropPaddingX:2},pointLabels:{ //Number - Point label font size in pixels
+	fontSize:10, //Function - Used to convert point labels
+	callback:function callback(label){return label;}}};var LinearRadialScale=Chart.Scale.extend({getValueCount:function getValueCount(){return this.chart.data.labels.length;},setDimensions:function setDimensions(){ // Set the unconstrained dimension before label rotation
+	this.width=this.maxWidth;this.height=this.maxHeight;this.xCenter=Math.round(this.width/2);this.yCenter=Math.round(this.height/2);var minSize=helpers.min([this.height,this.width]);var tickFontSize=helpers.getValueOrDefault(this.options.ticks.fontSize,Chart.defaults.global.defaultFontSize);this.drawingArea=this.options.display?minSize/2-(tickFontSize/2+this.options.ticks.backdropPaddingY):minSize/2;},determineDataLimits:function determineDataLimits(){this.min=null;this.max=null;helpers.each(this.chart.data.datasets,function(dataset,datasetIndex){if(this.chart.isDatasetVisible(datasetIndex)){var meta=this.chart.getDatasetMeta(datasetIndex);helpers.each(dataset.data,function(rawValue,index){var value=+this.getRightValue(rawValue);if(isNaN(value)||meta.data[index].hidden){return;}if(this.min===null){this.min=value;}else if(value<this.min){this.min=value;}if(this.max===null){this.max=value;}else if(value>this.max){this.max=value;}},this);}},this); // If we are forcing it to begin at 0, but 0 will already be rendered on the chart,
+	// do nothing since that would make the chart weird. If the user really wants a weird chart
+	// axis, they can manually override it
+	if(this.options.ticks.beginAtZero){var minSign=helpers.sign(this.min);var maxSign=helpers.sign(this.max);if(minSign<0&&maxSign<0){ // move the top up to 0
+	this.max=0;}else if(minSign>0&&maxSign>0){ // move the botttom down to 0
+	this.min=0;}}if(this.options.ticks.min!==undefined){this.min=this.options.ticks.min;}else if(this.options.ticks.suggestedMin!==undefined){this.min=Math.min(this.min,this.options.ticks.suggestedMin);}if(this.options.ticks.max!==undefined){this.max=this.options.ticks.max;}else if(this.options.ticks.suggestedMax!==undefined){this.max=Math.max(this.max,this.options.ticks.suggestedMax);}if(this.min===this.max){this.min--;this.max++;}},buildTicks:function buildTicks(){this.ticks=[]; // Figure out what the max number of ticks we can support it is based on the size of
+	// the axis area. For now, we say that the minimum tick spacing in pixels must be 50
+	// We also limit the maximum number of ticks to 11 which gives a nice 10 squares on
+	// the graph
+	var tickFontSize=helpers.getValueOrDefault(this.options.ticks.fontSize,Chart.defaults.global.defaultFontSize);var maxTicks=Math.min(this.options.ticks.maxTicksLimit?this.options.ticks.maxTicksLimit:11,Math.ceil(this.drawingArea/(1.5*tickFontSize)));maxTicks=Math.max(2,maxTicks); // Make sure we always have at least 2 ticks
+	// To get a "nice" value for the tick spacing, we will use the appropriately named
+	// "nice number" algorithm. See http://stackoverflow.com/questions/8506881/nice-label-algorithm-for-charts-with-minimum-ticks
+	// for details.
+	var niceRange=helpers.niceNum(this.max-this.min,false);var spacing=helpers.niceNum(niceRange/(maxTicks-1),true);var niceMin=Math.floor(this.min/spacing)*spacing;var niceMax=Math.ceil(this.max/spacing)*spacing;var numSpaces=Math.ceil((niceMax-niceMin)/spacing); // Put the values into the ticks array
+	this.ticks.push(this.options.ticks.min!==undefined?this.options.ticks.min:niceMin);for(var j=1;j<numSpaces;++j){this.ticks.push(niceMin+j*spacing);}this.ticks.push(this.options.ticks.max!==undefined?this.options.ticks.max:niceMax); // At this point, we need to update our max and min given the tick values since we have expanded the
+	// range of the scale
+	this.max=helpers.max(this.ticks);this.min=helpers.min(this.ticks);if(this.options.ticks.reverse){this.ticks.reverse();this.start=this.max;this.end=this.min;}else {this.start=this.min;this.end=this.max;}this.zeroLineIndex=this.ticks.indexOf(0);},convertTicksToLabels:function convertTicksToLabels(){Chart.Scale.prototype.convertTicksToLabels.call(this); // Point labels
+	this.pointLabels=this.chart.data.labels.map(this.options.pointLabels.callback,this);},getLabelForIndex:function getLabelForIndex(index,datasetIndex){return +this.getRightValue(this.chart.data.datasets[datasetIndex].data[index]);},fit:function fit(){ /*
+				 * Right, this is really confusing and there is a lot of maths going on here
+				 * The gist of the problem is here: https://gist.github.com/nnnick/696cc9c55f4b0beb8fe9
+				 *
+				 * Reaction: https://dl.dropboxusercontent.com/u/34601363/toomuchscience.gif
+				 *
+				 * Solution:
+				 *
+				 * We assume the radius of the polygon is half the size of the canvas at first
+				 * at each index we check if the text overlaps.
+				 *
+				 * Where it does, we store that angle and that index.
+				 *
+				 * After finding the largest index and angle we calculate how much we need to remove
+				 * from the shape radius to move the point inwards by that x.
+				 *
+				 * We average the left and right distances to get the maximum shape radius that can fit in the box
+				 * along with labels.
+				 *
+				 * Once we have that, we can find the centre point for the chart, by taking the x text protrusion
+				 * on each side, removing that from the size, halving it and adding the left x protrusion width.
+				 *
+				 * This will mean we have a shape fitted to the canvas, as large as it can be with the labels
+				 * and position it in the most space efficient manner
+				 *
+				 * https://dl.dropboxusercontent.com/u/34601363/yeahscience.gif
+				 */var pointLabelFontSize=helpers.getValueOrDefault(this.options.pointLabels.fontSize,Chart.defaults.global.defaultFontSize);var pointLabeFontStyle=helpers.getValueOrDefault(this.options.pointLabels.fontStyle,Chart.defaults.global.defaultFontStyle);var pointLabeFontFamily=helpers.getValueOrDefault(this.options.pointLabels.fontFamily,Chart.defaults.global.defaultFontFamily);var pointLabeFont=helpers.fontString(pointLabelFontSize,pointLabeFontStyle,pointLabeFontFamily); // Get maximum radius of the polygon. Either half the height (minus the text width) or half the width.
+	// Use this to calculate the offset + change. - Make sure L/R protrusion is at least 0 to stop issues with centre points
+	var largestPossibleRadius=helpers.min([this.height/2-pointLabelFontSize-5,this.width/2]),pointPosition,i,textWidth,halfTextWidth,furthestRight=this.width,furthestRightIndex,furthestRightAngle,furthestLeft=0,furthestLeftIndex,furthestLeftAngle,xProtrusionLeft,xProtrusionRight,radiusReductionRight,radiusReductionLeft,maxWidthRadius;this.ctx.font=pointLabeFont;for(i=0;i<this.getValueCount();i++){ // 5px to space the text slightly out - similar to what we do in the draw function.
+	pointPosition=this.getPointPosition(i,largestPossibleRadius);textWidth=this.ctx.measureText(this.pointLabels[i]?this.pointLabels[i]:'').width+5;if(i===0||i===this.getValueCount()/2){ // If we're at index zero, or exactly the middle, we're at exactly the top/bottom
+	// of the radar chart, so text will be aligned centrally, so we'll half it and compare
+	// w/left and right text sizes
+	halfTextWidth=textWidth/2;if(pointPosition.x+halfTextWidth>furthestRight){furthestRight=pointPosition.x+halfTextWidth;furthestRightIndex=i;}if(pointPosition.x-halfTextWidth<furthestLeft){furthestLeft=pointPosition.x-halfTextWidth;furthestLeftIndex=i;}}else if(i<this.getValueCount()/2){ // Less than half the values means we'll left align the text
+	if(pointPosition.x+textWidth>furthestRight){furthestRight=pointPosition.x+textWidth;furthestRightIndex=i;}}else if(i>this.getValueCount()/2){ // More than half the values means we'll right align the text
+	if(pointPosition.x-textWidth<furthestLeft){furthestLeft=pointPosition.x-textWidth;furthestLeftIndex=i;}}}xProtrusionLeft=furthestLeft;xProtrusionRight=Math.ceil(furthestRight-this.width);furthestRightAngle=this.getIndexAngle(furthestRightIndex);furthestLeftAngle=this.getIndexAngle(furthestLeftIndex);radiusReductionRight=xProtrusionRight/Math.sin(furthestRightAngle+Math.PI/2);radiusReductionLeft=xProtrusionLeft/Math.sin(furthestLeftAngle+Math.PI/2); // Ensure we actually need to reduce the size of the chart
+	radiusReductionRight=helpers.isNumber(radiusReductionRight)?radiusReductionRight:0;radiusReductionLeft=helpers.isNumber(radiusReductionLeft)?radiusReductionLeft:0;this.drawingArea=Math.round(largestPossibleRadius-(radiusReductionLeft+radiusReductionRight)/2);this.setCenterPoint(radiusReductionLeft,radiusReductionRight);},setCenterPoint:function setCenterPoint(leftMovement,rightMovement){var maxRight=this.width-rightMovement-this.drawingArea,maxLeft=leftMovement+this.drawingArea;this.xCenter=Math.round((maxLeft+maxRight)/2+this.left); // Always vertically in the centre as the text height doesn't change
+	this.yCenter=Math.round(this.height/2+this.top);},getIndexAngle:function getIndexAngle(index){var angleMultiplier=Math.PI*2/this.getValueCount(); // Start from the top instead of right, so remove a quarter of the circle
+	return index*angleMultiplier-Math.PI/2;},getDistanceFromCenterForValue:function getDistanceFromCenterForValue(value){if(value===null){return 0; // null always in center
+	} // Take into account half font size + the yPadding of the top value
+	var scalingFactor=this.drawingArea/(this.max-this.min);if(this.options.reverse){return (this.max-value)*scalingFactor;}else {return (value-this.min)*scalingFactor;}},getPointPosition:function getPointPosition(index,distanceFromCenter){var thisAngle=this.getIndexAngle(index);return {x:Math.round(Math.cos(thisAngle)*distanceFromCenter)+this.xCenter,y:Math.round(Math.sin(thisAngle)*distanceFromCenter)+this.yCenter};},getPointPositionForValue:function getPointPositionForValue(index,value){return this.getPointPosition(index,this.getDistanceFromCenterForValue(value));},draw:function draw(){if(this.options.display){var ctx=this.ctx;helpers.each(this.ticks,function(label,index){ // Don't draw a centre value (if it is minimum)
+	if(index>0||this.options.reverse){var yCenterOffset=this.getDistanceFromCenterForValue(this.ticks[index]);var yHeight=this.yCenter-yCenterOffset; // Draw circular lines around the scale
+	if(this.options.gridLines.display){ctx.strokeStyle=this.options.gridLines.color;ctx.lineWidth=this.options.gridLines.lineWidth;if(this.options.lineArc){ // Draw circular arcs between the points
+	ctx.beginPath();ctx.arc(this.xCenter,this.yCenter,yCenterOffset,0,Math.PI*2);ctx.closePath();ctx.stroke();}else { // Draw straight lines connecting each index
+	ctx.beginPath();for(var i=0;i<this.getValueCount();i++){var pointPosition=this.getPointPosition(i,this.getDistanceFromCenterForValue(this.ticks[index]));if(i===0){ctx.moveTo(pointPosition.x,pointPosition.y);}else {ctx.lineTo(pointPosition.x,pointPosition.y);}}ctx.closePath();ctx.stroke();}}if(this.options.ticks.display){var tickFontColor=helpers.getValueOrDefault(this.options.ticks.fontColor,Chart.defaults.global.defaultFontColor);var tickFontSize=helpers.getValueOrDefault(this.options.ticks.fontSize,Chart.defaults.global.defaultFontSize);var tickFontStyle=helpers.getValueOrDefault(this.options.ticks.fontStyle,Chart.defaults.global.defaultFontStyle);var tickFontFamily=helpers.getValueOrDefault(this.options.ticks.fontFamily,Chart.defaults.global.defaultFontFamily);var tickLabelFont=helpers.fontString(tickFontSize,tickFontStyle,tickFontFamily);ctx.font=tickLabelFont;if(this.options.ticks.showLabelBackdrop){var labelWidth=ctx.measureText(label).width;ctx.fillStyle=this.options.ticks.backdropColor;ctx.fillRect(this.xCenter-labelWidth/2-this.options.ticks.backdropPaddingX,yHeight-tickFontSize/2-this.options.ticks.backdropPaddingY,labelWidth+this.options.ticks.backdropPaddingX*2,tickFontSize+this.options.ticks.backdropPaddingY*2);}ctx.textAlign='center';ctx.textBaseline="middle";ctx.fillStyle=tickFontColor;ctx.fillText(label,this.xCenter,yHeight);}}},this);if(!this.options.lineArc){ctx.lineWidth=this.options.angleLines.lineWidth;ctx.strokeStyle=this.options.angleLines.color;for(var i=this.getValueCount()-1;i>=0;i--){if(this.options.angleLines.display){var outerPosition=this.getPointPosition(i,this.getDistanceFromCenterForValue(this.options.reverse?this.min:this.max));ctx.beginPath();ctx.moveTo(this.xCenter,this.yCenter);ctx.lineTo(outerPosition.x,outerPosition.y);ctx.stroke();ctx.closePath();} // Extra 3px out for some label spacing
+	var pointLabelPosition=this.getPointPosition(i,this.getDistanceFromCenterForValue(this.options.reverse?this.min:this.max)+5);var pointLabelFontColor=helpers.getValueOrDefault(this.options.pointLabels.fontColor,Chart.defaults.global.defaultFontColor);var pointLabelFontSize=helpers.getValueOrDefault(this.options.pointLabels.fontSize,Chart.defaults.global.defaultFontSize);var pointLabeFontStyle=helpers.getValueOrDefault(this.options.pointLabels.fontStyle,Chart.defaults.global.defaultFontStyle);var pointLabeFontFamily=helpers.getValueOrDefault(this.options.pointLabels.fontFamily,Chart.defaults.global.defaultFontFamily);var pointLabeFont=helpers.fontString(pointLabelFontSize,pointLabeFontStyle,pointLabeFontFamily);ctx.font=pointLabeFont;ctx.fillStyle=pointLabelFontColor;var labelsCount=this.pointLabels.length,halfLabelsCount=this.pointLabels.length/2,quarterLabelsCount=halfLabelsCount/2,upperHalf=i<quarterLabelsCount||i>labelsCount-quarterLabelsCount,exactQuarter=i===quarterLabelsCount||i===labelsCount-quarterLabelsCount;if(i===0){ctx.textAlign='center';}else if(i===halfLabelsCount){ctx.textAlign='center';}else if(i<halfLabelsCount){ctx.textAlign='left';}else {ctx.textAlign='right';} // Set the correct text baseline based on outer positioning
+	if(exactQuarter){ctx.textBaseline='middle';}else if(upperHalf){ctx.textBaseline='bottom';}else {ctx.textBaseline='top';}ctx.fillText(this.pointLabels[i]?this.pointLabels[i]:'',pointLabelPosition.x,pointLabelPosition.y);}}}}});Chart.scaleService.registerScaleType("radialLinear",LinearRadialScale,defaultConfig);};},{}],42:[function(require,module,exports){ /*global window: false */"use strict";var moment=require('moment');moment=typeof moment==='function'?moment:window.moment;module.exports=function(Chart){var helpers=Chart.helpers;var time={units:[{name:'millisecond',steps:[1,2,5,10,20,50,100,250,500]},{name:'second',steps:[1,2,5,10,30]},{name:'minute',steps:[1,2,5,10,30]},{name:'hour',steps:[1,2,3,6,12]},{name:'day',steps:[1,2,5]},{name:'week',maxStep:4},{name:'month',maxStep:3},{name:'quarter',maxStep:4},{name:'year',maxStep:false}]};var defaultConfig={position:"bottom",time:{parser:false, // false == a pattern string from http://momentjs.com/docs/#/parsing/string-format/ or a custom callback that converts its argument to a moment
+	format:false, // DEPRECATED false == date objects, moment object, callback or a pattern string from http://momentjs.com/docs/#/parsing/string-format/
+	unit:false, // false == automatic or override with week, month, year, etc.
+	round:false, // none, or override with week, month, year, etc.
+	displayFormat:false, // DEPRECATED
+	isoWeekday:false, // override week start day - see http://momentjs.com/docs/#/get-set/iso-weekday/
+	// defaults to unit's corresponding unitFormat below or override using pattern string from http://momentjs.com/docs/#/displaying/format/
+	displayFormats:{'millisecond':'h:mm:ss.SSS a', // 11:20:01.123 AM,
+	'second':'h:mm:ss a', // 11:20:01 AM
+	'minute':'h:mm:ss a', // 11:20:01 AM
+	'hour':'MMM D, hA', // Sept 4, 5PM
+	'day':'ll', // Sep 4 2015
+	'week':'ll', // Week 46, or maybe "[W]WW - YYYY" ?
+	'month':'MMM YYYY', // Sept 2015
+	'quarter':'[Q]Q - YYYY', // Q3
+	'year':'YYYY' // 2015
+	}},ticks:{autoSkip:false}};var TimeScale=Chart.Scale.extend({initialize:function initialize(){if(!moment){throw new Error('Chart.js - Moment.js could not be found! You must include it before Chart.js to use the time scale. Download at https://momentjs.com');}Chart.Scale.prototype.initialize.call(this);},getLabelMoment:function getLabelMoment(datasetIndex,index){return this.labelMoments[datasetIndex][index];},getMomentStartOf:function getMomentStartOf(tick){if(this.options.time.unit==='week'&&this.options.time.isoWeekday!==false){return tick.clone().startOf('isoWeek').isoWeekday(this.options.time.isoWeekday);}else {return tick.clone().startOf(this.tickUnit);}},determineDataLimits:function determineDataLimits(){this.labelMoments=[]; // Only parse these once. If the dataset does not have data as x,y pairs, we will use
+	// these
+	var scaleLabelMoments=[];if(this.chart.data.labels&&this.chart.data.labels.length>0){helpers.each(this.chart.data.labels,function(label,index){var labelMoment=this.parseTime(label);if(labelMoment.isValid()){if(this.options.time.round){labelMoment.startOf(this.options.time.round);}scaleLabelMoments.push(labelMoment);}},this);this.firstTick=moment.min.call(this,scaleLabelMoments);this.lastTick=moment.max.call(this,scaleLabelMoments);}else {this.firstTick=null;this.lastTick=null;}helpers.each(this.chart.data.datasets,function(dataset,datasetIndex){var momentsForDataset=[];var datasetVisible=this.chart.isDatasetVisible(datasetIndex);if(_typeof(dataset.data[0])==='object'){helpers.each(dataset.data,function(value,index){var labelMoment=this.parseTime(this.getRightValue(value));if(labelMoment.isValid()){if(this.options.time.round){labelMoment.startOf(this.options.time.round);}momentsForDataset.push(labelMoment);if(datasetVisible){ // May have gone outside the scale ranges, make sure we keep the first and last ticks updated
+	this.firstTick=this.firstTick!==null?moment.min(this.firstTick,labelMoment):labelMoment;this.lastTick=this.lastTick!==null?moment.max(this.lastTick,labelMoment):labelMoment;}}},this);}else { // We have no labels. Use the ones from the scale
+	momentsForDataset=scaleLabelMoments;}this.labelMoments.push(momentsForDataset);},this); // Set these after we've done all the data
+	if(this.options.time.min){this.firstTick=this.parseTime(this.options.time.min);}if(this.options.time.max){this.lastTick=this.parseTime(this.options.time.max);} // We will modify these, so clone for later
+	this.firstTick=(this.firstTick||moment()).clone();this.lastTick=(this.lastTick||moment()).clone();},buildTicks:function buildTicks(index){this.ctx.save();var tickFontSize=helpers.getValueOrDefault(this.options.ticks.fontSize,Chart.defaults.global.defaultFontSize);var tickFontStyle=helpers.getValueOrDefault(this.options.ticks.fontStyle,Chart.defaults.global.defaultFontStyle);var tickFontFamily=helpers.getValueOrDefault(this.options.ticks.fontFamily,Chart.defaults.global.defaultFontFamily);var tickLabelFont=helpers.fontString(tickFontSize,tickFontStyle,tickFontFamily);this.ctx.font=tickLabelFont;this.ticks=[];this.unitScale=1; // How much we scale the unit by, ie 2 means 2x unit per step
+	this.scaleSizeInUnits=0; // How large the scale is in the base unit (seconds, minutes, etc)
+	// Set unit override if applicable
+	if(this.options.time.unit){this.tickUnit=this.options.time.unit||'day';this.displayFormat=this.options.time.displayFormats[this.tickUnit];this.scaleSizeInUnits=this.lastTick.diff(this.firstTick,this.tickUnit,true);this.unitScale=helpers.getValueOrDefault(this.options.time.unitStepSize,1);}else { // Determine the smallest needed unit of the time
+	var innerWidth=this.isHorizontal()?this.width-(this.paddingLeft+this.paddingRight):this.height-(this.paddingTop+this.paddingBottom); // Crude approximation of what the label length might be
+	var tempFirstLabel=this.tickFormatFunction(this.firstTick,0,[]);var tickLabelWidth=this.ctx.measureText(tempFirstLabel).width;var cosRotation=Math.cos(helpers.toRadians(this.options.ticks.maxRotation));var sinRotation=Math.sin(helpers.toRadians(this.options.ticks.maxRotation));tickLabelWidth=tickLabelWidth*cosRotation+tickFontSize*sinRotation;var labelCapacity=innerWidth/tickLabelWidth; // Start as small as possible
+	this.tickUnit='millisecond';this.scaleSizeInUnits=this.lastTick.diff(this.firstTick,this.tickUnit,true);this.displayFormat=this.options.time.displayFormats[this.tickUnit];var unitDefinitionIndex=0;var unitDefinition=time.units[unitDefinitionIndex]; // While we aren't ideal and we don't have units left
+	while(unitDefinitionIndex<time.units.length){ // Can we scale this unit. If `false` we can scale infinitely
+	this.unitScale=1;if(helpers.isArray(unitDefinition.steps)&&Math.ceil(this.scaleSizeInUnits/labelCapacity)<helpers.max(unitDefinition.steps)){ // Use one of the prefedined steps
+	for(var idx=0;idx<unitDefinition.steps.length;++idx){if(unitDefinition.steps[idx]>=Math.ceil(this.scaleSizeInUnits/labelCapacity)){this.unitScale=helpers.getValueOrDefault(this.options.time.unitStepSize,unitDefinition.steps[idx]);break;}}break;}else if(unitDefinition.maxStep===false||Math.ceil(this.scaleSizeInUnits/labelCapacity)<unitDefinition.maxStep){ // We have a max step. Scale this unit
+	this.unitScale=helpers.getValueOrDefault(this.options.time.unitStepSize,Math.ceil(this.scaleSizeInUnits/labelCapacity));break;}else { // Move to the next unit up
+	++unitDefinitionIndex;unitDefinition=time.units[unitDefinitionIndex];this.tickUnit=unitDefinition.name;var leadingUnitBuffer=this.firstTick.diff(this.getMomentStartOf(this.firstTick),this.tickUnit,true);var trailingUnitBuffer=this.getMomentStartOf(this.lastTick.clone().add(1,this.tickUnit)).diff(this.lastTick,this.tickUnit,true);this.scaleSizeInUnits=this.lastTick.diff(this.firstTick,this.tickUnit,true)+leadingUnitBuffer+trailingUnitBuffer;this.displayFormat=this.options.time.displayFormats[unitDefinition.name];}}}var roundedStart; // Only round the first tick if we have no hard minimum
+	if(!this.options.time.min){this.firstTick=this.getMomentStartOf(this.firstTick);roundedStart=this.firstTick;}else {roundedStart=this.getMomentStartOf(this.firstTick);} // Only round the last tick if we have no hard maximum
+	if(!this.options.time.max){var roundedEnd=this.getMomentStartOf(this.lastTick);if(roundedEnd.diff(this.lastTick,this.tickUnit,true)!==0){ // Do not use end of because we need this to be in the next time unit
+	this.lastTick=this.getMomentStartOf(this.lastTick.add(1,this.tickUnit));}}this.smallestLabelSeparation=this.width;helpers.each(this.chart.data.datasets,function(dataset,datasetIndex){for(var i=1;i<this.labelMoments[datasetIndex].length;i++){this.smallestLabelSeparation=Math.min(this.smallestLabelSeparation,this.labelMoments[datasetIndex][i].diff(this.labelMoments[datasetIndex][i-1],this.tickUnit,true));}},this); // Tick displayFormat override
+	if(this.options.time.displayFormat){this.displayFormat=this.options.time.displayFormat;} // first tick. will have been rounded correctly if options.time.min is not specified
+	this.ticks.push(this.firstTick.clone()); // For every unit in between the first and last moment, create a moment and add it to the ticks tick
+	for(var i=1;i<=this.scaleSizeInUnits;++i){var newTick=roundedStart.clone().add(i,this.tickUnit); // Are we greater than the max time
+	if(this.options.time.max&&newTick.diff(this.lastTick,this.tickUnit,true)>=0){break;}if(i%this.unitScale===0){this.ticks.push(newTick);}} // Always show the right tick
+	var diff=this.ticks[this.ticks.length-1].diff(this.lastTick,this.tickUnit);if(diff!==0||this.scaleSizeInUnits===0){ // this is a weird case. If the <max> option is the same as the end option, we can't just diff the times because the tick was created from the roundedStart
+	// but the last tick was not rounded.
+	if(this.options.time.max){this.ticks.push(this.lastTick.clone());this.scaleSizeInUnits=this.lastTick.diff(this.ticks[0],this.tickUnit,true);}else {this.ticks.push(this.lastTick.clone());this.scaleSizeInUnits=this.lastTick.diff(this.firstTick,this.tickUnit,true);}}this.ctx.restore();}, // Get tooltip label
+	getLabelForIndex:function getLabelForIndex(index,datasetIndex){var label=this.chart.data.labels&&index<this.chart.data.labels.length?this.chart.data.labels[index]:'';if(_typeof(this.chart.data.datasets[datasetIndex].data[0])==='object'){label=this.getRightValue(this.chart.data.datasets[datasetIndex].data[index]);} // Format nicely
+	if(this.options.time.tooltipFormat){label=this.parseTime(label).format(this.options.time.tooltipFormat);}return label;}, // Function to format an individual tick mark
+	tickFormatFunction:function tickFormatFunction(tick,index,ticks){var formattedTick=tick.format(this.displayFormat);var tickOpts=this.options.ticks;var callback=helpers.getValueOrDefault(tickOpts.callback,tickOpts.userCallback);if(callback){return callback(formattedTick,index,ticks);}else {return formattedTick;}},convertTicksToLabels:function convertTicksToLabels(){this.tickMoments=this.ticks;this.ticks=this.ticks.map(this.tickFormatFunction,this);},getPixelForValue:function getPixelForValue(value,index,datasetIndex,includeOffset){var labelMoment=value&&value.isValid&&value.isValid()?value:this.getLabelMoment(datasetIndex,index);if(labelMoment){var offset=labelMoment.diff(this.firstTick,this.tickUnit,true);var decimal=offset/this.scaleSizeInUnits;if(this.isHorizontal()){var innerWidth=this.width-(this.paddingLeft+this.paddingRight);var valueWidth=innerWidth/Math.max(this.ticks.length-1,1);var valueOffset=innerWidth*decimal+this.paddingLeft;return this.left+Math.round(valueOffset);}else {var innerHeight=this.height-(this.paddingTop+this.paddingBottom);var valueHeight=innerHeight/Math.max(this.ticks.length-1,1);var heightOffset=innerHeight*decimal+this.paddingTop;return this.top+Math.round(heightOffset);}}},getPixelForTick:function getPixelForTick(index,includeOffset){return this.getPixelForValue(this.tickMoments[index],null,null,includeOffset);},getValueForPixel:function getValueForPixel(pixel){var innerDimension=this.isHorizontal()?this.width-(this.paddingLeft+this.paddingRight):this.height-(this.paddingTop+this.paddingBottom);var offset=(pixel-(this.isHorizontal()?this.left+this.paddingLeft:this.top+this.paddingTop))/innerDimension;offset*=this.scaleSizeInUnits;return this.firstTick.clone().add(moment.duration(offset,this.tickUnit).asSeconds(),'seconds');},parseTime:function parseTime(label){if(typeof this.options.time.parser==='string'){return moment(label,this.options.time.parser);}if(typeof this.options.time.parser==='function'){return this.options.time.parser(label);} // Date objects
+	if(typeof label.getMonth==='function'||typeof label==='number'){return moment(label);} // Moment support
+	if(label.isValid&&label.isValid()){return label;} // Custom parsing (return an instance of moment)
+	if(typeof this.options.time.format!=='string'&&this.options.time.format.call){console.warn("options.time.format is deprecated and replaced by options.time.parser. See http://nnnick.github.io/Chart.js/docs-v2/#scales-time-scale");return this.options.time.format(label);} // Moment format parsing
+	return moment(label,this.options.time.format);}});Chart.scaleService.registerScaleType("time",TimeScale,defaultConfig);};},{"moment":1}]},{},[7]);
+
+/***/ },
+/* 100 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -11368,7 +12457,7 @@ var App =
 	function floorInBase(n,base){return base*Math.floor(n/base);}})(jQuery);
 
 /***/ },
-/* 99 */
+/* 101 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -12964,660 +14053,13 @@ var App =
 	// (#7102#comment:10, https://github.com/jquery/jquery/pull/557)
 	// and CommonJS for browser emulators (#13566)
 	if(!noGlobal){window.jQuery=window.$=jQuery;}return jQuery;});
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(189)(module)))
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(190)(module)))
 
 /***/ },
-/* 100 */
-/***/ function(module, exports) {
-
-	"use strict";
-	'use strict';
-
-	(function (global) {
-	  "use strict";
-
-	  /* Set up a RequestAnimationFrame shim so we can animate efficiently FOR
-	   * GREAT JUSTICE. */
-
-	  var requestInterval, cancelInterval;
-
-	  (function () {
-	    var raf = global.requestAnimationFrame || global.webkitRequestAnimationFrame || global.mozRequestAnimationFrame || global.oRequestAnimationFrame || global.msRequestAnimationFrame,
-	        caf = global.cancelAnimationFrame || global.webkitCancelAnimationFrame || global.mozCancelAnimationFrame || global.oCancelAnimationFrame || global.msCancelAnimationFrame;
-
-	    if (raf && caf) {
-	      requestInterval = function requestInterval(fn, delay) {
-	        var handle = { value: null };
-
-	        function loop() {
-	          handle.value = raf(loop);
-	          fn();
-	        }
-
-	        loop();
-	        return handle;
-	      };
-
-	      cancelInterval = function cancelInterval(handle) {
-	        caf(handle.value);
-	      };
-	    } else {
-	      requestInterval = setInterval;
-	      cancelInterval = clearInterval;
-	    }
-	  })();
-
-	  /* Catmull-rom spline stuffs. */
-	  /*
-	  function upsample(n, spline) {
-	    var polyline = [],
-	        len = spline.length,
-	        bx  = spline[0],
-	        by  = spline[1],
-	        cx  = spline[2],
-	        cy  = spline[3],
-	        dx  = spline[4],
-	        dy  = spline[5],
-	        i, j, ax, ay, px, qx, rx, sx, py, qy, ry, sy, t;
-	     for(i = 6; i !== spline.length; i += 2) {
-	      ax = bx;
-	      bx = cx;
-	      cx = dx;
-	      dx = spline[i    ];
-	      px = -0.5 * ax + 1.5 * bx - 1.5 * cx + 0.5 * dx;
-	      qx =        ax - 2.5 * bx + 2.0 * cx - 0.5 * dx;
-	      rx = -0.5 * ax            + 0.5 * cx           ;
-	      sx =                   bx                      ;
-	       ay = by;
-	      by = cy;
-	      cy = dy;
-	      dy = spline[i + 1];
-	      py = -0.5 * ay + 1.5 * by - 1.5 * cy + 0.5 * dy;
-	      qy =        ay - 2.5 * by + 2.0 * cy - 0.5 * dy;
-	      ry = -0.5 * ay            + 0.5 * cy           ;
-	      sy =                   by                      ;
-	       for(j = 0; j !== n; ++j) {
-	        t = j / n;
-	         polyline.push(
-	          ((px * t + qx) * t + rx) * t + sx,
-	          ((py * t + qy) * t + ry) * t + sy
-	        );
-	      }
-	    }
-	     polyline.push(
-	      px + qx + rx + sx,
-	      py + qy + ry + sy
-	    );
-	     return polyline;
-	  }
-	   function downsample(n, polyline) {
-	    var len = 0,
-	        i, dx, dy;
-	     for(i = 2; i !== polyline.length; i += 2) {
-	      dx = polyline[i    ] - polyline[i - 2];
-	      dy = polyline[i + 1] - polyline[i - 1];
-	      len += Math.sqrt(dx * dx + dy * dy);
-	    }
-	     len /= n;
-	     var small = [],
-	        target = len,
-	        min = 0,
-	        max, t;
-	     small.push(polyline[0], polyline[1]);
-	     for(i = 2; i !== polyline.length; i += 2) {
-	      dx = polyline[i    ] - polyline[i - 2];
-	      dy = polyline[i + 1] - polyline[i - 1];
-	      max = min + Math.sqrt(dx * dx + dy * dy);
-	       if(max > target) {
-	        t = (target - min) / (max - min);
-	         small.push(
-	          polyline[i - 2] + dx * t,
-	          polyline[i - 1] + dy * t
-	        );
-	         target += len;
-	      }
-	       min = max;
-	    }
-	     small.push(polyline[polyline.length - 2], polyline[polyline.length - 1]);
-	     return small;
-	  }
-	  */
-
-	  /* Define skycon things. */
-	  /* FIXME: I'm *really really* sorry that this code is so gross. Really, I am.
-	   * I'll try to clean it up eventually! Promise! */
-	  var KEYFRAME = 500,
-	      STROKE = 0.08,
-	      TAU = 2.0 * Math.PI,
-	      TWO_OVER_SQRT_2 = 2.0 / Math.sqrt(2);
-
-	  function circle(ctx, x, y, r) {
-	    ctx.beginPath();
-	    ctx.arc(x, y, r, 0, TAU, false);
-	    ctx.fill();
-	  }
-
-	  function line(ctx, ax, ay, bx, by) {
-	    ctx.beginPath();
-	    ctx.moveTo(ax, ay);
-	    ctx.lineTo(bx, by);
-	    ctx.stroke();
-	  }
-
-	  function puff(ctx, t, cx, cy, rx, ry, rmin, rmax) {
-	    var c = Math.cos(t * TAU),
-	        s = Math.sin(t * TAU);
-
-	    rmax -= rmin;
-
-	    circle(ctx, cx - s * rx, cy + c * ry + rmax * 0.5, rmin + (1 - c * 0.5) * rmax);
-	  }
-
-	  function puffs(ctx, t, cx, cy, rx, ry, rmin, rmax) {
-	    var i;
-
-	    for (i = 5; i--;) {
-	      puff(ctx, t + i / 5, cx, cy, rx, ry, rmin, rmax);
-	    }
-	  }
-
-	  function cloud(ctx, t, cx, cy, cw, s, color) {
-	    t /= 30000;
-
-	    var a = cw * 0.21,
-	        b = cw * 0.12,
-	        c = cw * 0.24,
-	        d = cw * 0.28;
-
-	    ctx.fillStyle = color;
-	    puffs(ctx, t, cx, cy, a, b, c, d);
-
-	    ctx.globalCompositeOperation = 'destination-out';
-	    puffs(ctx, t, cx, cy, a, b, c - s, d - s);
-	    ctx.globalCompositeOperation = 'source-over';
-	  }
-
-	  function sun(ctx, t, cx, cy, cw, s, color) {
-	    t /= 120000;
-
-	    var a = cw * 0.25 - s * 0.5,
-	        b = cw * 0.32 + s * 0.5,
-	        c = cw * 0.50 - s * 0.5,
-	        i,
-	        p,
-	        cos,
-	        sin;
-
-	    ctx.strokeStyle = color;
-	    ctx.lineWidth = s;
-	    ctx.lineCap = "round";
-	    ctx.lineJoin = "round";
-
-	    ctx.beginPath();
-	    ctx.arc(cx, cy, a, 0, TAU, false);
-	    ctx.stroke();
-
-	    for (i = 8; i--;) {
-	      p = (t + i / 8) * TAU;
-	      cos = Math.cos(p);
-	      sin = Math.sin(p);
-	      line(ctx, cx + cos * b, cy + sin * b, cx + cos * c, cy + sin * c);
-	    }
-	  }
-
-	  function moon(ctx, t, cx, cy, cw, s, color) {
-	    t /= 15000;
-
-	    var a = cw * 0.29 - s * 0.5,
-	        b = cw * 0.05,
-	        c = Math.cos(t * TAU),
-	        p = c * TAU / -16;
-
-	    ctx.strokeStyle = color;
-	    ctx.lineWidth = s;
-	    ctx.lineCap = "round";
-	    ctx.lineJoin = "round";
-
-	    cx += c * b;
-
-	    ctx.beginPath();
-	    ctx.arc(cx, cy, a, p + TAU / 8, p + TAU * 7 / 8, false);
-	    ctx.arc(cx + Math.cos(p) * a * TWO_OVER_SQRT_2, cy + Math.sin(p) * a * TWO_OVER_SQRT_2, a, p + TAU * 5 / 8, p + TAU * 3 / 8, true);
-	    ctx.closePath();
-	    ctx.stroke();
-	  }
-
-	  function rain(ctx, t, cx, cy, cw, s, color) {
-	    t /= 1350;
-
-	    var a = cw * 0.16,
-	        b = TAU * 11 / 12,
-	        c = TAU * 7 / 12,
-	        i,
-	        p,
-	        x,
-	        y;
-
-	    ctx.fillStyle = color;
-
-	    for (i = 4; i--;) {
-	      p = (t + i / 4) % 1;
-	      x = cx + (i - 1.5) / 1.5 * (i === 1 || i === 2 ? -1 : 1) * a;
-	      y = cy + p * p * cw;
-	      ctx.beginPath();
-	      ctx.moveTo(x, y - s * 1.5);
-	      ctx.arc(x, y, s * 0.75, b, c, false);
-	      ctx.fill();
-	    }
-	  }
-
-	  function sleet(ctx, t, cx, cy, cw, s, color) {
-	    t /= 750;
-
-	    var a = cw * 0.1875,
-	        b = TAU * 11 / 12,
-	        c = TAU * 7 / 12,
-	        i,
-	        p,
-	        x,
-	        y;
-
-	    ctx.strokeStyle = color;
-	    ctx.lineWidth = s * 0.5;
-	    ctx.lineCap = "round";
-	    ctx.lineJoin = "round";
-
-	    for (i = 4; i--;) {
-	      p = (t + i / 4) % 1;
-	      x = Math.floor(cx + (i - 1.5) / 1.5 * (i === 1 || i === 2 ? -1 : 1) * a) + 0.5;
-	      y = cy + p * cw;
-	      line(ctx, x, y - s * 1.5, x, y + s * 1.5);
-	    }
-	  }
-
-	  function snow(ctx, t, cx, cy, cw, s, color) {
-	    t /= 3000;
-
-	    var a = cw * 0.16,
-	        b = s * 0.75,
-	        u = t * TAU * 0.7,
-	        ux = Math.cos(u) * b,
-	        uy = Math.sin(u) * b,
-	        v = u + TAU / 3,
-	        vx = Math.cos(v) * b,
-	        vy = Math.sin(v) * b,
-	        w = u + TAU * 2 / 3,
-	        wx = Math.cos(w) * b,
-	        wy = Math.sin(w) * b,
-	        i,
-	        p,
-	        x,
-	        y;
-
-	    ctx.strokeStyle = color;
-	    ctx.lineWidth = s * 0.5;
-	    ctx.lineCap = "round";
-	    ctx.lineJoin = "round";
-
-	    for (i = 4; i--;) {
-	      p = (t + i / 4) % 1;
-	      x = cx + Math.sin((p + i / 4) * TAU) * a;
-	      y = cy + p * cw;
-
-	      line(ctx, x - ux, y - uy, x + ux, y + uy);
-	      line(ctx, x - vx, y - vy, x + vx, y + vy);
-	      line(ctx, x - wx, y - wy, x + wx, y + wy);
-	    }
-	  }
-
-	  function fogbank(ctx, t, cx, cy, cw, s, color) {
-	    t /= 30000;
-
-	    var a = cw * 0.21,
-	        b = cw * 0.06,
-	        c = cw * 0.21,
-	        d = cw * 0.28;
-
-	    ctx.fillStyle = color;
-	    puffs(ctx, t, cx, cy, a, b, c, d);
-
-	    ctx.globalCompositeOperation = 'destination-out';
-	    puffs(ctx, t, cx, cy, a, b, c - s, d - s);
-	    ctx.globalCompositeOperation = 'source-over';
-	  }
-
-	  /*
-	  var WIND_PATHS = [
-	        downsample(63, upsample(8, [
-	          -1.00, -0.28,
-	          -0.75, -0.18,
-	          -0.50,  0.12,
-	          -0.20,  0.12,
-	          -0.04, -0.04,
-	          -0.07, -0.18,
-	          -0.19, -0.18,
-	          -0.23, -0.05,
-	          -0.12,  0.11,
-	           0.02,  0.16,
-	           0.20,  0.15,
-	           0.50,  0.07,
-	           0.75,  0.18,
-	           1.00,  0.28
-	        ])),
-	        downsample(31, upsample(16, [
-	          -1.00, -0.10,
-	          -0.75,  0.00,
-	          -0.50,  0.10,
-	          -0.25,  0.14,
-	           0.00,  0.10,
-	           0.25,  0.00,
-	           0.50, -0.10,
-	           0.75, -0.14,
-	           1.00, -0.10
-	        ]))
-	      ];
-	  */
-
-	  var WIND_PATHS = [[-0.7500, -0.1800, -0.7219, -0.1527, -0.6971, -0.1225, -0.6739, -0.0910, -0.6516, -0.0588, -0.6298, -0.0262, -0.6083, 0.0065, -0.5868, 0.0396, -0.5643, 0.0731, -0.5372, 0.1041, -0.5033, 0.1259, -0.4662, 0.1406, -0.4275, 0.1493, -0.3881, 0.1530, -0.3487, 0.1526, -0.3095, 0.1488, -0.2708, 0.1421, -0.2319, 0.1342, -0.1943, 0.1217, -0.1600, 0.1025, -0.1290, 0.0785, -0.1012, 0.0509, -0.0764, 0.0206, -0.0547, -0.0120, -0.0378, -0.0472, -0.0324, -0.0857, -0.0389, -0.1241, -0.0546, -0.1599, -0.0814, -0.1876, -0.1193, -0.1964, -0.1582, -0.1935, -0.1931, -0.1769, -0.2157, -0.1453, -0.2290, -0.1085, -0.2327, -0.0697, -0.2240, -0.0317, -0.2064, 0.0033, -0.1853, 0.0362, -0.1613, 0.0672, -0.1350, 0.0961, -0.1051, 0.1213, -0.0706, 0.1397, -0.0332, 0.1512, 0.0053, 0.1580, 0.0442, 0.1624, 0.0833, 0.1636, 0.1224, 0.1615, 0.1613, 0.1565, 0.1999, 0.1500, 0.2378, 0.1402, 0.2749, 0.1279, 0.3118, 0.1147, 0.3487, 0.1015, 0.3858, 0.0892, 0.4236, 0.0787, 0.4621, 0.0715, 0.5012, 0.0702, 0.5398, 0.0766, 0.5768, 0.0890, 0.6123, 0.1055, 0.6466, 0.1244, 0.6805, 0.1440, 0.7147, 0.1630, 0.7500, 0.1800], [-0.7500, 0.0000, -0.7033, 0.0195, -0.6569, 0.0399, -0.6104, 0.0600, -0.5634, 0.0789, -0.5155, 0.0954, -0.4667, 0.1089, -0.4174, 0.1206, -0.3676, 0.1299, -0.3174, 0.1365, -0.2669, 0.1398, -0.2162, 0.1391, -0.1658, 0.1347, -0.1157, 0.1271, -0.0661, 0.1169, -0.0170, 0.1046, 0.0316, 0.0903, 0.0791, 0.0728, 0.1259, 0.0534, 0.1723, 0.0331, 0.2188, 0.0129, 0.2656, -0.0064, 0.3122, -0.0263, 0.3586, -0.0466, 0.4052, -0.0665, 0.4525, -0.0847, 0.5007, -0.1002, 0.5497, -0.1130, 0.5991, -0.1240, 0.6491, -0.1325, 0.6994, -0.1380, 0.7500, -0.1400]],
-	      WIND_OFFSETS = [{ start: 0.36, end: 0.11 }, { start: 0.56, end: 0.16 }];
-
-	  function leaf(ctx, t, x, y, cw, s, color) {
-	    var a = cw / 8,
-	        b = a / 3,
-	        c = 2 * b,
-	        d = t % 1 * TAU,
-	        e = Math.cos(d),
-	        f = Math.sin(d);
-
-	    ctx.fillStyle = color;
-	    ctx.strokeStyle = color;
-	    ctx.lineWidth = s;
-	    ctx.lineCap = "round";
-	    ctx.lineJoin = "round";
-
-	    ctx.beginPath();
-	    ctx.arc(x, y, a, d, d + Math.PI, false);
-	    ctx.arc(x - b * e, y - b * f, c, d + Math.PI, d, false);
-	    ctx.arc(x + c * e, y + c * f, b, d + Math.PI, d, true);
-	    ctx.globalCompositeOperation = 'destination-out';
-	    ctx.fill();
-	    ctx.globalCompositeOperation = 'source-over';
-	    ctx.stroke();
-	  }
-
-	  function swoosh(ctx, t, cx, cy, cw, s, index, total, color) {
-	    t /= 2500;
-
-	    var path = WIND_PATHS[index],
-	        a = (t + index - WIND_OFFSETS[index].start) % total,
-	        c = (t + index - WIND_OFFSETS[index].end) % total,
-	        e = (t + index) % total,
-	        b,
-	        d,
-	        f,
-	        i;
-
-	    ctx.strokeStyle = color;
-	    ctx.lineWidth = s;
-	    ctx.lineCap = "round";
-	    ctx.lineJoin = "round";
-
-	    if (a < 1) {
-	      ctx.beginPath();
-
-	      a *= path.length / 2 - 1;
-	      b = Math.floor(a);
-	      a -= b;
-	      b *= 2;
-	      b += 2;
-
-	      ctx.moveTo(cx + (path[b - 2] * (1 - a) + path[b] * a) * cw, cy + (path[b - 1] * (1 - a) + path[b + 1] * a) * cw);
-
-	      if (c < 1) {
-	        c *= path.length / 2 - 1;
-	        d = Math.floor(c);
-	        c -= d;
-	        d *= 2;
-	        d += 2;
-
-	        for (i = b; i !== d; i += 2) {
-	          ctx.lineTo(cx + path[i] * cw, cy + path[i + 1] * cw);
-	        }ctx.lineTo(cx + (path[d - 2] * (1 - c) + path[d] * c) * cw, cy + (path[d - 1] * (1 - c) + path[d + 1] * c) * cw);
-	      } else for (i = b; i !== path.length; i += 2) {
-	        ctx.lineTo(cx + path[i] * cw, cy + path[i + 1] * cw);
-	      }ctx.stroke();
-	    } else if (c < 1) {
-	      ctx.beginPath();
-
-	      c *= path.length / 2 - 1;
-	      d = Math.floor(c);
-	      c -= d;
-	      d *= 2;
-	      d += 2;
-
-	      ctx.moveTo(cx + path[0] * cw, cy + path[1] * cw);
-
-	      for (i = 2; i !== d; i += 2) {
-	        ctx.lineTo(cx + path[i] * cw, cy + path[i + 1] * cw);
-	      }ctx.lineTo(cx + (path[d - 2] * (1 - c) + path[d] * c) * cw, cy + (path[d - 1] * (1 - c) + path[d + 1] * c) * cw);
-
-	      ctx.stroke();
-	    }
-
-	    if (e < 1) {
-	      e *= path.length / 2 - 1;
-	      f = Math.floor(e);
-	      e -= f;
-	      f *= 2;
-	      f += 2;
-
-	      leaf(ctx, t, cx + (path[f - 2] * (1 - e) + path[f] * e) * cw, cy + (path[f - 1] * (1 - e) + path[f + 1] * e) * cw, cw, s, color);
-	    }
-	  }
-
-	  var Skycons = function Skycons(opts) {
-	    this.list = [];
-	    this.interval = null;
-	    this.color = opts && opts.color ? opts.color : "black";
-	    this.resizeClear = !!(opts && opts.resizeClear);
-	  };
-
-	  Skycons.CLEAR_DAY = function (ctx, t, color) {
-	    var w = ctx.canvas.width,
-	        h = ctx.canvas.height,
-	        s = Math.min(w, h);
-
-	    sun(ctx, t, w * 0.5, h * 0.5, s, s * STROKE, color);
-	  };
-
-	  Skycons.CLEAR_NIGHT = function (ctx, t, color) {
-	    var w = ctx.canvas.width,
-	        h = ctx.canvas.height,
-	        s = Math.min(w, h);
-
-	    moon(ctx, t, w * 0.5, h * 0.5, s, s * STROKE, color);
-	  };
-
-	  Skycons.PARTLY_CLOUDY_DAY = function (ctx, t, color) {
-	    var w = ctx.canvas.width,
-	        h = ctx.canvas.height,
-	        s = Math.min(w, h);
-
-	    sun(ctx, t, w * 0.625, h * 0.375, s * 0.75, s * STROKE, color);
-	    cloud(ctx, t, w * 0.375, h * 0.625, s * 0.75, s * STROKE, color);
-	  };
-
-	  Skycons.PARTLY_CLOUDY_NIGHT = function (ctx, t, color) {
-	    var w = ctx.canvas.width,
-	        h = ctx.canvas.height,
-	        s = Math.min(w, h);
-
-	    moon(ctx, t, w * 0.667, h * 0.375, s * 0.75, s * STROKE, color);
-	    cloud(ctx, t, w * 0.375, h * 0.625, s * 0.75, s * STROKE, color);
-	  };
-
-	  Skycons.CLOUDY = function (ctx, t, color) {
-	    var w = ctx.canvas.width,
-	        h = ctx.canvas.height,
-	        s = Math.min(w, h);
-
-	    cloud(ctx, t, w * 0.5, h * 0.5, s, s * STROKE, color);
-	  };
-
-	  Skycons.RAIN = function (ctx, t, color) {
-	    var w = ctx.canvas.width,
-	        h = ctx.canvas.height,
-	        s = Math.min(w, h);
-
-	    rain(ctx, t, w * 0.5, h * 0.37, s * 0.9, s * STROKE, color);
-	    cloud(ctx, t, w * 0.5, h * 0.37, s * 0.9, s * STROKE, color);
-	  };
-
-	  Skycons.SLEET = function (ctx, t, color) {
-	    var w = ctx.canvas.width,
-	        h = ctx.canvas.height,
-	        s = Math.min(w, h);
-
-	    sleet(ctx, t, w * 0.5, h * 0.37, s * 0.9, s * STROKE, color);
-	    cloud(ctx, t, w * 0.5, h * 0.37, s * 0.9, s * STROKE, color);
-	  };
-
-	  Skycons.SNOW = function (ctx, t, color) {
-	    var w = ctx.canvas.width,
-	        h = ctx.canvas.height,
-	        s = Math.min(w, h);
-
-	    snow(ctx, t, w * 0.5, h * 0.37, s * 0.9, s * STROKE, color);
-	    cloud(ctx, t, w * 0.5, h * 0.37, s * 0.9, s * STROKE, color);
-	  };
-
-	  Skycons.WIND = function (ctx, t, color) {
-	    var w = ctx.canvas.width,
-	        h = ctx.canvas.height,
-	        s = Math.min(w, h);
-
-	    swoosh(ctx, t, w * 0.5, h * 0.5, s, s * STROKE, 0, 2, color);
-	    swoosh(ctx, t, w * 0.5, h * 0.5, s, s * STROKE, 1, 2, color);
-	  };
-
-	  Skycons.FOG = function (ctx, t, color) {
-	    var w = ctx.canvas.width,
-	        h = ctx.canvas.height,
-	        s = Math.min(w, h),
-	        k = s * STROKE;
-
-	    fogbank(ctx, t, w * 0.5, h * 0.32, s * 0.75, k, color);
-
-	    t /= 5000;
-
-	    var a = Math.cos(t * TAU) * s * 0.02,
-	        b = Math.cos((t + 0.25) * TAU) * s * 0.02,
-	        c = Math.cos((t + 0.50) * TAU) * s * 0.02,
-	        d = Math.cos((t + 0.75) * TAU) * s * 0.02,
-	        n = h * 0.936,
-	        e = Math.floor(n - k * 0.5) + 0.5,
-	        f = Math.floor(n - k * 2.5) + 0.5;
-
-	    ctx.strokeStyle = color;
-	    ctx.lineWidth = k;
-	    ctx.lineCap = "round";
-	    ctx.lineJoin = "round";
-
-	    line(ctx, a + w * 0.2 + k * 0.5, e, b + w * 0.8 - k * 0.5, e);
-	    line(ctx, c + w * 0.2 + k * 0.5, f, d + w * 0.8 - k * 0.5, f);
-	  };
-
-	  Skycons.prototype = {
-	    _determineDrawingFunction: function _determineDrawingFunction(draw) {
-	      if (typeof draw === "string") draw = Skycons[draw.toUpperCase().replace(/-/g, "_")] || null;
-
-	      return draw;
-	    },
-	    add: function add(el, draw) {
-	      var obj;
-
-	      if (typeof el === "string") el = document.getElementById(el);
-
-	      // Does nothing if canvas name doesn't exists
-	      if (el === null) return;
-
-	      draw = this._determineDrawingFunction(draw);
-
-	      // Does nothing if the draw function isn't actually a function
-	      if (typeof draw !== "function") return;
-
-	      obj = {
-	        element: el,
-	        context: el.getContext("2d"),
-	        drawing: draw
-	      };
-
-	      this.list.push(obj);
-	      this.draw(obj, KEYFRAME);
-	    },
-	    set: function set(el, draw) {
-	      var i;
-
-	      if (typeof el === "string") el = document.getElementById(el);
-
-	      for (i = this.list.length; i--;) {
-	        if (this.list[i].element === el) {
-	          this.list[i].drawing = this._determineDrawingFunction(draw);
-	          this.draw(this.list[i], KEYFRAME);
-	          return;
-	        }
-	      }this.add(el, draw);
-	    },
-	    remove: function remove(el) {
-	      var i;
-
-	      if (typeof el === "string") el = document.getElementById(el);
-
-	      for (i = this.list.length; i--;) {
-	        if (this.list[i].element === el) {
-	          this.list.splice(i, 1);
-	          return;
-	        }
-	      }
-	    },
-	    draw: function draw(obj, time) {
-	      var canvas = obj.context.canvas;
-
-	      if (this.resizeClear) canvas.width = canvas.width;else obj.context.clearRect(0, 0, canvas.width, canvas.height);
-
-	      obj.drawing(obj.context, time, this.color);
-	    },
-	    play: function play() {
-	      var self = this;
-
-	      this.pause();
-	      this.interval = requestInterval(function () {
-	        var now = Date.now(),
-	            i;
-
-	        for (i = self.list.length; i--;) {
-	          self.draw(self.list[i], now);
-	        }
-	      }, 1000 / 60);
-	    },
-	    pause: function pause() {
-	      var i;
-
-	      if (this.interval) {
-	        cancelInterval(this.interval);
-	        this.interval = null;
-	      }
-	    }
-	  };
-
-	  global.Skycons = Skycons;
-	})(undefined);
-
-/***/ },
-/* 101 */
+/* 102 */
 /***/ function(module, exports, __webpack_require__) {
 
-	exports = module.exports = __webpack_require__(54)();
+	exports = module.exports = __webpack_require__(55)();
 	// imports
 
 
@@ -13628,28 +14070,28 @@ var App =
 
 
 /***/ },
-/* 102 */
+/* 103 */
 /***/ function(module, exports, __webpack_require__) {
 
-	exports = module.exports = __webpack_require__(54)();
+	exports = module.exports = __webpack_require__(55)();
 	// imports
 
 
 	// module
-	exports.push([module.i, "/*!\n * Bootstrap v3.3.6 (http://getbootstrap.com)\n * Copyright 2011-2015 Twitter, Inc.\n * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)\n */\n/*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */\nhtml {\n  font-family: sans-serif;\n  -webkit-text-size-adjust: 100%;\n      -ms-text-size-adjust: 100%;\n}\nbody {\n  margin: 0;\n}\narticle,\naside,\ndetails,\nfigcaption,\nfigure,\nfooter,\nheader,\nhgroup,\nmain,\nmenu,\nnav,\nsection,\nsummary {\n  display: block;\n}\naudio,\ncanvas,\nprogress,\nvideo {\n  display: inline-block;\n  vertical-align: baseline;\n}\naudio:not([controls]) {\n  display: none;\n  height: 0;\n}\n[hidden],\ntemplate {\n  display: none;\n}\na {\n  background-color: transparent;\n}\na:active,\na:hover {\n  outline: 0;\n}\nabbr[title] {\n  border-bottom: 1px dotted;\n}\nb,\nstrong {\n  font-weight: bold;\n}\ndfn {\n  font-style: italic;\n}\nh1 {\n  margin: .67em 0;\n  font-size: 2em;\n}\nmark {\n  color: #000;\n  background: #ff0;\n}\nsmall {\n  font-size: 80%;\n}\nsub,\nsup {\n  position: relative;\n  font-size: 75%;\n  line-height: 0;\n  vertical-align: baseline;\n}\nsup {\n  top: -.5em;\n}\nsub {\n  bottom: -.25em;\n}\nimg {\n  border: 0;\n}\nsvg:not(:root) {\n  overflow: hidden;\n}\nfigure {\n  margin: 1em 40px;\n}\nhr {\n  height: 0;\n  -webkit-box-sizing: content-box;\n     -moz-box-sizing: content-box;\n          box-sizing: content-box;\n}\npre {\n  overflow: auto;\n}\ncode,\nkbd,\npre,\nsamp {\n  font-family: monospace, monospace;\n  font-size: 1em;\n}\nbutton,\ninput,\noptgroup,\nselect,\ntextarea {\n  margin: 0;\n  font: inherit;\n  color: inherit;\n}\nbutton {\n  overflow: visible;\n}\nbutton,\nselect {\n  text-transform: none;\n}\nbutton,\nhtml input[type=\"button\"],\ninput[type=\"reset\"],\ninput[type=\"submit\"] {\n  -webkit-appearance: button;\n  cursor: pointer;\n}\nbutton[disabled],\nhtml input[disabled] {\n  cursor: default;\n}\nbutton::-moz-focus-inner,\ninput::-moz-focus-inner {\n  padding: 0;\n  border: 0;\n}\ninput {\n  line-height: normal;\n}\ninput[type=\"checkbox\"],\ninput[type=\"radio\"] {\n  -webkit-box-sizing: border-box;\n     -moz-box-sizing: border-box;\n          box-sizing: border-box;\n  padding: 0;\n}\ninput[type=\"number\"]::-webkit-inner-spin-button,\ninput[type=\"number\"]::-webkit-outer-spin-button {\n  height: auto;\n}\ninput[type=\"search\"] {\n  -webkit-box-sizing: content-box;\n     -moz-box-sizing: content-box;\n          box-sizing: content-box;\n  -webkit-appearance: textfield;\n}\ninput[type=\"search\"]::-webkit-search-cancel-button,\ninput[type=\"search\"]::-webkit-search-decoration {\n  -webkit-appearance: none;\n}\nfieldset {\n  padding: .35em .625em .75em;\n  margin: 0 2px;\n  border: 1px solid #c0c0c0;\n}\nlegend {\n  padding: 0;\n  border: 0;\n}\ntextarea {\n  overflow: auto;\n}\noptgroup {\n  font-weight: bold;\n}\ntable {\n  border-spacing: 0;\n  border-collapse: collapse;\n}\ntd,\nth {\n  padding: 0;\n}\n/*! Source: https://github.com/h5bp/html5-boilerplate/blob/master/src/css/main.css */\n@media print {\n  *,\n  *:before,\n  *:after {\n    color: #000 !important;\n    text-shadow: none !important;\n    background: transparent !important;\n    -webkit-box-shadow: none !important;\n            box-shadow: none !important;\n  }\n  a,\n  a:visited {\n    text-decoration: underline;\n  }\n  a[href]:after {\n    content: \" (\" attr(href) \")\";\n  }\n  abbr[title]:after {\n    content: \" (\" attr(title) \")\";\n  }\n  a[href^=\"#\"]:after,\n  a[href^=\"javascript:\"]:after {\n    content: \"\";\n  }\n  pre,\n  blockquote {\n    border: 1px solid #999;\n\n    page-break-inside: avoid;\n  }\n  thead {\n    display: table-header-group;\n  }\n  tr,\n  img {\n    page-break-inside: avoid;\n  }\n  img {\n    max-width: 100% !important;\n  }\n  p,\n  h2,\n  h3 {\n    orphans: 3;\n    widows: 3;\n  }\n  h2,\n  h3 {\n    page-break-after: avoid;\n  }\n  .navbar {\n    display: none;\n  }\n  .btn > .caret,\n  .dropup > .btn > .caret {\n    border-top-color: #000 !important;\n  }\n  .label {\n    border: 1px solid #000;\n  }\n  .table {\n    border-collapse: collapse !important;\n  }\n  .table td,\n  .table th {\n    background-color: #fff !important;\n  }\n  .table-bordered th,\n  .table-bordered td {\n    border: 1px solid #ddd !important;\n  }\n}\n@font-face {\n  font-family: 'Glyphicons Halflings';\n\n  src: url(" + __webpack_require__(60) + ");\n  src: url(" + __webpack_require__(60) + "?#iefix) format('embedded-opentype'), url(" + __webpack_require__(188) + ") format('woff2'), url(" + __webpack_require__(187) + ") format('woff'), url(" + __webpack_require__(119) + ") format('truetype'), url(" + __webpack_require__(118) + "#glyphicons_halflingsregular) format('svg');\n}\n.glyphicon {\n  position: relative;\n  top: 1px;\n  display: inline-block;\n  font-family: 'Glyphicons Halflings';\n  font-style: normal;\n  font-weight: normal;\n  line-height: 1;\n\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n}\n.glyphicon-asterisk:before {\n  content: \"*\";\n}\n.glyphicon-plus:before {\n  content: \"+\";\n}\n.glyphicon-euro:before,\n.glyphicon-eur:before {\n  content: \"\\20AC\";\n}\n.glyphicon-minus:before {\n  content: \"\\2212\";\n}\n.glyphicon-cloud:before {\n  content: \"\\2601\";\n}\n.glyphicon-envelope:before {\n  content: \"\\2709\";\n}\n.glyphicon-pencil:before {\n  content: \"\\270F\";\n}\n.glyphicon-glass:before {\n  content: \"\\E001\";\n}\n.glyphicon-music:before {\n  content: \"\\E002\";\n}\n.glyphicon-search:before {\n  content: \"\\E003\";\n}\n.glyphicon-heart:before {\n  content: \"\\E005\";\n}\n.glyphicon-star:before {\n  content: \"\\E006\";\n}\n.glyphicon-star-empty:before {\n  content: \"\\E007\";\n}\n.glyphicon-user:before {\n  content: \"\\E008\";\n}\n.glyphicon-film:before {\n  content: \"\\E009\";\n}\n.glyphicon-th-large:before {\n  content: \"\\E010\";\n}\n.glyphicon-th:before {\n  content: \"\\E011\";\n}\n.glyphicon-th-list:before {\n  content: \"\\E012\";\n}\n.glyphicon-ok:before {\n  content: \"\\E013\";\n}\n.glyphicon-remove:before {\n  content: \"\\E014\";\n}\n.glyphicon-zoom-in:before {\n  content: \"\\E015\";\n}\n.glyphicon-zoom-out:before {\n  content: \"\\E016\";\n}\n.glyphicon-off:before {\n  content: \"\\E017\";\n}\n.glyphicon-signal:before {\n  content: \"\\E018\";\n}\n.glyphicon-cog:before {\n  content: \"\\E019\";\n}\n.glyphicon-trash:before {\n  content: \"\\E020\";\n}\n.glyphicon-home:before {\n  content: \"\\E021\";\n}\n.glyphicon-file:before {\n  content: \"\\E022\";\n}\n.glyphicon-time:before {\n  content: \"\\E023\";\n}\n.glyphicon-road:before {\n  content: \"\\E024\";\n}\n.glyphicon-download-alt:before {\n  content: \"\\E025\";\n}\n.glyphicon-download:before {\n  content: \"\\E026\";\n}\n.glyphicon-upload:before {\n  content: \"\\E027\";\n}\n.glyphicon-inbox:before {\n  content: \"\\E028\";\n}\n.glyphicon-play-circle:before {\n  content: \"\\E029\";\n}\n.glyphicon-repeat:before {\n  content: \"\\E030\";\n}\n.glyphicon-refresh:before {\n  content: \"\\E031\";\n}\n.glyphicon-list-alt:before {\n  content: \"\\E032\";\n}\n.glyphicon-lock:before {\n  content: \"\\E033\";\n}\n.glyphicon-flag:before {\n  content: \"\\E034\";\n}\n.glyphicon-headphones:before {\n  content: \"\\E035\";\n}\n.glyphicon-volume-off:before {\n  content: \"\\E036\";\n}\n.glyphicon-volume-down:before {\n  content: \"\\E037\";\n}\n.glyphicon-volume-up:before {\n  content: \"\\E038\";\n}\n.glyphicon-qrcode:before {\n  content: \"\\E039\";\n}\n.glyphicon-barcode:before {\n  content: \"\\E040\";\n}\n.glyphicon-tag:before {\n  content: \"\\E041\";\n}\n.glyphicon-tags:before {\n  content: \"\\E042\";\n}\n.glyphicon-book:before {\n  content: \"\\E043\";\n}\n.glyphicon-bookmark:before {\n  content: \"\\E044\";\n}\n.glyphicon-print:before {\n  content: \"\\E045\";\n}\n.glyphicon-camera:before {\n  content: \"\\E046\";\n}\n.glyphicon-font:before {\n  content: \"\\E047\";\n}\n.glyphicon-bold:before {\n  content: \"\\E048\";\n}\n.glyphicon-italic:before {\n  content: \"\\E049\";\n}\n.glyphicon-text-height:before {\n  content: \"\\E050\";\n}\n.glyphicon-text-width:before {\n  content: \"\\E051\";\n}\n.glyphicon-align-left:before {\n  content: \"\\E052\";\n}\n.glyphicon-align-center:before {\n  content: \"\\E053\";\n}\n.glyphicon-align-right:before {\n  content: \"\\E054\";\n}\n.glyphicon-align-justify:before {\n  content: \"\\E055\";\n}\n.glyphicon-list:before {\n  content: \"\\E056\";\n}\n.glyphicon-indent-left:before {\n  content: \"\\E057\";\n}\n.glyphicon-indent-right:before {\n  content: \"\\E058\";\n}\n.glyphicon-facetime-video:before {\n  content: \"\\E059\";\n}\n.glyphicon-picture:before {\n  content: \"\\E060\";\n}\n.glyphicon-map-marker:before {\n  content: \"\\E062\";\n}\n.glyphicon-adjust:before {\n  content: \"\\E063\";\n}\n.glyphicon-tint:before {\n  content: \"\\E064\";\n}\n.glyphicon-edit:before {\n  content: \"\\E065\";\n}\n.glyphicon-share:before {\n  content: \"\\E066\";\n}\n.glyphicon-check:before {\n  content: \"\\E067\";\n}\n.glyphicon-move:before {\n  content: \"\\E068\";\n}\n.glyphicon-step-backward:before {\n  content: \"\\E069\";\n}\n.glyphicon-fast-backward:before {\n  content: \"\\E070\";\n}\n.glyphicon-backward:before {\n  content: \"\\E071\";\n}\n.glyphicon-play:before {\n  content: \"\\E072\";\n}\n.glyphicon-pause:before {\n  content: \"\\E073\";\n}\n.glyphicon-stop:before {\n  content: \"\\E074\";\n}\n.glyphicon-forward:before {\n  content: \"\\E075\";\n}\n.glyphicon-fast-forward:before {\n  content: \"\\E076\";\n}\n.glyphicon-step-forward:before {\n  content: \"\\E077\";\n}\n.glyphicon-eject:before {\n  content: \"\\E078\";\n}\n.glyphicon-chevron-left:before {\n  content: \"\\E079\";\n}\n.glyphicon-chevron-right:before {\n  content: \"\\E080\";\n}\n.glyphicon-plus-sign:before {\n  content: \"\\E081\";\n}\n.glyphicon-minus-sign:before {\n  content: \"\\E082\";\n}\n.glyphicon-remove-sign:before {\n  content: \"\\E083\";\n}\n.glyphicon-ok-sign:before {\n  content: \"\\E084\";\n}\n.glyphicon-question-sign:before {\n  content: \"\\E085\";\n}\n.glyphicon-info-sign:before {\n  content: \"\\E086\";\n}\n.glyphicon-screenshot:before {\n  content: \"\\E087\";\n}\n.glyphicon-remove-circle:before {\n  content: \"\\E088\";\n}\n.glyphicon-ok-circle:before {\n  content: \"\\E089\";\n}\n.glyphicon-ban-circle:before {\n  content: \"\\E090\";\n}\n.glyphicon-arrow-left:before {\n  content: \"\\E091\";\n}\n.glyphicon-arrow-right:before {\n  content: \"\\E092\";\n}\n.glyphicon-arrow-up:before {\n  content: \"\\E093\";\n}\n.glyphicon-arrow-down:before {\n  content: \"\\E094\";\n}\n.glyphicon-share-alt:before {\n  content: \"\\E095\";\n}\n.glyphicon-resize-full:before {\n  content: \"\\E096\";\n}\n.glyphicon-resize-small:before {\n  content: \"\\E097\";\n}\n.glyphicon-exclamation-sign:before {\n  content: \"\\E101\";\n}\n.glyphicon-gift:before {\n  content: \"\\E102\";\n}\n.glyphicon-leaf:before {\n  content: \"\\E103\";\n}\n.glyphicon-fire:before {\n  content: \"\\E104\";\n}\n.glyphicon-eye-open:before {\n  content: \"\\E105\";\n}\n.glyphicon-eye-close:before {\n  content: \"\\E106\";\n}\n.glyphicon-warning-sign:before {\n  content: \"\\E107\";\n}\n.glyphicon-plane:before {\n  content: \"\\E108\";\n}\n.glyphicon-calendar:before {\n  content: \"\\E109\";\n}\n.glyphicon-random:before {\n  content: \"\\E110\";\n}\n.glyphicon-comment:before {\n  content: \"\\E111\";\n}\n.glyphicon-magnet:before {\n  content: \"\\E112\";\n}\n.glyphicon-chevron-up:before {\n  content: \"\\E113\";\n}\n.glyphicon-chevron-down:before {\n  content: \"\\E114\";\n}\n.glyphicon-retweet:before {\n  content: \"\\E115\";\n}\n.glyphicon-shopping-cart:before {\n  content: \"\\E116\";\n}\n.glyphicon-folder-close:before {\n  content: \"\\E117\";\n}\n.glyphicon-folder-open:before {\n  content: \"\\E118\";\n}\n.glyphicon-resize-vertical:before {\n  content: \"\\E119\";\n}\n.glyphicon-resize-horizontal:before {\n  content: \"\\E120\";\n}\n.glyphicon-hdd:before {\n  content: \"\\E121\";\n}\n.glyphicon-bullhorn:before {\n  content: \"\\E122\";\n}\n.glyphicon-bell:before {\n  content: \"\\E123\";\n}\n.glyphicon-certificate:before {\n  content: \"\\E124\";\n}\n.glyphicon-thumbs-up:before {\n  content: \"\\E125\";\n}\n.glyphicon-thumbs-down:before {\n  content: \"\\E126\";\n}\n.glyphicon-hand-right:before {\n  content: \"\\E127\";\n}\n.glyphicon-hand-left:before {\n  content: \"\\E128\";\n}\n.glyphicon-hand-up:before {\n  content: \"\\E129\";\n}\n.glyphicon-hand-down:before {\n  content: \"\\E130\";\n}\n.glyphicon-circle-arrow-right:before {\n  content: \"\\E131\";\n}\n.glyphicon-circle-arrow-left:before {\n  content: \"\\E132\";\n}\n.glyphicon-circle-arrow-up:before {\n  content: \"\\E133\";\n}\n.glyphicon-circle-arrow-down:before {\n  content: \"\\E134\";\n}\n.glyphicon-globe:before {\n  content: \"\\E135\";\n}\n.glyphicon-wrench:before {\n  content: \"\\E136\";\n}\n.glyphicon-tasks:before {\n  content: \"\\E137\";\n}\n.glyphicon-filter:before {\n  content: \"\\E138\";\n}\n.glyphicon-briefcase:before {\n  content: \"\\E139\";\n}\n.glyphicon-fullscreen:before {\n  content: \"\\E140\";\n}\n.glyphicon-dashboard:before {\n  content: \"\\E141\";\n}\n.glyphicon-paperclip:before {\n  content: \"\\E142\";\n}\n.glyphicon-heart-empty:before {\n  content: \"\\E143\";\n}\n.glyphicon-link:before {\n  content: \"\\E144\";\n}\n.glyphicon-phone:before {\n  content: \"\\E145\";\n}\n.glyphicon-pushpin:before {\n  content: \"\\E146\";\n}\n.glyphicon-usd:before {\n  content: \"\\E148\";\n}\n.glyphicon-gbp:before {\n  content: \"\\E149\";\n}\n.glyphicon-sort:before {\n  content: \"\\E150\";\n}\n.glyphicon-sort-by-alphabet:before {\n  content: \"\\E151\";\n}\n.glyphicon-sort-by-alphabet-alt:before {\n  content: \"\\E152\";\n}\n.glyphicon-sort-by-order:before {\n  content: \"\\E153\";\n}\n.glyphicon-sort-by-order-alt:before {\n  content: \"\\E154\";\n}\n.glyphicon-sort-by-attributes:before {\n  content: \"\\E155\";\n}\n.glyphicon-sort-by-attributes-alt:before {\n  content: \"\\E156\";\n}\n.glyphicon-unchecked:before {\n  content: \"\\E157\";\n}\n.glyphicon-expand:before {\n  content: \"\\E158\";\n}\n.glyphicon-collapse-down:before {\n  content: \"\\E159\";\n}\n.glyphicon-collapse-up:before {\n  content: \"\\E160\";\n}\n.glyphicon-log-in:before {\n  content: \"\\E161\";\n}\n.glyphicon-flash:before {\n  content: \"\\E162\";\n}\n.glyphicon-log-out:before {\n  content: \"\\E163\";\n}\n.glyphicon-new-window:before {\n  content: \"\\E164\";\n}\n.glyphicon-record:before {\n  content: \"\\E165\";\n}\n.glyphicon-save:before {\n  content: \"\\E166\";\n}\n.glyphicon-open:before {\n  content: \"\\E167\";\n}\n.glyphicon-saved:before {\n  content: \"\\E168\";\n}\n.glyphicon-import:before {\n  content: \"\\E169\";\n}\n.glyphicon-export:before {\n  content: \"\\E170\";\n}\n.glyphicon-send:before {\n  content: \"\\E171\";\n}\n.glyphicon-floppy-disk:before {\n  content: \"\\E172\";\n}\n.glyphicon-floppy-saved:before {\n  content: \"\\E173\";\n}\n.glyphicon-floppy-remove:before {\n  content: \"\\E174\";\n}\n.glyphicon-floppy-save:before {\n  content: \"\\E175\";\n}\n.glyphicon-floppy-open:before {\n  content: \"\\E176\";\n}\n.glyphicon-credit-card:before {\n  content: \"\\E177\";\n}\n.glyphicon-transfer:before {\n  content: \"\\E178\";\n}\n.glyphicon-cutlery:before {\n  content: \"\\E179\";\n}\n.glyphicon-header:before {\n  content: \"\\E180\";\n}\n.glyphicon-compressed:before {\n  content: \"\\E181\";\n}\n.glyphicon-earphone:before {\n  content: \"\\E182\";\n}\n.glyphicon-phone-alt:before {\n  content: \"\\E183\";\n}\n.glyphicon-tower:before {\n  content: \"\\E184\";\n}\n.glyphicon-stats:before {\n  content: \"\\E185\";\n}\n.glyphicon-sd-video:before {\n  content: \"\\E186\";\n}\n.glyphicon-hd-video:before {\n  content: \"\\E187\";\n}\n.glyphicon-subtitles:before {\n  content: \"\\E188\";\n}\n.glyphicon-sound-stereo:before {\n  content: \"\\E189\";\n}\n.glyphicon-sound-dolby:before {\n  content: \"\\E190\";\n}\n.glyphicon-sound-5-1:before {\n  content: \"\\E191\";\n}\n.glyphicon-sound-6-1:before {\n  content: \"\\E192\";\n}\n.glyphicon-sound-7-1:before {\n  content: \"\\E193\";\n}\n.glyphicon-copyright-mark:before {\n  content: \"\\E194\";\n}\n.glyphicon-registration-mark:before {\n  content: \"\\E195\";\n}\n.glyphicon-cloud-download:before {\n  content: \"\\E197\";\n}\n.glyphicon-cloud-upload:before {\n  content: \"\\E198\";\n}\n.glyphicon-tree-conifer:before {\n  content: \"\\E199\";\n}\n.glyphicon-tree-deciduous:before {\n  content: \"\\E200\";\n}\n.glyphicon-cd:before {\n  content: \"\\E201\";\n}\n.glyphicon-save-file:before {\n  content: \"\\E202\";\n}\n.glyphicon-open-file:before {\n  content: \"\\E203\";\n}\n.glyphicon-level-up:before {\n  content: \"\\E204\";\n}\n.glyphicon-copy:before {\n  content: \"\\E205\";\n}\n.glyphicon-paste:before {\n  content: \"\\E206\";\n}\n.glyphicon-alert:before {\n  content: \"\\E209\";\n}\n.glyphicon-equalizer:before {\n  content: \"\\E210\";\n}\n.glyphicon-king:before {\n  content: \"\\E211\";\n}\n.glyphicon-queen:before {\n  content: \"\\E212\";\n}\n.glyphicon-pawn:before {\n  content: \"\\E213\";\n}\n.glyphicon-bishop:before {\n  content: \"\\E214\";\n}\n.glyphicon-knight:before {\n  content: \"\\E215\";\n}\n.glyphicon-baby-formula:before {\n  content: \"\\E216\";\n}\n.glyphicon-tent:before {\n  content: \"\\26FA\";\n}\n.glyphicon-blackboard:before {\n  content: \"\\E218\";\n}\n.glyphicon-bed:before {\n  content: \"\\E219\";\n}\n.glyphicon-apple:before {\n  content: \"\\F8FF\";\n}\n.glyphicon-erase:before {\n  content: \"\\E221\";\n}\n.glyphicon-hourglass:before {\n  content: \"\\231B\";\n}\n.glyphicon-lamp:before {\n  content: \"\\E223\";\n}\n.glyphicon-duplicate:before {\n  content: \"\\E224\";\n}\n.glyphicon-piggy-bank:before {\n  content: \"\\E225\";\n}\n.glyphicon-scissors:before {\n  content: \"\\E226\";\n}\n.glyphicon-bitcoin:before {\n  content: \"\\E227\";\n}\n.glyphicon-btc:before {\n  content: \"\\E227\";\n}\n.glyphicon-xbt:before {\n  content: \"\\E227\";\n}\n.glyphicon-yen:before {\n  content: \"\\A5\";\n}\n.glyphicon-jpy:before {\n  content: \"\\A5\";\n}\n.glyphicon-ruble:before {\n  content: \"\\20BD\";\n}\n.glyphicon-rub:before {\n  content: \"\\20BD\";\n}\n.glyphicon-scale:before {\n  content: \"\\E230\";\n}\n.glyphicon-ice-lolly:before {\n  content: \"\\E231\";\n}\n.glyphicon-ice-lolly-tasted:before {\n  content: \"\\E232\";\n}\n.glyphicon-education:before {\n  content: \"\\E233\";\n}\n.glyphicon-option-horizontal:before {\n  content: \"\\E234\";\n}\n.glyphicon-option-vertical:before {\n  content: \"\\E235\";\n}\n.glyphicon-menu-hamburger:before {\n  content: \"\\E236\";\n}\n.glyphicon-modal-window:before {\n  content: \"\\E237\";\n}\n.glyphicon-oil:before {\n  content: \"\\E238\";\n}\n.glyphicon-grain:before {\n  content: \"\\E239\";\n}\n.glyphicon-sunglasses:before {\n  content: \"\\E240\";\n}\n.glyphicon-text-size:before {\n  content: \"\\E241\";\n}\n.glyphicon-text-color:before {\n  content: \"\\E242\";\n}\n.glyphicon-text-background:before {\n  content: \"\\E243\";\n}\n.glyphicon-object-align-top:before {\n  content: \"\\E244\";\n}\n.glyphicon-object-align-bottom:before {\n  content: \"\\E245\";\n}\n.glyphicon-object-align-horizontal:before {\n  content: \"\\E246\";\n}\n.glyphicon-object-align-left:before {\n  content: \"\\E247\";\n}\n.glyphicon-object-align-vertical:before {\n  content: \"\\E248\";\n}\n.glyphicon-object-align-right:before {\n  content: \"\\E249\";\n}\n.glyphicon-triangle-right:before {\n  content: \"\\E250\";\n}\n.glyphicon-triangle-left:before {\n  content: \"\\E251\";\n}\n.glyphicon-triangle-bottom:before {\n  content: \"\\E252\";\n}\n.glyphicon-triangle-top:before {\n  content: \"\\E253\";\n}\n.glyphicon-console:before {\n  content: \"\\E254\";\n}\n.glyphicon-superscript:before {\n  content: \"\\E255\";\n}\n.glyphicon-subscript:before {\n  content: \"\\E256\";\n}\n.glyphicon-menu-left:before {\n  content: \"\\E257\";\n}\n.glyphicon-menu-right:before {\n  content: \"\\E258\";\n}\n.glyphicon-menu-down:before {\n  content: \"\\E259\";\n}\n.glyphicon-menu-up:before {\n  content: \"\\E260\";\n}\n* {\n  -webkit-box-sizing: border-box;\n     -moz-box-sizing: border-box;\n          box-sizing: border-box;\n}\n*:before,\n*:after {\n  -webkit-box-sizing: border-box;\n     -moz-box-sizing: border-box;\n          box-sizing: border-box;\n}\nhtml {\n  font-size: 10px;\n\n  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);\n}\nbody {\n  font-family: \"Helvetica Neue\", Helvetica, Arial, sans-serif;\n  font-size: 14px;\n  line-height: 1.42857143;\n  color: #333;\n  background-color: #fff;\n}\ninput,\nbutton,\nselect,\ntextarea {\n  font-family: inherit;\n  font-size: inherit;\n  line-height: inherit;\n}\na {\n  color: #337ab7;\n  text-decoration: none;\n}\na:hover,\na:focus {\n  color: #23527c;\n  text-decoration: underline;\n}\na:focus {\n  outline: thin dotted;\n  outline: 5px auto -webkit-focus-ring-color;\n  outline-offset: -2px;\n}\nfigure {\n  margin: 0;\n}\nimg {\n  vertical-align: middle;\n}\n.img-responsive,\n.thumbnail > img,\n.thumbnail a > img,\n.carousel-inner > .item > img,\n.carousel-inner > .item > a > img {\n  display: block;\n  max-width: 100%;\n  height: auto;\n}\n.img-rounded {\n  border-radius: 6px;\n}\n.img-thumbnail {\n  display: inline-block;\n  max-width: 100%;\n  height: auto;\n  padding: 4px;\n  line-height: 1.42857143;\n  background-color: #fff;\n  border: 1px solid #ddd;\n  border-radius: 4px;\n  -webkit-transition: all .2s ease-in-out;\n       -o-transition: all .2s ease-in-out;\n          transition: all .2s ease-in-out;\n}\n.img-circle {\n  border-radius: 50%;\n}\nhr {\n  margin-top: 20px;\n  margin-bottom: 20px;\n  border: 0;\n  border-top: 1px solid #eee;\n}\n.sr-only {\n  position: absolute;\n  width: 1px;\n  height: 1px;\n  padding: 0;\n  margin: -1px;\n  overflow: hidden;\n  clip: rect(0, 0, 0, 0);\n  border: 0;\n}\n.sr-only-focusable:active,\n.sr-only-focusable:focus {\n  position: static;\n  width: auto;\n  height: auto;\n  margin: 0;\n  overflow: visible;\n  clip: auto;\n}\n[role=\"button\"] {\n  cursor: pointer;\n}\nh1,\nh2,\nh3,\nh4,\nh5,\nh6,\n.h1,\n.h2,\n.h3,\n.h4,\n.h5,\n.h6 {\n  font-family: inherit;\n  font-weight: 500;\n  line-height: 1.1;\n  color: inherit;\n}\nh1 small,\nh2 small,\nh3 small,\nh4 small,\nh5 small,\nh6 small,\n.h1 small,\n.h2 small,\n.h3 small,\n.h4 small,\n.h5 small,\n.h6 small,\nh1 .small,\nh2 .small,\nh3 .small,\nh4 .small,\nh5 .small,\nh6 .small,\n.h1 .small,\n.h2 .small,\n.h3 .small,\n.h4 .small,\n.h5 .small,\n.h6 .small {\n  font-weight: normal;\n  line-height: 1;\n  color: #777;\n}\nh1,\n.h1,\nh2,\n.h2,\nh3,\n.h3 {\n  margin-top: 20px;\n  margin-bottom: 10px;\n}\nh1 small,\n.h1 small,\nh2 small,\n.h2 small,\nh3 small,\n.h3 small,\nh1 .small,\n.h1 .small,\nh2 .small,\n.h2 .small,\nh3 .small,\n.h3 .small {\n  font-size: 65%;\n}\nh4,\n.h4,\nh5,\n.h5,\nh6,\n.h6 {\n  margin-top: 10px;\n  margin-bottom: 10px;\n}\nh4 small,\n.h4 small,\nh5 small,\n.h5 small,\nh6 small,\n.h6 small,\nh4 .small,\n.h4 .small,\nh5 .small,\n.h5 .small,\nh6 .small,\n.h6 .small {\n  font-size: 75%;\n}\nh1,\n.h1 {\n  font-size: 36px;\n}\nh2,\n.h2 {\n  font-size: 30px;\n}\nh3,\n.h3 {\n  font-size: 24px;\n}\nh4,\n.h4 {\n  font-size: 18px;\n}\nh5,\n.h5 {\n  font-size: 14px;\n}\nh6,\n.h6 {\n  font-size: 12px;\n}\np {\n  margin: 0 0 10px;\n}\n.lead {\n  margin-bottom: 20px;\n  font-size: 16px;\n  font-weight: 300;\n  line-height: 1.4;\n}\n@media (min-width: 768px) {\n  .lead {\n    font-size: 21px;\n  }\n}\nsmall,\n.small {\n  font-size: 85%;\n}\nmark,\n.mark {\n  padding: .2em;\n  background-color: #fcf8e3;\n}\n.text-left {\n  text-align: left;\n}\n.text-right {\n  text-align: right;\n}\n.text-center {\n  text-align: center;\n}\n.text-justify {\n  text-align: justify;\n}\n.text-nowrap {\n  white-space: nowrap;\n}\n.text-lowercase {\n  text-transform: lowercase;\n}\n.text-uppercase {\n  text-transform: uppercase;\n}\n.text-capitalize {\n  text-transform: capitalize;\n}\n.text-muted {\n  color: #777;\n}\n.text-primary {\n  color: #337ab7;\n}\na.text-primary:hover,\na.text-primary:focus {\n  color: #286090;\n}\n.text-success {\n  color: #3c763d;\n}\na.text-success:hover,\na.text-success:focus {\n  color: #2b542c;\n}\n.text-info {\n  color: #31708f;\n}\na.text-info:hover,\na.text-info:focus {\n  color: #245269;\n}\n.text-warning {\n  color: #8a6d3b;\n}\na.text-warning:hover,\na.text-warning:focus {\n  color: #66512c;\n}\n.text-danger {\n  color: #a94442;\n}\na.text-danger:hover,\na.text-danger:focus {\n  color: #843534;\n}\n.bg-primary {\n  color: #fff;\n  background-color: #337ab7;\n}\na.bg-primary:hover,\na.bg-primary:focus {\n  background-color: #286090;\n}\n.bg-success {\n  background-color: #dff0d8;\n}\na.bg-success:hover,\na.bg-success:focus {\n  background-color: #c1e2b3;\n}\n.bg-info {\n  background-color: #d9edf7;\n}\na.bg-info:hover,\na.bg-info:focus {\n  background-color: #afd9ee;\n}\n.bg-warning {\n  background-color: #fcf8e3;\n}\na.bg-warning:hover,\na.bg-warning:focus {\n  background-color: #f7ecb5;\n}\n.bg-danger {\n  background-color: #f2dede;\n}\na.bg-danger:hover,\na.bg-danger:focus {\n  background-color: #e4b9b9;\n}\n.page-header {\n  padding-bottom: 9px;\n  margin: 40px 0 20px;\n  border-bottom: 1px solid #eee;\n}\nul,\nol {\n  margin-top: 0;\n  margin-bottom: 10px;\n}\nul ul,\nol ul,\nul ol,\nol ol {\n  margin-bottom: 0;\n}\n.list-unstyled {\n  padding-left: 0;\n  list-style: none;\n}\n.list-inline {\n  padding-left: 0;\n  margin-left: -5px;\n  list-style: none;\n}\n.list-inline > li {\n  display: inline-block;\n  padding-right: 5px;\n  padding-left: 5px;\n}\ndl {\n  margin-top: 0;\n  margin-bottom: 20px;\n}\ndt,\ndd {\n  line-height: 1.42857143;\n}\ndt {\n  font-weight: bold;\n}\ndd {\n  margin-left: 0;\n}\n@media (min-width: 768px) {\n  .dl-horizontal dt {\n    float: left;\n    width: 160px;\n    overflow: hidden;\n    clear: left;\n    text-align: right;\n    text-overflow: ellipsis;\n    white-space: nowrap;\n  }\n  .dl-horizontal dd {\n    margin-left: 180px;\n  }\n}\nabbr[title],\nabbr[data-original-title] {\n  cursor: help;\n  border-bottom: 1px dotted #777;\n}\n.initialism {\n  font-size: 90%;\n  text-transform: uppercase;\n}\nblockquote {\n  padding: 10px 20px;\n  margin: 0 0 20px;\n  font-size: 17.5px;\n  border-left: 5px solid #eee;\n}\nblockquote p:last-child,\nblockquote ul:last-child,\nblockquote ol:last-child {\n  margin-bottom: 0;\n}\nblockquote footer,\nblockquote small,\nblockquote .small {\n  display: block;\n  font-size: 80%;\n  line-height: 1.42857143;\n  color: #777;\n}\nblockquote footer:before,\nblockquote small:before,\nblockquote .small:before {\n  content: '\\2014   \\A0';\n}\n.blockquote-reverse,\nblockquote.pull-right {\n  padding-right: 15px;\n  padding-left: 0;\n  text-align: right;\n  border-right: 5px solid #eee;\n  border-left: 0;\n}\n.blockquote-reverse footer:before,\nblockquote.pull-right footer:before,\n.blockquote-reverse small:before,\nblockquote.pull-right small:before,\n.blockquote-reverse .small:before,\nblockquote.pull-right .small:before {\n  content: '';\n}\n.blockquote-reverse footer:after,\nblockquote.pull-right footer:after,\n.blockquote-reverse small:after,\nblockquote.pull-right small:after,\n.blockquote-reverse .small:after,\nblockquote.pull-right .small:after {\n  content: '\\A0   \\2014';\n}\naddress {\n  margin-bottom: 20px;\n  font-style: normal;\n  line-height: 1.42857143;\n}\ncode,\nkbd,\npre,\nsamp {\n  font-family: Menlo, Monaco, Consolas, \"Courier New\", monospace;\n}\ncode {\n  padding: 2px 4px;\n  font-size: 90%;\n  color: #c7254e;\n  background-color: #f9f2f4;\n  border-radius: 4px;\n}\nkbd {\n  padding: 2px 4px;\n  font-size: 90%;\n  color: #fff;\n  background-color: #333;\n  border-radius: 3px;\n  -webkit-box-shadow: inset 0 -1px 0 rgba(0, 0, 0, .25);\n          box-shadow: inset 0 -1px 0 rgba(0, 0, 0, .25);\n}\nkbd kbd {\n  padding: 0;\n  font-size: 100%;\n  font-weight: bold;\n  -webkit-box-shadow: none;\n          box-shadow: none;\n}\npre {\n  display: block;\n  padding: 9.5px;\n  margin: 0 0 10px;\n  font-size: 13px;\n  line-height: 1.42857143;\n  color: #333;\n  word-break: break-all;\n  word-wrap: break-word;\n  background-color: #f5f5f5;\n  border: 1px solid #ccc;\n  border-radius: 4px;\n}\npre code {\n  padding: 0;\n  font-size: inherit;\n  color: inherit;\n  white-space: pre-wrap;\n  background-color: transparent;\n  border-radius: 0;\n}\n.pre-scrollable {\n  max-height: 340px;\n  overflow-y: scroll;\n}\n.container {\n  padding-right: 15px;\n  padding-left: 15px;\n  margin-right: auto;\n  margin-left: auto;\n}\n@media (min-width: 768px) {\n  .container {\n    width: 750px;\n  }\n}\n@media (min-width: 992px) {\n  .container {\n    width: 970px;\n  }\n}\n@media (min-width: 1200px) {\n  .container {\n    width: 1170px;\n  }\n}\n.container-fluid {\n  padding-right: 15px;\n  padding-left: 15px;\n  margin-right: auto;\n  margin-left: auto;\n}\n.row {\n  margin-right: -15px;\n  margin-left: -15px;\n}\n.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {\n  position: relative;\n  min-height: 1px;\n  padding-right: 15px;\n  padding-left: 15px;\n}\n.col-xs-1, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9, .col-xs-10, .col-xs-11, .col-xs-12 {\n  float: left;\n}\n.col-xs-12 {\n  width: 100%;\n}\n.col-xs-11 {\n  width: 91.66666667%;\n}\n.col-xs-10 {\n  width: 83.33333333%;\n}\n.col-xs-9 {\n  width: 75%;\n}\n.col-xs-8 {\n  width: 66.66666667%;\n}\n.col-xs-7 {\n  width: 58.33333333%;\n}\n.col-xs-6 {\n  width: 50%;\n}\n.col-xs-5 {\n  width: 41.66666667%;\n}\n.col-xs-4 {\n  width: 33.33333333%;\n}\n.col-xs-3 {\n  width: 25%;\n}\n.col-xs-2 {\n  width: 16.66666667%;\n}\n.col-xs-1 {\n  width: 8.33333333%;\n}\n.col-xs-pull-12 {\n  right: 100%;\n}\n.col-xs-pull-11 {\n  right: 91.66666667%;\n}\n.col-xs-pull-10 {\n  right: 83.33333333%;\n}\n.col-xs-pull-9 {\n  right: 75%;\n}\n.col-xs-pull-8 {\n  right: 66.66666667%;\n}\n.col-xs-pull-7 {\n  right: 58.33333333%;\n}\n.col-xs-pull-6 {\n  right: 50%;\n}\n.col-xs-pull-5 {\n  right: 41.66666667%;\n}\n.col-xs-pull-4 {\n  right: 33.33333333%;\n}\n.col-xs-pull-3 {\n  right: 25%;\n}\n.col-xs-pull-2 {\n  right: 16.66666667%;\n}\n.col-xs-pull-1 {\n  right: 8.33333333%;\n}\n.col-xs-pull-0 {\n  right: auto;\n}\n.col-xs-push-12 {\n  left: 100%;\n}\n.col-xs-push-11 {\n  left: 91.66666667%;\n}\n.col-xs-push-10 {\n  left: 83.33333333%;\n}\n.col-xs-push-9 {\n  left: 75%;\n}\n.col-xs-push-8 {\n  left: 66.66666667%;\n}\n.col-xs-push-7 {\n  left: 58.33333333%;\n}\n.col-xs-push-6 {\n  left: 50%;\n}\n.col-xs-push-5 {\n  left: 41.66666667%;\n}\n.col-xs-push-4 {\n  left: 33.33333333%;\n}\n.col-xs-push-3 {\n  left: 25%;\n}\n.col-xs-push-2 {\n  left: 16.66666667%;\n}\n.col-xs-push-1 {\n  left: 8.33333333%;\n}\n.col-xs-push-0 {\n  left: auto;\n}\n.col-xs-offset-12 {\n  margin-left: 100%;\n}\n.col-xs-offset-11 {\n  margin-left: 91.66666667%;\n}\n.col-xs-offset-10 {\n  margin-left: 83.33333333%;\n}\n.col-xs-offset-9 {\n  margin-left: 75%;\n}\n.col-xs-offset-8 {\n  margin-left: 66.66666667%;\n}\n.col-xs-offset-7 {\n  margin-left: 58.33333333%;\n}\n.col-xs-offset-6 {\n  margin-left: 50%;\n}\n.col-xs-offset-5 {\n  margin-left: 41.66666667%;\n}\n.col-xs-offset-4 {\n  margin-left: 33.33333333%;\n}\n.col-xs-offset-3 {\n  margin-left: 25%;\n}\n.col-xs-offset-2 {\n  margin-left: 16.66666667%;\n}\n.col-xs-offset-1 {\n  margin-left: 8.33333333%;\n}\n.col-xs-offset-0 {\n  margin-left: 0;\n}\n@media (min-width: 768px) {\n  .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12 {\n    float: left;\n  }\n  .col-sm-12 {\n    width: 100%;\n  }\n  .col-sm-11 {\n    width: 91.66666667%;\n  }\n  .col-sm-10 {\n    width: 83.33333333%;\n  }\n  .col-sm-9 {\n    width: 75%;\n  }\n  .col-sm-8 {\n    width: 66.66666667%;\n  }\n  .col-sm-7 {\n    width: 58.33333333%;\n  }\n  .col-sm-6 {\n    width: 50%;\n  }\n  .col-sm-5 {\n    width: 41.66666667%;\n  }\n  .col-sm-4 {\n    width: 33.33333333%;\n  }\n  .col-sm-3 {\n    width: 25%;\n  }\n  .col-sm-2 {\n    width: 16.66666667%;\n  }\n  .col-sm-1 {\n    width: 8.33333333%;\n  }\n  .col-sm-pull-12 {\n    right: 100%;\n  }\n  .col-sm-pull-11 {\n    right: 91.66666667%;\n  }\n  .col-sm-pull-10 {\n    right: 83.33333333%;\n  }\n  .col-sm-pull-9 {\n    right: 75%;\n  }\n  .col-sm-pull-8 {\n    right: 66.66666667%;\n  }\n  .col-sm-pull-7 {\n    right: 58.33333333%;\n  }\n  .col-sm-pull-6 {\n    right: 50%;\n  }\n  .col-sm-pull-5 {\n    right: 41.66666667%;\n  }\n  .col-sm-pull-4 {\n    right: 33.33333333%;\n  }\n  .col-sm-pull-3 {\n    right: 25%;\n  }\n  .col-sm-pull-2 {\n    right: 16.66666667%;\n  }\n  .col-sm-pull-1 {\n    right: 8.33333333%;\n  }\n  .col-sm-pull-0 {\n    right: auto;\n  }\n  .col-sm-push-12 {\n    left: 100%;\n  }\n  .col-sm-push-11 {\n    left: 91.66666667%;\n  }\n  .col-sm-push-10 {\n    left: 83.33333333%;\n  }\n  .col-sm-push-9 {\n    left: 75%;\n  }\n  .col-sm-push-8 {\n    left: 66.66666667%;\n  }\n  .col-sm-push-7 {\n    left: 58.33333333%;\n  }\n  .col-sm-push-6 {\n    left: 50%;\n  }\n  .col-sm-push-5 {\n    left: 41.66666667%;\n  }\n  .col-sm-push-4 {\n    left: 33.33333333%;\n  }\n  .col-sm-push-3 {\n    left: 25%;\n  }\n  .col-sm-push-2 {\n    left: 16.66666667%;\n  }\n  .col-sm-push-1 {\n    left: 8.33333333%;\n  }\n  .col-sm-push-0 {\n    left: auto;\n  }\n  .col-sm-offset-12 {\n    margin-left: 100%;\n  }\n  .col-sm-offset-11 {\n    margin-left: 91.66666667%;\n  }\n  .col-sm-offset-10 {\n    margin-left: 83.33333333%;\n  }\n  .col-sm-offset-9 {\n    margin-left: 75%;\n  }\n  .col-sm-offset-8 {\n    margin-left: 66.66666667%;\n  }\n  .col-sm-offset-7 {\n    margin-left: 58.33333333%;\n  }\n  .col-sm-offset-6 {\n    margin-left: 50%;\n  }\n  .col-sm-offset-5 {\n    margin-left: 41.66666667%;\n  }\n  .col-sm-offset-4 {\n    margin-left: 33.33333333%;\n  }\n  .col-sm-offset-3 {\n    margin-left: 25%;\n  }\n  .col-sm-offset-2 {\n    margin-left: 16.66666667%;\n  }\n  .col-sm-offset-1 {\n    margin-left: 8.33333333%;\n  }\n  .col-sm-offset-0 {\n    margin-left: 0;\n  }\n}\n@media (min-width: 992px) {\n  .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {\n    float: left;\n  }\n  .col-md-12 {\n    width: 100%;\n  }\n  .col-md-11 {\n    width: 91.66666667%;\n  }\n  .col-md-10 {\n    width: 83.33333333%;\n  }\n  .col-md-9 {\n    width: 75%;\n  }\n  .col-md-8 {\n    width: 66.66666667%;\n  }\n  .col-md-7 {\n    width: 58.33333333%;\n  }\n  .col-md-6 {\n    width: 50%;\n  }\n  .col-md-5 {\n    width: 41.66666667%;\n  }\n  .col-md-4 {\n    width: 33.33333333%;\n  }\n  .col-md-3 {\n    width: 25%;\n  }\n  .col-md-2 {\n    width: 16.66666667%;\n  }\n  .col-md-1 {\n    width: 8.33333333%;\n  }\n  .col-md-pull-12 {\n    right: 100%;\n  }\n  .col-md-pull-11 {\n    right: 91.66666667%;\n  }\n  .col-md-pull-10 {\n    right: 83.33333333%;\n  }\n  .col-md-pull-9 {\n    right: 75%;\n  }\n  .col-md-pull-8 {\n    right: 66.66666667%;\n  }\n  .col-md-pull-7 {\n    right: 58.33333333%;\n  }\n  .col-md-pull-6 {\n    right: 50%;\n  }\n  .col-md-pull-5 {\n    right: 41.66666667%;\n  }\n  .col-md-pull-4 {\n    right: 33.33333333%;\n  }\n  .col-md-pull-3 {\n    right: 25%;\n  }\n  .col-md-pull-2 {\n    right: 16.66666667%;\n  }\n  .col-md-pull-1 {\n    right: 8.33333333%;\n  }\n  .col-md-pull-0 {\n    right: auto;\n  }\n  .col-md-push-12 {\n    left: 100%;\n  }\n  .col-md-push-11 {\n    left: 91.66666667%;\n  }\n  .col-md-push-10 {\n    left: 83.33333333%;\n  }\n  .col-md-push-9 {\n    left: 75%;\n  }\n  .col-md-push-8 {\n    left: 66.66666667%;\n  }\n  .col-md-push-7 {\n    left: 58.33333333%;\n  }\n  .col-md-push-6 {\n    left: 50%;\n  }\n  .col-md-push-5 {\n    left: 41.66666667%;\n  }\n  .col-md-push-4 {\n    left: 33.33333333%;\n  }\n  .col-md-push-3 {\n    left: 25%;\n  }\n  .col-md-push-2 {\n    left: 16.66666667%;\n  }\n  .col-md-push-1 {\n    left: 8.33333333%;\n  }\n  .col-md-push-0 {\n    left: auto;\n  }\n  .col-md-offset-12 {\n    margin-left: 100%;\n  }\n  .col-md-offset-11 {\n    margin-left: 91.66666667%;\n  }\n  .col-md-offset-10 {\n    margin-left: 83.33333333%;\n  }\n  .col-md-offset-9 {\n    margin-left: 75%;\n  }\n  .col-md-offset-8 {\n    margin-left: 66.66666667%;\n  }\n  .col-md-offset-7 {\n    margin-left: 58.33333333%;\n  }\n  .col-md-offset-6 {\n    margin-left: 50%;\n  }\n  .col-md-offset-5 {\n    margin-left: 41.66666667%;\n  }\n  .col-md-offset-4 {\n    margin-left: 33.33333333%;\n  }\n  .col-md-offset-3 {\n    margin-left: 25%;\n  }\n  .col-md-offset-2 {\n    margin-left: 16.66666667%;\n  }\n  .col-md-offset-1 {\n    margin-left: 8.33333333%;\n  }\n  .col-md-offset-0 {\n    margin-left: 0;\n  }\n}\n@media (min-width: 1200px) {\n  .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12 {\n    float: left;\n  }\n  .col-lg-12 {\n    width: 100%;\n  }\n  .col-lg-11 {\n    width: 91.66666667%;\n  }\n  .col-lg-10 {\n    width: 83.33333333%;\n  }\n  .col-lg-9 {\n    width: 75%;\n  }\n  .col-lg-8 {\n    width: 66.66666667%;\n  }\n  .col-lg-7 {\n    width: 58.33333333%;\n  }\n  .col-lg-6 {\n    width: 50%;\n  }\n  .col-lg-5 {\n    width: 41.66666667%;\n  }\n  .col-lg-4 {\n    width: 33.33333333%;\n  }\n  .col-lg-3 {\n    width: 25%;\n  }\n  .col-lg-2 {\n    width: 16.66666667%;\n  }\n  .col-lg-1 {\n    width: 8.33333333%;\n  }\n  .col-lg-pull-12 {\n    right: 100%;\n  }\n  .col-lg-pull-11 {\n    right: 91.66666667%;\n  }\n  .col-lg-pull-10 {\n    right: 83.33333333%;\n  }\n  .col-lg-pull-9 {\n    right: 75%;\n  }\n  .col-lg-pull-8 {\n    right: 66.66666667%;\n  }\n  .col-lg-pull-7 {\n    right: 58.33333333%;\n  }\n  .col-lg-pull-6 {\n    right: 50%;\n  }\n  .col-lg-pull-5 {\n    right: 41.66666667%;\n  }\n  .col-lg-pull-4 {\n    right: 33.33333333%;\n  }\n  .col-lg-pull-3 {\n    right: 25%;\n  }\n  .col-lg-pull-2 {\n    right: 16.66666667%;\n  }\n  .col-lg-pull-1 {\n    right: 8.33333333%;\n  }\n  .col-lg-pull-0 {\n    right: auto;\n  }\n  .col-lg-push-12 {\n    left: 100%;\n  }\n  .col-lg-push-11 {\n    left: 91.66666667%;\n  }\n  .col-lg-push-10 {\n    left: 83.33333333%;\n  }\n  .col-lg-push-9 {\n    left: 75%;\n  }\n  .col-lg-push-8 {\n    left: 66.66666667%;\n  }\n  .col-lg-push-7 {\n    left: 58.33333333%;\n  }\n  .col-lg-push-6 {\n    left: 50%;\n  }\n  .col-lg-push-5 {\n    left: 41.66666667%;\n  }\n  .col-lg-push-4 {\n    left: 33.33333333%;\n  }\n  .col-lg-push-3 {\n    left: 25%;\n  }\n  .col-lg-push-2 {\n    left: 16.66666667%;\n  }\n  .col-lg-push-1 {\n    left: 8.33333333%;\n  }\n  .col-lg-push-0 {\n    left: auto;\n  }\n  .col-lg-offset-12 {\n    margin-left: 100%;\n  }\n  .col-lg-offset-11 {\n    margin-left: 91.66666667%;\n  }\n  .col-lg-offset-10 {\n    margin-left: 83.33333333%;\n  }\n  .col-lg-offset-9 {\n    margin-left: 75%;\n  }\n  .col-lg-offset-8 {\n    margin-left: 66.66666667%;\n  }\n  .col-lg-offset-7 {\n    margin-left: 58.33333333%;\n  }\n  .col-lg-offset-6 {\n    margin-left: 50%;\n  }\n  .col-lg-offset-5 {\n    margin-left: 41.66666667%;\n  }\n  .col-lg-offset-4 {\n    margin-left: 33.33333333%;\n  }\n  .col-lg-offset-3 {\n    margin-left: 25%;\n  }\n  .col-lg-offset-2 {\n    margin-left: 16.66666667%;\n  }\n  .col-lg-offset-1 {\n    margin-left: 8.33333333%;\n  }\n  .col-lg-offset-0 {\n    margin-left: 0;\n  }\n}\ntable {\n  background-color: transparent;\n}\ncaption {\n  padding-top: 8px;\n  padding-bottom: 8px;\n  color: #777;\n  text-align: left;\n}\nth {\n  text-align: left;\n}\n.table {\n  width: 100%;\n  max-width: 100%;\n  margin-bottom: 20px;\n}\n.table > thead > tr > th,\n.table > tbody > tr > th,\n.table > tfoot > tr > th,\n.table > thead > tr > td,\n.table > tbody > tr > td,\n.table > tfoot > tr > td {\n  padding: 8px;\n  line-height: 1.42857143;\n  vertical-align: top;\n  border-top: 1px solid #ddd;\n}\n.table > thead > tr > th {\n  vertical-align: bottom;\n  border-bottom: 2px solid #ddd;\n}\n.table > caption + thead > tr:first-child > th,\n.table > colgroup + thead > tr:first-child > th,\n.table > thead:first-child > tr:first-child > th,\n.table > caption + thead > tr:first-child > td,\n.table > colgroup + thead > tr:first-child > td,\n.table > thead:first-child > tr:first-child > td {\n  border-top: 0;\n}\n.table > tbody + tbody {\n  border-top: 2px solid #ddd;\n}\n.table .table {\n  background-color: #fff;\n}\n.table-condensed > thead > tr > th,\n.table-condensed > tbody > tr > th,\n.table-condensed > tfoot > tr > th,\n.table-condensed > thead > tr > td,\n.table-condensed > tbody > tr > td,\n.table-condensed > tfoot > tr > td {\n  padding: 5px;\n}\n.table-bordered {\n  border: 1px solid #ddd;\n}\n.table-bordered > thead > tr > th,\n.table-bordered > tbody > tr > th,\n.table-bordered > tfoot > tr > th,\n.table-bordered > thead > tr > td,\n.table-bordered > tbody > tr > td,\n.table-bordered > tfoot > tr > td {\n  border: 1px solid #ddd;\n}\n.table-bordered > thead > tr > th,\n.table-bordered > thead > tr > td {\n  border-bottom-width: 2px;\n}\n.table-striped > tbody > tr:nth-of-type(odd) {\n  background-color: #f9f9f9;\n}\n.table-hover > tbody > tr:hover {\n  background-color: #f5f5f5;\n}\ntable col[class*=\"col-\"] {\n  position: static;\n  display: table-column;\n  float: none;\n}\ntable td[class*=\"col-\"],\ntable th[class*=\"col-\"] {\n  position: static;\n  display: table-cell;\n  float: none;\n}\n.table > thead > tr > td.active,\n.table > tbody > tr > td.active,\n.table > tfoot > tr > td.active,\n.table > thead > tr > th.active,\n.table > tbody > tr > th.active,\n.table > tfoot > tr > th.active,\n.table > thead > tr.active > td,\n.table > tbody > tr.active > td,\n.table > tfoot > tr.active > td,\n.table > thead > tr.active > th,\n.table > tbody > tr.active > th,\n.table > tfoot > tr.active > th {\n  background-color: #f5f5f5;\n}\n.table-hover > tbody > tr > td.active:hover,\n.table-hover > tbody > tr > th.active:hover,\n.table-hover > tbody > tr.active:hover > td,\n.table-hover > tbody > tr:hover > .active,\n.table-hover > tbody > tr.active:hover > th {\n  background-color: #e8e8e8;\n}\n.table > thead > tr > td.success,\n.table > tbody > tr > td.success,\n.table > tfoot > tr > td.success,\n.table > thead > tr > th.success,\n.table > tbody > tr > th.success,\n.table > tfoot > tr > th.success,\n.table > thead > tr.success > td,\n.table > tbody > tr.success > td,\n.table > tfoot > tr.success > td,\n.table > thead > tr.success > th,\n.table > tbody > tr.success > th,\n.table > tfoot > tr.success > th {\n  background-color: #dff0d8;\n}\n.table-hover > tbody > tr > td.success:hover,\n.table-hover > tbody > tr > th.success:hover,\n.table-hover > tbody > tr.success:hover > td,\n.table-hover > tbody > tr:hover > .success,\n.table-hover > tbody > tr.success:hover > th {\n  background-color: #d0e9c6;\n}\n.table > thead > tr > td.info,\n.table > tbody > tr > td.info,\n.table > tfoot > tr > td.info,\n.table > thead > tr > th.info,\n.table > tbody > tr > th.info,\n.table > tfoot > tr > th.info,\n.table > thead > tr.info > td,\n.table > tbody > tr.info > td,\n.table > tfoot > tr.info > td,\n.table > thead > tr.info > th,\n.table > tbody > tr.info > th,\n.table > tfoot > tr.info > th {\n  background-color: #d9edf7;\n}\n.table-hover > tbody > tr > td.info:hover,\n.table-hover > tbody > tr > th.info:hover,\n.table-hover > tbody > tr.info:hover > td,\n.table-hover > tbody > tr:hover > .info,\n.table-hover > tbody > tr.info:hover > th {\n  background-color: #c4e3f3;\n}\n.table > thead > tr > td.warning,\n.table > tbody > tr > td.warning,\n.table > tfoot > tr > td.warning,\n.table > thead > tr > th.warning,\n.table > tbody > tr > th.warning,\n.table > tfoot > tr > th.warning,\n.table > thead > tr.warning > td,\n.table > tbody > tr.warning > td,\n.table > tfoot > tr.warning > td,\n.table > thead > tr.warning > th,\n.table > tbody > tr.warning > th,\n.table > tfoot > tr.warning > th {\n  background-color: #fcf8e3;\n}\n.table-hover > tbody > tr > td.warning:hover,\n.table-hover > tbody > tr > th.warning:hover,\n.table-hover > tbody > tr.warning:hover > td,\n.table-hover > tbody > tr:hover > .warning,\n.table-hover > tbody > tr.warning:hover > th {\n  background-color: #faf2cc;\n}\n.table > thead > tr > td.danger,\n.table > tbody > tr > td.danger,\n.table > tfoot > tr > td.danger,\n.table > thead > tr > th.danger,\n.table > tbody > tr > th.danger,\n.table > tfoot > tr > th.danger,\n.table > thead > tr.danger > td,\n.table > tbody > tr.danger > td,\n.table > tfoot > tr.danger > td,\n.table > thead > tr.danger > th,\n.table > tbody > tr.danger > th,\n.table > tfoot > tr.danger > th {\n  background-color: #f2dede;\n}\n.table-hover > tbody > tr > td.danger:hover,\n.table-hover > tbody > tr > th.danger:hover,\n.table-hover > tbody > tr.danger:hover > td,\n.table-hover > tbody > tr:hover > .danger,\n.table-hover > tbody > tr.danger:hover > th {\n  background-color: #ebcccc;\n}\n.table-responsive {\n  min-height: .01%;\n  overflow-x: auto;\n}\n@media screen and (max-width: 767px) {\n  .table-responsive {\n    width: 100%;\n    margin-bottom: 15px;\n    overflow-y: hidden;\n    -ms-overflow-style: -ms-autohiding-scrollbar;\n    border: 1px solid #ddd;\n  }\n  .table-responsive > .table {\n    margin-bottom: 0;\n  }\n  .table-responsive > .table > thead > tr > th,\n  .table-responsive > .table > tbody > tr > th,\n  .table-responsive > .table > tfoot > tr > th,\n  .table-responsive > .table > thead > tr > td,\n  .table-responsive > .table > tbody > tr > td,\n  .table-responsive > .table > tfoot > tr > td {\n    white-space: nowrap;\n  }\n  .table-responsive > .table-bordered {\n    border: 0;\n  }\n  .table-responsive > .table-bordered > thead > tr > th:first-child,\n  .table-responsive > .table-bordered > tbody > tr > th:first-child,\n  .table-responsive > .table-bordered > tfoot > tr > th:first-child,\n  .table-responsive > .table-bordered > thead > tr > td:first-child,\n  .table-responsive > .table-bordered > tbody > tr > td:first-child,\n  .table-responsive > .table-bordered > tfoot > tr > td:first-child {\n    border-left: 0;\n  }\n  .table-responsive > .table-bordered > thead > tr > th:last-child,\n  .table-responsive > .table-bordered > tbody > tr > th:last-child,\n  .table-responsive > .table-bordered > tfoot > tr > th:last-child,\n  .table-responsive > .table-bordered > thead > tr > td:last-child,\n  .table-responsive > .table-bordered > tbody > tr > td:last-child,\n  .table-responsive > .table-bordered > tfoot > tr > td:last-child {\n    border-right: 0;\n  }\n  .table-responsive > .table-bordered > tbody > tr:last-child > th,\n  .table-responsive > .table-bordered > tfoot > tr:last-child > th,\n  .table-responsive > .table-bordered > tbody > tr:last-child > td,\n  .table-responsive > .table-bordered > tfoot > tr:last-child > td {\n    border-bottom: 0;\n  }\n}\nfieldset {\n  min-width: 0;\n  padding: 0;\n  margin: 0;\n  border: 0;\n}\nlegend {\n  display: block;\n  width: 100%;\n  padding: 0;\n  margin-bottom: 20px;\n  font-size: 21px;\n  line-height: inherit;\n  color: #333;\n  border: 0;\n  border-bottom: 1px solid #e5e5e5;\n}\nlabel {\n  display: inline-block;\n  max-width: 100%;\n  margin-bottom: 5px;\n  font-weight: bold;\n}\ninput[type=\"search\"] {\n  -webkit-box-sizing: border-box;\n     -moz-box-sizing: border-box;\n          box-sizing: border-box;\n}\ninput[type=\"radio\"],\ninput[type=\"checkbox\"] {\n  margin: 4px 0 0;\n  margin-top: 1px \\9;\n  line-height: normal;\n}\ninput[type=\"file\"] {\n  display: block;\n}\ninput[type=\"range\"] {\n  display: block;\n  width: 100%;\n}\nselect[multiple],\nselect[size] {\n  height: auto;\n}\ninput[type=\"file\"]:focus,\ninput[type=\"radio\"]:focus,\ninput[type=\"checkbox\"]:focus {\n  outline: thin dotted;\n  outline: 5px auto -webkit-focus-ring-color;\n  outline-offset: -2px;\n}\noutput {\n  display: block;\n  padding-top: 7px;\n  font-size: 14px;\n  line-height: 1.42857143;\n  color: #555;\n}\n.form-control {\n  display: block;\n  width: 100%;\n  height: 34px;\n  padding: 6px 12px;\n  font-size: 14px;\n  line-height: 1.42857143;\n  color: #555;\n  background-color: #fff;\n  background-image: none;\n  border: 1px solid #ccc;\n  border-radius: 4px;\n  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);\n          box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);\n  -webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;\n       -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;\n          transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;\n}\n.form-control:focus {\n  border-color: #66afe9;\n  outline: 0;\n  -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, .6);\n          box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, .6);\n}\n.form-control::-moz-placeholder {\n  color: #999;\n  opacity: 1;\n}\n.form-control:-ms-input-placeholder {\n  color: #999;\n}\n.form-control::-webkit-input-placeholder {\n  color: #999;\n}\n.form-control::-ms-expand {\n  background-color: transparent;\n  border: 0;\n}\n.form-control[disabled],\n.form-control[readonly],\nfieldset[disabled] .form-control {\n  background-color: #eee;\n  opacity: 1;\n}\n.form-control[disabled],\nfieldset[disabled] .form-control {\n  cursor: not-allowed;\n}\ntextarea.form-control {\n  height: auto;\n}\ninput[type=\"search\"] {\n  -webkit-appearance: none;\n}\n@media screen and (-webkit-min-device-pixel-ratio: 0) {\n  input[type=\"date\"].form-control,\n  input[type=\"time\"].form-control,\n  input[type=\"datetime-local\"].form-control,\n  input[type=\"month\"].form-control {\n    line-height: 34px;\n  }\n  input[type=\"date\"].input-sm,\n  input[type=\"time\"].input-sm,\n  input[type=\"datetime-local\"].input-sm,\n  input[type=\"month\"].input-sm,\n  .input-group-sm input[type=\"date\"],\n  .input-group-sm input[type=\"time\"],\n  .input-group-sm input[type=\"datetime-local\"],\n  .input-group-sm input[type=\"month\"] {\n    line-height: 30px;\n  }\n  input[type=\"date\"].input-lg,\n  input[type=\"time\"].input-lg,\n  input[type=\"datetime-local\"].input-lg,\n  input[type=\"month\"].input-lg,\n  .input-group-lg input[type=\"date\"],\n  .input-group-lg input[type=\"time\"],\n  .input-group-lg input[type=\"datetime-local\"],\n  .input-group-lg input[type=\"month\"] {\n    line-height: 46px;\n  }\n}\n.form-group {\n  margin-bottom: 15px;\n}\n.radio,\n.checkbox {\n  position: relative;\n  display: block;\n  margin-top: 10px;\n  margin-bottom: 10px;\n}\n.radio label,\n.checkbox label {\n  min-height: 20px;\n  padding-left: 20px;\n  margin-bottom: 0;\n  font-weight: normal;\n  cursor: pointer;\n}\n.radio input[type=\"radio\"],\n.radio-inline input[type=\"radio\"],\n.checkbox input[type=\"checkbox\"],\n.checkbox-inline input[type=\"checkbox\"] {\n  position: absolute;\n  margin-top: 4px \\9;\n  margin-left: -20px;\n}\n.radio + .radio,\n.checkbox + .checkbox {\n  margin-top: -5px;\n}\n.radio-inline,\n.checkbox-inline {\n  position: relative;\n  display: inline-block;\n  padding-left: 20px;\n  margin-bottom: 0;\n  font-weight: normal;\n  vertical-align: middle;\n  cursor: pointer;\n}\n.radio-inline + .radio-inline,\n.checkbox-inline + .checkbox-inline {\n  margin-top: 0;\n  margin-left: 10px;\n}\ninput[type=\"radio\"][disabled],\ninput[type=\"checkbox\"][disabled],\ninput[type=\"radio\"].disabled,\ninput[type=\"checkbox\"].disabled,\nfieldset[disabled] input[type=\"radio\"],\nfieldset[disabled] input[type=\"checkbox\"] {\n  cursor: not-allowed;\n}\n.radio-inline.disabled,\n.checkbox-inline.disabled,\nfieldset[disabled] .radio-inline,\nfieldset[disabled] .checkbox-inline {\n  cursor: not-allowed;\n}\n.radio.disabled label,\n.checkbox.disabled label,\nfieldset[disabled] .radio label,\nfieldset[disabled] .checkbox label {\n  cursor: not-allowed;\n}\n.form-control-static {\n  min-height: 34px;\n  padding-top: 7px;\n  padding-bottom: 7px;\n  margin-bottom: 0;\n}\n.form-control-static.input-lg,\n.form-control-static.input-sm {\n  padding-right: 0;\n  padding-left: 0;\n}\n.input-sm {\n  height: 30px;\n  padding: 5px 10px;\n  font-size: 12px;\n  line-height: 1.5;\n  border-radius: 3px;\n}\nselect.input-sm {\n  height: 30px;\n  line-height: 30px;\n}\ntextarea.input-sm,\nselect[multiple].input-sm {\n  height: auto;\n}\n.form-group-sm .form-control {\n  height: 30px;\n  padding: 5px 10px;\n  font-size: 12px;\n  line-height: 1.5;\n  border-radius: 3px;\n}\n.form-group-sm select.form-control {\n  height: 30px;\n  line-height: 30px;\n}\n.form-group-sm textarea.form-control,\n.form-group-sm select[multiple].form-control {\n  height: auto;\n}\n.form-group-sm .form-control-static {\n  height: 30px;\n  min-height: 32px;\n  padding: 6px 10px;\n  font-size: 12px;\n  line-height: 1.5;\n}\n.input-lg {\n  height: 46px;\n  padding: 10px 16px;\n  font-size: 18px;\n  line-height: 1.3333333;\n  border-radius: 6px;\n}\nselect.input-lg {\n  height: 46px;\n  line-height: 46px;\n}\ntextarea.input-lg,\nselect[multiple].input-lg {\n  height: auto;\n}\n.form-group-lg .form-control {\n  height: 46px;\n  padding: 10px 16px;\n  font-size: 18px;\n  line-height: 1.3333333;\n  border-radius: 6px;\n}\n.form-group-lg select.form-control {\n  height: 46px;\n  line-height: 46px;\n}\n.form-group-lg textarea.form-control,\n.form-group-lg select[multiple].form-control {\n  height: auto;\n}\n.form-group-lg .form-control-static {\n  height: 46px;\n  min-height: 38px;\n  padding: 11px 16px;\n  font-size: 18px;\n  line-height: 1.3333333;\n}\n.has-feedback {\n  position: relative;\n}\n.has-feedback .form-control {\n  padding-right: 42.5px;\n}\n.form-control-feedback {\n  position: absolute;\n  top: 0;\n  right: 0;\n  z-index: 2;\n  display: block;\n  width: 34px;\n  height: 34px;\n  line-height: 34px;\n  text-align: center;\n  pointer-events: none;\n}\n.input-lg + .form-control-feedback,\n.input-group-lg + .form-control-feedback,\n.form-group-lg .form-control + .form-control-feedback {\n  width: 46px;\n  height: 46px;\n  line-height: 46px;\n}\n.input-sm + .form-control-feedback,\n.input-group-sm + .form-control-feedback,\n.form-group-sm .form-control + .form-control-feedback {\n  width: 30px;\n  height: 30px;\n  line-height: 30px;\n}\n.has-success .help-block,\n.has-success .control-label,\n.has-success .radio,\n.has-success .checkbox,\n.has-success .radio-inline,\n.has-success .checkbox-inline,\n.has-success.radio label,\n.has-success.checkbox label,\n.has-success.radio-inline label,\n.has-success.checkbox-inline label {\n  color: #3c763d;\n}\n.has-success .form-control {\n  border-color: #3c763d;\n  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);\n          box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);\n}\n.has-success .form-control:focus {\n  border-color: #2b542c;\n  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 6px #67b168;\n          box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 6px #67b168;\n}\n.has-success .input-group-addon {\n  color: #3c763d;\n  background-color: #dff0d8;\n  border-color: #3c763d;\n}\n.has-success .form-control-feedback {\n  color: #3c763d;\n}\n.has-warning .help-block,\n.has-warning .control-label,\n.has-warning .radio,\n.has-warning .checkbox,\n.has-warning .radio-inline,\n.has-warning .checkbox-inline,\n.has-warning.radio label,\n.has-warning.checkbox label,\n.has-warning.radio-inline label,\n.has-warning.checkbox-inline label {\n  color: #8a6d3b;\n}\n.has-warning .form-control {\n  border-color: #8a6d3b;\n  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);\n          box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);\n}\n.has-warning .form-control:focus {\n  border-color: #66512c;\n  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 6px #c0a16b;\n          box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 6px #c0a16b;\n}\n.has-warning .input-group-addon {\n  color: #8a6d3b;\n  background-color: #fcf8e3;\n  border-color: #8a6d3b;\n}\n.has-warning .form-control-feedback {\n  color: #8a6d3b;\n}\n.has-error .help-block,\n.has-error .control-label,\n.has-error .radio,\n.has-error .checkbox,\n.has-error .radio-inline,\n.has-error .checkbox-inline,\n.has-error.radio label,\n.has-error.checkbox label,\n.has-error.radio-inline label,\n.has-error.checkbox-inline label {\n  color: #a94442;\n}\n.has-error .form-control {\n  border-color: #a94442;\n  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);\n          box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);\n}\n.has-error .form-control:focus {\n  border-color: #843534;\n  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 6px #ce8483;\n          box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 6px #ce8483;\n}\n.has-error .input-group-addon {\n  color: #a94442;\n  background-color: #f2dede;\n  border-color: #a94442;\n}\n.has-error .form-control-feedback {\n  color: #a94442;\n}\n.has-feedback label ~ .form-control-feedback {\n  top: 25px;\n}\n.has-feedback label.sr-only ~ .form-control-feedback {\n  top: 0;\n}\n.help-block {\n  display: block;\n  margin-top: 5px;\n  margin-bottom: 10px;\n  color: #737373;\n}\n@media (min-width: 768px) {\n  .form-inline .form-group {\n    display: inline-block;\n    margin-bottom: 0;\n    vertical-align: middle;\n  }\n  .form-inline .form-control {\n    display: inline-block;\n    width: auto;\n    vertical-align: middle;\n  }\n  .form-inline .form-control-static {\n    display: inline-block;\n  }\n  .form-inline .input-group {\n    display: inline-table;\n    vertical-align: middle;\n  }\n  .form-inline .input-group .input-group-addon,\n  .form-inline .input-group .input-group-btn,\n  .form-inline .input-group .form-control {\n    width: auto;\n  }\n  .form-inline .input-group > .form-control {\n    width: 100%;\n  }\n  .form-inline .control-label {\n    margin-bottom: 0;\n    vertical-align: middle;\n  }\n  .form-inline .radio,\n  .form-inline .checkbox {\n    display: inline-block;\n    margin-top: 0;\n    margin-bottom: 0;\n    vertical-align: middle;\n  }\n  .form-inline .radio label,\n  .form-inline .checkbox label {\n    padding-left: 0;\n  }\n  .form-inline .radio input[type=\"radio\"],\n  .form-inline .checkbox input[type=\"checkbox\"] {\n    position: relative;\n    margin-left: 0;\n  }\n  .form-inline .has-feedback .form-control-feedback {\n    top: 0;\n  }\n}\n.form-horizontal .radio,\n.form-horizontal .checkbox,\n.form-horizontal .radio-inline,\n.form-horizontal .checkbox-inline {\n  padding-top: 7px;\n  margin-top: 0;\n  margin-bottom: 0;\n}\n.form-horizontal .radio,\n.form-horizontal .checkbox {\n  min-height: 27px;\n}\n.form-horizontal .form-group {\n  margin-right: -15px;\n  margin-left: -15px;\n}\n@media (min-width: 768px) {\n  .form-horizontal .control-label {\n    padding-top: 7px;\n    margin-bottom: 0;\n    text-align: right;\n  }\n}\n.form-horizontal .has-feedback .form-control-feedback {\n  right: 15px;\n}\n@media (min-width: 768px) {\n  .form-horizontal .form-group-lg .control-label {\n    padding-top: 11px;\n    font-size: 18px;\n  }\n}\n@media (min-width: 768px) {\n  .form-horizontal .form-group-sm .control-label {\n    padding-top: 6px;\n    font-size: 12px;\n  }\n}\n.btn {\n  display: inline-block;\n  padding: 6px 12px;\n  margin-bottom: 0;\n  font-size: 14px;\n  font-weight: normal;\n  line-height: 1.42857143;\n  text-align: center;\n  white-space: nowrap;\n  vertical-align: middle;\n  -ms-touch-action: manipulation;\n      touch-action: manipulation;\n  cursor: pointer;\n  -webkit-user-select: none;\n     -moz-user-select: none;\n      -ms-user-select: none;\n          user-select: none;\n  background-image: none;\n  border: 1px solid transparent;\n  border-radius: 4px;\n}\n.btn:focus,\n.btn:active:focus,\n.btn.active:focus,\n.btn.focus,\n.btn:active.focus,\n.btn.active.focus {\n  outline: thin dotted;\n  outline: 5px auto -webkit-focus-ring-color;\n  outline-offset: -2px;\n}\n.btn:hover,\n.btn:focus,\n.btn.focus {\n  color: #333;\n  text-decoration: none;\n}\n.btn:active,\n.btn.active {\n  background-image: none;\n  outline: 0;\n  -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125);\n          box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125);\n}\n.btn.disabled,\n.btn[disabled],\nfieldset[disabled] .btn {\n  cursor: not-allowed;\n  filter: alpha(opacity=65);\n  -webkit-box-shadow: none;\n          box-shadow: none;\n  opacity: .65;\n}\na.btn.disabled,\nfieldset[disabled] a.btn {\n  pointer-events: none;\n}\n.btn-default {\n  color: #333;\n  background-color: #fff;\n  border-color: #ccc;\n}\n.btn-default:focus,\n.btn-default.focus {\n  color: #333;\n  background-color: #e6e6e6;\n  border-color: #8c8c8c;\n}\n.btn-default:hover {\n  color: #333;\n  background-color: #e6e6e6;\n  border-color: #adadad;\n}\n.btn-default:active,\n.btn-default.active,\n.open > .dropdown-toggle.btn-default {\n  color: #333;\n  background-color: #e6e6e6;\n  border-color: #adadad;\n}\n.btn-default:active:hover,\n.btn-default.active:hover,\n.open > .dropdown-toggle.btn-default:hover,\n.btn-default:active:focus,\n.btn-default.active:focus,\n.open > .dropdown-toggle.btn-default:focus,\n.btn-default:active.focus,\n.btn-default.active.focus,\n.open > .dropdown-toggle.btn-default.focus {\n  color: #333;\n  background-color: #d4d4d4;\n  border-color: #8c8c8c;\n}\n.btn-default:active,\n.btn-default.active,\n.open > .dropdown-toggle.btn-default {\n  background-image: none;\n}\n.btn-default.disabled:hover,\n.btn-default[disabled]:hover,\nfieldset[disabled] .btn-default:hover,\n.btn-default.disabled:focus,\n.btn-default[disabled]:focus,\nfieldset[disabled] .btn-default:focus,\n.btn-default.disabled.focus,\n.btn-default[disabled].focus,\nfieldset[disabled] .btn-default.focus {\n  background-color: #fff;\n  border-color: #ccc;\n}\n.btn-default .badge {\n  color: #fff;\n  background-color: #333;\n}\n.btn-primary {\n  color: #fff;\n  background-color: #337ab7;\n  border-color: #2e6da4;\n}\n.btn-primary:focus,\n.btn-primary.focus {\n  color: #fff;\n  background-color: #286090;\n  border-color: #122b40;\n}\n.btn-primary:hover {\n  color: #fff;\n  background-color: #286090;\n  border-color: #204d74;\n}\n.btn-primary:active,\n.btn-primary.active,\n.open > .dropdown-toggle.btn-primary {\n  color: #fff;\n  background-color: #286090;\n  border-color: #204d74;\n}\n.btn-primary:active:hover,\n.btn-primary.active:hover,\n.open > .dropdown-toggle.btn-primary:hover,\n.btn-primary:active:focus,\n.btn-primary.active:focus,\n.open > .dropdown-toggle.btn-primary:focus,\n.btn-primary:active.focus,\n.btn-primary.active.focus,\n.open > .dropdown-toggle.btn-primary.focus {\n  color: #fff;\n  background-color: #204d74;\n  border-color: #122b40;\n}\n.btn-primary:active,\n.btn-primary.active,\n.open > .dropdown-toggle.btn-primary {\n  background-image: none;\n}\n.btn-primary.disabled:hover,\n.btn-primary[disabled]:hover,\nfieldset[disabled] .btn-primary:hover,\n.btn-primary.disabled:focus,\n.btn-primary[disabled]:focus,\nfieldset[disabled] .btn-primary:focus,\n.btn-primary.disabled.focus,\n.btn-primary[disabled].focus,\nfieldset[disabled] .btn-primary.focus {\n  background-color: #337ab7;\n  border-color: #2e6da4;\n}\n.btn-primary .badge {\n  color: #337ab7;\n  background-color: #fff;\n}\n.btn-success {\n  color: #fff;\n  background-color: #5cb85c;\n  border-color: #4cae4c;\n}\n.btn-success:focus,\n.btn-success.focus {\n  color: #fff;\n  background-color: #449d44;\n  border-color: #255625;\n}\n.btn-success:hover {\n  color: #fff;\n  background-color: #449d44;\n  border-color: #398439;\n}\n.btn-success:active,\n.btn-success.active,\n.open > .dropdown-toggle.btn-success {\n  color: #fff;\n  background-color: #449d44;\n  border-color: #398439;\n}\n.btn-success:active:hover,\n.btn-success.active:hover,\n.open > .dropdown-toggle.btn-success:hover,\n.btn-success:active:focus,\n.btn-success.active:focus,\n.open > .dropdown-toggle.btn-success:focus,\n.btn-success:active.focus,\n.btn-success.active.focus,\n.open > .dropdown-toggle.btn-success.focus {\n  color: #fff;\n  background-color: #398439;\n  border-color: #255625;\n}\n.btn-success:active,\n.btn-success.active,\n.open > .dropdown-toggle.btn-success {\n  background-image: none;\n}\n.btn-success.disabled:hover,\n.btn-success[disabled]:hover,\nfieldset[disabled] .btn-success:hover,\n.btn-success.disabled:focus,\n.btn-success[disabled]:focus,\nfieldset[disabled] .btn-success:focus,\n.btn-success.disabled.focus,\n.btn-success[disabled].focus,\nfieldset[disabled] .btn-success.focus {\n  background-color: #5cb85c;\n  border-color: #4cae4c;\n}\n.btn-success .badge {\n  color: #5cb85c;\n  background-color: #fff;\n}\n.btn-info {\n  color: #fff;\n  background-color: #5bc0de;\n  border-color: #46b8da;\n}\n.btn-info:focus,\n.btn-info.focus {\n  color: #fff;\n  background-color: #31b0d5;\n  border-color: #1b6d85;\n}\n.btn-info:hover {\n  color: #fff;\n  background-color: #31b0d5;\n  border-color: #269abc;\n}\n.btn-info:active,\n.btn-info.active,\n.open > .dropdown-toggle.btn-info {\n  color: #fff;\n  background-color: #31b0d5;\n  border-color: #269abc;\n}\n.btn-info:active:hover,\n.btn-info.active:hover,\n.open > .dropdown-toggle.btn-info:hover,\n.btn-info:active:focus,\n.btn-info.active:focus,\n.open > .dropdown-toggle.btn-info:focus,\n.btn-info:active.focus,\n.btn-info.active.focus,\n.open > .dropdown-toggle.btn-info.focus {\n  color: #fff;\n  background-color: #269abc;\n  border-color: #1b6d85;\n}\n.btn-info:active,\n.btn-info.active,\n.open > .dropdown-toggle.btn-info {\n  background-image: none;\n}\n.btn-info.disabled:hover,\n.btn-info[disabled]:hover,\nfieldset[disabled] .btn-info:hover,\n.btn-info.disabled:focus,\n.btn-info[disabled]:focus,\nfieldset[disabled] .btn-info:focus,\n.btn-info.disabled.focus,\n.btn-info[disabled].focus,\nfieldset[disabled] .btn-info.focus {\n  background-color: #5bc0de;\n  border-color: #46b8da;\n}\n.btn-info .badge {\n  color: #5bc0de;\n  background-color: #fff;\n}\n.btn-warning {\n  color: #fff;\n  background-color: #f0ad4e;\n  border-color: #eea236;\n}\n.btn-warning:focus,\n.btn-warning.focus {\n  color: #fff;\n  background-color: #ec971f;\n  border-color: #985f0d;\n}\n.btn-warning:hover {\n  color: #fff;\n  background-color: #ec971f;\n  border-color: #d58512;\n}\n.btn-warning:active,\n.btn-warning.active,\n.open > .dropdown-toggle.btn-warning {\n  color: #fff;\n  background-color: #ec971f;\n  border-color: #d58512;\n}\n.btn-warning:active:hover,\n.btn-warning.active:hover,\n.open > .dropdown-toggle.btn-warning:hover,\n.btn-warning:active:focus,\n.btn-warning.active:focus,\n.open > .dropdown-toggle.btn-warning:focus,\n.btn-warning:active.focus,\n.btn-warning.active.focus,\n.open > .dropdown-toggle.btn-warning.focus {\n  color: #fff;\n  background-color: #d58512;\n  border-color: #985f0d;\n}\n.btn-warning:active,\n.btn-warning.active,\n.open > .dropdown-toggle.btn-warning {\n  background-image: none;\n}\n.btn-warning.disabled:hover,\n.btn-warning[disabled]:hover,\nfieldset[disabled] .btn-warning:hover,\n.btn-warning.disabled:focus,\n.btn-warning[disabled]:focus,\nfieldset[disabled] .btn-warning:focus,\n.btn-warning.disabled.focus,\n.btn-warning[disabled].focus,\nfieldset[disabled] .btn-warning.focus {\n  background-color: #f0ad4e;\n  border-color: #eea236;\n}\n.btn-warning .badge {\n  color: #f0ad4e;\n  background-color: #fff;\n}\n.btn-danger {\n  color: #fff;\n  background-color: #d9534f;\n  border-color: #d43f3a;\n}\n.btn-danger:focus,\n.btn-danger.focus {\n  color: #fff;\n  background-color: #c9302c;\n  border-color: #761c19;\n}\n.btn-danger:hover {\n  color: #fff;\n  background-color: #c9302c;\n  border-color: #ac2925;\n}\n.btn-danger:active,\n.btn-danger.active,\n.open > .dropdown-toggle.btn-danger {\n  color: #fff;\n  background-color: #c9302c;\n  border-color: #ac2925;\n}\n.btn-danger:active:hover,\n.btn-danger.active:hover,\n.open > .dropdown-toggle.btn-danger:hover,\n.btn-danger:active:focus,\n.btn-danger.active:focus,\n.open > .dropdown-toggle.btn-danger:focus,\n.btn-danger:active.focus,\n.btn-danger.active.focus,\n.open > .dropdown-toggle.btn-danger.focus {\n  color: #fff;\n  background-color: #ac2925;\n  border-color: #761c19;\n}\n.btn-danger:active,\n.btn-danger.active,\n.open > .dropdown-toggle.btn-danger {\n  background-image: none;\n}\n.btn-danger.disabled:hover,\n.btn-danger[disabled]:hover,\nfieldset[disabled] .btn-danger:hover,\n.btn-danger.disabled:focus,\n.btn-danger[disabled]:focus,\nfieldset[disabled] .btn-danger:focus,\n.btn-danger.disabled.focus,\n.btn-danger[disabled].focus,\nfieldset[disabled] .btn-danger.focus {\n  background-color: #d9534f;\n  border-color: #d43f3a;\n}\n.btn-danger .badge {\n  color: #d9534f;\n  background-color: #fff;\n}\n.btn-link {\n  font-weight: normal;\n  color: #337ab7;\n  border-radius: 0;\n}\n.btn-link,\n.btn-link:active,\n.btn-link.active,\n.btn-link[disabled],\nfieldset[disabled] .btn-link {\n  background-color: transparent;\n  -webkit-box-shadow: none;\n          box-shadow: none;\n}\n.btn-link,\n.btn-link:hover,\n.btn-link:focus,\n.btn-link:active {\n  border-color: transparent;\n}\n.btn-link:hover,\n.btn-link:focus {\n  color: #23527c;\n  text-decoration: underline;\n  background-color: transparent;\n}\n.btn-link[disabled]:hover,\nfieldset[disabled] .btn-link:hover,\n.btn-link[disabled]:focus,\nfieldset[disabled] .btn-link:focus {\n  color: #777;\n  text-decoration: none;\n}\n.btn-lg,\n.btn-group-lg > .btn {\n  padding: 10px 16px;\n  font-size: 18px;\n  line-height: 1.3333333;\n  border-radius: 6px;\n}\n.btn-sm,\n.btn-group-sm > .btn {\n  padding: 5px 10px;\n  font-size: 12px;\n  line-height: 1.5;\n  border-radius: 3px;\n}\n.btn-xs,\n.btn-group-xs > .btn {\n  padding: 1px 5px;\n  font-size: 12px;\n  line-height: 1.5;\n  border-radius: 3px;\n}\n.btn-block {\n  display: block;\n  width: 100%;\n}\n.btn-block + .btn-block {\n  margin-top: 5px;\n}\ninput[type=\"submit\"].btn-block,\ninput[type=\"reset\"].btn-block,\ninput[type=\"button\"].btn-block {\n  width: 100%;\n}\n.fade {\n  opacity: 0;\n  -webkit-transition: opacity .15s linear;\n       -o-transition: opacity .15s linear;\n          transition: opacity .15s linear;\n}\n.fade.in {\n  opacity: 1;\n}\n.collapse {\n  display: none;\n}\n.collapse.in {\n  display: block;\n}\ntr.collapse.in {\n  display: table-row;\n}\ntbody.collapse.in {\n  display: table-row-group;\n}\n.collapsing {\n  position: relative;\n  height: 0;\n  overflow: hidden;\n  -webkit-transition-timing-function: ease;\n       -o-transition-timing-function: ease;\n          transition-timing-function: ease;\n  -webkit-transition-duration: .35s;\n       -o-transition-duration: .35s;\n          transition-duration: .35s;\n  -webkit-transition-property: height, visibility;\n       -o-transition-property: height, visibility;\n          transition-property: height, visibility;\n}\n.caret {\n  display: inline-block;\n  width: 0;\n  height: 0;\n  margin-left: 2px;\n  vertical-align: middle;\n  border-top: 4px dashed;\n  border-top: 4px solid \\9;\n  border-right: 4px solid transparent;\n  border-left: 4px solid transparent;\n}\n.dropup,\n.dropdown {\n  position: relative;\n}\n.dropdown-toggle:focus {\n  outline: 0;\n}\n.dropdown-menu {\n  position: absolute;\n  top: 100%;\n  left: 0;\n  z-index: 1000;\n  display: none;\n  float: left;\n  min-width: 160px;\n  padding: 5px 0;\n  margin: 2px 0 0;\n  font-size: 14px;\n  text-align: left;\n  list-style: none;\n  background-color: #fff;\n  -webkit-background-clip: padding-box;\n          background-clip: padding-box;\n  border: 1px solid #ccc;\n  border: 1px solid rgba(0, 0, 0, .15);\n  border-radius: 4px;\n  -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, .175);\n          box-shadow: 0 6px 12px rgba(0, 0, 0, .175);\n}\n.dropdown-menu.pull-right {\n  right: 0;\n  left: auto;\n}\n.dropdown-menu .divider {\n  height: 1px;\n  margin: 9px 0;\n  overflow: hidden;\n  background-color: #e5e5e5;\n}\n.dropdown-menu > li > a {\n  display: block;\n  padding: 3px 20px;\n  clear: both;\n  font-weight: normal;\n  line-height: 1.42857143;\n  color: #333;\n  white-space: nowrap;\n}\n.dropdown-menu > li > a:hover,\n.dropdown-menu > li > a:focus {\n  color: #262626;\n  text-decoration: none;\n  background-color: #f5f5f5;\n}\n.dropdown-menu > .active > a,\n.dropdown-menu > .active > a:hover,\n.dropdown-menu > .active > a:focus {\n  color: #fff;\n  text-decoration: none;\n  background-color: #337ab7;\n  outline: 0;\n}\n.dropdown-menu > .disabled > a,\n.dropdown-menu > .disabled > a:hover,\n.dropdown-menu > .disabled > a:focus {\n  color: #777;\n}\n.dropdown-menu > .disabled > a:hover,\n.dropdown-menu > .disabled > a:focus {\n  text-decoration: none;\n  cursor: not-allowed;\n  background-color: transparent;\n  background-image: none;\n  filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);\n}\n.open > .dropdown-menu {\n  display: block;\n}\n.open > a {\n  outline: 0;\n}\n.dropdown-menu-right {\n  right: 0;\n  left: auto;\n}\n.dropdown-menu-left {\n  right: auto;\n  left: 0;\n}\n.dropdown-header {\n  display: block;\n  padding: 3px 20px;\n  font-size: 12px;\n  line-height: 1.42857143;\n  color: #777;\n  white-space: nowrap;\n}\n.dropdown-backdrop {\n  position: fixed;\n  top: 0;\n  right: 0;\n  bottom: 0;\n  left: 0;\n  z-index: 990;\n}\n.pull-right > .dropdown-menu {\n  right: 0;\n  left: auto;\n}\n.dropup .caret,\n.navbar-fixed-bottom .dropdown .caret {\n  content: \"\";\n  border-top: 0;\n  border-bottom: 4px dashed;\n  border-bottom: 4px solid \\9;\n}\n.dropup .dropdown-menu,\n.navbar-fixed-bottom .dropdown .dropdown-menu {\n  top: auto;\n  bottom: 100%;\n  margin-bottom: 2px;\n}\n@media (min-width: 768px) {\n  .navbar-right .dropdown-menu {\n    right: 0;\n    left: auto;\n  }\n  .navbar-right .dropdown-menu-left {\n    right: auto;\n    left: 0;\n  }\n}\n.btn-group,\n.btn-group-vertical {\n  position: relative;\n  display: inline-block;\n  vertical-align: middle;\n}\n.btn-group > .btn,\n.btn-group-vertical > .btn {\n  position: relative;\n  float: left;\n}\n.btn-group > .btn:hover,\n.btn-group-vertical > .btn:hover,\n.btn-group > .btn:focus,\n.btn-group-vertical > .btn:focus,\n.btn-group > .btn:active,\n.btn-group-vertical > .btn:active,\n.btn-group > .btn.active,\n.btn-group-vertical > .btn.active {\n  z-index: 2;\n}\n.btn-group .btn + .btn,\n.btn-group .btn + .btn-group,\n.btn-group .btn-group + .btn,\n.btn-group .btn-group + .btn-group {\n  margin-left: -1px;\n}\n.btn-toolbar {\n  margin-left: -5px;\n}\n.btn-toolbar .btn,\n.btn-toolbar .btn-group,\n.btn-toolbar .input-group {\n  float: left;\n}\n.btn-toolbar > .btn,\n.btn-toolbar > .btn-group,\n.btn-toolbar > .input-group {\n  margin-left: 5px;\n}\n.btn-group > .btn:not(:first-child):not(:last-child):not(.dropdown-toggle) {\n  border-radius: 0;\n}\n.btn-group > .btn:first-child {\n  margin-left: 0;\n}\n.btn-group > .btn:first-child:not(:last-child):not(.dropdown-toggle) {\n  border-top-right-radius: 0;\n  border-bottom-right-radius: 0;\n}\n.btn-group > .btn:last-child:not(:first-child),\n.btn-group > .dropdown-toggle:not(:first-child) {\n  border-top-left-radius: 0;\n  border-bottom-left-radius: 0;\n}\n.btn-group > .btn-group {\n  float: left;\n}\n.btn-group > .btn-group:not(:first-child):not(:last-child) > .btn {\n  border-radius: 0;\n}\n.btn-group > .btn-group:first-child:not(:last-child) > .btn:last-child,\n.btn-group > .btn-group:first-child:not(:last-child) > .dropdown-toggle {\n  border-top-right-radius: 0;\n  border-bottom-right-radius: 0;\n}\n.btn-group > .btn-group:last-child:not(:first-child) > .btn:first-child {\n  border-top-left-radius: 0;\n  border-bottom-left-radius: 0;\n}\n.btn-group .dropdown-toggle:active,\n.btn-group.open .dropdown-toggle {\n  outline: 0;\n}\n.btn-group > .btn + .dropdown-toggle {\n  padding-right: 8px;\n  padding-left: 8px;\n}\n.btn-group > .btn-lg + .dropdown-toggle {\n  padding-right: 12px;\n  padding-left: 12px;\n}\n.btn-group.open .dropdown-toggle {\n  -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125);\n          box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125);\n}\n.btn-group.open .dropdown-toggle.btn-link {\n  -webkit-box-shadow: none;\n          box-shadow: none;\n}\n.btn .caret {\n  margin-left: 0;\n}\n.btn-lg .caret {\n  border-width: 5px 5px 0;\n  border-bottom-width: 0;\n}\n.dropup .btn-lg .caret {\n  border-width: 0 5px 5px;\n}\n.btn-group-vertical > .btn,\n.btn-group-vertical > .btn-group,\n.btn-group-vertical > .btn-group > .btn {\n  display: block;\n  float: none;\n  width: 100%;\n  max-width: 100%;\n}\n.btn-group-vertical > .btn-group > .btn {\n  float: none;\n}\n.btn-group-vertical > .btn + .btn,\n.btn-group-vertical > .btn + .btn-group,\n.btn-group-vertical > .btn-group + .btn,\n.btn-group-vertical > .btn-group + .btn-group {\n  margin-top: -1px;\n  margin-left: 0;\n}\n.btn-group-vertical > .btn:not(:first-child):not(:last-child) {\n  border-radius: 0;\n}\n.btn-group-vertical > .btn:first-child:not(:last-child) {\n  border-top-left-radius: 4px;\n  border-top-right-radius: 4px;\n  border-bottom-right-radius: 0;\n  border-bottom-left-radius: 0;\n}\n.btn-group-vertical > .btn:last-child:not(:first-child) {\n  border-top-left-radius: 0;\n  border-top-right-radius: 0;\n  border-bottom-right-radius: 4px;\n  border-bottom-left-radius: 4px;\n}\n.btn-group-vertical > .btn-group:not(:first-child):not(:last-child) > .btn {\n  border-radius: 0;\n}\n.btn-group-vertical > .btn-group:first-child:not(:last-child) > .btn:last-child,\n.btn-group-vertical > .btn-group:first-child:not(:last-child) > .dropdown-toggle {\n  border-bottom-right-radius: 0;\n  border-bottom-left-radius: 0;\n}\n.btn-group-vertical > .btn-group:last-child:not(:first-child) > .btn:first-child {\n  border-top-left-radius: 0;\n  border-top-right-radius: 0;\n}\n.btn-group-justified {\n  display: table;\n  width: 100%;\n  table-layout: fixed;\n  border-collapse: separate;\n}\n.btn-group-justified > .btn,\n.btn-group-justified > .btn-group {\n  display: table-cell;\n  float: none;\n  width: 1%;\n}\n.btn-group-justified > .btn-group .btn {\n  width: 100%;\n}\n.btn-group-justified > .btn-group .dropdown-menu {\n  left: auto;\n}\n[data-toggle=\"buttons\"] > .btn input[type=\"radio\"],\n[data-toggle=\"buttons\"] > .btn-group > .btn input[type=\"radio\"],\n[data-toggle=\"buttons\"] > .btn input[type=\"checkbox\"],\n[data-toggle=\"buttons\"] > .btn-group > .btn input[type=\"checkbox\"] {\n  position: absolute;\n  clip: rect(0, 0, 0, 0);\n  pointer-events: none;\n}\n.input-group {\n  position: relative;\n  display: table;\n  border-collapse: separate;\n}\n.input-group[class*=\"col-\"] {\n  float: none;\n  padding-right: 0;\n  padding-left: 0;\n}\n.input-group .form-control {\n  position: relative;\n  z-index: 2;\n  float: left;\n  width: 100%;\n  margin-bottom: 0;\n}\n.input-group .form-control:focus {\n  z-index: 3;\n}\n.input-group-lg > .form-control,\n.input-group-lg > .input-group-addon,\n.input-group-lg > .input-group-btn > .btn {\n  height: 46px;\n  padding: 10px 16px;\n  font-size: 18px;\n  line-height: 1.3333333;\n  border-radius: 6px;\n}\nselect.input-group-lg > .form-control,\nselect.input-group-lg > .input-group-addon,\nselect.input-group-lg > .input-group-btn > .btn {\n  height: 46px;\n  line-height: 46px;\n}\ntextarea.input-group-lg > .form-control,\ntextarea.input-group-lg > .input-group-addon,\ntextarea.input-group-lg > .input-group-btn > .btn,\nselect[multiple].input-group-lg > .form-control,\nselect[multiple].input-group-lg > .input-group-addon,\nselect[multiple].input-group-lg > .input-group-btn > .btn {\n  height: auto;\n}\n.input-group-sm > .form-control,\n.input-group-sm > .input-group-addon,\n.input-group-sm > .input-group-btn > .btn {\n  height: 30px;\n  padding: 5px 10px;\n  font-size: 12px;\n  line-height: 1.5;\n  border-radius: 3px;\n}\nselect.input-group-sm > .form-control,\nselect.input-group-sm > .input-group-addon,\nselect.input-group-sm > .input-group-btn > .btn {\n  height: 30px;\n  line-height: 30px;\n}\ntextarea.input-group-sm > .form-control,\ntextarea.input-group-sm > .input-group-addon,\ntextarea.input-group-sm > .input-group-btn > .btn,\nselect[multiple].input-group-sm > .form-control,\nselect[multiple].input-group-sm > .input-group-addon,\nselect[multiple].input-group-sm > .input-group-btn > .btn {\n  height: auto;\n}\n.input-group-addon,\n.input-group-btn,\n.input-group .form-control {\n  display: table-cell;\n}\n.input-group-addon:not(:first-child):not(:last-child),\n.input-group-btn:not(:first-child):not(:last-child),\n.input-group .form-control:not(:first-child):not(:last-child) {\n  border-radius: 0;\n}\n.input-group-addon,\n.input-group-btn {\n  width: 1%;\n  white-space: nowrap;\n  vertical-align: middle;\n}\n.input-group-addon {\n  padding: 6px 12px;\n  font-size: 14px;\n  font-weight: normal;\n  line-height: 1;\n  color: #555;\n  text-align: center;\n  background-color: #eee;\n  border: 1px solid #ccc;\n  border-radius: 4px;\n}\n.input-group-addon.input-sm {\n  padding: 5px 10px;\n  font-size: 12px;\n  border-radius: 3px;\n}\n.input-group-addon.input-lg {\n  padding: 10px 16px;\n  font-size: 18px;\n  border-radius: 6px;\n}\n.input-group-addon input[type=\"radio\"],\n.input-group-addon input[type=\"checkbox\"] {\n  margin-top: 0;\n}\n.input-group .form-control:first-child,\n.input-group-addon:first-child,\n.input-group-btn:first-child > .btn,\n.input-group-btn:first-child > .btn-group > .btn,\n.input-group-btn:first-child > .dropdown-toggle,\n.input-group-btn:last-child > .btn:not(:last-child):not(.dropdown-toggle),\n.input-group-btn:last-child > .btn-group:not(:last-child) > .btn {\n  border-top-right-radius: 0;\n  border-bottom-right-radius: 0;\n}\n.input-group-addon:first-child {\n  border-right: 0;\n}\n.input-group .form-control:last-child,\n.input-group-addon:last-child,\n.input-group-btn:last-child > .btn,\n.input-group-btn:last-child > .btn-group > .btn,\n.input-group-btn:last-child > .dropdown-toggle,\n.input-group-btn:first-child > .btn:not(:first-child),\n.input-group-btn:first-child > .btn-group:not(:first-child) > .btn {\n  border-top-left-radius: 0;\n  border-bottom-left-radius: 0;\n}\n.input-group-addon:last-child {\n  border-left: 0;\n}\n.input-group-btn {\n  position: relative;\n  font-size: 0;\n  white-space: nowrap;\n}\n.input-group-btn > .btn {\n  position: relative;\n}\n.input-group-btn > .btn + .btn {\n  margin-left: -1px;\n}\n.input-group-btn > .btn:hover,\n.input-group-btn > .btn:focus,\n.input-group-btn > .btn:active {\n  z-index: 2;\n}\n.input-group-btn:first-child > .btn,\n.input-group-btn:first-child > .btn-group {\n  margin-right: -1px;\n}\n.input-group-btn:last-child > .btn,\n.input-group-btn:last-child > .btn-group {\n  z-index: 2;\n  margin-left: -1px;\n}\n.nav {\n  padding-left: 0;\n  margin-bottom: 0;\n  list-style: none;\n}\n.nav > li {\n  position: relative;\n  display: block;\n}\n.nav > li > a {\n  position: relative;\n  display: block;\n  padding: 10px 15px;\n}\n.nav > li > a:hover,\n.nav > li > a:focus {\n  text-decoration: none;\n  background-color: #eee;\n}\n.nav > li.disabled > a {\n  color: #777;\n}\n.nav > li.disabled > a:hover,\n.nav > li.disabled > a:focus {\n  color: #777;\n  text-decoration: none;\n  cursor: not-allowed;\n  background-color: transparent;\n}\n.nav .open > a,\n.nav .open > a:hover,\n.nav .open > a:focus {\n  background-color: #eee;\n  border-color: #337ab7;\n}\n.nav .nav-divider {\n  height: 1px;\n  margin: 9px 0;\n  overflow: hidden;\n  background-color: #e5e5e5;\n}\n.nav > li > a > img {\n  max-width: none;\n}\n.nav-tabs {\n  border-bottom: 1px solid #ddd;\n}\n.nav-tabs > li {\n  float: left;\n  margin-bottom: -1px;\n}\n.nav-tabs > li > a {\n  margin-right: 2px;\n  line-height: 1.42857143;\n  border: 1px solid transparent;\n  border-radius: 4px 4px 0 0;\n}\n.nav-tabs > li > a:hover {\n  border-color: #eee #eee #ddd;\n}\n.nav-tabs > li.active > a,\n.nav-tabs > li.active > a:hover,\n.nav-tabs > li.active > a:focus {\n  color: #555;\n  cursor: default;\n  background-color: #fff;\n  border: 1px solid #ddd;\n  border-bottom-color: transparent;\n}\n.nav-tabs.nav-justified {\n  width: 100%;\n  border-bottom: 0;\n}\n.nav-tabs.nav-justified > li {\n  float: none;\n}\n.nav-tabs.nav-justified > li > a {\n  margin-bottom: 5px;\n  text-align: center;\n}\n.nav-tabs.nav-justified > .dropdown .dropdown-menu {\n  top: auto;\n  left: auto;\n}\n@media (min-width: 768px) {\n  .nav-tabs.nav-justified > li {\n    display: table-cell;\n    width: 1%;\n  }\n  .nav-tabs.nav-justified > li > a {\n    margin-bottom: 0;\n  }\n}\n.nav-tabs.nav-justified > li > a {\n  margin-right: 0;\n  border-radius: 4px;\n}\n.nav-tabs.nav-justified > .active > a,\n.nav-tabs.nav-justified > .active > a:hover,\n.nav-tabs.nav-justified > .active > a:focus {\n  border: 1px solid #ddd;\n}\n@media (min-width: 768px) {\n  .nav-tabs.nav-justified > li > a {\n    border-bottom: 1px solid #ddd;\n    border-radius: 4px 4px 0 0;\n  }\n  .nav-tabs.nav-justified > .active > a,\n  .nav-tabs.nav-justified > .active > a:hover,\n  .nav-tabs.nav-justified > .active > a:focus {\n    border-bottom-color: #fff;\n  }\n}\n.nav-pills > li {\n  float: left;\n}\n.nav-pills > li > a {\n  border-radius: 4px;\n}\n.nav-pills > li + li {\n  margin-left: 2px;\n}\n.nav-pills > li.active > a,\n.nav-pills > li.active > a:hover,\n.nav-pills > li.active > a:focus {\n  color: #fff;\n  background-color: #337ab7;\n}\n.nav-stacked > li {\n  float: none;\n}\n.nav-stacked > li + li {\n  margin-top: 2px;\n  margin-left: 0;\n}\n.nav-justified {\n  width: 100%;\n}\n.nav-justified > li {\n  float: none;\n}\n.nav-justified > li > a {\n  margin-bottom: 5px;\n  text-align: center;\n}\n.nav-justified > .dropdown .dropdown-menu {\n  top: auto;\n  left: auto;\n}\n@media (min-width: 768px) {\n  .nav-justified > li {\n    display: table-cell;\n    width: 1%;\n  }\n  .nav-justified > li > a {\n    margin-bottom: 0;\n  }\n}\n.nav-tabs-justified {\n  border-bottom: 0;\n}\n.nav-tabs-justified > li > a {\n  margin-right: 0;\n  border-radius: 4px;\n}\n.nav-tabs-justified > .active > a,\n.nav-tabs-justified > .active > a:hover,\n.nav-tabs-justified > .active > a:focus {\n  border: 1px solid #ddd;\n}\n@media (min-width: 768px) {\n  .nav-tabs-justified > li > a {\n    border-bottom: 1px solid #ddd;\n    border-radius: 4px 4px 0 0;\n  }\n  .nav-tabs-justified > .active > a,\n  .nav-tabs-justified > .active > a:hover,\n  .nav-tabs-justified > .active > a:focus {\n    border-bottom-color: #fff;\n  }\n}\n.tab-content > .tab-pane {\n  display: none;\n}\n.tab-content > .active {\n  display: block;\n}\n.nav-tabs .dropdown-menu {\n  margin-top: -1px;\n  border-top-left-radius: 0;\n  border-top-right-radius: 0;\n}\n.navbar {\n  position: relative;\n  min-height: 50px;\n  margin-bottom: 20px;\n  border: 1px solid transparent;\n}\n@media (min-width: 768px) {\n  .navbar {\n    border-radius: 4px;\n  }\n}\n@media (min-width: 768px) {\n  .navbar-header {\n    float: left;\n  }\n}\n.navbar-collapse {\n  padding-right: 15px;\n  padding-left: 15px;\n  overflow-x: visible;\n  -webkit-overflow-scrolling: touch;\n  border-top: 1px solid transparent;\n  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, .1);\n          box-shadow: inset 0 1px 0 rgba(255, 255, 255, .1);\n}\n.navbar-collapse.in {\n  overflow-y: auto;\n}\n@media (min-width: 768px) {\n  .navbar-collapse {\n    width: auto;\n    border-top: 0;\n    -webkit-box-shadow: none;\n            box-shadow: none;\n  }\n  .navbar-collapse.collapse {\n    display: block !important;\n    height: auto !important;\n    padding-bottom: 0;\n    overflow: visible !important;\n  }\n  .navbar-collapse.in {\n    overflow-y: visible;\n  }\n  .navbar-fixed-top .navbar-collapse,\n  .navbar-static-top .navbar-collapse,\n  .navbar-fixed-bottom .navbar-collapse {\n    padding-right: 0;\n    padding-left: 0;\n  }\n}\n.navbar-fixed-top .navbar-collapse,\n.navbar-fixed-bottom .navbar-collapse {\n  max-height: 340px;\n}\n@media (max-device-width: 480px) and (orientation: landscape) {\n  .navbar-fixed-top .navbar-collapse,\n  .navbar-fixed-bottom .navbar-collapse {\n    max-height: 200px;\n  }\n}\n.container > .navbar-header,\n.container-fluid > .navbar-header,\n.container > .navbar-collapse,\n.container-fluid > .navbar-collapse {\n  margin-right: -15px;\n  margin-left: -15px;\n}\n@media (min-width: 768px) {\n  .container > .navbar-header,\n  .container-fluid > .navbar-header,\n  .container > .navbar-collapse,\n  .container-fluid > .navbar-collapse {\n    margin-right: 0;\n    margin-left: 0;\n  }\n}\n.navbar-static-top {\n  z-index: 1000;\n  border-width: 0 0 1px;\n}\n@media (min-width: 768px) {\n  .navbar-static-top {\n    border-radius: 0;\n  }\n}\n.navbar-fixed-top,\n.navbar-fixed-bottom {\n  position: fixed;\n  right: 0;\n  left: 0;\n  z-index: 1030;\n}\n@media (min-width: 768px) {\n  .navbar-fixed-top,\n  .navbar-fixed-bottom {\n    border-radius: 0;\n  }\n}\n.navbar-fixed-top {\n  top: 0;\n  border-width: 0 0 1px;\n}\n.navbar-fixed-bottom {\n  bottom: 0;\n  margin-bottom: 0;\n  border-width: 1px 0 0;\n}\n.navbar-brand {\n  float: left;\n  height: 50px;\n  padding: 15px 15px;\n  font-size: 18px;\n  line-height: 20px;\n}\n.navbar-brand:hover,\n.navbar-brand:focus {\n  text-decoration: none;\n}\n.navbar-brand > img {\n  display: block;\n}\n@media (min-width: 768px) {\n  .navbar > .container .navbar-brand,\n  .navbar > .container-fluid .navbar-brand {\n    margin-left: -15px;\n  }\n}\n.navbar-toggle {\n  position: relative;\n  float: right;\n  padding: 9px 10px;\n  margin-top: 8px;\n  margin-right: 15px;\n  margin-bottom: 8px;\n  background-color: transparent;\n  background-image: none;\n  border: 1px solid transparent;\n  border-radius: 4px;\n}\n.navbar-toggle:focus {\n  outline: 0;\n}\n.navbar-toggle .icon-bar {\n  display: block;\n  width: 22px;\n  height: 2px;\n  border-radius: 1px;\n}\n.navbar-toggle .icon-bar + .icon-bar {\n  margin-top: 4px;\n}\n@media (min-width: 768px) {\n  .navbar-toggle {\n    display: none;\n  }\n}\n.navbar-nav {\n  margin: 7.5px -15px;\n}\n.navbar-nav > li > a {\n  padding-top: 10px;\n  padding-bottom: 10px;\n  line-height: 20px;\n}\n@media (max-width: 767px) {\n  .navbar-nav .open .dropdown-menu {\n    position: static;\n    float: none;\n    width: auto;\n    margin-top: 0;\n    background-color: transparent;\n    border: 0;\n    -webkit-box-shadow: none;\n            box-shadow: none;\n  }\n  .navbar-nav .open .dropdown-menu > li > a,\n  .navbar-nav .open .dropdown-menu .dropdown-header {\n    padding: 5px 15px 5px 25px;\n  }\n  .navbar-nav .open .dropdown-menu > li > a {\n    line-height: 20px;\n  }\n  .navbar-nav .open .dropdown-menu > li > a:hover,\n  .navbar-nav .open .dropdown-menu > li > a:focus {\n    background-image: none;\n  }\n}\n@media (min-width: 768px) {\n  .navbar-nav {\n    float: left;\n    margin: 0;\n  }\n  .navbar-nav > li {\n    float: left;\n  }\n  .navbar-nav > li > a {\n    padding-top: 15px;\n    padding-bottom: 15px;\n  }\n}\n.navbar-form {\n  padding: 10px 15px;\n  margin-top: 8px;\n  margin-right: -15px;\n  margin-bottom: 8px;\n  margin-left: -15px;\n  border-top: 1px solid transparent;\n  border-bottom: 1px solid transparent;\n  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, .1), 0 1px 0 rgba(255, 255, 255, .1);\n          box-shadow: inset 0 1px 0 rgba(255, 255, 255, .1), 0 1px 0 rgba(255, 255, 255, .1);\n}\n@media (min-width: 768px) {\n  .navbar-form .form-group {\n    display: inline-block;\n    margin-bottom: 0;\n    vertical-align: middle;\n  }\n  .navbar-form .form-control {\n    display: inline-block;\n    width: auto;\n    vertical-align: middle;\n  }\n  .navbar-form .form-control-static {\n    display: inline-block;\n  }\n  .navbar-form .input-group {\n    display: inline-table;\n    vertical-align: middle;\n  }\n  .navbar-form .input-group .input-group-addon,\n  .navbar-form .input-group .input-group-btn,\n  .navbar-form .input-group .form-control {\n    width: auto;\n  }\n  .navbar-form .input-group > .form-control {\n    width: 100%;\n  }\n  .navbar-form .control-label {\n    margin-bottom: 0;\n    vertical-align: middle;\n  }\n  .navbar-form .radio,\n  .navbar-form .checkbox {\n    display: inline-block;\n    margin-top: 0;\n    margin-bottom: 0;\n    vertical-align: middle;\n  }\n  .navbar-form .radio label,\n  .navbar-form .checkbox label {\n    padding-left: 0;\n  }\n  .navbar-form .radio input[type=\"radio\"],\n  .navbar-form .checkbox input[type=\"checkbox\"] {\n    position: relative;\n    margin-left: 0;\n  }\n  .navbar-form .has-feedback .form-control-feedback {\n    top: 0;\n  }\n}\n@media (max-width: 767px) {\n  .navbar-form .form-group {\n    margin-bottom: 5px;\n  }\n  .navbar-form .form-group:last-child {\n    margin-bottom: 0;\n  }\n}\n@media (min-width: 768px) {\n  .navbar-form {\n    width: auto;\n    padding-top: 0;\n    padding-bottom: 0;\n    margin-right: 0;\n    margin-left: 0;\n    border: 0;\n    -webkit-box-shadow: none;\n            box-shadow: none;\n  }\n}\n.navbar-nav > li > .dropdown-menu {\n  margin-top: 0;\n  border-top-left-radius: 0;\n  border-top-right-radius: 0;\n}\n.navbar-fixed-bottom .navbar-nav > li > .dropdown-menu {\n  margin-bottom: 0;\n  border-top-left-radius: 4px;\n  border-top-right-radius: 4px;\n  border-bottom-right-radius: 0;\n  border-bottom-left-radius: 0;\n}\n.navbar-btn {\n  margin-top: 8px;\n  margin-bottom: 8px;\n}\n.navbar-btn.btn-sm {\n  margin-top: 10px;\n  margin-bottom: 10px;\n}\n.navbar-btn.btn-xs {\n  margin-top: 14px;\n  margin-bottom: 14px;\n}\n.navbar-text {\n  margin-top: 15px;\n  margin-bottom: 15px;\n}\n@media (min-width: 768px) {\n  .navbar-text {\n    float: left;\n    margin-right: 15px;\n    margin-left: 15px;\n  }\n}\n@media (min-width: 768px) {\n  .navbar-left {\n    float: left !important;\n  }\n  .navbar-right {\n    float: right !important;\n    margin-right: -15px;\n  }\n  .navbar-right ~ .navbar-right {\n    margin-right: 0;\n  }\n}\n.navbar-default {\n  background-color: #f8f8f8;\n  border-color: #e7e7e7;\n}\n.navbar-default .navbar-brand {\n  color: #777;\n}\n.navbar-default .navbar-brand:hover,\n.navbar-default .navbar-brand:focus {\n  color: #5e5e5e;\n  background-color: transparent;\n}\n.navbar-default .navbar-text {\n  color: #777;\n}\n.navbar-default .navbar-nav > li > a {\n  color: #777;\n}\n.navbar-default .navbar-nav > li > a:hover,\n.navbar-default .navbar-nav > li > a:focus {\n  color: #333;\n  background-color: transparent;\n}\n.navbar-default .navbar-nav > .active > a,\n.navbar-default .navbar-nav > .active > a:hover,\n.navbar-default .navbar-nav > .active > a:focus {\n  color: #555;\n  background-color: #e7e7e7;\n}\n.navbar-default .navbar-nav > .disabled > a,\n.navbar-default .navbar-nav > .disabled > a:hover,\n.navbar-default .navbar-nav > .disabled > a:focus {\n  color: #ccc;\n  background-color: transparent;\n}\n.navbar-default .navbar-toggle {\n  border-color: #ddd;\n}\n.navbar-default .navbar-toggle:hover,\n.navbar-default .navbar-toggle:focus {\n  background-color: #ddd;\n}\n.navbar-default .navbar-toggle .icon-bar {\n  background-color: #888;\n}\n.navbar-default .navbar-collapse,\n.navbar-default .navbar-form {\n  border-color: #e7e7e7;\n}\n.navbar-default .navbar-nav > .open > a,\n.navbar-default .navbar-nav > .open > a:hover,\n.navbar-default .navbar-nav > .open > a:focus {\n  color: #555;\n  background-color: #e7e7e7;\n}\n@media (max-width: 767px) {\n  .navbar-default .navbar-nav .open .dropdown-menu > li > a {\n    color: #777;\n  }\n  .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,\n  .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {\n    color: #333;\n    background-color: transparent;\n  }\n  .navbar-default .navbar-nav .open .dropdown-menu > .active > a,\n  .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover,\n  .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {\n    color: #555;\n    background-color: #e7e7e7;\n  }\n  .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a,\n  .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a:hover,\n  .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a:focus {\n    color: #ccc;\n    background-color: transparent;\n  }\n}\n.navbar-default .navbar-link {\n  color: #777;\n}\n.navbar-default .navbar-link:hover {\n  color: #333;\n}\n.navbar-default .btn-link {\n  color: #777;\n}\n.navbar-default .btn-link:hover,\n.navbar-default .btn-link:focus {\n  color: #333;\n}\n.navbar-default .btn-link[disabled]:hover,\nfieldset[disabled] .navbar-default .btn-link:hover,\n.navbar-default .btn-link[disabled]:focus,\nfieldset[disabled] .navbar-default .btn-link:focus {\n  color: #ccc;\n}\n.navbar-inverse {\n  background-color: #222;\n  border-color: #080808;\n}\n.navbar-inverse .navbar-brand {\n  color: #9d9d9d;\n}\n.navbar-inverse .navbar-brand:hover,\n.navbar-inverse .navbar-brand:focus {\n  color: #fff;\n  background-color: transparent;\n}\n.navbar-inverse .navbar-text {\n  color: #9d9d9d;\n}\n.navbar-inverse .navbar-nav > li > a {\n  color: #9d9d9d;\n}\n.navbar-inverse .navbar-nav > li > a:hover,\n.navbar-inverse .navbar-nav > li > a:focus {\n  color: #fff;\n  background-color: transparent;\n}\n.navbar-inverse .navbar-nav > .active > a,\n.navbar-inverse .navbar-nav > .active > a:hover,\n.navbar-inverse .navbar-nav > .active > a:focus {\n  color: #fff;\n  background-color: #080808;\n}\n.navbar-inverse .navbar-nav > .disabled > a,\n.navbar-inverse .navbar-nav > .disabled > a:hover,\n.navbar-inverse .navbar-nav > .disabled > a:focus {\n  color: #444;\n  background-color: transparent;\n}\n.navbar-inverse .navbar-toggle {\n  border-color: #333;\n}\n.navbar-inverse .navbar-toggle:hover,\n.navbar-inverse .navbar-toggle:focus {\n  background-color: #333;\n}\n.navbar-inverse .navbar-toggle .icon-bar {\n  background-color: #fff;\n}\n.navbar-inverse .navbar-collapse,\n.navbar-inverse .navbar-form {\n  border-color: #101010;\n}\n.navbar-inverse .navbar-nav > .open > a,\n.navbar-inverse .navbar-nav > .open > a:hover,\n.navbar-inverse .navbar-nav > .open > a:focus {\n  color: #fff;\n  background-color: #080808;\n}\n@media (max-width: 767px) {\n  .navbar-inverse .navbar-nav .open .dropdown-menu > .dropdown-header {\n    border-color: #080808;\n  }\n  .navbar-inverse .navbar-nav .open .dropdown-menu .divider {\n    background-color: #080808;\n  }\n  .navbar-inverse .navbar-nav .open .dropdown-menu > li > a {\n    color: #9d9d9d;\n  }\n  .navbar-inverse .navbar-nav .open .dropdown-menu > li > a:hover,\n  .navbar-inverse .navbar-nav .open .dropdown-menu > li > a:focus {\n    color: #fff;\n    background-color: transparent;\n  }\n  .navbar-inverse .navbar-nav .open .dropdown-menu > .active > a,\n  .navbar-inverse .navbar-nav .open .dropdown-menu > .active > a:hover,\n  .navbar-inverse .navbar-nav .open .dropdown-menu > .active > a:focus {\n    color: #fff;\n    background-color: #080808;\n  }\n  .navbar-inverse .navbar-nav .open .dropdown-menu > .disabled > a,\n  .navbar-inverse .navbar-nav .open .dropdown-menu > .disabled > a:hover,\n  .navbar-inverse .navbar-nav .open .dropdown-menu > .disabled > a:focus {\n    color: #444;\n    background-color: transparent;\n  }\n}\n.navbar-inverse .navbar-link {\n  color: #9d9d9d;\n}\n.navbar-inverse .navbar-link:hover {\n  color: #fff;\n}\n.navbar-inverse .btn-link {\n  color: #9d9d9d;\n}\n.navbar-inverse .btn-link:hover,\n.navbar-inverse .btn-link:focus {\n  color: #fff;\n}\n.navbar-inverse .btn-link[disabled]:hover,\nfieldset[disabled] .navbar-inverse .btn-link:hover,\n.navbar-inverse .btn-link[disabled]:focus,\nfieldset[disabled] .navbar-inverse .btn-link:focus {\n  color: #444;\n}\n.breadcrumb {\n  padding: 8px 15px;\n  margin-bottom: 20px;\n  list-style: none;\n  background-color: #f5f5f5;\n  border-radius: 4px;\n}\n.breadcrumb > li {\n  display: inline-block;\n}\n.breadcrumb > li + li:before {\n  padding: 0 5px;\n  color: #ccc;\n  content: \"/\\A0\";\n}\n.breadcrumb > .active {\n  color: #777;\n}\n.pagination {\n  display: inline-block;\n  padding-left: 0;\n  margin: 20px 0;\n  border-radius: 4px;\n}\n.pagination > li {\n  display: inline;\n}\n.pagination > li > a,\n.pagination > li > span {\n  position: relative;\n  float: left;\n  padding: 6px 12px;\n  margin-left: -1px;\n  line-height: 1.42857143;\n  color: #337ab7;\n  text-decoration: none;\n  background-color: #fff;\n  border: 1px solid #ddd;\n}\n.pagination > li:first-child > a,\n.pagination > li:first-child > span {\n  margin-left: 0;\n  border-top-left-radius: 4px;\n  border-bottom-left-radius: 4px;\n}\n.pagination > li:last-child > a,\n.pagination > li:last-child > span {\n  border-top-right-radius: 4px;\n  border-bottom-right-radius: 4px;\n}\n.pagination > li > a:hover,\n.pagination > li > span:hover,\n.pagination > li > a:focus,\n.pagination > li > span:focus {\n  z-index: 2;\n  color: #23527c;\n  background-color: #eee;\n  border-color: #ddd;\n}\n.pagination > .active > a,\n.pagination > .active > span,\n.pagination > .active > a:hover,\n.pagination > .active > span:hover,\n.pagination > .active > a:focus,\n.pagination > .active > span:focus {\n  z-index: 3;\n  color: #fff;\n  cursor: default;\n  background-color: #337ab7;\n  border-color: #337ab7;\n}\n.pagination > .disabled > span,\n.pagination > .disabled > span:hover,\n.pagination > .disabled > span:focus,\n.pagination > .disabled > a,\n.pagination > .disabled > a:hover,\n.pagination > .disabled > a:focus {\n  color: #777;\n  cursor: not-allowed;\n  background-color: #fff;\n  border-color: #ddd;\n}\n.pagination-lg > li > a,\n.pagination-lg > li > span {\n  padding: 10px 16px;\n  font-size: 18px;\n  line-height: 1.3333333;\n}\n.pagination-lg > li:first-child > a,\n.pagination-lg > li:first-child > span {\n  border-top-left-radius: 6px;\n  border-bottom-left-radius: 6px;\n}\n.pagination-lg > li:last-child > a,\n.pagination-lg > li:last-child > span {\n  border-top-right-radius: 6px;\n  border-bottom-right-radius: 6px;\n}\n.pagination-sm > li > a,\n.pagination-sm > li > span {\n  padding: 5px 10px;\n  font-size: 12px;\n  line-height: 1.5;\n}\n.pagination-sm > li:first-child > a,\n.pagination-sm > li:first-child > span {\n  border-top-left-radius: 3px;\n  border-bottom-left-radius: 3px;\n}\n.pagination-sm > li:last-child > a,\n.pagination-sm > li:last-child > span {\n  border-top-right-radius: 3px;\n  border-bottom-right-radius: 3px;\n}\n.pager {\n  padding-left: 0;\n  margin: 20px 0;\n  text-align: center;\n  list-style: none;\n}\n.pager li {\n  display: inline;\n}\n.pager li > a,\n.pager li > span {\n  display: inline-block;\n  padding: 5px 14px;\n  background-color: #fff;\n  border: 1px solid #ddd;\n  border-radius: 15px;\n}\n.pager li > a:hover,\n.pager li > a:focus {\n  text-decoration: none;\n  background-color: #eee;\n}\n.pager .next > a,\n.pager .next > span {\n  float: right;\n}\n.pager .previous > a,\n.pager .previous > span {\n  float: left;\n}\n.pager .disabled > a,\n.pager .disabled > a:hover,\n.pager .disabled > a:focus,\n.pager .disabled > span {\n  color: #777;\n  cursor: not-allowed;\n  background-color: #fff;\n}\n.label {\n  display: inline;\n  padding: .2em .6em .3em;\n  font-size: 75%;\n  font-weight: bold;\n  line-height: 1;\n  color: #fff;\n  text-align: center;\n  white-space: nowrap;\n  vertical-align: baseline;\n  border-radius: .25em;\n}\na.label:hover,\na.label:focus {\n  color: #fff;\n  text-decoration: none;\n  cursor: pointer;\n}\n.label:empty {\n  display: none;\n}\n.btn .label {\n  position: relative;\n  top: -1px;\n}\n.label-default {\n  background-color: #777;\n}\n.label-default[href]:hover,\n.label-default[href]:focus {\n  background-color: #5e5e5e;\n}\n.label-primary {\n  background-color: #337ab7;\n}\n.label-primary[href]:hover,\n.label-primary[href]:focus {\n  background-color: #286090;\n}\n.label-success {\n  background-color: #5cb85c;\n}\n.label-success[href]:hover,\n.label-success[href]:focus {\n  background-color: #449d44;\n}\n.label-info {\n  background-color: #5bc0de;\n}\n.label-info[href]:hover,\n.label-info[href]:focus {\n  background-color: #31b0d5;\n}\n.label-warning {\n  background-color: #f0ad4e;\n}\n.label-warning[href]:hover,\n.label-warning[href]:focus {\n  background-color: #ec971f;\n}\n.label-danger {\n  background-color: #d9534f;\n}\n.label-danger[href]:hover,\n.label-danger[href]:focus {\n  background-color: #c9302c;\n}\n.badge {\n  display: inline-block;\n  min-width: 10px;\n  padding: 3px 7px;\n  font-size: 12px;\n  font-weight: bold;\n  line-height: 1;\n  color: #fff;\n  text-align: center;\n  white-space: nowrap;\n  vertical-align: middle;\n  background-color: #777;\n  border-radius: 10px;\n}\n.badge:empty {\n  display: none;\n}\n.btn .badge {\n  position: relative;\n  top: -1px;\n}\n.btn-xs .badge,\n.btn-group-xs > .btn .badge {\n  top: 0;\n  padding: 1px 5px;\n}\na.badge:hover,\na.badge:focus {\n  color: #fff;\n  text-decoration: none;\n  cursor: pointer;\n}\n.list-group-item.active > .badge,\n.nav-pills > .active > a > .badge {\n  color: #337ab7;\n  background-color: #fff;\n}\n.list-group-item > .badge {\n  float: right;\n}\n.list-group-item > .badge + .badge {\n  margin-right: 5px;\n}\n.nav-pills > li > a > .badge {\n  margin-left: 3px;\n}\n.jumbotron {\n  padding-top: 30px;\n  padding-bottom: 30px;\n  margin-bottom: 30px;\n  color: inherit;\n  background-color: #eee;\n}\n.jumbotron h1,\n.jumbotron .h1 {\n  color: inherit;\n}\n.jumbotron p {\n  margin-bottom: 15px;\n  font-size: 21px;\n  font-weight: 200;\n}\n.jumbotron > hr {\n  border-top-color: #d5d5d5;\n}\n.container .jumbotron,\n.container-fluid .jumbotron {\n  padding-right: 15px;\n  padding-left: 15px;\n  border-radius: 6px;\n}\n.jumbotron .container {\n  max-width: 100%;\n}\n@media screen and (min-width: 768px) {\n  .jumbotron {\n    padding-top: 48px;\n    padding-bottom: 48px;\n  }\n  .container .jumbotron,\n  .container-fluid .jumbotron {\n    padding-right: 60px;\n    padding-left: 60px;\n  }\n  .jumbotron h1,\n  .jumbotron .h1 {\n    font-size: 63px;\n  }\n}\n.thumbnail {\n  display: block;\n  padding: 4px;\n  margin-bottom: 20px;\n  line-height: 1.42857143;\n  background-color: #fff;\n  border: 1px solid #ddd;\n  border-radius: 4px;\n  -webkit-transition: border .2s ease-in-out;\n       -o-transition: border .2s ease-in-out;\n          transition: border .2s ease-in-out;\n}\n.thumbnail > img,\n.thumbnail a > img {\n  margin-right: auto;\n  margin-left: auto;\n}\na.thumbnail:hover,\na.thumbnail:focus,\na.thumbnail.active {\n  border-color: #337ab7;\n}\n.thumbnail .caption {\n  padding: 9px;\n  color: #333;\n}\n.alert {\n  padding: 15px;\n  margin-bottom: 20px;\n  border: 1px solid transparent;\n  border-radius: 4px;\n}\n.alert h4 {\n  margin-top: 0;\n  color: inherit;\n}\n.alert .alert-link {\n  font-weight: bold;\n}\n.alert > p,\n.alert > ul {\n  margin-bottom: 0;\n}\n.alert > p + p {\n  margin-top: 5px;\n}\n.alert-dismissable,\n.alert-dismissible {\n  padding-right: 35px;\n}\n.alert-dismissable .close,\n.alert-dismissible .close {\n  position: relative;\n  top: -2px;\n  right: -21px;\n  color: inherit;\n}\n.alert-success {\n  color: #3c763d;\n  background-color: #dff0d8;\n  border-color: #d6e9c6;\n}\n.alert-success hr {\n  border-top-color: #c9e2b3;\n}\n.alert-success .alert-link {\n  color: #2b542c;\n}\n.alert-info {\n  color: #31708f;\n  background-color: #d9edf7;\n  border-color: #bce8f1;\n}\n.alert-info hr {\n  border-top-color: #a6e1ec;\n}\n.alert-info .alert-link {\n  color: #245269;\n}\n.alert-warning {\n  color: #8a6d3b;\n  background-color: #fcf8e3;\n  border-color: #faebcc;\n}\n.alert-warning hr {\n  border-top-color: #f7e1b5;\n}\n.alert-warning .alert-link {\n  color: #66512c;\n}\n.alert-danger {\n  color: #a94442;\n  background-color: #f2dede;\n  border-color: #ebccd1;\n}\n.alert-danger hr {\n  border-top-color: #e4b9c0;\n}\n.alert-danger .alert-link {\n  color: #843534;\n}\n@-webkit-keyframes progress-bar-stripes {\n  from {\n    background-position: 40px 0;\n  }\n  to {\n    background-position: 0 0;\n  }\n}\n@-o-keyframes progress-bar-stripes {\n  from {\n    background-position: 40px 0;\n  }\n  to {\n    background-position: 0 0;\n  }\n}\n@keyframes progress-bar-stripes {\n  from {\n    background-position: 40px 0;\n  }\n  to {\n    background-position: 0 0;\n  }\n}\n.progress {\n  height: 20px;\n  margin-bottom: 20px;\n  overflow: hidden;\n  background-color: #f5f5f5;\n  border-radius: 4px;\n  -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, .1);\n          box-shadow: inset 0 1px 2px rgba(0, 0, 0, .1);\n}\n.progress-bar {\n  float: left;\n  width: 0;\n  height: 100%;\n  font-size: 12px;\n  line-height: 20px;\n  color: #fff;\n  text-align: center;\n  background-color: #337ab7;\n  -webkit-box-shadow: inset 0 -1px 0 rgba(0, 0, 0, .15);\n          box-shadow: inset 0 -1px 0 rgba(0, 0, 0, .15);\n  -webkit-transition: width .6s ease;\n       -o-transition: width .6s ease;\n          transition: width .6s ease;\n}\n.progress-striped .progress-bar,\n.progress-bar-striped {\n  background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, .15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%, transparent 75%, transparent);\n  background-image:      -o-linear-gradient(45deg, rgba(255, 255, 255, .15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%, transparent 75%, transparent);\n  background-image:         linear-gradient(45deg, rgba(255, 255, 255, .15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%, transparent 75%, transparent);\n  -webkit-background-size: 40px 40px;\n          background-size: 40px 40px;\n}\n.progress.active .progress-bar,\n.progress-bar.active {\n  -webkit-animation: progress-bar-stripes 2s linear infinite;\n       -o-animation: progress-bar-stripes 2s linear infinite;\n          animation: progress-bar-stripes 2s linear infinite;\n}\n.progress-bar-success {\n  background-color: #5cb85c;\n}\n.progress-striped .progress-bar-success {\n  background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, .15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%, transparent 75%, transparent);\n  background-image:      -o-linear-gradient(45deg, rgba(255, 255, 255, .15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%, transparent 75%, transparent);\n  background-image:         linear-gradient(45deg, rgba(255, 255, 255, .15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%, transparent 75%, transparent);\n}\n.progress-bar-info {\n  background-color: #5bc0de;\n}\n.progress-striped .progress-bar-info {\n  background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, .15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%, transparent 75%, transparent);\n  background-image:      -o-linear-gradient(45deg, rgba(255, 255, 255, .15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%, transparent 75%, transparent);\n  background-image:         linear-gradient(45deg, rgba(255, 255, 255, .15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%, transparent 75%, transparent);\n}\n.progress-bar-warning {\n  background-color: #f0ad4e;\n}\n.progress-striped .progress-bar-warning {\n  background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, .15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%, transparent 75%, transparent);\n  background-image:      -o-linear-gradient(45deg, rgba(255, 255, 255, .15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%, transparent 75%, transparent);\n  background-image:         linear-gradient(45deg, rgba(255, 255, 255, .15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%, transparent 75%, transparent);\n}\n.progress-bar-danger {\n  background-color: #d9534f;\n}\n.progress-striped .progress-bar-danger {\n  background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, .15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%, transparent 75%, transparent);\n  background-image:      -o-linear-gradient(45deg, rgba(255, 255, 255, .15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%, transparent 75%, transparent);\n  background-image:         linear-gradient(45deg, rgba(255, 255, 255, .15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%, transparent 75%, transparent);\n}\n.media {\n  margin-top: 15px;\n}\n.media:first-child {\n  margin-top: 0;\n}\n.media,\n.media-body {\n  overflow: hidden;\n  zoom: 1;\n}\n.media-body {\n  width: 10000px;\n}\n.media-object {\n  display: block;\n}\n.media-object.img-thumbnail {\n  max-width: none;\n}\n.media-right,\n.media > .pull-right {\n  padding-left: 10px;\n}\n.media-left,\n.media > .pull-left {\n  padding-right: 10px;\n}\n.media-left,\n.media-right,\n.media-body {\n  display: table-cell;\n  vertical-align: top;\n}\n.media-middle {\n  vertical-align: middle;\n}\n.media-bottom {\n  vertical-align: bottom;\n}\n.media-heading {\n  margin-top: 0;\n  margin-bottom: 5px;\n}\n.media-list {\n  padding-left: 0;\n  list-style: none;\n}\n.list-group {\n  padding-left: 0;\n  margin-bottom: 20px;\n}\n.list-group-item {\n  position: relative;\n  display: block;\n  padding: 10px 15px;\n  margin-bottom: -1px;\n  background-color: #fff;\n  border: 1px solid #ddd;\n}\n.list-group-item:first-child {\n  border-top-left-radius: 4px;\n  border-top-right-radius: 4px;\n}\n.list-group-item:last-child {\n  margin-bottom: 0;\n  border-bottom-right-radius: 4px;\n  border-bottom-left-radius: 4px;\n}\na.list-group-item,\nbutton.list-group-item {\n  color: #555;\n}\na.list-group-item .list-group-item-heading,\nbutton.list-group-item .list-group-item-heading {\n  color: #333;\n}\na.list-group-item:hover,\nbutton.list-group-item:hover,\na.list-group-item:focus,\nbutton.list-group-item:focus {\n  color: #555;\n  text-decoration: none;\n  background-color: #f5f5f5;\n}\nbutton.list-group-item {\n  width: 100%;\n  text-align: left;\n}\n.list-group-item.disabled,\n.list-group-item.disabled:hover,\n.list-group-item.disabled:focus {\n  color: #777;\n  cursor: not-allowed;\n  background-color: #eee;\n}\n.list-group-item.disabled .list-group-item-heading,\n.list-group-item.disabled:hover .list-group-item-heading,\n.list-group-item.disabled:focus .list-group-item-heading {\n  color: inherit;\n}\n.list-group-item.disabled .list-group-item-text,\n.list-group-item.disabled:hover .list-group-item-text,\n.list-group-item.disabled:focus .list-group-item-text {\n  color: #777;\n}\n.list-group-item.active,\n.list-group-item.active:hover,\n.list-group-item.active:focus {\n  z-index: 2;\n  color: #fff;\n  background-color: #337ab7;\n  border-color: #337ab7;\n}\n.list-group-item.active .list-group-item-heading,\n.list-group-item.active:hover .list-group-item-heading,\n.list-group-item.active:focus .list-group-item-heading,\n.list-group-item.active .list-group-item-heading > small,\n.list-group-item.active:hover .list-group-item-heading > small,\n.list-group-item.active:focus .list-group-item-heading > small,\n.list-group-item.active .list-group-item-heading > .small,\n.list-group-item.active:hover .list-group-item-heading > .small,\n.list-group-item.active:focus .list-group-item-heading > .small {\n  color: inherit;\n}\n.list-group-item.active .list-group-item-text,\n.list-group-item.active:hover .list-group-item-text,\n.list-group-item.active:focus .list-group-item-text {\n  color: #c7ddef;\n}\n.list-group-item-success {\n  color: #3c763d;\n  background-color: #dff0d8;\n}\na.list-group-item-success,\nbutton.list-group-item-success {\n  color: #3c763d;\n}\na.list-group-item-success .list-group-item-heading,\nbutton.list-group-item-success .list-group-item-heading {\n  color: inherit;\n}\na.list-group-item-success:hover,\nbutton.list-group-item-success:hover,\na.list-group-item-success:focus,\nbutton.list-group-item-success:focus {\n  color: #3c763d;\n  background-color: #d0e9c6;\n}\na.list-group-item-success.active,\nbutton.list-group-item-success.active,\na.list-group-item-success.active:hover,\nbutton.list-group-item-success.active:hover,\na.list-group-item-success.active:focus,\nbutton.list-group-item-success.active:focus {\n  color: #fff;\n  background-color: #3c763d;\n  border-color: #3c763d;\n}\n.list-group-item-info {\n  color: #31708f;\n  background-color: #d9edf7;\n}\na.list-group-item-info,\nbutton.list-group-item-info {\n  color: #31708f;\n}\na.list-group-item-info .list-group-item-heading,\nbutton.list-group-item-info .list-group-item-heading {\n  color: inherit;\n}\na.list-group-item-info:hover,\nbutton.list-group-item-info:hover,\na.list-group-item-info:focus,\nbutton.list-group-item-info:focus {\n  color: #31708f;\n  background-color: #c4e3f3;\n}\na.list-group-item-info.active,\nbutton.list-group-item-info.active,\na.list-group-item-info.active:hover,\nbutton.list-group-item-info.active:hover,\na.list-group-item-info.active:focus,\nbutton.list-group-item-info.active:focus {\n  color: #fff;\n  background-color: #31708f;\n  border-color: #31708f;\n}\n.list-group-item-warning {\n  color: #8a6d3b;\n  background-color: #fcf8e3;\n}\na.list-group-item-warning,\nbutton.list-group-item-warning {\n  color: #8a6d3b;\n}\na.list-group-item-warning .list-group-item-heading,\nbutton.list-group-item-warning .list-group-item-heading {\n  color: inherit;\n}\na.list-group-item-warning:hover,\nbutton.list-group-item-warning:hover,\na.list-group-item-warning:focus,\nbutton.list-group-item-warning:focus {\n  color: #8a6d3b;\n  background-color: #faf2cc;\n}\na.list-group-item-warning.active,\nbutton.list-group-item-warning.active,\na.list-group-item-warning.active:hover,\nbutton.list-group-item-warning.active:hover,\na.list-group-item-warning.active:focus,\nbutton.list-group-item-warning.active:focus {\n  color: #fff;\n  background-color: #8a6d3b;\n  border-color: #8a6d3b;\n}\n.list-group-item-danger {\n  color: #a94442;\n  background-color: #f2dede;\n}\na.list-group-item-danger,\nbutton.list-group-item-danger {\n  color: #a94442;\n}\na.list-group-item-danger .list-group-item-heading,\nbutton.list-group-item-danger .list-group-item-heading {\n  color: inherit;\n}\na.list-group-item-danger:hover,\nbutton.list-group-item-danger:hover,\na.list-group-item-danger:focus,\nbutton.list-group-item-danger:focus {\n  color: #a94442;\n  background-color: #ebcccc;\n}\na.list-group-item-danger.active,\nbutton.list-group-item-danger.active,\na.list-group-item-danger.active:hover,\nbutton.list-group-item-danger.active:hover,\na.list-group-item-danger.active:focus,\nbutton.list-group-item-danger.active:focus {\n  color: #fff;\n  background-color: #a94442;\n  border-color: #a94442;\n}\n.list-group-item-heading {\n  margin-top: 0;\n  margin-bottom: 5px;\n}\n.list-group-item-text {\n  margin-bottom: 0;\n  line-height: 1.3;\n}\n.panel {\n  margin-bottom: 20px;\n  background-color: #fff;\n  border: 1px solid transparent;\n  border-radius: 4px;\n  -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, .05);\n          box-shadow: 0 1px 1px rgba(0, 0, 0, .05);\n}\n.panel-body {\n  padding: 15px;\n}\n.panel-heading {\n  padding: 10px 15px;\n  border-bottom: 1px solid transparent;\n  border-top-left-radius: 3px;\n  border-top-right-radius: 3px;\n}\n.panel-heading > .dropdown .dropdown-toggle {\n  color: inherit;\n}\n.panel-title {\n  margin-top: 0;\n  margin-bottom: 0;\n  font-size: 16px;\n  color: inherit;\n}\n.panel-title > a,\n.panel-title > small,\n.panel-title > .small,\n.panel-title > small > a,\n.panel-title > .small > a {\n  color: inherit;\n}\n.panel-footer {\n  padding: 10px 15px;\n  background-color: #f5f5f5;\n  border-top: 1px solid #ddd;\n  border-bottom-right-radius: 3px;\n  border-bottom-left-radius: 3px;\n}\n.panel > .list-group,\n.panel > .panel-collapse > .list-group {\n  margin-bottom: 0;\n}\n.panel > .list-group .list-group-item,\n.panel > .panel-collapse > .list-group .list-group-item {\n  border-width: 1px 0;\n  border-radius: 0;\n}\n.panel > .list-group:first-child .list-group-item:first-child,\n.panel > .panel-collapse > .list-group:first-child .list-group-item:first-child {\n  border-top: 0;\n  border-top-left-radius: 3px;\n  border-top-right-radius: 3px;\n}\n.panel > .list-group:last-child .list-group-item:last-child,\n.panel > .panel-collapse > .list-group:last-child .list-group-item:last-child {\n  border-bottom: 0;\n  border-bottom-right-radius: 3px;\n  border-bottom-left-radius: 3px;\n}\n.panel > .panel-heading + .panel-collapse > .list-group .list-group-item:first-child {\n  border-top-left-radius: 0;\n  border-top-right-radius: 0;\n}\n.panel-heading + .list-group .list-group-item:first-child {\n  border-top-width: 0;\n}\n.list-group + .panel-footer {\n  border-top-width: 0;\n}\n.panel > .table,\n.panel > .table-responsive > .table,\n.panel > .panel-collapse > .table {\n  margin-bottom: 0;\n}\n.panel > .table caption,\n.panel > .table-responsive > .table caption,\n.panel > .panel-collapse > .table caption {\n  padding-right: 15px;\n  padding-left: 15px;\n}\n.panel > .table:first-child,\n.panel > .table-responsive:first-child > .table:first-child {\n  border-top-left-radius: 3px;\n  border-top-right-radius: 3px;\n}\n.panel > .table:first-child > thead:first-child > tr:first-child,\n.panel > .table-responsive:first-child > .table:first-child > thead:first-child > tr:first-child,\n.panel > .table:first-child > tbody:first-child > tr:first-child,\n.panel > .table-responsive:first-child > .table:first-child > tbody:first-child > tr:first-child {\n  border-top-left-radius: 3px;\n  border-top-right-radius: 3px;\n}\n.panel > .table:first-child > thead:first-child > tr:first-child td:first-child,\n.panel > .table-responsive:first-child > .table:first-child > thead:first-child > tr:first-child td:first-child,\n.panel > .table:first-child > tbody:first-child > tr:first-child td:first-child,\n.panel > .table-responsive:first-child > .table:first-child > tbody:first-child > tr:first-child td:first-child,\n.panel > .table:first-child > thead:first-child > tr:first-child th:first-child,\n.panel > .table-responsive:first-child > .table:first-child > thead:first-child > tr:first-child th:first-child,\n.panel > .table:first-child > tbody:first-child > tr:first-child th:first-child,\n.panel > .table-responsive:first-child > .table:first-child > tbody:first-child > tr:first-child th:first-child {\n  border-top-left-radius: 3px;\n}\n.panel > .table:first-child > thead:first-child > tr:first-child td:last-child,\n.panel > .table-responsive:first-child > .table:first-child > thead:first-child > tr:first-child td:last-child,\n.panel > .table:first-child > tbody:first-child > tr:first-child td:last-child,\n.panel > .table-responsive:first-child > .table:first-child > tbody:first-child > tr:first-child td:last-child,\n.panel > .table:first-child > thead:first-child > tr:first-child th:last-child,\n.panel > .table-responsive:first-child > .table:first-child > thead:first-child > tr:first-child th:last-child,\n.panel > .table:first-child > tbody:first-child > tr:first-child th:last-child,\n.panel > .table-responsive:first-child > .table:first-child > tbody:first-child > tr:first-child th:last-child {\n  border-top-right-radius: 3px;\n}\n.panel > .table:last-child,\n.panel > .table-responsive:last-child > .table:last-child {\n  border-bottom-right-radius: 3px;\n  border-bottom-left-radius: 3px;\n}\n.panel > .table:last-child > tbody:last-child > tr:last-child,\n.panel > .table-responsive:last-child > .table:last-child > tbody:last-child > tr:last-child,\n.panel > .table:last-child > tfoot:last-child > tr:last-child,\n.panel > .table-responsive:last-child > .table:last-child > tfoot:last-child > tr:last-child {\n  border-bottom-right-radius: 3px;\n  border-bottom-left-radius: 3px;\n}\n.panel > .table:last-child > tbody:last-child > tr:last-child td:first-child,\n.panel > .table-responsive:last-child > .table:last-child > tbody:last-child > tr:last-child td:first-child,\n.panel > .table:last-child > tfoot:last-child > tr:last-child td:first-child,\n.panel > .table-responsive:last-child > .table:last-child > tfoot:last-child > tr:last-child td:first-child,\n.panel > .table:last-child > tbody:last-child > tr:last-child th:first-child,\n.panel > .table-responsive:last-child > .table:last-child > tbody:last-child > tr:last-child th:first-child,\n.panel > .table:last-child > tfoot:last-child > tr:last-child th:first-child,\n.panel > .table-responsive:last-child > .table:last-child > tfoot:last-child > tr:last-child th:first-child {\n  border-bottom-left-radius: 3px;\n}\n.panel > .table:last-child > tbody:last-child > tr:last-child td:last-child,\n.panel > .table-responsive:last-child > .table:last-child > tbody:last-child > tr:last-child td:last-child,\n.panel > .table:last-child > tfoot:last-child > tr:last-child td:last-child,\n.panel > .table-responsive:last-child > .table:last-child > tfoot:last-child > tr:last-child td:last-child,\n.panel > .table:last-child > tbody:last-child > tr:last-child th:last-child,\n.panel > .table-responsive:last-child > .table:last-child > tbody:last-child > tr:last-child th:last-child,\n.panel > .table:last-child > tfoot:last-child > tr:last-child th:last-child,\n.panel > .table-responsive:last-child > .table:last-child > tfoot:last-child > tr:last-child th:last-child {\n  border-bottom-right-radius: 3px;\n}\n.panel > .panel-body + .table,\n.panel > .panel-body + .table-responsive,\n.panel > .table + .panel-body,\n.panel > .table-responsive + .panel-body {\n  border-top: 1px solid #ddd;\n}\n.panel > .table > tbody:first-child > tr:first-child th,\n.panel > .table > tbody:first-child > tr:first-child td {\n  border-top: 0;\n}\n.panel > .table-bordered,\n.panel > .table-responsive > .table-bordered {\n  border: 0;\n}\n.panel > .table-bordered > thead > tr > th:first-child,\n.panel > .table-responsive > .table-bordered > thead > tr > th:first-child,\n.panel > .table-bordered > tbody > tr > th:first-child,\n.panel > .table-responsive > .table-bordered > tbody > tr > th:first-child,\n.panel > .table-bordered > tfoot > tr > th:first-child,\n.panel > .table-responsive > .table-bordered > tfoot > tr > th:first-child,\n.panel > .table-bordered > thead > tr > td:first-child,\n.panel > .table-responsive > .table-bordered > thead > tr > td:first-child,\n.panel > .table-bordered > tbody > tr > td:first-child,\n.panel > .table-responsive > .table-bordered > tbody > tr > td:first-child,\n.panel > .table-bordered > tfoot > tr > td:first-child,\n.panel > .table-responsive > .table-bordered > tfoot > tr > td:first-child {\n  border-left: 0;\n}\n.panel > .table-bordered > thead > tr > th:last-child,\n.panel > .table-responsive > .table-bordered > thead > tr > th:last-child,\n.panel > .table-bordered > tbody > tr > th:last-child,\n.panel > .table-responsive > .table-bordered > tbody > tr > th:last-child,\n.panel > .table-bordered > tfoot > tr > th:last-child,\n.panel > .table-responsive > .table-bordered > tfoot > tr > th:last-child,\n.panel > .table-bordered > thead > tr > td:last-child,\n.panel > .table-responsive > .table-bordered > thead > tr > td:last-child,\n.panel > .table-bordered > tbody > tr > td:last-child,\n.panel > .table-responsive > .table-bordered > tbody > tr > td:last-child,\n.panel > .table-bordered > tfoot > tr > td:last-child,\n.panel > .table-responsive > .table-bordered > tfoot > tr > td:last-child {\n  border-right: 0;\n}\n.panel > .table-bordered > thead > tr:first-child > td,\n.panel > .table-responsive > .table-bordered > thead > tr:first-child > td,\n.panel > .table-bordered > tbody > tr:first-child > td,\n.panel > .table-responsive > .table-bordered > tbody > tr:first-child > td,\n.panel > .table-bordered > thead > tr:first-child > th,\n.panel > .table-responsive > .table-bordered > thead > tr:first-child > th,\n.panel > .table-bordered > tbody > tr:first-child > th,\n.panel > .table-responsive > .table-bordered > tbody > tr:first-child > th {\n  border-bottom: 0;\n}\n.panel > .table-bordered > tbody > tr:last-child > td,\n.panel > .table-responsive > .table-bordered > tbody > tr:last-child > td,\n.panel > .table-bordered > tfoot > tr:last-child > td,\n.panel > .table-responsive > .table-bordered > tfoot > tr:last-child > td,\n.panel > .table-bordered > tbody > tr:last-child > th,\n.panel > .table-responsive > .table-bordered > tbody > tr:last-child > th,\n.panel > .table-bordered > tfoot > tr:last-child > th,\n.panel > .table-responsive > .table-bordered > tfoot > tr:last-child > th {\n  border-bottom: 0;\n}\n.panel > .table-responsive {\n  margin-bottom: 0;\n  border: 0;\n}\n.panel-group {\n  margin-bottom: 20px;\n}\n.panel-group .panel {\n  margin-bottom: 0;\n  border-radius: 4px;\n}\n.panel-group .panel + .panel {\n  margin-top: 5px;\n}\n.panel-group .panel-heading {\n  border-bottom: 0;\n}\n.panel-group .panel-heading + .panel-collapse > .panel-body,\n.panel-group .panel-heading + .panel-collapse > .list-group {\n  border-top: 1px solid #ddd;\n}\n.panel-group .panel-footer {\n  border-top: 0;\n}\n.panel-group .panel-footer + .panel-collapse .panel-body {\n  border-bottom: 1px solid #ddd;\n}\n.panel-default {\n  border-color: #ddd;\n}\n.panel-default > .panel-heading {\n  color: #333;\n  background-color: #f5f5f5;\n  border-color: #ddd;\n}\n.panel-default > .panel-heading + .panel-collapse > .panel-body {\n  border-top-color: #ddd;\n}\n.panel-default > .panel-heading .badge {\n  color: #f5f5f5;\n  background-color: #333;\n}\n.panel-default > .panel-footer + .panel-collapse > .panel-body {\n  border-bottom-color: #ddd;\n}\n.panel-primary {\n  border-color: #337ab7;\n}\n.panel-primary > .panel-heading {\n  color: #fff;\n  background-color: #337ab7;\n  border-color: #337ab7;\n}\n.panel-primary > .panel-heading + .panel-collapse > .panel-body {\n  border-top-color: #337ab7;\n}\n.panel-primary > .panel-heading .badge {\n  color: #337ab7;\n  background-color: #fff;\n}\n.panel-primary > .panel-footer + .panel-collapse > .panel-body {\n  border-bottom-color: #337ab7;\n}\n.panel-success {\n  border-color: #d6e9c6;\n}\n.panel-success > .panel-heading {\n  color: #3c763d;\n  background-color: #dff0d8;\n  border-color: #d6e9c6;\n}\n.panel-success > .panel-heading + .panel-collapse > .panel-body {\n  border-top-color: #d6e9c6;\n}\n.panel-success > .panel-heading .badge {\n  color: #dff0d8;\n  background-color: #3c763d;\n}\n.panel-success > .panel-footer + .panel-collapse > .panel-body {\n  border-bottom-color: #d6e9c6;\n}\n.panel-info {\n  border-color: #bce8f1;\n}\n.panel-info > .panel-heading {\n  color: #31708f;\n  background-color: #d9edf7;\n  border-color: #bce8f1;\n}\n.panel-info > .panel-heading + .panel-collapse > .panel-body {\n  border-top-color: #bce8f1;\n}\n.panel-info > .panel-heading .badge {\n  color: #d9edf7;\n  background-color: #31708f;\n}\n.panel-info > .panel-footer + .panel-collapse > .panel-body {\n  border-bottom-color: #bce8f1;\n}\n.panel-warning {\n  border-color: #faebcc;\n}\n.panel-warning > .panel-heading {\n  color: #8a6d3b;\n  background-color: #fcf8e3;\n  border-color: #faebcc;\n}\n.panel-warning > .panel-heading + .panel-collapse > .panel-body {\n  border-top-color: #faebcc;\n}\n.panel-warning > .panel-heading .badge {\n  color: #fcf8e3;\n  background-color: #8a6d3b;\n}\n.panel-warning > .panel-footer + .panel-collapse > .panel-body {\n  border-bottom-color: #faebcc;\n}\n.panel-danger {\n  border-color: #ebccd1;\n}\n.panel-danger > .panel-heading {\n  color: #a94442;\n  background-color: #f2dede;\n  border-color: #ebccd1;\n}\n.panel-danger > .panel-heading + .panel-collapse > .panel-body {\n  border-top-color: #ebccd1;\n}\n.panel-danger > .panel-heading .badge {\n  color: #f2dede;\n  background-color: #a94442;\n}\n.panel-danger > .panel-footer + .panel-collapse > .panel-body {\n  border-bottom-color: #ebccd1;\n}\n.embed-responsive {\n  position: relative;\n  display: block;\n  height: 0;\n  padding: 0;\n  overflow: hidden;\n}\n.embed-responsive .embed-responsive-item,\n.embed-responsive iframe,\n.embed-responsive embed,\n.embed-responsive object,\n.embed-responsive video {\n  position: absolute;\n  top: 0;\n  bottom: 0;\n  left: 0;\n  width: 100%;\n  height: 100%;\n  border: 0;\n}\n.embed-responsive-16by9 {\n  padding-bottom: 56.25%;\n}\n.embed-responsive-4by3 {\n  padding-bottom: 75%;\n}\n.well {\n  min-height: 20px;\n  padding: 19px;\n  margin-bottom: 20px;\n  background-color: #f5f5f5;\n  border: 1px solid #e3e3e3;\n  border-radius: 4px;\n  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .05);\n          box-shadow: inset 0 1px 1px rgba(0, 0, 0, .05);\n}\n.well blockquote {\n  border-color: #ddd;\n  border-color: rgba(0, 0, 0, .15);\n}\n.well-lg {\n  padding: 24px;\n  border-radius: 6px;\n}\n.well-sm {\n  padding: 9px;\n  border-radius: 3px;\n}\n.close {\n  float: right;\n  font-size: 21px;\n  font-weight: bold;\n  line-height: 1;\n  color: #000;\n  text-shadow: 0 1px 0 #fff;\n  filter: alpha(opacity=20);\n  opacity: .2;\n}\n.close:hover,\n.close:focus {\n  color: #000;\n  text-decoration: none;\n  cursor: pointer;\n  filter: alpha(opacity=50);\n  opacity: .5;\n}\nbutton.close {\n  -webkit-appearance: none;\n  padding: 0;\n  cursor: pointer;\n  background: transparent;\n  border: 0;\n}\n.modal-open {\n  overflow: hidden;\n}\n.modal {\n  position: fixed;\n  top: 0;\n  right: 0;\n  bottom: 0;\n  left: 0;\n  z-index: 1050;\n  display: none;\n  overflow: hidden;\n  -webkit-overflow-scrolling: touch;\n  outline: 0;\n}\n.modal.fade .modal-dialog {\n  -webkit-transition: -webkit-transform .3s ease-out;\n       -o-transition:      -o-transform .3s ease-out;\n          transition:         transform .3s ease-out;\n  -webkit-transform: translate(0, -25%);\n      -ms-transform: translate(0, -25%);\n       -o-transform: translate(0, -25%);\n          transform: translate(0, -25%);\n}\n.modal.in .modal-dialog {\n  -webkit-transform: translate(0, 0);\n      -ms-transform: translate(0, 0);\n       -o-transform: translate(0, 0);\n          transform: translate(0, 0);\n}\n.modal-open .modal {\n  overflow-x: hidden;\n  overflow-y: auto;\n}\n.modal-dialog {\n  position: relative;\n  width: auto;\n  margin: 10px;\n}\n.modal-content {\n  position: relative;\n  background-color: #fff;\n  -webkit-background-clip: padding-box;\n          background-clip: padding-box;\n  border: 1px solid #999;\n  border: 1px solid rgba(0, 0, 0, .2);\n  border-radius: 6px;\n  outline: 0;\n  -webkit-box-shadow: 0 3px 9px rgba(0, 0, 0, .5);\n          box-shadow: 0 3px 9px rgba(0, 0, 0, .5);\n}\n.modal-backdrop {\n  position: fixed;\n  top: 0;\n  right: 0;\n  bottom: 0;\n  left: 0;\n  z-index: 1040;\n  background-color: #000;\n}\n.modal-backdrop.fade {\n  filter: alpha(opacity=0);\n  opacity: 0;\n}\n.modal-backdrop.in {\n  filter: alpha(opacity=50);\n  opacity: .5;\n}\n.modal-header {\n  padding: 15px;\n  border-bottom: 1px solid #e5e5e5;\n}\n.modal-header .close {\n  margin-top: -2px;\n}\n.modal-title {\n  margin: 0;\n  line-height: 1.42857143;\n}\n.modal-body {\n  position: relative;\n  padding: 15px;\n}\n.modal-footer {\n  padding: 15px;\n  text-align: right;\n  border-top: 1px solid #e5e5e5;\n}\n.modal-footer .btn + .btn {\n  margin-bottom: 0;\n  margin-left: 5px;\n}\n.modal-footer .btn-group .btn + .btn {\n  margin-left: -1px;\n}\n.modal-footer .btn-block + .btn-block {\n  margin-left: 0;\n}\n.modal-scrollbar-measure {\n  position: absolute;\n  top: -9999px;\n  width: 50px;\n  height: 50px;\n  overflow: scroll;\n}\n@media (min-width: 768px) {\n  .modal-dialog {\n    width: 600px;\n    margin: 30px auto;\n  }\n  .modal-content {\n    -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, .5);\n            box-shadow: 0 5px 15px rgba(0, 0, 0, .5);\n  }\n  .modal-sm {\n    width: 300px;\n  }\n}\n@media (min-width: 992px) {\n  .modal-lg {\n    width: 900px;\n  }\n}\n.tooltip {\n  position: absolute;\n  z-index: 1070;\n  display: block;\n  font-family: \"Helvetica Neue\", Helvetica, Arial, sans-serif;\n  font-size: 12px;\n  font-style: normal;\n  font-weight: normal;\n  line-height: 1.42857143;\n  text-align: left;\n  text-align: start;\n  text-decoration: none;\n  text-shadow: none;\n  text-transform: none;\n  letter-spacing: normal;\n  word-break: normal;\n  word-spacing: normal;\n  word-wrap: normal;\n  white-space: normal;\n  filter: alpha(opacity=0);\n  opacity: 0;\n\n  line-break: auto;\n}\n.tooltip.in {\n  filter: alpha(opacity=90);\n  opacity: .9;\n}\n.tooltip.top {\n  padding: 5px 0;\n  margin-top: -3px;\n}\n.tooltip.right {\n  padding: 0 5px;\n  margin-left: 3px;\n}\n.tooltip.bottom {\n  padding: 5px 0;\n  margin-top: 3px;\n}\n.tooltip.left {\n  padding: 0 5px;\n  margin-left: -3px;\n}\n.tooltip-inner {\n  max-width: 200px;\n  padding: 3px 8px;\n  color: #fff;\n  text-align: center;\n  background-color: #000;\n  border-radius: 4px;\n}\n.tooltip-arrow {\n  position: absolute;\n  width: 0;\n  height: 0;\n  border-color: transparent;\n  border-style: solid;\n}\n.tooltip.top .tooltip-arrow {\n  bottom: 0;\n  left: 50%;\n  margin-left: -5px;\n  border-width: 5px 5px 0;\n  border-top-color: #000;\n}\n.tooltip.top-left .tooltip-arrow {\n  right: 5px;\n  bottom: 0;\n  margin-bottom: -5px;\n  border-width: 5px 5px 0;\n  border-top-color: #000;\n}\n.tooltip.top-right .tooltip-arrow {\n  bottom: 0;\n  left: 5px;\n  margin-bottom: -5px;\n  border-width: 5px 5px 0;\n  border-top-color: #000;\n}\n.tooltip.right .tooltip-arrow {\n  top: 50%;\n  left: 0;\n  margin-top: -5px;\n  border-width: 5px 5px 5px 0;\n  border-right-color: #000;\n}\n.tooltip.left .tooltip-arrow {\n  top: 50%;\n  right: 0;\n  margin-top: -5px;\n  border-width: 5px 0 5px 5px;\n  border-left-color: #000;\n}\n.tooltip.bottom .tooltip-arrow {\n  top: 0;\n  left: 50%;\n  margin-left: -5px;\n  border-width: 0 5px 5px;\n  border-bottom-color: #000;\n}\n.tooltip.bottom-left .tooltip-arrow {\n  top: 0;\n  right: 5px;\n  margin-top: -5px;\n  border-width: 0 5px 5px;\n  border-bottom-color: #000;\n}\n.tooltip.bottom-right .tooltip-arrow {\n  top: 0;\n  left: 5px;\n  margin-top: -5px;\n  border-width: 0 5px 5px;\n  border-bottom-color: #000;\n}\n.popover {\n  position: absolute;\n  top: 0;\n  left: 0;\n  z-index: 1060;\n  display: none;\n  max-width: 276px;\n  padding: 1px;\n  font-family: \"Helvetica Neue\", Helvetica, Arial, sans-serif;\n  font-size: 14px;\n  font-style: normal;\n  font-weight: normal;\n  line-height: 1.42857143;\n  text-align: left;\n  text-align: start;\n  text-decoration: none;\n  text-shadow: none;\n  text-transform: none;\n  letter-spacing: normal;\n  word-break: normal;\n  word-spacing: normal;\n  word-wrap: normal;\n  white-space: normal;\n  background-color: #fff;\n  -webkit-background-clip: padding-box;\n          background-clip: padding-box;\n  border: 1px solid #ccc;\n  border: 1px solid rgba(0, 0, 0, .2);\n  border-radius: 6px;\n  -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, .2);\n          box-shadow: 0 5px 10px rgba(0, 0, 0, .2);\n\n  line-break: auto;\n}\n.popover.top {\n  margin-top: -10px;\n}\n.popover.right {\n  margin-left: 10px;\n}\n.popover.bottom {\n  margin-top: 10px;\n}\n.popover.left {\n  margin-left: -10px;\n}\n.popover-title {\n  padding: 8px 14px;\n  margin: 0;\n  font-size: 14px;\n  background-color: #f7f7f7;\n  border-bottom: 1px solid #ebebeb;\n  border-radius: 5px 5px 0 0;\n}\n.popover-content {\n  padding: 9px 14px;\n}\n.popover > .arrow,\n.popover > .arrow:after {\n  position: absolute;\n  display: block;\n  width: 0;\n  height: 0;\n  border-color: transparent;\n  border-style: solid;\n}\n.popover > .arrow {\n  border-width: 11px;\n}\n.popover > .arrow:after {\n  content: \"\";\n  border-width: 10px;\n}\n.popover.top > .arrow {\n  bottom: -11px;\n  left: 50%;\n  margin-left: -11px;\n  border-top-color: #999;\n  border-top-color: rgba(0, 0, 0, .25);\n  border-bottom-width: 0;\n}\n.popover.top > .arrow:after {\n  bottom: 1px;\n  margin-left: -10px;\n  content: \" \";\n  border-top-color: #fff;\n  border-bottom-width: 0;\n}\n.popover.right > .arrow {\n  top: 50%;\n  left: -11px;\n  margin-top: -11px;\n  border-right-color: #999;\n  border-right-color: rgba(0, 0, 0, .25);\n  border-left-width: 0;\n}\n.popover.right > .arrow:after {\n  bottom: -10px;\n  left: 1px;\n  content: \" \";\n  border-right-color: #fff;\n  border-left-width: 0;\n}\n.popover.bottom > .arrow {\n  top: -11px;\n  left: 50%;\n  margin-left: -11px;\n  border-top-width: 0;\n  border-bottom-color: #999;\n  border-bottom-color: rgba(0, 0, 0, .25);\n}\n.popover.bottom > .arrow:after {\n  top: 1px;\n  margin-left: -10px;\n  content: \" \";\n  border-top-width: 0;\n  border-bottom-color: #fff;\n}\n.popover.left > .arrow {\n  top: 50%;\n  right: -11px;\n  margin-top: -11px;\n  border-right-width: 0;\n  border-left-color: #999;\n  border-left-color: rgba(0, 0, 0, .25);\n}\n.popover.left > .arrow:after {\n  right: 1px;\n  bottom: -10px;\n  content: \" \";\n  border-right-width: 0;\n  border-left-color: #fff;\n}\n.carousel {\n  position: relative;\n}\n.carousel-inner {\n  position: relative;\n  width: 100%;\n  overflow: hidden;\n}\n.carousel-inner > .item {\n  position: relative;\n  display: none;\n  -webkit-transition: .6s ease-in-out left;\n       -o-transition: .6s ease-in-out left;\n          transition: .6s ease-in-out left;\n}\n.carousel-inner > .item > img,\n.carousel-inner > .item > a > img {\n  line-height: 1;\n}\n@media all and (transform-3d), (-webkit-transform-3d) {\n  .carousel-inner > .item {\n    -webkit-transition: -webkit-transform .6s ease-in-out;\n         -o-transition:      -o-transform .6s ease-in-out;\n            transition:         transform .6s ease-in-out;\n\n    -webkit-backface-visibility: hidden;\n            backface-visibility: hidden;\n    -webkit-perspective: 1000px;\n            perspective: 1000px;\n  }\n  .carousel-inner > .item.next,\n  .carousel-inner > .item.active.right {\n    left: 0;\n    -webkit-transform: translate3d(100%, 0, 0);\n            transform: translate3d(100%, 0, 0);\n  }\n  .carousel-inner > .item.prev,\n  .carousel-inner > .item.active.left {\n    left: 0;\n    -webkit-transform: translate3d(-100%, 0, 0);\n            transform: translate3d(-100%, 0, 0);\n  }\n  .carousel-inner > .item.next.left,\n  .carousel-inner > .item.prev.right,\n  .carousel-inner > .item.active {\n    left: 0;\n    -webkit-transform: translate3d(0, 0, 0);\n            transform: translate3d(0, 0, 0);\n  }\n}\n.carousel-inner > .active,\n.carousel-inner > .next,\n.carousel-inner > .prev {\n  display: block;\n}\n.carousel-inner > .active {\n  left: 0;\n}\n.carousel-inner > .next,\n.carousel-inner > .prev {\n  position: absolute;\n  top: 0;\n  width: 100%;\n}\n.carousel-inner > .next {\n  left: 100%;\n}\n.carousel-inner > .prev {\n  left: -100%;\n}\n.carousel-inner > .next.left,\n.carousel-inner > .prev.right {\n  left: 0;\n}\n.carousel-inner > .active.left {\n  left: -100%;\n}\n.carousel-inner > .active.right {\n  left: 100%;\n}\n.carousel-control {\n  position: absolute;\n  top: 0;\n  bottom: 0;\n  left: 0;\n  width: 15%;\n  font-size: 20px;\n  color: #fff;\n  text-align: center;\n  text-shadow: 0 1px 2px rgba(0, 0, 0, .6);\n  background-color: rgba(0, 0, 0, 0);\n  filter: alpha(opacity=50);\n  opacity: .5;\n}\n.carousel-control.left {\n  background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, .5) 0%, rgba(0, 0, 0, .0001) 100%);\n  background-image:      -o-linear-gradient(left, rgba(0, 0, 0, .5) 0%, rgba(0, 0, 0, .0001) 100%);\n  background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, .5)), to(rgba(0, 0, 0, .0001)));\n  background-image:         linear-gradient(to right, rgba(0, 0, 0, .5) 0%, rgba(0, 0, 0, .0001) 100%);\n  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#80000000', endColorstr='#00000000', GradientType=1);\n  background-repeat: repeat-x;\n}\n.carousel-control.right {\n  right: 0;\n  left: auto;\n  background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, .0001) 0%, rgba(0, 0, 0, .5) 100%);\n  background-image:      -o-linear-gradient(left, rgba(0, 0, 0, .0001) 0%, rgba(0, 0, 0, .5) 100%);\n  background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, .0001)), to(rgba(0, 0, 0, .5)));\n  background-image:         linear-gradient(to right, rgba(0, 0, 0, .0001) 0%, rgba(0, 0, 0, .5) 100%);\n  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#80000000', GradientType=1);\n  background-repeat: repeat-x;\n}\n.carousel-control:hover,\n.carousel-control:focus {\n  color: #fff;\n  text-decoration: none;\n  filter: alpha(opacity=90);\n  outline: 0;\n  opacity: .9;\n}\n.carousel-control .icon-prev,\n.carousel-control .icon-next,\n.carousel-control .glyphicon-chevron-left,\n.carousel-control .glyphicon-chevron-right {\n  position: absolute;\n  top: 50%;\n  z-index: 5;\n  display: inline-block;\n  margin-top: -10px;\n}\n.carousel-control .icon-prev,\n.carousel-control .glyphicon-chevron-left {\n  left: 50%;\n  margin-left: -10px;\n}\n.carousel-control .icon-next,\n.carousel-control .glyphicon-chevron-right {\n  right: 50%;\n  margin-right: -10px;\n}\n.carousel-control .icon-prev,\n.carousel-control .icon-next {\n  width: 20px;\n  height: 20px;\n  font-family: serif;\n  line-height: 1;\n}\n.carousel-control .icon-prev:before {\n  content: '\\2039';\n}\n.carousel-control .icon-next:before {\n  content: '\\203A';\n}\n.carousel-indicators {\n  position: absolute;\n  bottom: 10px;\n  left: 50%;\n  z-index: 15;\n  width: 60%;\n  padding-left: 0;\n  margin-left: -30%;\n  text-align: center;\n  list-style: none;\n}\n.carousel-indicators li {\n  display: inline-block;\n  width: 10px;\n  height: 10px;\n  margin: 1px;\n  text-indent: -999px;\n  cursor: pointer;\n  background-color: #000 \\9;\n  background-color: rgba(0, 0, 0, 0);\n  border: 1px solid #fff;\n  border-radius: 10px;\n}\n.carousel-indicators .active {\n  width: 12px;\n  height: 12px;\n  margin: 0;\n  background-color: #fff;\n}\n.carousel-caption {\n  position: absolute;\n  right: 15%;\n  bottom: 20px;\n  left: 15%;\n  z-index: 10;\n  padding-top: 20px;\n  padding-bottom: 20px;\n  color: #fff;\n  text-align: center;\n  text-shadow: 0 1px 2px rgba(0, 0, 0, .6);\n}\n.carousel-caption .btn {\n  text-shadow: none;\n}\n@media screen and (min-width: 768px) {\n  .carousel-control .glyphicon-chevron-left,\n  .carousel-control .glyphicon-chevron-right,\n  .carousel-control .icon-prev,\n  .carousel-control .icon-next {\n    width: 30px;\n    height: 30px;\n    margin-top: -10px;\n    font-size: 30px;\n  }\n  .carousel-control .glyphicon-chevron-left,\n  .carousel-control .icon-prev {\n    margin-left: -10px;\n  }\n  .carousel-control .glyphicon-chevron-right,\n  .carousel-control .icon-next {\n    margin-right: -10px;\n  }\n  .carousel-caption {\n    right: 20%;\n    left: 20%;\n    padding-bottom: 30px;\n  }\n  .carousel-indicators {\n    bottom: 20px;\n  }\n}\n.clearfix:before,\n.clearfix:after,\n.dl-horizontal dd:before,\n.dl-horizontal dd:after,\n.container:before,\n.container:after,\n.container-fluid:before,\n.container-fluid:after,\n.row:before,\n.row:after,\n.form-horizontal .form-group:before,\n.form-horizontal .form-group:after,\n.btn-toolbar:before,\n.btn-toolbar:after,\n.btn-group-vertical > .btn-group:before,\n.btn-group-vertical > .btn-group:after,\n.nav:before,\n.nav:after,\n.navbar:before,\n.navbar:after,\n.navbar-header:before,\n.navbar-header:after,\n.navbar-collapse:before,\n.navbar-collapse:after,\n.pager:before,\n.pager:after,\n.panel-body:before,\n.panel-body:after,\n.modal-header:before,\n.modal-header:after,\n.modal-footer:before,\n.modal-footer:after {\n  display: table;\n  content: \" \";\n}\n.clearfix:after,\n.dl-horizontal dd:after,\n.container:after,\n.container-fluid:after,\n.row:after,\n.form-horizontal .form-group:after,\n.btn-toolbar:after,\n.btn-group-vertical > .btn-group:after,\n.nav:after,\n.navbar:after,\n.navbar-header:after,\n.navbar-collapse:after,\n.pager:after,\n.panel-body:after,\n.modal-header:after,\n.modal-footer:after {\n  clear: both;\n}\n.center-block {\n  display: block;\n  margin-right: auto;\n  margin-left: auto;\n}\n.pull-right {\n  float: right !important;\n}\n.pull-left {\n  float: left !important;\n}\n.hide {\n  display: none !important;\n}\n.show {\n  display: block !important;\n}\n.invisible {\n  visibility: hidden;\n}\n.text-hide {\n  font: 0/0 a;\n  color: transparent;\n  text-shadow: none;\n  background-color: transparent;\n  border: 0;\n}\n.hidden {\n  display: none !important;\n}\n.affix {\n  position: fixed;\n}\n@-ms-viewport {\n  width: device-width;\n}\n.visible-xs,\n.visible-sm,\n.visible-md,\n.visible-lg {\n  display: none !important;\n}\n.visible-xs-block,\n.visible-xs-inline,\n.visible-xs-inline-block,\n.visible-sm-block,\n.visible-sm-inline,\n.visible-sm-inline-block,\n.visible-md-block,\n.visible-md-inline,\n.visible-md-inline-block,\n.visible-lg-block,\n.visible-lg-inline,\n.visible-lg-inline-block {\n  display: none !important;\n}\n@media (max-width: 767px) {\n  .visible-xs {\n    display: block !important;\n  }\n  table.visible-xs {\n    display: table !important;\n  }\n  tr.visible-xs {\n    display: table-row !important;\n  }\n  th.visible-xs,\n  td.visible-xs {\n    display: table-cell !important;\n  }\n}\n@media (max-width: 767px) {\n  .visible-xs-block {\n    display: block !important;\n  }\n}\n@media (max-width: 767px) {\n  .visible-xs-inline {\n    display: inline !important;\n  }\n}\n@media (max-width: 767px) {\n  .visible-xs-inline-block {\n    display: inline-block !important;\n  }\n}\n@media (min-width: 768px) and (max-width: 991px) {\n  .visible-sm {\n    display: block !important;\n  }\n  table.visible-sm {\n    display: table !important;\n  }\n  tr.visible-sm {\n    display: table-row !important;\n  }\n  th.visible-sm,\n  td.visible-sm {\n    display: table-cell !important;\n  }\n}\n@media (min-width: 768px) and (max-width: 991px) {\n  .visible-sm-block {\n    display: block !important;\n  }\n}\n@media (min-width: 768px) and (max-width: 991px) {\n  .visible-sm-inline {\n    display: inline !important;\n  }\n}\n@media (min-width: 768px) and (max-width: 991px) {\n  .visible-sm-inline-block {\n    display: inline-block !important;\n  }\n}\n@media (min-width: 992px) and (max-width: 1199px) {\n  .visible-md {\n    display: block !important;\n  }\n  table.visible-md {\n    display: table !important;\n  }\n  tr.visible-md {\n    display: table-row !important;\n  }\n  th.visible-md,\n  td.visible-md {\n    display: table-cell !important;\n  }\n}\n@media (min-width: 992px) and (max-width: 1199px) {\n  .visible-md-block {\n    display: block !important;\n  }\n}\n@media (min-width: 992px) and (max-width: 1199px) {\n  .visible-md-inline {\n    display: inline !important;\n  }\n}\n@media (min-width: 992px) and (max-width: 1199px) {\n  .visible-md-inline-block {\n    display: inline-block !important;\n  }\n}\n@media (min-width: 1200px) {\n  .visible-lg {\n    display: block !important;\n  }\n  table.visible-lg {\n    display: table !important;\n  }\n  tr.visible-lg {\n    display: table-row !important;\n  }\n  th.visible-lg,\n  td.visible-lg {\n    display: table-cell !important;\n  }\n}\n@media (min-width: 1200px) {\n  .visible-lg-block {\n    display: block !important;\n  }\n}\n@media (min-width: 1200px) {\n  .visible-lg-inline {\n    display: inline !important;\n  }\n}\n@media (min-width: 1200px) {\n  .visible-lg-inline-block {\n    display: inline-block !important;\n  }\n}\n@media (max-width: 767px) {\n  .hidden-xs {\n    display: none !important;\n  }\n}\n@media (min-width: 768px) and (max-width: 991px) {\n  .hidden-sm {\n    display: none !important;\n  }\n}\n@media (min-width: 992px) and (max-width: 1199px) {\n  .hidden-md {\n    display: none !important;\n  }\n}\n@media (min-width: 1200px) {\n  .hidden-lg {\n    display: none !important;\n  }\n}\n.visible-print {\n  display: none !important;\n}\n@media print {\n  .visible-print {\n    display: block !important;\n  }\n  table.visible-print {\n    display: table !important;\n  }\n  tr.visible-print {\n    display: table-row !important;\n  }\n  th.visible-print,\n  td.visible-print {\n    display: table-cell !important;\n  }\n}\n.visible-print-block {\n  display: none !important;\n}\n@media print {\n  .visible-print-block {\n    display: block !important;\n  }\n}\n.visible-print-inline {\n  display: none !important;\n}\n@media print {\n  .visible-print-inline {\n    display: inline !important;\n  }\n}\n.visible-print-inline-block {\n  display: none !important;\n}\n@media print {\n  .visible-print-inline-block {\n    display: inline-block !important;\n  }\n}\n@media print {\n  .hidden-print {\n    display: none !important;\n  }\n}\n/*# sourceMappingURL=bootstrap.css.map */\n", ""]);
+	exports.push([module.i, "/*!\n * Bootstrap v3.3.6 (http://getbootstrap.com)\n * Copyright 2011-2015 Twitter, Inc.\n * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)\n */\n/*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */\nhtml {\n  font-family: sans-serif;\n  -webkit-text-size-adjust: 100%;\n      -ms-text-size-adjust: 100%;\n}\nbody {\n  margin: 0;\n}\narticle,\naside,\ndetails,\nfigcaption,\nfigure,\nfooter,\nheader,\nhgroup,\nmain,\nmenu,\nnav,\nsection,\nsummary {\n  display: block;\n}\naudio,\ncanvas,\nprogress,\nvideo {\n  display: inline-block;\n  vertical-align: baseline;\n}\naudio:not([controls]) {\n  display: none;\n  height: 0;\n}\n[hidden],\ntemplate {\n  display: none;\n}\na {\n  background-color: transparent;\n}\na:active,\na:hover {\n  outline: 0;\n}\nabbr[title] {\n  border-bottom: 1px dotted;\n}\nb,\nstrong {\n  font-weight: bold;\n}\ndfn {\n  font-style: italic;\n}\nh1 {\n  margin: .67em 0;\n  font-size: 2em;\n}\nmark {\n  color: #000;\n  background: #ff0;\n}\nsmall {\n  font-size: 80%;\n}\nsub,\nsup {\n  position: relative;\n  font-size: 75%;\n  line-height: 0;\n  vertical-align: baseline;\n}\nsup {\n  top: -.5em;\n}\nsub {\n  bottom: -.25em;\n}\nimg {\n  border: 0;\n}\nsvg:not(:root) {\n  overflow: hidden;\n}\nfigure {\n  margin: 1em 40px;\n}\nhr {\n  height: 0;\n  -webkit-box-sizing: content-box;\n     -moz-box-sizing: content-box;\n          box-sizing: content-box;\n}\npre {\n  overflow: auto;\n}\ncode,\nkbd,\npre,\nsamp {\n  font-family: monospace, monospace;\n  font-size: 1em;\n}\nbutton,\ninput,\noptgroup,\nselect,\ntextarea {\n  margin: 0;\n  font: inherit;\n  color: inherit;\n}\nbutton {\n  overflow: visible;\n}\nbutton,\nselect {\n  text-transform: none;\n}\nbutton,\nhtml input[type=\"button\"],\ninput[type=\"reset\"],\ninput[type=\"submit\"] {\n  -webkit-appearance: button;\n  cursor: pointer;\n}\nbutton[disabled],\nhtml input[disabled] {\n  cursor: default;\n}\nbutton::-moz-focus-inner,\ninput::-moz-focus-inner {\n  padding: 0;\n  border: 0;\n}\ninput {\n  line-height: normal;\n}\ninput[type=\"checkbox\"],\ninput[type=\"radio\"] {\n  -webkit-box-sizing: border-box;\n     -moz-box-sizing: border-box;\n          box-sizing: border-box;\n  padding: 0;\n}\ninput[type=\"number\"]::-webkit-inner-spin-button,\ninput[type=\"number\"]::-webkit-outer-spin-button {\n  height: auto;\n}\ninput[type=\"search\"] {\n  -webkit-box-sizing: content-box;\n     -moz-box-sizing: content-box;\n          box-sizing: content-box;\n  -webkit-appearance: textfield;\n}\ninput[type=\"search\"]::-webkit-search-cancel-button,\ninput[type=\"search\"]::-webkit-search-decoration {\n  -webkit-appearance: none;\n}\nfieldset {\n  padding: .35em .625em .75em;\n  margin: 0 2px;\n  border: 1px solid #c0c0c0;\n}\nlegend {\n  padding: 0;\n  border: 0;\n}\ntextarea {\n  overflow: auto;\n}\noptgroup {\n  font-weight: bold;\n}\ntable {\n  border-spacing: 0;\n  border-collapse: collapse;\n}\ntd,\nth {\n  padding: 0;\n}\n/*! Source: https://github.com/h5bp/html5-boilerplate/blob/master/src/css/main.css */\n@media print {\n  *,\n  *:before,\n  *:after {\n    color: #000 !important;\n    text-shadow: none !important;\n    background: transparent !important;\n    -webkit-box-shadow: none !important;\n            box-shadow: none !important;\n  }\n  a,\n  a:visited {\n    text-decoration: underline;\n  }\n  a[href]:after {\n    content: \" (\" attr(href) \")\";\n  }\n  abbr[title]:after {\n    content: \" (\" attr(title) \")\";\n  }\n  a[href^=\"#\"]:after,\n  a[href^=\"javascript:\"]:after {\n    content: \"\";\n  }\n  pre,\n  blockquote {\n    border: 1px solid #999;\n\n    page-break-inside: avoid;\n  }\n  thead {\n    display: table-header-group;\n  }\n  tr,\n  img {\n    page-break-inside: avoid;\n  }\n  img {\n    max-width: 100% !important;\n  }\n  p,\n  h2,\n  h3 {\n    orphans: 3;\n    widows: 3;\n  }\n  h2,\n  h3 {\n    page-break-after: avoid;\n  }\n  .navbar {\n    display: none;\n  }\n  .btn > .caret,\n  .dropup > .btn > .caret {\n    border-top-color: #000 !important;\n  }\n  .label {\n    border: 1px solid #000;\n  }\n  .table {\n    border-collapse: collapse !important;\n  }\n  .table td,\n  .table th {\n    background-color: #fff !important;\n  }\n  .table-bordered th,\n  .table-bordered td {\n    border: 1px solid #ddd !important;\n  }\n}\n@font-face {\n  font-family: 'Glyphicons Halflings';\n\n  src: url(" + __webpack_require__(61) + ");\n  src: url(" + __webpack_require__(61) + "?#iefix) format('embedded-opentype'), url(" + __webpack_require__(189) + ") format('woff2'), url(" + __webpack_require__(188) + ") format('woff'), url(" + __webpack_require__(120) + ") format('truetype'), url(" + __webpack_require__(119) + "#glyphicons_halflingsregular) format('svg');\n}\n.glyphicon {\n  position: relative;\n  top: 1px;\n  display: inline-block;\n  font-family: 'Glyphicons Halflings';\n  font-style: normal;\n  font-weight: normal;\n  line-height: 1;\n\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n}\n.glyphicon-asterisk:before {\n  content: \"*\";\n}\n.glyphicon-plus:before {\n  content: \"+\";\n}\n.glyphicon-euro:before,\n.glyphicon-eur:before {\n  content: \"\\20AC\";\n}\n.glyphicon-minus:before {\n  content: \"\\2212\";\n}\n.glyphicon-cloud:before {\n  content: \"\\2601\";\n}\n.glyphicon-envelope:before {\n  content: \"\\2709\";\n}\n.glyphicon-pencil:before {\n  content: \"\\270F\";\n}\n.glyphicon-glass:before {\n  content: \"\\E001\";\n}\n.glyphicon-music:before {\n  content: \"\\E002\";\n}\n.glyphicon-search:before {\n  content: \"\\E003\";\n}\n.glyphicon-heart:before {\n  content: \"\\E005\";\n}\n.glyphicon-star:before {\n  content: \"\\E006\";\n}\n.glyphicon-star-empty:before {\n  content: \"\\E007\";\n}\n.glyphicon-user:before {\n  content: \"\\E008\";\n}\n.glyphicon-film:before {\n  content: \"\\E009\";\n}\n.glyphicon-th-large:before {\n  content: \"\\E010\";\n}\n.glyphicon-th:before {\n  content: \"\\E011\";\n}\n.glyphicon-th-list:before {\n  content: \"\\E012\";\n}\n.glyphicon-ok:before {\n  content: \"\\E013\";\n}\n.glyphicon-remove:before {\n  content: \"\\E014\";\n}\n.glyphicon-zoom-in:before {\n  content: \"\\E015\";\n}\n.glyphicon-zoom-out:before {\n  content: \"\\E016\";\n}\n.glyphicon-off:before {\n  content: \"\\E017\";\n}\n.glyphicon-signal:before {\n  content: \"\\E018\";\n}\n.glyphicon-cog:before {\n  content: \"\\E019\";\n}\n.glyphicon-trash:before {\n  content: \"\\E020\";\n}\n.glyphicon-home:before {\n  content: \"\\E021\";\n}\n.glyphicon-file:before {\n  content: \"\\E022\";\n}\n.glyphicon-time:before {\n  content: \"\\E023\";\n}\n.glyphicon-road:before {\n  content: \"\\E024\";\n}\n.glyphicon-download-alt:before {\n  content: \"\\E025\";\n}\n.glyphicon-download:before {\n  content: \"\\E026\";\n}\n.glyphicon-upload:before {\n  content: \"\\E027\";\n}\n.glyphicon-inbox:before {\n  content: \"\\E028\";\n}\n.glyphicon-play-circle:before {\n  content: \"\\E029\";\n}\n.glyphicon-repeat:before {\n  content: \"\\E030\";\n}\n.glyphicon-refresh:before {\n  content: \"\\E031\";\n}\n.glyphicon-list-alt:before {\n  content: \"\\E032\";\n}\n.glyphicon-lock:before {\n  content: \"\\E033\";\n}\n.glyphicon-flag:before {\n  content: \"\\E034\";\n}\n.glyphicon-headphones:before {\n  content: \"\\E035\";\n}\n.glyphicon-volume-off:before {\n  content: \"\\E036\";\n}\n.glyphicon-volume-down:before {\n  content: \"\\E037\";\n}\n.glyphicon-volume-up:before {\n  content: \"\\E038\";\n}\n.glyphicon-qrcode:before {\n  content: \"\\E039\";\n}\n.glyphicon-barcode:before {\n  content: \"\\E040\";\n}\n.glyphicon-tag:before {\n  content: \"\\E041\";\n}\n.glyphicon-tags:before {\n  content: \"\\E042\";\n}\n.glyphicon-book:before {\n  content: \"\\E043\";\n}\n.glyphicon-bookmark:before {\n  content: \"\\E044\";\n}\n.glyphicon-print:before {\n  content: \"\\E045\";\n}\n.glyphicon-camera:before {\n  content: \"\\E046\";\n}\n.glyphicon-font:before {\n  content: \"\\E047\";\n}\n.glyphicon-bold:before {\n  content: \"\\E048\";\n}\n.glyphicon-italic:before {\n  content: \"\\E049\";\n}\n.glyphicon-text-height:before {\n  content: \"\\E050\";\n}\n.glyphicon-text-width:before {\n  content: \"\\E051\";\n}\n.glyphicon-align-left:before {\n  content: \"\\E052\";\n}\n.glyphicon-align-center:before {\n  content: \"\\E053\";\n}\n.glyphicon-align-right:before {\n  content: \"\\E054\";\n}\n.glyphicon-align-justify:before {\n  content: \"\\E055\";\n}\n.glyphicon-list:before {\n  content: \"\\E056\";\n}\n.glyphicon-indent-left:before {\n  content: \"\\E057\";\n}\n.glyphicon-indent-right:before {\n  content: \"\\E058\";\n}\n.glyphicon-facetime-video:before {\n  content: \"\\E059\";\n}\n.glyphicon-picture:before {\n  content: \"\\E060\";\n}\n.glyphicon-map-marker:before {\n  content: \"\\E062\";\n}\n.glyphicon-adjust:before {\n  content: \"\\E063\";\n}\n.glyphicon-tint:before {\n  content: \"\\E064\";\n}\n.glyphicon-edit:before {\n  content: \"\\E065\";\n}\n.glyphicon-share:before {\n  content: \"\\E066\";\n}\n.glyphicon-check:before {\n  content: \"\\E067\";\n}\n.glyphicon-move:before {\n  content: \"\\E068\";\n}\n.glyphicon-step-backward:before {\n  content: \"\\E069\";\n}\n.glyphicon-fast-backward:before {\n  content: \"\\E070\";\n}\n.glyphicon-backward:before {\n  content: \"\\E071\";\n}\n.glyphicon-play:before {\n  content: \"\\E072\";\n}\n.glyphicon-pause:before {\n  content: \"\\E073\";\n}\n.glyphicon-stop:before {\n  content: \"\\E074\";\n}\n.glyphicon-forward:before {\n  content: \"\\E075\";\n}\n.glyphicon-fast-forward:before {\n  content: \"\\E076\";\n}\n.glyphicon-step-forward:before {\n  content: \"\\E077\";\n}\n.glyphicon-eject:before {\n  content: \"\\E078\";\n}\n.glyphicon-chevron-left:before {\n  content: \"\\E079\";\n}\n.glyphicon-chevron-right:before {\n  content: \"\\E080\";\n}\n.glyphicon-plus-sign:before {\n  content: \"\\E081\";\n}\n.glyphicon-minus-sign:before {\n  content: \"\\E082\";\n}\n.glyphicon-remove-sign:before {\n  content: \"\\E083\";\n}\n.glyphicon-ok-sign:before {\n  content: \"\\E084\";\n}\n.glyphicon-question-sign:before {\n  content: \"\\E085\";\n}\n.glyphicon-info-sign:before {\n  content: \"\\E086\";\n}\n.glyphicon-screenshot:before {\n  content: \"\\E087\";\n}\n.glyphicon-remove-circle:before {\n  content: \"\\E088\";\n}\n.glyphicon-ok-circle:before {\n  content: \"\\E089\";\n}\n.glyphicon-ban-circle:before {\n  content: \"\\E090\";\n}\n.glyphicon-arrow-left:before {\n  content: \"\\E091\";\n}\n.glyphicon-arrow-right:before {\n  content: \"\\E092\";\n}\n.glyphicon-arrow-up:before {\n  content: \"\\E093\";\n}\n.glyphicon-arrow-down:before {\n  content: \"\\E094\";\n}\n.glyphicon-share-alt:before {\n  content: \"\\E095\";\n}\n.glyphicon-resize-full:before {\n  content: \"\\E096\";\n}\n.glyphicon-resize-small:before {\n  content: \"\\E097\";\n}\n.glyphicon-exclamation-sign:before {\n  content: \"\\E101\";\n}\n.glyphicon-gift:before {\n  content: \"\\E102\";\n}\n.glyphicon-leaf:before {\n  content: \"\\E103\";\n}\n.glyphicon-fire:before {\n  content: \"\\E104\";\n}\n.glyphicon-eye-open:before {\n  content: \"\\E105\";\n}\n.glyphicon-eye-close:before {\n  content: \"\\E106\";\n}\n.glyphicon-warning-sign:before {\n  content: \"\\E107\";\n}\n.glyphicon-plane:before {\n  content: \"\\E108\";\n}\n.glyphicon-calendar:before {\n  content: \"\\E109\";\n}\n.glyphicon-random:before {\n  content: \"\\E110\";\n}\n.glyphicon-comment:before {\n  content: \"\\E111\";\n}\n.glyphicon-magnet:before {\n  content: \"\\E112\";\n}\n.glyphicon-chevron-up:before {\n  content: \"\\E113\";\n}\n.glyphicon-chevron-down:before {\n  content: \"\\E114\";\n}\n.glyphicon-retweet:before {\n  content: \"\\E115\";\n}\n.glyphicon-shopping-cart:before {\n  content: \"\\E116\";\n}\n.glyphicon-folder-close:before {\n  content: \"\\E117\";\n}\n.glyphicon-folder-open:before {\n  content: \"\\E118\";\n}\n.glyphicon-resize-vertical:before {\n  content: \"\\E119\";\n}\n.glyphicon-resize-horizontal:before {\n  content: \"\\E120\";\n}\n.glyphicon-hdd:before {\n  content: \"\\E121\";\n}\n.glyphicon-bullhorn:before {\n  content: \"\\E122\";\n}\n.glyphicon-bell:before {\n  content: \"\\E123\";\n}\n.glyphicon-certificate:before {\n  content: \"\\E124\";\n}\n.glyphicon-thumbs-up:before {\n  content: \"\\E125\";\n}\n.glyphicon-thumbs-down:before {\n  content: \"\\E126\";\n}\n.glyphicon-hand-right:before {\n  content: \"\\E127\";\n}\n.glyphicon-hand-left:before {\n  content: \"\\E128\";\n}\n.glyphicon-hand-up:before {\n  content: \"\\E129\";\n}\n.glyphicon-hand-down:before {\n  content: \"\\E130\";\n}\n.glyphicon-circle-arrow-right:before {\n  content: \"\\E131\";\n}\n.glyphicon-circle-arrow-left:before {\n  content: \"\\E132\";\n}\n.glyphicon-circle-arrow-up:before {\n  content: \"\\E133\";\n}\n.glyphicon-circle-arrow-down:before {\n  content: \"\\E134\";\n}\n.glyphicon-globe:before {\n  content: \"\\E135\";\n}\n.glyphicon-wrench:before {\n  content: \"\\E136\";\n}\n.glyphicon-tasks:before {\n  content: \"\\E137\";\n}\n.glyphicon-filter:before {\n  content: \"\\E138\";\n}\n.glyphicon-briefcase:before {\n  content: \"\\E139\";\n}\n.glyphicon-fullscreen:before {\n  content: \"\\E140\";\n}\n.glyphicon-dashboard:before {\n  content: \"\\E141\";\n}\n.glyphicon-paperclip:before {\n  content: \"\\E142\";\n}\n.glyphicon-heart-empty:before {\n  content: \"\\E143\";\n}\n.glyphicon-link:before {\n  content: \"\\E144\";\n}\n.glyphicon-phone:before {\n  content: \"\\E145\";\n}\n.glyphicon-pushpin:before {\n  content: \"\\E146\";\n}\n.glyphicon-usd:before {\n  content: \"\\E148\";\n}\n.glyphicon-gbp:before {\n  content: \"\\E149\";\n}\n.glyphicon-sort:before {\n  content: \"\\E150\";\n}\n.glyphicon-sort-by-alphabet:before {\n  content: \"\\E151\";\n}\n.glyphicon-sort-by-alphabet-alt:before {\n  content: \"\\E152\";\n}\n.glyphicon-sort-by-order:before {\n  content: \"\\E153\";\n}\n.glyphicon-sort-by-order-alt:before {\n  content: \"\\E154\";\n}\n.glyphicon-sort-by-attributes:before {\n  content: \"\\E155\";\n}\n.glyphicon-sort-by-attributes-alt:before {\n  content: \"\\E156\";\n}\n.glyphicon-unchecked:before {\n  content: \"\\E157\";\n}\n.glyphicon-expand:before {\n  content: \"\\E158\";\n}\n.glyphicon-collapse-down:before {\n  content: \"\\E159\";\n}\n.glyphicon-collapse-up:before {\n  content: \"\\E160\";\n}\n.glyphicon-log-in:before {\n  content: \"\\E161\";\n}\n.glyphicon-flash:before {\n  content: \"\\E162\";\n}\n.glyphicon-log-out:before {\n  content: \"\\E163\";\n}\n.glyphicon-new-window:before {\n  content: \"\\E164\";\n}\n.glyphicon-record:before {\n  content: \"\\E165\";\n}\n.glyphicon-save:before {\n  content: \"\\E166\";\n}\n.glyphicon-open:before {\n  content: \"\\E167\";\n}\n.glyphicon-saved:before {\n  content: \"\\E168\";\n}\n.glyphicon-import:before {\n  content: \"\\E169\";\n}\n.glyphicon-export:before {\n  content: \"\\E170\";\n}\n.glyphicon-send:before {\n  content: \"\\E171\";\n}\n.glyphicon-floppy-disk:before {\n  content: \"\\E172\";\n}\n.glyphicon-floppy-saved:before {\n  content: \"\\E173\";\n}\n.glyphicon-floppy-remove:before {\n  content: \"\\E174\";\n}\n.glyphicon-floppy-save:before {\n  content: \"\\E175\";\n}\n.glyphicon-floppy-open:before {\n  content: \"\\E176\";\n}\n.glyphicon-credit-card:before {\n  content: \"\\E177\";\n}\n.glyphicon-transfer:before {\n  content: \"\\E178\";\n}\n.glyphicon-cutlery:before {\n  content: \"\\E179\";\n}\n.glyphicon-header:before {\n  content: \"\\E180\";\n}\n.glyphicon-compressed:before {\n  content: \"\\E181\";\n}\n.glyphicon-earphone:before {\n  content: \"\\E182\";\n}\n.glyphicon-phone-alt:before {\n  content: \"\\E183\";\n}\n.glyphicon-tower:before {\n  content: \"\\E184\";\n}\n.glyphicon-stats:before {\n  content: \"\\E185\";\n}\n.glyphicon-sd-video:before {\n  content: \"\\E186\";\n}\n.glyphicon-hd-video:before {\n  content: \"\\E187\";\n}\n.glyphicon-subtitles:before {\n  content: \"\\E188\";\n}\n.glyphicon-sound-stereo:before {\n  content: \"\\E189\";\n}\n.glyphicon-sound-dolby:before {\n  content: \"\\E190\";\n}\n.glyphicon-sound-5-1:before {\n  content: \"\\E191\";\n}\n.glyphicon-sound-6-1:before {\n  content: \"\\E192\";\n}\n.glyphicon-sound-7-1:before {\n  content: \"\\E193\";\n}\n.glyphicon-copyright-mark:before {\n  content: \"\\E194\";\n}\n.glyphicon-registration-mark:before {\n  content: \"\\E195\";\n}\n.glyphicon-cloud-download:before {\n  content: \"\\E197\";\n}\n.glyphicon-cloud-upload:before {\n  content: \"\\E198\";\n}\n.glyphicon-tree-conifer:before {\n  content: \"\\E199\";\n}\n.glyphicon-tree-deciduous:before {\n  content: \"\\E200\";\n}\n.glyphicon-cd:before {\n  content: \"\\E201\";\n}\n.glyphicon-save-file:before {\n  content: \"\\E202\";\n}\n.glyphicon-open-file:before {\n  content: \"\\E203\";\n}\n.glyphicon-level-up:before {\n  content: \"\\E204\";\n}\n.glyphicon-copy:before {\n  content: \"\\E205\";\n}\n.glyphicon-paste:before {\n  content: \"\\E206\";\n}\n.glyphicon-alert:before {\n  content: \"\\E209\";\n}\n.glyphicon-equalizer:before {\n  content: \"\\E210\";\n}\n.glyphicon-king:before {\n  content: \"\\E211\";\n}\n.glyphicon-queen:before {\n  content: \"\\E212\";\n}\n.glyphicon-pawn:before {\n  content: \"\\E213\";\n}\n.glyphicon-bishop:before {\n  content: \"\\E214\";\n}\n.glyphicon-knight:before {\n  content: \"\\E215\";\n}\n.glyphicon-baby-formula:before {\n  content: \"\\E216\";\n}\n.glyphicon-tent:before {\n  content: \"\\26FA\";\n}\n.glyphicon-blackboard:before {\n  content: \"\\E218\";\n}\n.glyphicon-bed:before {\n  content: \"\\E219\";\n}\n.glyphicon-apple:before {\n  content: \"\\F8FF\";\n}\n.glyphicon-erase:before {\n  content: \"\\E221\";\n}\n.glyphicon-hourglass:before {\n  content: \"\\231B\";\n}\n.glyphicon-lamp:before {\n  content: \"\\E223\";\n}\n.glyphicon-duplicate:before {\n  content: \"\\E224\";\n}\n.glyphicon-piggy-bank:before {\n  content: \"\\E225\";\n}\n.glyphicon-scissors:before {\n  content: \"\\E226\";\n}\n.glyphicon-bitcoin:before {\n  content: \"\\E227\";\n}\n.glyphicon-btc:before {\n  content: \"\\E227\";\n}\n.glyphicon-xbt:before {\n  content: \"\\E227\";\n}\n.glyphicon-yen:before {\n  content: \"\\A5\";\n}\n.glyphicon-jpy:before {\n  content: \"\\A5\";\n}\n.glyphicon-ruble:before {\n  content: \"\\20BD\";\n}\n.glyphicon-rub:before {\n  content: \"\\20BD\";\n}\n.glyphicon-scale:before {\n  content: \"\\E230\";\n}\n.glyphicon-ice-lolly:before {\n  content: \"\\E231\";\n}\n.glyphicon-ice-lolly-tasted:before {\n  content: \"\\E232\";\n}\n.glyphicon-education:before {\n  content: \"\\E233\";\n}\n.glyphicon-option-horizontal:before {\n  content: \"\\E234\";\n}\n.glyphicon-option-vertical:before {\n  content: \"\\E235\";\n}\n.glyphicon-menu-hamburger:before {\n  content: \"\\E236\";\n}\n.glyphicon-modal-window:before {\n  content: \"\\E237\";\n}\n.glyphicon-oil:before {\n  content: \"\\E238\";\n}\n.glyphicon-grain:before {\n  content: \"\\E239\";\n}\n.glyphicon-sunglasses:before {\n  content: \"\\E240\";\n}\n.glyphicon-text-size:before {\n  content: \"\\E241\";\n}\n.glyphicon-text-color:before {\n  content: \"\\E242\";\n}\n.glyphicon-text-background:before {\n  content: \"\\E243\";\n}\n.glyphicon-object-align-top:before {\n  content: \"\\E244\";\n}\n.glyphicon-object-align-bottom:before {\n  content: \"\\E245\";\n}\n.glyphicon-object-align-horizontal:before {\n  content: \"\\E246\";\n}\n.glyphicon-object-align-left:before {\n  content: \"\\E247\";\n}\n.glyphicon-object-align-vertical:before {\n  content: \"\\E248\";\n}\n.glyphicon-object-align-right:before {\n  content: \"\\E249\";\n}\n.glyphicon-triangle-right:before {\n  content: \"\\E250\";\n}\n.glyphicon-triangle-left:before {\n  content: \"\\E251\";\n}\n.glyphicon-triangle-bottom:before {\n  content: \"\\E252\";\n}\n.glyphicon-triangle-top:before {\n  content: \"\\E253\";\n}\n.glyphicon-console:before {\n  content: \"\\E254\";\n}\n.glyphicon-superscript:before {\n  content: \"\\E255\";\n}\n.glyphicon-subscript:before {\n  content: \"\\E256\";\n}\n.glyphicon-menu-left:before {\n  content: \"\\E257\";\n}\n.glyphicon-menu-right:before {\n  content: \"\\E258\";\n}\n.glyphicon-menu-down:before {\n  content: \"\\E259\";\n}\n.glyphicon-menu-up:before {\n  content: \"\\E260\";\n}\n* {\n  -webkit-box-sizing: border-box;\n     -moz-box-sizing: border-box;\n          box-sizing: border-box;\n}\n*:before,\n*:after {\n  -webkit-box-sizing: border-box;\n     -moz-box-sizing: border-box;\n          box-sizing: border-box;\n}\nhtml {\n  font-size: 10px;\n\n  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);\n}\nbody {\n  font-family: \"Helvetica Neue\", Helvetica, Arial, sans-serif;\n  font-size: 14px;\n  line-height: 1.42857143;\n  color: #333;\n  background-color: #fff;\n}\ninput,\nbutton,\nselect,\ntextarea {\n  font-family: inherit;\n  font-size: inherit;\n  line-height: inherit;\n}\na {\n  color: #337ab7;\n  text-decoration: none;\n}\na:hover,\na:focus {\n  color: #23527c;\n  text-decoration: underline;\n}\na:focus {\n  outline: thin dotted;\n  outline: 5px auto -webkit-focus-ring-color;\n  outline-offset: -2px;\n}\nfigure {\n  margin: 0;\n}\nimg {\n  vertical-align: middle;\n}\n.img-responsive,\n.thumbnail > img,\n.thumbnail a > img,\n.carousel-inner > .item > img,\n.carousel-inner > .item > a > img {\n  display: block;\n  max-width: 100%;\n  height: auto;\n}\n.img-rounded {\n  border-radius: 6px;\n}\n.img-thumbnail {\n  display: inline-block;\n  max-width: 100%;\n  height: auto;\n  padding: 4px;\n  line-height: 1.42857143;\n  background-color: #fff;\n  border: 1px solid #ddd;\n  border-radius: 4px;\n  -webkit-transition: all .2s ease-in-out;\n       -o-transition: all .2s ease-in-out;\n          transition: all .2s ease-in-out;\n}\n.img-circle {\n  border-radius: 50%;\n}\nhr {\n  margin-top: 20px;\n  margin-bottom: 20px;\n  border: 0;\n  border-top: 1px solid #eee;\n}\n.sr-only {\n  position: absolute;\n  width: 1px;\n  height: 1px;\n  padding: 0;\n  margin: -1px;\n  overflow: hidden;\n  clip: rect(0, 0, 0, 0);\n  border: 0;\n}\n.sr-only-focusable:active,\n.sr-only-focusable:focus {\n  position: static;\n  width: auto;\n  height: auto;\n  margin: 0;\n  overflow: visible;\n  clip: auto;\n}\n[role=\"button\"] {\n  cursor: pointer;\n}\nh1,\nh2,\nh3,\nh4,\nh5,\nh6,\n.h1,\n.h2,\n.h3,\n.h4,\n.h5,\n.h6 {\n  font-family: inherit;\n  font-weight: 500;\n  line-height: 1.1;\n  color: inherit;\n}\nh1 small,\nh2 small,\nh3 small,\nh4 small,\nh5 small,\nh6 small,\n.h1 small,\n.h2 small,\n.h3 small,\n.h4 small,\n.h5 small,\n.h6 small,\nh1 .small,\nh2 .small,\nh3 .small,\nh4 .small,\nh5 .small,\nh6 .small,\n.h1 .small,\n.h2 .small,\n.h3 .small,\n.h4 .small,\n.h5 .small,\n.h6 .small {\n  font-weight: normal;\n  line-height: 1;\n  color: #777;\n}\nh1,\n.h1,\nh2,\n.h2,\nh3,\n.h3 {\n  margin-top: 20px;\n  margin-bottom: 10px;\n}\nh1 small,\n.h1 small,\nh2 small,\n.h2 small,\nh3 small,\n.h3 small,\nh1 .small,\n.h1 .small,\nh2 .small,\n.h2 .small,\nh3 .small,\n.h3 .small {\n  font-size: 65%;\n}\nh4,\n.h4,\nh5,\n.h5,\nh6,\n.h6 {\n  margin-top: 10px;\n  margin-bottom: 10px;\n}\nh4 small,\n.h4 small,\nh5 small,\n.h5 small,\nh6 small,\n.h6 small,\nh4 .small,\n.h4 .small,\nh5 .small,\n.h5 .small,\nh6 .small,\n.h6 .small {\n  font-size: 75%;\n}\nh1,\n.h1 {\n  font-size: 36px;\n}\nh2,\n.h2 {\n  font-size: 30px;\n}\nh3,\n.h3 {\n  font-size: 24px;\n}\nh4,\n.h4 {\n  font-size: 18px;\n}\nh5,\n.h5 {\n  font-size: 14px;\n}\nh6,\n.h6 {\n  font-size: 12px;\n}\np {\n  margin: 0 0 10px;\n}\n.lead {\n  margin-bottom: 20px;\n  font-size: 16px;\n  font-weight: 300;\n  line-height: 1.4;\n}\n@media (min-width: 768px) {\n  .lead {\n    font-size: 21px;\n  }\n}\nsmall,\n.small {\n  font-size: 85%;\n}\nmark,\n.mark {\n  padding: .2em;\n  background-color: #fcf8e3;\n}\n.text-left {\n  text-align: left;\n}\n.text-right {\n  text-align: right;\n}\n.text-center {\n  text-align: center;\n}\n.text-justify {\n  text-align: justify;\n}\n.text-nowrap {\n  white-space: nowrap;\n}\n.text-lowercase {\n  text-transform: lowercase;\n}\n.text-uppercase {\n  text-transform: uppercase;\n}\n.text-capitalize {\n  text-transform: capitalize;\n}\n.text-muted {\n  color: #777;\n}\n.text-primary {\n  color: #337ab7;\n}\na.text-primary:hover,\na.text-primary:focus {\n  color: #286090;\n}\n.text-success {\n  color: #3c763d;\n}\na.text-success:hover,\na.text-success:focus {\n  color: #2b542c;\n}\n.text-info {\n  color: #31708f;\n}\na.text-info:hover,\na.text-info:focus {\n  color: #245269;\n}\n.text-warning {\n  color: #8a6d3b;\n}\na.text-warning:hover,\na.text-warning:focus {\n  color: #66512c;\n}\n.text-danger {\n  color: #a94442;\n}\na.text-danger:hover,\na.text-danger:focus {\n  color: #843534;\n}\n.bg-primary {\n  color: #fff;\n  background-color: #337ab7;\n}\na.bg-primary:hover,\na.bg-primary:focus {\n  background-color: #286090;\n}\n.bg-success {\n  background-color: #dff0d8;\n}\na.bg-success:hover,\na.bg-success:focus {\n  background-color: #c1e2b3;\n}\n.bg-info {\n  background-color: #d9edf7;\n}\na.bg-info:hover,\na.bg-info:focus {\n  background-color: #afd9ee;\n}\n.bg-warning {\n  background-color: #fcf8e3;\n}\na.bg-warning:hover,\na.bg-warning:focus {\n  background-color: #f7ecb5;\n}\n.bg-danger {\n  background-color: #f2dede;\n}\na.bg-danger:hover,\na.bg-danger:focus {\n  background-color: #e4b9b9;\n}\n.page-header {\n  padding-bottom: 9px;\n  margin: 40px 0 20px;\n  border-bottom: 1px solid #eee;\n}\nul,\nol {\n  margin-top: 0;\n  margin-bottom: 10px;\n}\nul ul,\nol ul,\nul ol,\nol ol {\n  margin-bottom: 0;\n}\n.list-unstyled {\n  padding-left: 0;\n  list-style: none;\n}\n.list-inline {\n  padding-left: 0;\n  margin-left: -5px;\n  list-style: none;\n}\n.list-inline > li {\n  display: inline-block;\n  padding-right: 5px;\n  padding-left: 5px;\n}\ndl {\n  margin-top: 0;\n  margin-bottom: 20px;\n}\ndt,\ndd {\n  line-height: 1.42857143;\n}\ndt {\n  font-weight: bold;\n}\ndd {\n  margin-left: 0;\n}\n@media (min-width: 768px) {\n  .dl-horizontal dt {\n    float: left;\n    width: 160px;\n    overflow: hidden;\n    clear: left;\n    text-align: right;\n    text-overflow: ellipsis;\n    white-space: nowrap;\n  }\n  .dl-horizontal dd {\n    margin-left: 180px;\n  }\n}\nabbr[title],\nabbr[data-original-title] {\n  cursor: help;\n  border-bottom: 1px dotted #777;\n}\n.initialism {\n  font-size: 90%;\n  text-transform: uppercase;\n}\nblockquote {\n  padding: 10px 20px;\n  margin: 0 0 20px;\n  font-size: 17.5px;\n  border-left: 5px solid #eee;\n}\nblockquote p:last-child,\nblockquote ul:last-child,\nblockquote ol:last-child {\n  margin-bottom: 0;\n}\nblockquote footer,\nblockquote small,\nblockquote .small {\n  display: block;\n  font-size: 80%;\n  line-height: 1.42857143;\n  color: #777;\n}\nblockquote footer:before,\nblockquote small:before,\nblockquote .small:before {\n  content: '\\2014   \\A0';\n}\n.blockquote-reverse,\nblockquote.pull-right {\n  padding-right: 15px;\n  padding-left: 0;\n  text-align: right;\n  border-right: 5px solid #eee;\n  border-left: 0;\n}\n.blockquote-reverse footer:before,\nblockquote.pull-right footer:before,\n.blockquote-reverse small:before,\nblockquote.pull-right small:before,\n.blockquote-reverse .small:before,\nblockquote.pull-right .small:before {\n  content: '';\n}\n.blockquote-reverse footer:after,\nblockquote.pull-right footer:after,\n.blockquote-reverse small:after,\nblockquote.pull-right small:after,\n.blockquote-reverse .small:after,\nblockquote.pull-right .small:after {\n  content: '\\A0   \\2014';\n}\naddress {\n  margin-bottom: 20px;\n  font-style: normal;\n  line-height: 1.42857143;\n}\ncode,\nkbd,\npre,\nsamp {\n  font-family: Menlo, Monaco, Consolas, \"Courier New\", monospace;\n}\ncode {\n  padding: 2px 4px;\n  font-size: 90%;\n  color: #c7254e;\n  background-color: #f9f2f4;\n  border-radius: 4px;\n}\nkbd {\n  padding: 2px 4px;\n  font-size: 90%;\n  color: #fff;\n  background-color: #333;\n  border-radius: 3px;\n  -webkit-box-shadow: inset 0 -1px 0 rgba(0, 0, 0, .25);\n          box-shadow: inset 0 -1px 0 rgba(0, 0, 0, .25);\n}\nkbd kbd {\n  padding: 0;\n  font-size: 100%;\n  font-weight: bold;\n  -webkit-box-shadow: none;\n          box-shadow: none;\n}\npre {\n  display: block;\n  padding: 9.5px;\n  margin: 0 0 10px;\n  font-size: 13px;\n  line-height: 1.42857143;\n  color: #333;\n  word-break: break-all;\n  word-wrap: break-word;\n  background-color: #f5f5f5;\n  border: 1px solid #ccc;\n  border-radius: 4px;\n}\npre code {\n  padding: 0;\n  font-size: inherit;\n  color: inherit;\n  white-space: pre-wrap;\n  background-color: transparent;\n  border-radius: 0;\n}\n.pre-scrollable {\n  max-height: 340px;\n  overflow-y: scroll;\n}\n.container {\n  padding-right: 15px;\n  padding-left: 15px;\n  margin-right: auto;\n  margin-left: auto;\n}\n@media (min-width: 768px) {\n  .container {\n    width: 750px;\n  }\n}\n@media (min-width: 992px) {\n  .container {\n    width: 970px;\n  }\n}\n@media (min-width: 1200px) {\n  .container {\n    width: 1170px;\n  }\n}\n.container-fluid {\n  padding-right: 15px;\n  padding-left: 15px;\n  margin-right: auto;\n  margin-left: auto;\n}\n.row {\n  margin-right: -15px;\n  margin-left: -15px;\n}\n.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {\n  position: relative;\n  min-height: 1px;\n  padding-right: 15px;\n  padding-left: 15px;\n}\n.col-xs-1, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9, .col-xs-10, .col-xs-11, .col-xs-12 {\n  float: left;\n}\n.col-xs-12 {\n  width: 100%;\n}\n.col-xs-11 {\n  width: 91.66666667%;\n}\n.col-xs-10 {\n  width: 83.33333333%;\n}\n.col-xs-9 {\n  width: 75%;\n}\n.col-xs-8 {\n  width: 66.66666667%;\n}\n.col-xs-7 {\n  width: 58.33333333%;\n}\n.col-xs-6 {\n  width: 50%;\n}\n.col-xs-5 {\n  width: 41.66666667%;\n}\n.col-xs-4 {\n  width: 33.33333333%;\n}\n.col-xs-3 {\n  width: 25%;\n}\n.col-xs-2 {\n  width: 16.66666667%;\n}\n.col-xs-1 {\n  width: 8.33333333%;\n}\n.col-xs-pull-12 {\n  right: 100%;\n}\n.col-xs-pull-11 {\n  right: 91.66666667%;\n}\n.col-xs-pull-10 {\n  right: 83.33333333%;\n}\n.col-xs-pull-9 {\n  right: 75%;\n}\n.col-xs-pull-8 {\n  right: 66.66666667%;\n}\n.col-xs-pull-7 {\n  right: 58.33333333%;\n}\n.col-xs-pull-6 {\n  right: 50%;\n}\n.col-xs-pull-5 {\n  right: 41.66666667%;\n}\n.col-xs-pull-4 {\n  right: 33.33333333%;\n}\n.col-xs-pull-3 {\n  right: 25%;\n}\n.col-xs-pull-2 {\n  right: 16.66666667%;\n}\n.col-xs-pull-1 {\n  right: 8.33333333%;\n}\n.col-xs-pull-0 {\n  right: auto;\n}\n.col-xs-push-12 {\n  left: 100%;\n}\n.col-xs-push-11 {\n  left: 91.66666667%;\n}\n.col-xs-push-10 {\n  left: 83.33333333%;\n}\n.col-xs-push-9 {\n  left: 75%;\n}\n.col-xs-push-8 {\n  left: 66.66666667%;\n}\n.col-xs-push-7 {\n  left: 58.33333333%;\n}\n.col-xs-push-6 {\n  left: 50%;\n}\n.col-xs-push-5 {\n  left: 41.66666667%;\n}\n.col-xs-push-4 {\n  left: 33.33333333%;\n}\n.col-xs-push-3 {\n  left: 25%;\n}\n.col-xs-push-2 {\n  left: 16.66666667%;\n}\n.col-xs-push-1 {\n  left: 8.33333333%;\n}\n.col-xs-push-0 {\n  left: auto;\n}\n.col-xs-offset-12 {\n  margin-left: 100%;\n}\n.col-xs-offset-11 {\n  margin-left: 91.66666667%;\n}\n.col-xs-offset-10 {\n  margin-left: 83.33333333%;\n}\n.col-xs-offset-9 {\n  margin-left: 75%;\n}\n.col-xs-offset-8 {\n  margin-left: 66.66666667%;\n}\n.col-xs-offset-7 {\n  margin-left: 58.33333333%;\n}\n.col-xs-offset-6 {\n  margin-left: 50%;\n}\n.col-xs-offset-5 {\n  margin-left: 41.66666667%;\n}\n.col-xs-offset-4 {\n  margin-left: 33.33333333%;\n}\n.col-xs-offset-3 {\n  margin-left: 25%;\n}\n.col-xs-offset-2 {\n  margin-left: 16.66666667%;\n}\n.col-xs-offset-1 {\n  margin-left: 8.33333333%;\n}\n.col-xs-offset-0 {\n  margin-left: 0;\n}\n@media (min-width: 768px) {\n  .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12 {\n    float: left;\n  }\n  .col-sm-12 {\n    width: 100%;\n  }\n  .col-sm-11 {\n    width: 91.66666667%;\n  }\n  .col-sm-10 {\n    width: 83.33333333%;\n  }\n  .col-sm-9 {\n    width: 75%;\n  }\n  .col-sm-8 {\n    width: 66.66666667%;\n  }\n  .col-sm-7 {\n    width: 58.33333333%;\n  }\n  .col-sm-6 {\n    width: 50%;\n  }\n  .col-sm-5 {\n    width: 41.66666667%;\n  }\n  .col-sm-4 {\n    width: 33.33333333%;\n  }\n  .col-sm-3 {\n    width: 25%;\n  }\n  .col-sm-2 {\n    width: 16.66666667%;\n  }\n  .col-sm-1 {\n    width: 8.33333333%;\n  }\n  .col-sm-pull-12 {\n    right: 100%;\n  }\n  .col-sm-pull-11 {\n    right: 91.66666667%;\n  }\n  .col-sm-pull-10 {\n    right: 83.33333333%;\n  }\n  .col-sm-pull-9 {\n    right: 75%;\n  }\n  .col-sm-pull-8 {\n    right: 66.66666667%;\n  }\n  .col-sm-pull-7 {\n    right: 58.33333333%;\n  }\n  .col-sm-pull-6 {\n    right: 50%;\n  }\n  .col-sm-pull-5 {\n    right: 41.66666667%;\n  }\n  .col-sm-pull-4 {\n    right: 33.33333333%;\n  }\n  .col-sm-pull-3 {\n    right: 25%;\n  }\n  .col-sm-pull-2 {\n    right: 16.66666667%;\n  }\n  .col-sm-pull-1 {\n    right: 8.33333333%;\n  }\n  .col-sm-pull-0 {\n    right: auto;\n  }\n  .col-sm-push-12 {\n    left: 100%;\n  }\n  .col-sm-push-11 {\n    left: 91.66666667%;\n  }\n  .col-sm-push-10 {\n    left: 83.33333333%;\n  }\n  .col-sm-push-9 {\n    left: 75%;\n  }\n  .col-sm-push-8 {\n    left: 66.66666667%;\n  }\n  .col-sm-push-7 {\n    left: 58.33333333%;\n  }\n  .col-sm-push-6 {\n    left: 50%;\n  }\n  .col-sm-push-5 {\n    left: 41.66666667%;\n  }\n  .col-sm-push-4 {\n    left: 33.33333333%;\n  }\n  .col-sm-push-3 {\n    left: 25%;\n  }\n  .col-sm-push-2 {\n    left: 16.66666667%;\n  }\n  .col-sm-push-1 {\n    left: 8.33333333%;\n  }\n  .col-sm-push-0 {\n    left: auto;\n  }\n  .col-sm-offset-12 {\n    margin-left: 100%;\n  }\n  .col-sm-offset-11 {\n    margin-left: 91.66666667%;\n  }\n  .col-sm-offset-10 {\n    margin-left: 83.33333333%;\n  }\n  .col-sm-offset-9 {\n    margin-left: 75%;\n  }\n  .col-sm-offset-8 {\n    margin-left: 66.66666667%;\n  }\n  .col-sm-offset-7 {\n    margin-left: 58.33333333%;\n  }\n  .col-sm-offset-6 {\n    margin-left: 50%;\n  }\n  .col-sm-offset-5 {\n    margin-left: 41.66666667%;\n  }\n  .col-sm-offset-4 {\n    margin-left: 33.33333333%;\n  }\n  .col-sm-offset-3 {\n    margin-left: 25%;\n  }\n  .col-sm-offset-2 {\n    margin-left: 16.66666667%;\n  }\n  .col-sm-offset-1 {\n    margin-left: 8.33333333%;\n  }\n  .col-sm-offset-0 {\n    margin-left: 0;\n  }\n}\n@media (min-width: 992px) {\n  .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {\n    float: left;\n  }\n  .col-md-12 {\n    width: 100%;\n  }\n  .col-md-11 {\n    width: 91.66666667%;\n  }\n  .col-md-10 {\n    width: 83.33333333%;\n  }\n  .col-md-9 {\n    width: 75%;\n  }\n  .col-md-8 {\n    width: 66.66666667%;\n  }\n  .col-md-7 {\n    width: 58.33333333%;\n  }\n  .col-md-6 {\n    width: 50%;\n  }\n  .col-md-5 {\n    width: 41.66666667%;\n  }\n  .col-md-4 {\n    width: 33.33333333%;\n  }\n  .col-md-3 {\n    width: 25%;\n  }\n  .col-md-2 {\n    width: 16.66666667%;\n  }\n  .col-md-1 {\n    width: 8.33333333%;\n  }\n  .col-md-pull-12 {\n    right: 100%;\n  }\n  .col-md-pull-11 {\n    right: 91.66666667%;\n  }\n  .col-md-pull-10 {\n    right: 83.33333333%;\n  }\n  .col-md-pull-9 {\n    right: 75%;\n  }\n  .col-md-pull-8 {\n    right: 66.66666667%;\n  }\n  .col-md-pull-7 {\n    right: 58.33333333%;\n  }\n  .col-md-pull-6 {\n    right: 50%;\n  }\n  .col-md-pull-5 {\n    right: 41.66666667%;\n  }\n  .col-md-pull-4 {\n    right: 33.33333333%;\n  }\n  .col-md-pull-3 {\n    right: 25%;\n  }\n  .col-md-pull-2 {\n    right: 16.66666667%;\n  }\n  .col-md-pull-1 {\n    right: 8.33333333%;\n  }\n  .col-md-pull-0 {\n    right: auto;\n  }\n  .col-md-push-12 {\n    left: 100%;\n  }\n  .col-md-push-11 {\n    left: 91.66666667%;\n  }\n  .col-md-push-10 {\n    left: 83.33333333%;\n  }\n  .col-md-push-9 {\n    left: 75%;\n  }\n  .col-md-push-8 {\n    left: 66.66666667%;\n  }\n  .col-md-push-7 {\n    left: 58.33333333%;\n  }\n  .col-md-push-6 {\n    left: 50%;\n  }\n  .col-md-push-5 {\n    left: 41.66666667%;\n  }\n  .col-md-push-4 {\n    left: 33.33333333%;\n  }\n  .col-md-push-3 {\n    left: 25%;\n  }\n  .col-md-push-2 {\n    left: 16.66666667%;\n  }\n  .col-md-push-1 {\n    left: 8.33333333%;\n  }\n  .col-md-push-0 {\n    left: auto;\n  }\n  .col-md-offset-12 {\n    margin-left: 100%;\n  }\n  .col-md-offset-11 {\n    margin-left: 91.66666667%;\n  }\n  .col-md-offset-10 {\n    margin-left: 83.33333333%;\n  }\n  .col-md-offset-9 {\n    margin-left: 75%;\n  }\n  .col-md-offset-8 {\n    margin-left: 66.66666667%;\n  }\n  .col-md-offset-7 {\n    margin-left: 58.33333333%;\n  }\n  .col-md-offset-6 {\n    margin-left: 50%;\n  }\n  .col-md-offset-5 {\n    margin-left: 41.66666667%;\n  }\n  .col-md-offset-4 {\n    margin-left: 33.33333333%;\n  }\n  .col-md-offset-3 {\n    margin-left: 25%;\n  }\n  .col-md-offset-2 {\n    margin-left: 16.66666667%;\n  }\n  .col-md-offset-1 {\n    margin-left: 8.33333333%;\n  }\n  .col-md-offset-0 {\n    margin-left: 0;\n  }\n}\n@media (min-width: 1200px) {\n  .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12 {\n    float: left;\n  }\n  .col-lg-12 {\n    width: 100%;\n  }\n  .col-lg-11 {\n    width: 91.66666667%;\n  }\n  .col-lg-10 {\n    width: 83.33333333%;\n  }\n  .col-lg-9 {\n    width: 75%;\n  }\n  .col-lg-8 {\n    width: 66.66666667%;\n  }\n  .col-lg-7 {\n    width: 58.33333333%;\n  }\n  .col-lg-6 {\n    width: 50%;\n  }\n  .col-lg-5 {\n    width: 41.66666667%;\n  }\n  .col-lg-4 {\n    width: 33.33333333%;\n  }\n  .col-lg-3 {\n    width: 25%;\n  }\n  .col-lg-2 {\n    width: 16.66666667%;\n  }\n  .col-lg-1 {\n    width: 8.33333333%;\n  }\n  .col-lg-pull-12 {\n    right: 100%;\n  }\n  .col-lg-pull-11 {\n    right: 91.66666667%;\n  }\n  .col-lg-pull-10 {\n    right: 83.33333333%;\n  }\n  .col-lg-pull-9 {\n    right: 75%;\n  }\n  .col-lg-pull-8 {\n    right: 66.66666667%;\n  }\n  .col-lg-pull-7 {\n    right: 58.33333333%;\n  }\n  .col-lg-pull-6 {\n    right: 50%;\n  }\n  .col-lg-pull-5 {\n    right: 41.66666667%;\n  }\n  .col-lg-pull-4 {\n    right: 33.33333333%;\n  }\n  .col-lg-pull-3 {\n    right: 25%;\n  }\n  .col-lg-pull-2 {\n    right: 16.66666667%;\n  }\n  .col-lg-pull-1 {\n    right: 8.33333333%;\n  }\n  .col-lg-pull-0 {\n    right: auto;\n  }\n  .col-lg-push-12 {\n    left: 100%;\n  }\n  .col-lg-push-11 {\n    left: 91.66666667%;\n  }\n  .col-lg-push-10 {\n    left: 83.33333333%;\n  }\n  .col-lg-push-9 {\n    left: 75%;\n  }\n  .col-lg-push-8 {\n    left: 66.66666667%;\n  }\n  .col-lg-push-7 {\n    left: 58.33333333%;\n  }\n  .col-lg-push-6 {\n    left: 50%;\n  }\n  .col-lg-push-5 {\n    left: 41.66666667%;\n  }\n  .col-lg-push-4 {\n    left: 33.33333333%;\n  }\n  .col-lg-push-3 {\n    left: 25%;\n  }\n  .col-lg-push-2 {\n    left: 16.66666667%;\n  }\n  .col-lg-push-1 {\n    left: 8.33333333%;\n  }\n  .col-lg-push-0 {\n    left: auto;\n  }\n  .col-lg-offset-12 {\n    margin-left: 100%;\n  }\n  .col-lg-offset-11 {\n    margin-left: 91.66666667%;\n  }\n  .col-lg-offset-10 {\n    margin-left: 83.33333333%;\n  }\n  .col-lg-offset-9 {\n    margin-left: 75%;\n  }\n  .col-lg-offset-8 {\n    margin-left: 66.66666667%;\n  }\n  .col-lg-offset-7 {\n    margin-left: 58.33333333%;\n  }\n  .col-lg-offset-6 {\n    margin-left: 50%;\n  }\n  .col-lg-offset-5 {\n    margin-left: 41.66666667%;\n  }\n  .col-lg-offset-4 {\n    margin-left: 33.33333333%;\n  }\n  .col-lg-offset-3 {\n    margin-left: 25%;\n  }\n  .col-lg-offset-2 {\n    margin-left: 16.66666667%;\n  }\n  .col-lg-offset-1 {\n    margin-left: 8.33333333%;\n  }\n  .col-lg-offset-0 {\n    margin-left: 0;\n  }\n}\ntable {\n  background-color: transparent;\n}\ncaption {\n  padding-top: 8px;\n  padding-bottom: 8px;\n  color: #777;\n  text-align: left;\n}\nth {\n  text-align: left;\n}\n.table {\n  width: 100%;\n  max-width: 100%;\n  margin-bottom: 20px;\n}\n.table > thead > tr > th,\n.table > tbody > tr > th,\n.table > tfoot > tr > th,\n.table > thead > tr > td,\n.table > tbody > tr > td,\n.table > tfoot > tr > td {\n  padding: 8px;\n  line-height: 1.42857143;\n  vertical-align: top;\n  border-top: 1px solid #ddd;\n}\n.table > thead > tr > th {\n  vertical-align: bottom;\n  border-bottom: 2px solid #ddd;\n}\n.table > caption + thead > tr:first-child > th,\n.table > colgroup + thead > tr:first-child > th,\n.table > thead:first-child > tr:first-child > th,\n.table > caption + thead > tr:first-child > td,\n.table > colgroup + thead > tr:first-child > td,\n.table > thead:first-child > tr:first-child > td {\n  border-top: 0;\n}\n.table > tbody + tbody {\n  border-top: 2px solid #ddd;\n}\n.table .table {\n  background-color: #fff;\n}\n.table-condensed > thead > tr > th,\n.table-condensed > tbody > tr > th,\n.table-condensed > tfoot > tr > th,\n.table-condensed > thead > tr > td,\n.table-condensed > tbody > tr > td,\n.table-condensed > tfoot > tr > td {\n  padding: 5px;\n}\n.table-bordered {\n  border: 1px solid #ddd;\n}\n.table-bordered > thead > tr > th,\n.table-bordered > tbody > tr > th,\n.table-bordered > tfoot > tr > th,\n.table-bordered > thead > tr > td,\n.table-bordered > tbody > tr > td,\n.table-bordered > tfoot > tr > td {\n  border: 1px solid #ddd;\n}\n.table-bordered > thead > tr > th,\n.table-bordered > thead > tr > td {\n  border-bottom-width: 2px;\n}\n.table-striped > tbody > tr:nth-of-type(odd) {\n  background-color: #f9f9f9;\n}\n.table-hover > tbody > tr:hover {\n  background-color: #f5f5f5;\n}\ntable col[class*=\"col-\"] {\n  position: static;\n  display: table-column;\n  float: none;\n}\ntable td[class*=\"col-\"],\ntable th[class*=\"col-\"] {\n  position: static;\n  display: table-cell;\n  float: none;\n}\n.table > thead > tr > td.active,\n.table > tbody > tr > td.active,\n.table > tfoot > tr > td.active,\n.table > thead > tr > th.active,\n.table > tbody > tr > th.active,\n.table > tfoot > tr > th.active,\n.table > thead > tr.active > td,\n.table > tbody > tr.active > td,\n.table > tfoot > tr.active > td,\n.table > thead > tr.active > th,\n.table > tbody > tr.active > th,\n.table > tfoot > tr.active > th {\n  background-color: #f5f5f5;\n}\n.table-hover > tbody > tr > td.active:hover,\n.table-hover > tbody > tr > th.active:hover,\n.table-hover > tbody > tr.active:hover > td,\n.table-hover > tbody > tr:hover > .active,\n.table-hover > tbody > tr.active:hover > th {\n  background-color: #e8e8e8;\n}\n.table > thead > tr > td.success,\n.table > tbody > tr > td.success,\n.table > tfoot > tr > td.success,\n.table > thead > tr > th.success,\n.table > tbody > tr > th.success,\n.table > tfoot > tr > th.success,\n.table > thead > tr.success > td,\n.table > tbody > tr.success > td,\n.table > tfoot > tr.success > td,\n.table > thead > tr.success > th,\n.table > tbody > tr.success > th,\n.table > tfoot > tr.success > th {\n  background-color: #dff0d8;\n}\n.table-hover > tbody > tr > td.success:hover,\n.table-hover > tbody > tr > th.success:hover,\n.table-hover > tbody > tr.success:hover > td,\n.table-hover > tbody > tr:hover > .success,\n.table-hover > tbody > tr.success:hover > th {\n  background-color: #d0e9c6;\n}\n.table > thead > tr > td.info,\n.table > tbody > tr > td.info,\n.table > tfoot > tr > td.info,\n.table > thead > tr > th.info,\n.table > tbody > tr > th.info,\n.table > tfoot > tr > th.info,\n.table > thead > tr.info > td,\n.table > tbody > tr.info > td,\n.table > tfoot > tr.info > td,\n.table > thead > tr.info > th,\n.table > tbody > tr.info > th,\n.table > tfoot > tr.info > th {\n  background-color: #d9edf7;\n}\n.table-hover > tbody > tr > td.info:hover,\n.table-hover > tbody > tr > th.info:hover,\n.table-hover > tbody > tr.info:hover > td,\n.table-hover > tbody > tr:hover > .info,\n.table-hover > tbody > tr.info:hover > th {\n  background-color: #c4e3f3;\n}\n.table > thead > tr > td.warning,\n.table > tbody > tr > td.warning,\n.table > tfoot > tr > td.warning,\n.table > thead > tr > th.warning,\n.table > tbody > tr > th.warning,\n.table > tfoot > tr > th.warning,\n.table > thead > tr.warning > td,\n.table > tbody > tr.warning > td,\n.table > tfoot > tr.warning > td,\n.table > thead > tr.warning > th,\n.table > tbody > tr.warning > th,\n.table > tfoot > tr.warning > th {\n  background-color: #fcf8e3;\n}\n.table-hover > tbody > tr > td.warning:hover,\n.table-hover > tbody > tr > th.warning:hover,\n.table-hover > tbody > tr.warning:hover > td,\n.table-hover > tbody > tr:hover > .warning,\n.table-hover > tbody > tr.warning:hover > th {\n  background-color: #faf2cc;\n}\n.table > thead > tr > td.danger,\n.table > tbody > tr > td.danger,\n.table > tfoot > tr > td.danger,\n.table > thead > tr > th.danger,\n.table > tbody > tr > th.danger,\n.table > tfoot > tr > th.danger,\n.table > thead > tr.danger > td,\n.table > tbody > tr.danger > td,\n.table > tfoot > tr.danger > td,\n.table > thead > tr.danger > th,\n.table > tbody > tr.danger > th,\n.table > tfoot > tr.danger > th {\n  background-color: #f2dede;\n}\n.table-hover > tbody > tr > td.danger:hover,\n.table-hover > tbody > tr > th.danger:hover,\n.table-hover > tbody > tr.danger:hover > td,\n.table-hover > tbody > tr:hover > .danger,\n.table-hover > tbody > tr.danger:hover > th {\n  background-color: #ebcccc;\n}\n.table-responsive {\n  min-height: .01%;\n  overflow-x: auto;\n}\n@media screen and (max-width: 767px) {\n  .table-responsive {\n    width: 100%;\n    margin-bottom: 15px;\n    overflow-y: hidden;\n    -ms-overflow-style: -ms-autohiding-scrollbar;\n    border: 1px solid #ddd;\n  }\n  .table-responsive > .table {\n    margin-bottom: 0;\n  }\n  .table-responsive > .table > thead > tr > th,\n  .table-responsive > .table > tbody > tr > th,\n  .table-responsive > .table > tfoot > tr > th,\n  .table-responsive > .table > thead > tr > td,\n  .table-responsive > .table > tbody > tr > td,\n  .table-responsive > .table > tfoot > tr > td {\n    white-space: nowrap;\n  }\n  .table-responsive > .table-bordered {\n    border: 0;\n  }\n  .table-responsive > .table-bordered > thead > tr > th:first-child,\n  .table-responsive > .table-bordered > tbody > tr > th:first-child,\n  .table-responsive > .table-bordered > tfoot > tr > th:first-child,\n  .table-responsive > .table-bordered > thead > tr > td:first-child,\n  .table-responsive > .table-bordered > tbody > tr > td:first-child,\n  .table-responsive > .table-bordered > tfoot > tr > td:first-child {\n    border-left: 0;\n  }\n  .table-responsive > .table-bordered > thead > tr > th:last-child,\n  .table-responsive > .table-bordered > tbody > tr > th:last-child,\n  .table-responsive > .table-bordered > tfoot > tr > th:last-child,\n  .table-responsive > .table-bordered > thead > tr > td:last-child,\n  .table-responsive > .table-bordered > tbody > tr > td:last-child,\n  .table-responsive > .table-bordered > tfoot > tr > td:last-child {\n    border-right: 0;\n  }\n  .table-responsive > .table-bordered > tbody > tr:last-child > th,\n  .table-responsive > .table-bordered > tfoot > tr:last-child > th,\n  .table-responsive > .table-bordered > tbody > tr:last-child > td,\n  .table-responsive > .table-bordered > tfoot > tr:last-child > td {\n    border-bottom: 0;\n  }\n}\nfieldset {\n  min-width: 0;\n  padding: 0;\n  margin: 0;\n  border: 0;\n}\nlegend {\n  display: block;\n  width: 100%;\n  padding: 0;\n  margin-bottom: 20px;\n  font-size: 21px;\n  line-height: inherit;\n  color: #333;\n  border: 0;\n  border-bottom: 1px solid #e5e5e5;\n}\nlabel {\n  display: inline-block;\n  max-width: 100%;\n  margin-bottom: 5px;\n  font-weight: bold;\n}\ninput[type=\"search\"] {\n  -webkit-box-sizing: border-box;\n     -moz-box-sizing: border-box;\n          box-sizing: border-box;\n}\ninput[type=\"radio\"],\ninput[type=\"checkbox\"] {\n  margin: 4px 0 0;\n  margin-top: 1px \\9;\n  line-height: normal;\n}\ninput[type=\"file\"] {\n  display: block;\n}\ninput[type=\"range\"] {\n  display: block;\n  width: 100%;\n}\nselect[multiple],\nselect[size] {\n  height: auto;\n}\ninput[type=\"file\"]:focus,\ninput[type=\"radio\"]:focus,\ninput[type=\"checkbox\"]:focus {\n  outline: thin dotted;\n  outline: 5px auto -webkit-focus-ring-color;\n  outline-offset: -2px;\n}\noutput {\n  display: block;\n  padding-top: 7px;\n  font-size: 14px;\n  line-height: 1.42857143;\n  color: #555;\n}\n.form-control {\n  display: block;\n  width: 100%;\n  height: 34px;\n  padding: 6px 12px;\n  font-size: 14px;\n  line-height: 1.42857143;\n  color: #555;\n  background-color: #fff;\n  background-image: none;\n  border: 1px solid #ccc;\n  border-radius: 4px;\n  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);\n          box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);\n  -webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;\n       -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;\n          transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;\n}\n.form-control:focus {\n  border-color: #66afe9;\n  outline: 0;\n  -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, .6);\n          box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, .6);\n}\n.form-control::-moz-placeholder {\n  color: #999;\n  opacity: 1;\n}\n.form-control:-ms-input-placeholder {\n  color: #999;\n}\n.form-control::-webkit-input-placeholder {\n  color: #999;\n}\n.form-control::-ms-expand {\n  background-color: transparent;\n  border: 0;\n}\n.form-control[disabled],\n.form-control[readonly],\nfieldset[disabled] .form-control {\n  background-color: #eee;\n  opacity: 1;\n}\n.form-control[disabled],\nfieldset[disabled] .form-control {\n  cursor: not-allowed;\n}\ntextarea.form-control {\n  height: auto;\n}\ninput[type=\"search\"] {\n  -webkit-appearance: none;\n}\n@media screen and (-webkit-min-device-pixel-ratio: 0) {\n  input[type=\"date\"].form-control,\n  input[type=\"time\"].form-control,\n  input[type=\"datetime-local\"].form-control,\n  input[type=\"month\"].form-control {\n    line-height: 34px;\n  }\n  input[type=\"date\"].input-sm,\n  input[type=\"time\"].input-sm,\n  input[type=\"datetime-local\"].input-sm,\n  input[type=\"month\"].input-sm,\n  .input-group-sm input[type=\"date\"],\n  .input-group-sm input[type=\"time\"],\n  .input-group-sm input[type=\"datetime-local\"],\n  .input-group-sm input[type=\"month\"] {\n    line-height: 30px;\n  }\n  input[type=\"date\"].input-lg,\n  input[type=\"time\"].input-lg,\n  input[type=\"datetime-local\"].input-lg,\n  input[type=\"month\"].input-lg,\n  .input-group-lg input[type=\"date\"],\n  .input-group-lg input[type=\"time\"],\n  .input-group-lg input[type=\"datetime-local\"],\n  .input-group-lg input[type=\"month\"] {\n    line-height: 46px;\n  }\n}\n.form-group {\n  margin-bottom: 15px;\n}\n.radio,\n.checkbox {\n  position: relative;\n  display: block;\n  margin-top: 10px;\n  margin-bottom: 10px;\n}\n.radio label,\n.checkbox label {\n  min-height: 20px;\n  padding-left: 20px;\n  margin-bottom: 0;\n  font-weight: normal;\n  cursor: pointer;\n}\n.radio input[type=\"radio\"],\n.radio-inline input[type=\"radio\"],\n.checkbox input[type=\"checkbox\"],\n.checkbox-inline input[type=\"checkbox\"] {\n  position: absolute;\n  margin-top: 4px \\9;\n  margin-left: -20px;\n}\n.radio + .radio,\n.checkbox + .checkbox {\n  margin-top: -5px;\n}\n.radio-inline,\n.checkbox-inline {\n  position: relative;\n  display: inline-block;\n  padding-left: 20px;\n  margin-bottom: 0;\n  font-weight: normal;\n  vertical-align: middle;\n  cursor: pointer;\n}\n.radio-inline + .radio-inline,\n.checkbox-inline + .checkbox-inline {\n  margin-top: 0;\n  margin-left: 10px;\n}\ninput[type=\"radio\"][disabled],\ninput[type=\"checkbox\"][disabled],\ninput[type=\"radio\"].disabled,\ninput[type=\"checkbox\"].disabled,\nfieldset[disabled] input[type=\"radio\"],\nfieldset[disabled] input[type=\"checkbox\"] {\n  cursor: not-allowed;\n}\n.radio-inline.disabled,\n.checkbox-inline.disabled,\nfieldset[disabled] .radio-inline,\nfieldset[disabled] .checkbox-inline {\n  cursor: not-allowed;\n}\n.radio.disabled label,\n.checkbox.disabled label,\nfieldset[disabled] .radio label,\nfieldset[disabled] .checkbox label {\n  cursor: not-allowed;\n}\n.form-control-static {\n  min-height: 34px;\n  padding-top: 7px;\n  padding-bottom: 7px;\n  margin-bottom: 0;\n}\n.form-control-static.input-lg,\n.form-control-static.input-sm {\n  padding-right: 0;\n  padding-left: 0;\n}\n.input-sm {\n  height: 30px;\n  padding: 5px 10px;\n  font-size: 12px;\n  line-height: 1.5;\n  border-radius: 3px;\n}\nselect.input-sm {\n  height: 30px;\n  line-height: 30px;\n}\ntextarea.input-sm,\nselect[multiple].input-sm {\n  height: auto;\n}\n.form-group-sm .form-control {\n  height: 30px;\n  padding: 5px 10px;\n  font-size: 12px;\n  line-height: 1.5;\n  border-radius: 3px;\n}\n.form-group-sm select.form-control {\n  height: 30px;\n  line-height: 30px;\n}\n.form-group-sm textarea.form-control,\n.form-group-sm select[multiple].form-control {\n  height: auto;\n}\n.form-group-sm .form-control-static {\n  height: 30px;\n  min-height: 32px;\n  padding: 6px 10px;\n  font-size: 12px;\n  line-height: 1.5;\n}\n.input-lg {\n  height: 46px;\n  padding: 10px 16px;\n  font-size: 18px;\n  line-height: 1.3333333;\n  border-radius: 6px;\n}\nselect.input-lg {\n  height: 46px;\n  line-height: 46px;\n}\ntextarea.input-lg,\nselect[multiple].input-lg {\n  height: auto;\n}\n.form-group-lg .form-control {\n  height: 46px;\n  padding: 10px 16px;\n  font-size: 18px;\n  line-height: 1.3333333;\n  border-radius: 6px;\n}\n.form-group-lg select.form-control {\n  height: 46px;\n  line-height: 46px;\n}\n.form-group-lg textarea.form-control,\n.form-group-lg select[multiple].form-control {\n  height: auto;\n}\n.form-group-lg .form-control-static {\n  height: 46px;\n  min-height: 38px;\n  padding: 11px 16px;\n  font-size: 18px;\n  line-height: 1.3333333;\n}\n.has-feedback {\n  position: relative;\n}\n.has-feedback .form-control {\n  padding-right: 42.5px;\n}\n.form-control-feedback {\n  position: absolute;\n  top: 0;\n  right: 0;\n  z-index: 2;\n  display: block;\n  width: 34px;\n  height: 34px;\n  line-height: 34px;\n  text-align: center;\n  pointer-events: none;\n}\n.input-lg + .form-control-feedback,\n.input-group-lg + .form-control-feedback,\n.form-group-lg .form-control + .form-control-feedback {\n  width: 46px;\n  height: 46px;\n  line-height: 46px;\n}\n.input-sm + .form-control-feedback,\n.input-group-sm + .form-control-feedback,\n.form-group-sm .form-control + .form-control-feedback {\n  width: 30px;\n  height: 30px;\n  line-height: 30px;\n}\n.has-success .help-block,\n.has-success .control-label,\n.has-success .radio,\n.has-success .checkbox,\n.has-success .radio-inline,\n.has-success .checkbox-inline,\n.has-success.radio label,\n.has-success.checkbox label,\n.has-success.radio-inline label,\n.has-success.checkbox-inline label {\n  color: #3c763d;\n}\n.has-success .form-control {\n  border-color: #3c763d;\n  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);\n          box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);\n}\n.has-success .form-control:focus {\n  border-color: #2b542c;\n  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 6px #67b168;\n          box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 6px #67b168;\n}\n.has-success .input-group-addon {\n  color: #3c763d;\n  background-color: #dff0d8;\n  border-color: #3c763d;\n}\n.has-success .form-control-feedback {\n  color: #3c763d;\n}\n.has-warning .help-block,\n.has-warning .control-label,\n.has-warning .radio,\n.has-warning .checkbox,\n.has-warning .radio-inline,\n.has-warning .checkbox-inline,\n.has-warning.radio label,\n.has-warning.checkbox label,\n.has-warning.radio-inline label,\n.has-warning.checkbox-inline label {\n  color: #8a6d3b;\n}\n.has-warning .form-control {\n  border-color: #8a6d3b;\n  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);\n          box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);\n}\n.has-warning .form-control:focus {\n  border-color: #66512c;\n  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 6px #c0a16b;\n          box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 6px #c0a16b;\n}\n.has-warning .input-group-addon {\n  color: #8a6d3b;\n  background-color: #fcf8e3;\n  border-color: #8a6d3b;\n}\n.has-warning .form-control-feedback {\n  color: #8a6d3b;\n}\n.has-error .help-block,\n.has-error .control-label,\n.has-error .radio,\n.has-error .checkbox,\n.has-error .radio-inline,\n.has-error .checkbox-inline,\n.has-error.radio label,\n.has-error.checkbox label,\n.has-error.radio-inline label,\n.has-error.checkbox-inline label {\n  color: #a94442;\n}\n.has-error .form-control {\n  border-color: #a94442;\n  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);\n          box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);\n}\n.has-error .form-control:focus {\n  border-color: #843534;\n  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 6px #ce8483;\n          box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 6px #ce8483;\n}\n.has-error .input-group-addon {\n  color: #a94442;\n  background-color: #f2dede;\n  border-color: #a94442;\n}\n.has-error .form-control-feedback {\n  color: #a94442;\n}\n.has-feedback label ~ .form-control-feedback {\n  top: 25px;\n}\n.has-feedback label.sr-only ~ .form-control-feedback {\n  top: 0;\n}\n.help-block {\n  display: block;\n  margin-top: 5px;\n  margin-bottom: 10px;\n  color: #737373;\n}\n@media (min-width: 768px) {\n  .form-inline .form-group {\n    display: inline-block;\n    margin-bottom: 0;\n    vertical-align: middle;\n  }\n  .form-inline .form-control {\n    display: inline-block;\n    width: auto;\n    vertical-align: middle;\n  }\n  .form-inline .form-control-static {\n    display: inline-block;\n  }\n  .form-inline .input-group {\n    display: inline-table;\n    vertical-align: middle;\n  }\n  .form-inline .input-group .input-group-addon,\n  .form-inline .input-group .input-group-btn,\n  .form-inline .input-group .form-control {\n    width: auto;\n  }\n  .form-inline .input-group > .form-control {\n    width: 100%;\n  }\n  .form-inline .control-label {\n    margin-bottom: 0;\n    vertical-align: middle;\n  }\n  .form-inline .radio,\n  .form-inline .checkbox {\n    display: inline-block;\n    margin-top: 0;\n    margin-bottom: 0;\n    vertical-align: middle;\n  }\n  .form-inline .radio label,\n  .form-inline .checkbox label {\n    padding-left: 0;\n  }\n  .form-inline .radio input[type=\"radio\"],\n  .form-inline .checkbox input[type=\"checkbox\"] {\n    position: relative;\n    margin-left: 0;\n  }\n  .form-inline .has-feedback .form-control-feedback {\n    top: 0;\n  }\n}\n.form-horizontal .radio,\n.form-horizontal .checkbox,\n.form-horizontal .radio-inline,\n.form-horizontal .checkbox-inline {\n  padding-top: 7px;\n  margin-top: 0;\n  margin-bottom: 0;\n}\n.form-horizontal .radio,\n.form-horizontal .checkbox {\n  min-height: 27px;\n}\n.form-horizontal .form-group {\n  margin-right: -15px;\n  margin-left: -15px;\n}\n@media (min-width: 768px) {\n  .form-horizontal .control-label {\n    padding-top: 7px;\n    margin-bottom: 0;\n    text-align: right;\n  }\n}\n.form-horizontal .has-feedback .form-control-feedback {\n  right: 15px;\n}\n@media (min-width: 768px) {\n  .form-horizontal .form-group-lg .control-label {\n    padding-top: 11px;\n    font-size: 18px;\n  }\n}\n@media (min-width: 768px) {\n  .form-horizontal .form-group-sm .control-label {\n    padding-top: 6px;\n    font-size: 12px;\n  }\n}\n.btn {\n  display: inline-block;\n  padding: 6px 12px;\n  margin-bottom: 0;\n  font-size: 14px;\n  font-weight: normal;\n  line-height: 1.42857143;\n  text-align: center;\n  white-space: nowrap;\n  vertical-align: middle;\n  -ms-touch-action: manipulation;\n      touch-action: manipulation;\n  cursor: pointer;\n  -webkit-user-select: none;\n     -moz-user-select: none;\n      -ms-user-select: none;\n          user-select: none;\n  background-image: none;\n  border: 1px solid transparent;\n  border-radius: 4px;\n}\n.btn:focus,\n.btn:active:focus,\n.btn.active:focus,\n.btn.focus,\n.btn:active.focus,\n.btn.active.focus {\n  outline: thin dotted;\n  outline: 5px auto -webkit-focus-ring-color;\n  outline-offset: -2px;\n}\n.btn:hover,\n.btn:focus,\n.btn.focus {\n  color: #333;\n  text-decoration: none;\n}\n.btn:active,\n.btn.active {\n  background-image: none;\n  outline: 0;\n  -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125);\n          box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125);\n}\n.btn.disabled,\n.btn[disabled],\nfieldset[disabled] .btn {\n  cursor: not-allowed;\n  filter: alpha(opacity=65);\n  -webkit-box-shadow: none;\n          box-shadow: none;\n  opacity: .65;\n}\na.btn.disabled,\nfieldset[disabled] a.btn {\n  pointer-events: none;\n}\n.btn-default {\n  color: #333;\n  background-color: #fff;\n  border-color: #ccc;\n}\n.btn-default:focus,\n.btn-default.focus {\n  color: #333;\n  background-color: #e6e6e6;\n  border-color: #8c8c8c;\n}\n.btn-default:hover {\n  color: #333;\n  background-color: #e6e6e6;\n  border-color: #adadad;\n}\n.btn-default:active,\n.btn-default.active,\n.open > .dropdown-toggle.btn-default {\n  color: #333;\n  background-color: #e6e6e6;\n  border-color: #adadad;\n}\n.btn-default:active:hover,\n.btn-default.active:hover,\n.open > .dropdown-toggle.btn-default:hover,\n.btn-default:active:focus,\n.btn-default.active:focus,\n.open > .dropdown-toggle.btn-default:focus,\n.btn-default:active.focus,\n.btn-default.active.focus,\n.open > .dropdown-toggle.btn-default.focus {\n  color: #333;\n  background-color: #d4d4d4;\n  border-color: #8c8c8c;\n}\n.btn-default:active,\n.btn-default.active,\n.open > .dropdown-toggle.btn-default {\n  background-image: none;\n}\n.btn-default.disabled:hover,\n.btn-default[disabled]:hover,\nfieldset[disabled] .btn-default:hover,\n.btn-default.disabled:focus,\n.btn-default[disabled]:focus,\nfieldset[disabled] .btn-default:focus,\n.btn-default.disabled.focus,\n.btn-default[disabled].focus,\nfieldset[disabled] .btn-default.focus {\n  background-color: #fff;\n  border-color: #ccc;\n}\n.btn-default .badge {\n  color: #fff;\n  background-color: #333;\n}\n.btn-primary {\n  color: #fff;\n  background-color: #337ab7;\n  border-color: #2e6da4;\n}\n.btn-primary:focus,\n.btn-primary.focus {\n  color: #fff;\n  background-color: #286090;\n  border-color: #122b40;\n}\n.btn-primary:hover {\n  color: #fff;\n  background-color: #286090;\n  border-color: #204d74;\n}\n.btn-primary:active,\n.btn-primary.active,\n.open > .dropdown-toggle.btn-primary {\n  color: #fff;\n  background-color: #286090;\n  border-color: #204d74;\n}\n.btn-primary:active:hover,\n.btn-primary.active:hover,\n.open > .dropdown-toggle.btn-primary:hover,\n.btn-primary:active:focus,\n.btn-primary.active:focus,\n.open > .dropdown-toggle.btn-primary:focus,\n.btn-primary:active.focus,\n.btn-primary.active.focus,\n.open > .dropdown-toggle.btn-primary.focus {\n  color: #fff;\n  background-color: #204d74;\n  border-color: #122b40;\n}\n.btn-primary:active,\n.btn-primary.active,\n.open > .dropdown-toggle.btn-primary {\n  background-image: none;\n}\n.btn-primary.disabled:hover,\n.btn-primary[disabled]:hover,\nfieldset[disabled] .btn-primary:hover,\n.btn-primary.disabled:focus,\n.btn-primary[disabled]:focus,\nfieldset[disabled] .btn-primary:focus,\n.btn-primary.disabled.focus,\n.btn-primary[disabled].focus,\nfieldset[disabled] .btn-primary.focus {\n  background-color: #337ab7;\n  border-color: #2e6da4;\n}\n.btn-primary .badge {\n  color: #337ab7;\n  background-color: #fff;\n}\n.btn-success {\n  color: #fff;\n  background-color: #5cb85c;\n  border-color: #4cae4c;\n}\n.btn-success:focus,\n.btn-success.focus {\n  color: #fff;\n  background-color: #449d44;\n  border-color: #255625;\n}\n.btn-success:hover {\n  color: #fff;\n  background-color: #449d44;\n  border-color: #398439;\n}\n.btn-success:active,\n.btn-success.active,\n.open > .dropdown-toggle.btn-success {\n  color: #fff;\n  background-color: #449d44;\n  border-color: #398439;\n}\n.btn-success:active:hover,\n.btn-success.active:hover,\n.open > .dropdown-toggle.btn-success:hover,\n.btn-success:active:focus,\n.btn-success.active:focus,\n.open > .dropdown-toggle.btn-success:focus,\n.btn-success:active.focus,\n.btn-success.active.focus,\n.open > .dropdown-toggle.btn-success.focus {\n  color: #fff;\n  background-color: #398439;\n  border-color: #255625;\n}\n.btn-success:active,\n.btn-success.active,\n.open > .dropdown-toggle.btn-success {\n  background-image: none;\n}\n.btn-success.disabled:hover,\n.btn-success[disabled]:hover,\nfieldset[disabled] .btn-success:hover,\n.btn-success.disabled:focus,\n.btn-success[disabled]:focus,\nfieldset[disabled] .btn-success:focus,\n.btn-success.disabled.focus,\n.btn-success[disabled].focus,\nfieldset[disabled] .btn-success.focus {\n  background-color: #5cb85c;\n  border-color: #4cae4c;\n}\n.btn-success .badge {\n  color: #5cb85c;\n  background-color: #fff;\n}\n.btn-info {\n  color: #fff;\n  background-color: #5bc0de;\n  border-color: #46b8da;\n}\n.btn-info:focus,\n.btn-info.focus {\n  color: #fff;\n  background-color: #31b0d5;\n  border-color: #1b6d85;\n}\n.btn-info:hover {\n  color: #fff;\n  background-color: #31b0d5;\n  border-color: #269abc;\n}\n.btn-info:active,\n.btn-info.active,\n.open > .dropdown-toggle.btn-info {\n  color: #fff;\n  background-color: #31b0d5;\n  border-color: #269abc;\n}\n.btn-info:active:hover,\n.btn-info.active:hover,\n.open > .dropdown-toggle.btn-info:hover,\n.btn-info:active:focus,\n.btn-info.active:focus,\n.open > .dropdown-toggle.btn-info:focus,\n.btn-info:active.focus,\n.btn-info.active.focus,\n.open > .dropdown-toggle.btn-info.focus {\n  color: #fff;\n  background-color: #269abc;\n  border-color: #1b6d85;\n}\n.btn-info:active,\n.btn-info.active,\n.open > .dropdown-toggle.btn-info {\n  background-image: none;\n}\n.btn-info.disabled:hover,\n.btn-info[disabled]:hover,\nfieldset[disabled] .btn-info:hover,\n.btn-info.disabled:focus,\n.btn-info[disabled]:focus,\nfieldset[disabled] .btn-info:focus,\n.btn-info.disabled.focus,\n.btn-info[disabled].focus,\nfieldset[disabled] .btn-info.focus {\n  background-color: #5bc0de;\n  border-color: #46b8da;\n}\n.btn-info .badge {\n  color: #5bc0de;\n  background-color: #fff;\n}\n.btn-warning {\n  color: #fff;\n  background-color: #f0ad4e;\n  border-color: #eea236;\n}\n.btn-warning:focus,\n.btn-warning.focus {\n  color: #fff;\n  background-color: #ec971f;\n  border-color: #985f0d;\n}\n.btn-warning:hover {\n  color: #fff;\n  background-color: #ec971f;\n  border-color: #d58512;\n}\n.btn-warning:active,\n.btn-warning.active,\n.open > .dropdown-toggle.btn-warning {\n  color: #fff;\n  background-color: #ec971f;\n  border-color: #d58512;\n}\n.btn-warning:active:hover,\n.btn-warning.active:hover,\n.open > .dropdown-toggle.btn-warning:hover,\n.btn-warning:active:focus,\n.btn-warning.active:focus,\n.open > .dropdown-toggle.btn-warning:focus,\n.btn-warning:active.focus,\n.btn-warning.active.focus,\n.open > .dropdown-toggle.btn-warning.focus {\n  color: #fff;\n  background-color: #d58512;\n  border-color: #985f0d;\n}\n.btn-warning:active,\n.btn-warning.active,\n.open > .dropdown-toggle.btn-warning {\n  background-image: none;\n}\n.btn-warning.disabled:hover,\n.btn-warning[disabled]:hover,\nfieldset[disabled] .btn-warning:hover,\n.btn-warning.disabled:focus,\n.btn-warning[disabled]:focus,\nfieldset[disabled] .btn-warning:focus,\n.btn-warning.disabled.focus,\n.btn-warning[disabled].focus,\nfieldset[disabled] .btn-warning.focus {\n  background-color: #f0ad4e;\n  border-color: #eea236;\n}\n.btn-warning .badge {\n  color: #f0ad4e;\n  background-color: #fff;\n}\n.btn-danger {\n  color: #fff;\n  background-color: #d9534f;\n  border-color: #d43f3a;\n}\n.btn-danger:focus,\n.btn-danger.focus {\n  color: #fff;\n  background-color: #c9302c;\n  border-color: #761c19;\n}\n.btn-danger:hover {\n  color: #fff;\n  background-color: #c9302c;\n  border-color: #ac2925;\n}\n.btn-danger:active,\n.btn-danger.active,\n.open > .dropdown-toggle.btn-danger {\n  color: #fff;\n  background-color: #c9302c;\n  border-color: #ac2925;\n}\n.btn-danger:active:hover,\n.btn-danger.active:hover,\n.open > .dropdown-toggle.btn-danger:hover,\n.btn-danger:active:focus,\n.btn-danger.active:focus,\n.open > .dropdown-toggle.btn-danger:focus,\n.btn-danger:active.focus,\n.btn-danger.active.focus,\n.open > .dropdown-toggle.btn-danger.focus {\n  color: #fff;\n  background-color: #ac2925;\n  border-color: #761c19;\n}\n.btn-danger:active,\n.btn-danger.active,\n.open > .dropdown-toggle.btn-danger {\n  background-image: none;\n}\n.btn-danger.disabled:hover,\n.btn-danger[disabled]:hover,\nfieldset[disabled] .btn-danger:hover,\n.btn-danger.disabled:focus,\n.btn-danger[disabled]:focus,\nfieldset[disabled] .btn-danger:focus,\n.btn-danger.disabled.focus,\n.btn-danger[disabled].focus,\nfieldset[disabled] .btn-danger.focus {\n  background-color: #d9534f;\n  border-color: #d43f3a;\n}\n.btn-danger .badge {\n  color: #d9534f;\n  background-color: #fff;\n}\n.btn-link {\n  font-weight: normal;\n  color: #337ab7;\n  border-radius: 0;\n}\n.btn-link,\n.btn-link:active,\n.btn-link.active,\n.btn-link[disabled],\nfieldset[disabled] .btn-link {\n  background-color: transparent;\n  -webkit-box-shadow: none;\n          box-shadow: none;\n}\n.btn-link,\n.btn-link:hover,\n.btn-link:focus,\n.btn-link:active {\n  border-color: transparent;\n}\n.btn-link:hover,\n.btn-link:focus {\n  color: #23527c;\n  text-decoration: underline;\n  background-color: transparent;\n}\n.btn-link[disabled]:hover,\nfieldset[disabled] .btn-link:hover,\n.btn-link[disabled]:focus,\nfieldset[disabled] .btn-link:focus {\n  color: #777;\n  text-decoration: none;\n}\n.btn-lg,\n.btn-group-lg > .btn {\n  padding: 10px 16px;\n  font-size: 18px;\n  line-height: 1.3333333;\n  border-radius: 6px;\n}\n.btn-sm,\n.btn-group-sm > .btn {\n  padding: 5px 10px;\n  font-size: 12px;\n  line-height: 1.5;\n  border-radius: 3px;\n}\n.btn-xs,\n.btn-group-xs > .btn {\n  padding: 1px 5px;\n  font-size: 12px;\n  line-height: 1.5;\n  border-radius: 3px;\n}\n.btn-block {\n  display: block;\n  width: 100%;\n}\n.btn-block + .btn-block {\n  margin-top: 5px;\n}\ninput[type=\"submit\"].btn-block,\ninput[type=\"reset\"].btn-block,\ninput[type=\"button\"].btn-block {\n  width: 100%;\n}\n.fade {\n  opacity: 0;\n  -webkit-transition: opacity .15s linear;\n       -o-transition: opacity .15s linear;\n          transition: opacity .15s linear;\n}\n.fade.in {\n  opacity: 1;\n}\n.collapse {\n  display: none;\n}\n.collapse.in {\n  display: block;\n}\ntr.collapse.in {\n  display: table-row;\n}\ntbody.collapse.in {\n  display: table-row-group;\n}\n.collapsing {\n  position: relative;\n  height: 0;\n  overflow: hidden;\n  -webkit-transition-timing-function: ease;\n       -o-transition-timing-function: ease;\n          transition-timing-function: ease;\n  -webkit-transition-duration: .35s;\n       -o-transition-duration: .35s;\n          transition-duration: .35s;\n  -webkit-transition-property: height, visibility;\n       -o-transition-property: height, visibility;\n          transition-property: height, visibility;\n}\n.caret {\n  display: inline-block;\n  width: 0;\n  height: 0;\n  margin-left: 2px;\n  vertical-align: middle;\n  border-top: 4px dashed;\n  border-top: 4px solid \\9;\n  border-right: 4px solid transparent;\n  border-left: 4px solid transparent;\n}\n.dropup,\n.dropdown {\n  position: relative;\n}\n.dropdown-toggle:focus {\n  outline: 0;\n}\n.dropdown-menu {\n  position: absolute;\n  top: 100%;\n  left: 0;\n  z-index: 1000;\n  display: none;\n  float: left;\n  min-width: 160px;\n  padding: 5px 0;\n  margin: 2px 0 0;\n  font-size: 14px;\n  text-align: left;\n  list-style: none;\n  background-color: #fff;\n  -webkit-background-clip: padding-box;\n          background-clip: padding-box;\n  border: 1px solid #ccc;\n  border: 1px solid rgba(0, 0, 0, .15);\n  border-radius: 4px;\n  -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, .175);\n          box-shadow: 0 6px 12px rgba(0, 0, 0, .175);\n}\n.dropdown-menu.pull-right {\n  right: 0;\n  left: auto;\n}\n.dropdown-menu .divider {\n  height: 1px;\n  margin: 9px 0;\n  overflow: hidden;\n  background-color: #e5e5e5;\n}\n.dropdown-menu > li > a {\n  display: block;\n  padding: 3px 20px;\n  clear: both;\n  font-weight: normal;\n  line-height: 1.42857143;\n  color: #333;\n  white-space: nowrap;\n}\n.dropdown-menu > li > a:hover,\n.dropdown-menu > li > a:focus {\n  color: #262626;\n  text-decoration: none;\n  background-color: #f5f5f5;\n}\n.dropdown-menu > .active > a,\n.dropdown-menu > .active > a:hover,\n.dropdown-menu > .active > a:focus {\n  color: #fff;\n  text-decoration: none;\n  background-color: #337ab7;\n  outline: 0;\n}\n.dropdown-menu > .disabled > a,\n.dropdown-menu > .disabled > a:hover,\n.dropdown-menu > .disabled > a:focus {\n  color: #777;\n}\n.dropdown-menu > .disabled > a:hover,\n.dropdown-menu > .disabled > a:focus {\n  text-decoration: none;\n  cursor: not-allowed;\n  background-color: transparent;\n  background-image: none;\n  filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);\n}\n.open > .dropdown-menu {\n  display: block;\n}\n.open > a {\n  outline: 0;\n}\n.dropdown-menu-right {\n  right: 0;\n  left: auto;\n}\n.dropdown-menu-left {\n  right: auto;\n  left: 0;\n}\n.dropdown-header {\n  display: block;\n  padding: 3px 20px;\n  font-size: 12px;\n  line-height: 1.42857143;\n  color: #777;\n  white-space: nowrap;\n}\n.dropdown-backdrop {\n  position: fixed;\n  top: 0;\n  right: 0;\n  bottom: 0;\n  left: 0;\n  z-index: 990;\n}\n.pull-right > .dropdown-menu {\n  right: 0;\n  left: auto;\n}\n.dropup .caret,\n.navbar-fixed-bottom .dropdown .caret {\n  content: \"\";\n  border-top: 0;\n  border-bottom: 4px dashed;\n  border-bottom: 4px solid \\9;\n}\n.dropup .dropdown-menu,\n.navbar-fixed-bottom .dropdown .dropdown-menu {\n  top: auto;\n  bottom: 100%;\n  margin-bottom: 2px;\n}\n@media (min-width: 768px) {\n  .navbar-right .dropdown-menu {\n    right: 0;\n    left: auto;\n  }\n  .navbar-right .dropdown-menu-left {\n    right: auto;\n    left: 0;\n  }\n}\n.btn-group,\n.btn-group-vertical {\n  position: relative;\n  display: inline-block;\n  vertical-align: middle;\n}\n.btn-group > .btn,\n.btn-group-vertical > .btn {\n  position: relative;\n  float: left;\n}\n.btn-group > .btn:hover,\n.btn-group-vertical > .btn:hover,\n.btn-group > .btn:focus,\n.btn-group-vertical > .btn:focus,\n.btn-group > .btn:active,\n.btn-group-vertical > .btn:active,\n.btn-group > .btn.active,\n.btn-group-vertical > .btn.active {\n  z-index: 2;\n}\n.btn-group .btn + .btn,\n.btn-group .btn + .btn-group,\n.btn-group .btn-group + .btn,\n.btn-group .btn-group + .btn-group {\n  margin-left: -1px;\n}\n.btn-toolbar {\n  margin-left: -5px;\n}\n.btn-toolbar .btn,\n.btn-toolbar .btn-group,\n.btn-toolbar .input-group {\n  float: left;\n}\n.btn-toolbar > .btn,\n.btn-toolbar > .btn-group,\n.btn-toolbar > .input-group {\n  margin-left: 5px;\n}\n.btn-group > .btn:not(:first-child):not(:last-child):not(.dropdown-toggle) {\n  border-radius: 0;\n}\n.btn-group > .btn:first-child {\n  margin-left: 0;\n}\n.btn-group > .btn:first-child:not(:last-child):not(.dropdown-toggle) {\n  border-top-right-radius: 0;\n  border-bottom-right-radius: 0;\n}\n.btn-group > .btn:last-child:not(:first-child),\n.btn-group > .dropdown-toggle:not(:first-child) {\n  border-top-left-radius: 0;\n  border-bottom-left-radius: 0;\n}\n.btn-group > .btn-group {\n  float: left;\n}\n.btn-group > .btn-group:not(:first-child):not(:last-child) > .btn {\n  border-radius: 0;\n}\n.btn-group > .btn-group:first-child:not(:last-child) > .btn:last-child,\n.btn-group > .btn-group:first-child:not(:last-child) > .dropdown-toggle {\n  border-top-right-radius: 0;\n  border-bottom-right-radius: 0;\n}\n.btn-group > .btn-group:last-child:not(:first-child) > .btn:first-child {\n  border-top-left-radius: 0;\n  border-bottom-left-radius: 0;\n}\n.btn-group .dropdown-toggle:active,\n.btn-group.open .dropdown-toggle {\n  outline: 0;\n}\n.btn-group > .btn + .dropdown-toggle {\n  padding-right: 8px;\n  padding-left: 8px;\n}\n.btn-group > .btn-lg + .dropdown-toggle {\n  padding-right: 12px;\n  padding-left: 12px;\n}\n.btn-group.open .dropdown-toggle {\n  -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125);\n          box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125);\n}\n.btn-group.open .dropdown-toggle.btn-link {\n  -webkit-box-shadow: none;\n          box-shadow: none;\n}\n.btn .caret {\n  margin-left: 0;\n}\n.btn-lg .caret {\n  border-width: 5px 5px 0;\n  border-bottom-width: 0;\n}\n.dropup .btn-lg .caret {\n  border-width: 0 5px 5px;\n}\n.btn-group-vertical > .btn,\n.btn-group-vertical > .btn-group,\n.btn-group-vertical > .btn-group > .btn {\n  display: block;\n  float: none;\n  width: 100%;\n  max-width: 100%;\n}\n.btn-group-vertical > .btn-group > .btn {\n  float: none;\n}\n.btn-group-vertical > .btn + .btn,\n.btn-group-vertical > .btn + .btn-group,\n.btn-group-vertical > .btn-group + .btn,\n.btn-group-vertical > .btn-group + .btn-group {\n  margin-top: -1px;\n  margin-left: 0;\n}\n.btn-group-vertical > .btn:not(:first-child):not(:last-child) {\n  border-radius: 0;\n}\n.btn-group-vertical > .btn:first-child:not(:last-child) {\n  border-top-left-radius: 4px;\n  border-top-right-radius: 4px;\n  border-bottom-right-radius: 0;\n  border-bottom-left-radius: 0;\n}\n.btn-group-vertical > .btn:last-child:not(:first-child) {\n  border-top-left-radius: 0;\n  border-top-right-radius: 0;\n  border-bottom-right-radius: 4px;\n  border-bottom-left-radius: 4px;\n}\n.btn-group-vertical > .btn-group:not(:first-child):not(:last-child) > .btn {\n  border-radius: 0;\n}\n.btn-group-vertical > .btn-group:first-child:not(:last-child) > .btn:last-child,\n.btn-group-vertical > .btn-group:first-child:not(:last-child) > .dropdown-toggle {\n  border-bottom-right-radius: 0;\n  border-bottom-left-radius: 0;\n}\n.btn-group-vertical > .btn-group:last-child:not(:first-child) > .btn:first-child {\n  border-top-left-radius: 0;\n  border-top-right-radius: 0;\n}\n.btn-group-justified {\n  display: table;\n  width: 100%;\n  table-layout: fixed;\n  border-collapse: separate;\n}\n.btn-group-justified > .btn,\n.btn-group-justified > .btn-group {\n  display: table-cell;\n  float: none;\n  width: 1%;\n}\n.btn-group-justified > .btn-group .btn {\n  width: 100%;\n}\n.btn-group-justified > .btn-group .dropdown-menu {\n  left: auto;\n}\n[data-toggle=\"buttons\"] > .btn input[type=\"radio\"],\n[data-toggle=\"buttons\"] > .btn-group > .btn input[type=\"radio\"],\n[data-toggle=\"buttons\"] > .btn input[type=\"checkbox\"],\n[data-toggle=\"buttons\"] > .btn-group > .btn input[type=\"checkbox\"] {\n  position: absolute;\n  clip: rect(0, 0, 0, 0);\n  pointer-events: none;\n}\n.input-group {\n  position: relative;\n  display: table;\n  border-collapse: separate;\n}\n.input-group[class*=\"col-\"] {\n  float: none;\n  padding-right: 0;\n  padding-left: 0;\n}\n.input-group .form-control {\n  position: relative;\n  z-index: 2;\n  float: left;\n  width: 100%;\n  margin-bottom: 0;\n}\n.input-group .form-control:focus {\n  z-index: 3;\n}\n.input-group-lg > .form-control,\n.input-group-lg > .input-group-addon,\n.input-group-lg > .input-group-btn > .btn {\n  height: 46px;\n  padding: 10px 16px;\n  font-size: 18px;\n  line-height: 1.3333333;\n  border-radius: 6px;\n}\nselect.input-group-lg > .form-control,\nselect.input-group-lg > .input-group-addon,\nselect.input-group-lg > .input-group-btn > .btn {\n  height: 46px;\n  line-height: 46px;\n}\ntextarea.input-group-lg > .form-control,\ntextarea.input-group-lg > .input-group-addon,\ntextarea.input-group-lg > .input-group-btn > .btn,\nselect[multiple].input-group-lg > .form-control,\nselect[multiple].input-group-lg > .input-group-addon,\nselect[multiple].input-group-lg > .input-group-btn > .btn {\n  height: auto;\n}\n.input-group-sm > .form-control,\n.input-group-sm > .input-group-addon,\n.input-group-sm > .input-group-btn > .btn {\n  height: 30px;\n  padding: 5px 10px;\n  font-size: 12px;\n  line-height: 1.5;\n  border-radius: 3px;\n}\nselect.input-group-sm > .form-control,\nselect.input-group-sm > .input-group-addon,\nselect.input-group-sm > .input-group-btn > .btn {\n  height: 30px;\n  line-height: 30px;\n}\ntextarea.input-group-sm > .form-control,\ntextarea.input-group-sm > .input-group-addon,\ntextarea.input-group-sm > .input-group-btn > .btn,\nselect[multiple].input-group-sm > .form-control,\nselect[multiple].input-group-sm > .input-group-addon,\nselect[multiple].input-group-sm > .input-group-btn > .btn {\n  height: auto;\n}\n.input-group-addon,\n.input-group-btn,\n.input-group .form-control {\n  display: table-cell;\n}\n.input-group-addon:not(:first-child):not(:last-child),\n.input-group-btn:not(:first-child):not(:last-child),\n.input-group .form-control:not(:first-child):not(:last-child) {\n  border-radius: 0;\n}\n.input-group-addon,\n.input-group-btn {\n  width: 1%;\n  white-space: nowrap;\n  vertical-align: middle;\n}\n.input-group-addon {\n  padding: 6px 12px;\n  font-size: 14px;\n  font-weight: normal;\n  line-height: 1;\n  color: #555;\n  text-align: center;\n  background-color: #eee;\n  border: 1px solid #ccc;\n  border-radius: 4px;\n}\n.input-group-addon.input-sm {\n  padding: 5px 10px;\n  font-size: 12px;\n  border-radius: 3px;\n}\n.input-group-addon.input-lg {\n  padding: 10px 16px;\n  font-size: 18px;\n  border-radius: 6px;\n}\n.input-group-addon input[type=\"radio\"],\n.input-group-addon input[type=\"checkbox\"] {\n  margin-top: 0;\n}\n.input-group .form-control:first-child,\n.input-group-addon:first-child,\n.input-group-btn:first-child > .btn,\n.input-group-btn:first-child > .btn-group > .btn,\n.input-group-btn:first-child > .dropdown-toggle,\n.input-group-btn:last-child > .btn:not(:last-child):not(.dropdown-toggle),\n.input-group-btn:last-child > .btn-group:not(:last-child) > .btn {\n  border-top-right-radius: 0;\n  border-bottom-right-radius: 0;\n}\n.input-group-addon:first-child {\n  border-right: 0;\n}\n.input-group .form-control:last-child,\n.input-group-addon:last-child,\n.input-group-btn:last-child > .btn,\n.input-group-btn:last-child > .btn-group > .btn,\n.input-group-btn:last-child > .dropdown-toggle,\n.input-group-btn:first-child > .btn:not(:first-child),\n.input-group-btn:first-child > .btn-group:not(:first-child) > .btn {\n  border-top-left-radius: 0;\n  border-bottom-left-radius: 0;\n}\n.input-group-addon:last-child {\n  border-left: 0;\n}\n.input-group-btn {\n  position: relative;\n  font-size: 0;\n  white-space: nowrap;\n}\n.input-group-btn > .btn {\n  position: relative;\n}\n.input-group-btn > .btn + .btn {\n  margin-left: -1px;\n}\n.input-group-btn > .btn:hover,\n.input-group-btn > .btn:focus,\n.input-group-btn > .btn:active {\n  z-index: 2;\n}\n.input-group-btn:first-child > .btn,\n.input-group-btn:first-child > .btn-group {\n  margin-right: -1px;\n}\n.input-group-btn:last-child > .btn,\n.input-group-btn:last-child > .btn-group {\n  z-index: 2;\n  margin-left: -1px;\n}\n.nav {\n  padding-left: 0;\n  margin-bottom: 0;\n  list-style: none;\n}\n.nav > li {\n  position: relative;\n  display: block;\n}\n.nav > li > a {\n  position: relative;\n  display: block;\n  padding: 10px 15px;\n}\n.nav > li > a:hover,\n.nav > li > a:focus {\n  text-decoration: none;\n  background-color: #eee;\n}\n.nav > li.disabled > a {\n  color: #777;\n}\n.nav > li.disabled > a:hover,\n.nav > li.disabled > a:focus {\n  color: #777;\n  text-decoration: none;\n  cursor: not-allowed;\n  background-color: transparent;\n}\n.nav .open > a,\n.nav .open > a:hover,\n.nav .open > a:focus {\n  background-color: #eee;\n  border-color: #337ab7;\n}\n.nav .nav-divider {\n  height: 1px;\n  margin: 9px 0;\n  overflow: hidden;\n  background-color: #e5e5e5;\n}\n.nav > li > a > img {\n  max-width: none;\n}\n.nav-tabs {\n  border-bottom: 1px solid #ddd;\n}\n.nav-tabs > li {\n  float: left;\n  margin-bottom: -1px;\n}\n.nav-tabs > li > a {\n  margin-right: 2px;\n  line-height: 1.42857143;\n  border: 1px solid transparent;\n  border-radius: 4px 4px 0 0;\n}\n.nav-tabs > li > a:hover {\n  border-color: #eee #eee #ddd;\n}\n.nav-tabs > li.active > a,\n.nav-tabs > li.active > a:hover,\n.nav-tabs > li.active > a:focus {\n  color: #555;\n  cursor: default;\n  background-color: #fff;\n  border: 1px solid #ddd;\n  border-bottom-color: transparent;\n}\n.nav-tabs.nav-justified {\n  width: 100%;\n  border-bottom: 0;\n}\n.nav-tabs.nav-justified > li {\n  float: none;\n}\n.nav-tabs.nav-justified > li > a {\n  margin-bottom: 5px;\n  text-align: center;\n}\n.nav-tabs.nav-justified > .dropdown .dropdown-menu {\n  top: auto;\n  left: auto;\n}\n@media (min-width: 768px) {\n  .nav-tabs.nav-justified > li {\n    display: table-cell;\n    width: 1%;\n  }\n  .nav-tabs.nav-justified > li > a {\n    margin-bottom: 0;\n  }\n}\n.nav-tabs.nav-justified > li > a {\n  margin-right: 0;\n  border-radius: 4px;\n}\n.nav-tabs.nav-justified > .active > a,\n.nav-tabs.nav-justified > .active > a:hover,\n.nav-tabs.nav-justified > .active > a:focus {\n  border: 1px solid #ddd;\n}\n@media (min-width: 768px) {\n  .nav-tabs.nav-justified > li > a {\n    border-bottom: 1px solid #ddd;\n    border-radius: 4px 4px 0 0;\n  }\n  .nav-tabs.nav-justified > .active > a,\n  .nav-tabs.nav-justified > .active > a:hover,\n  .nav-tabs.nav-justified > .active > a:focus {\n    border-bottom-color: #fff;\n  }\n}\n.nav-pills > li {\n  float: left;\n}\n.nav-pills > li > a {\n  border-radius: 4px;\n}\n.nav-pills > li + li {\n  margin-left: 2px;\n}\n.nav-pills > li.active > a,\n.nav-pills > li.active > a:hover,\n.nav-pills > li.active > a:focus {\n  color: #fff;\n  background-color: #337ab7;\n}\n.nav-stacked > li {\n  float: none;\n}\n.nav-stacked > li + li {\n  margin-top: 2px;\n  margin-left: 0;\n}\n.nav-justified {\n  width: 100%;\n}\n.nav-justified > li {\n  float: none;\n}\n.nav-justified > li > a {\n  margin-bottom: 5px;\n  text-align: center;\n}\n.nav-justified > .dropdown .dropdown-menu {\n  top: auto;\n  left: auto;\n}\n@media (min-width: 768px) {\n  .nav-justified > li {\n    display: table-cell;\n    width: 1%;\n  }\n  .nav-justified > li > a {\n    margin-bottom: 0;\n  }\n}\n.nav-tabs-justified {\n  border-bottom: 0;\n}\n.nav-tabs-justified > li > a {\n  margin-right: 0;\n  border-radius: 4px;\n}\n.nav-tabs-justified > .active > a,\n.nav-tabs-justified > .active > a:hover,\n.nav-tabs-justified > .active > a:focus {\n  border: 1px solid #ddd;\n}\n@media (min-width: 768px) {\n  .nav-tabs-justified > li > a {\n    border-bottom: 1px solid #ddd;\n    border-radius: 4px 4px 0 0;\n  }\n  .nav-tabs-justified > .active > a,\n  .nav-tabs-justified > .active > a:hover,\n  .nav-tabs-justified > .active > a:focus {\n    border-bottom-color: #fff;\n  }\n}\n.tab-content > .tab-pane {\n  display: none;\n}\n.tab-content > .active {\n  display: block;\n}\n.nav-tabs .dropdown-menu {\n  margin-top: -1px;\n  border-top-left-radius: 0;\n  border-top-right-radius: 0;\n}\n.navbar {\n  position: relative;\n  min-height: 50px;\n  margin-bottom: 20px;\n  border: 1px solid transparent;\n}\n@media (min-width: 768px) {\n  .navbar {\n    border-radius: 4px;\n  }\n}\n@media (min-width: 768px) {\n  .navbar-header {\n    float: left;\n  }\n}\n.navbar-collapse {\n  padding-right: 15px;\n  padding-left: 15px;\n  overflow-x: visible;\n  -webkit-overflow-scrolling: touch;\n  border-top: 1px solid transparent;\n  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, .1);\n          box-shadow: inset 0 1px 0 rgba(255, 255, 255, .1);\n}\n.navbar-collapse.in {\n  overflow-y: auto;\n}\n@media (min-width: 768px) {\n  .navbar-collapse {\n    width: auto;\n    border-top: 0;\n    -webkit-box-shadow: none;\n            box-shadow: none;\n  }\n  .navbar-collapse.collapse {\n    display: block !important;\n    height: auto !important;\n    padding-bottom: 0;\n    overflow: visible !important;\n  }\n  .navbar-collapse.in {\n    overflow-y: visible;\n  }\n  .navbar-fixed-top .navbar-collapse,\n  .navbar-static-top .navbar-collapse,\n  .navbar-fixed-bottom .navbar-collapse {\n    padding-right: 0;\n    padding-left: 0;\n  }\n}\n.navbar-fixed-top .navbar-collapse,\n.navbar-fixed-bottom .navbar-collapse {\n  max-height: 340px;\n}\n@media (max-device-width: 480px) and (orientation: landscape) {\n  .navbar-fixed-top .navbar-collapse,\n  .navbar-fixed-bottom .navbar-collapse {\n    max-height: 200px;\n  }\n}\n.container > .navbar-header,\n.container-fluid > .navbar-header,\n.container > .navbar-collapse,\n.container-fluid > .navbar-collapse {\n  margin-right: -15px;\n  margin-left: -15px;\n}\n@media (min-width: 768px) {\n  .container > .navbar-header,\n  .container-fluid > .navbar-header,\n  .container > .navbar-collapse,\n  .container-fluid > .navbar-collapse {\n    margin-right: 0;\n    margin-left: 0;\n  }\n}\n.navbar-static-top {\n  z-index: 1000;\n  border-width: 0 0 1px;\n}\n@media (min-width: 768px) {\n  .navbar-static-top {\n    border-radius: 0;\n  }\n}\n.navbar-fixed-top,\n.navbar-fixed-bottom {\n  position: fixed;\n  right: 0;\n  left: 0;\n  z-index: 1030;\n}\n@media (min-width: 768px) {\n  .navbar-fixed-top,\n  .navbar-fixed-bottom {\n    border-radius: 0;\n  }\n}\n.navbar-fixed-top {\n  top: 0;\n  border-width: 0 0 1px;\n}\n.navbar-fixed-bottom {\n  bottom: 0;\n  margin-bottom: 0;\n  border-width: 1px 0 0;\n}\n.navbar-brand {\n  float: left;\n  height: 50px;\n  padding: 15px 15px;\n  font-size: 18px;\n  line-height: 20px;\n}\n.navbar-brand:hover,\n.navbar-brand:focus {\n  text-decoration: none;\n}\n.navbar-brand > img {\n  display: block;\n}\n@media (min-width: 768px) {\n  .navbar > .container .navbar-brand,\n  .navbar > .container-fluid .navbar-brand {\n    margin-left: -15px;\n  }\n}\n.navbar-toggle {\n  position: relative;\n  float: right;\n  padding: 9px 10px;\n  margin-top: 8px;\n  margin-right: 15px;\n  margin-bottom: 8px;\n  background-color: transparent;\n  background-image: none;\n  border: 1px solid transparent;\n  border-radius: 4px;\n}\n.navbar-toggle:focus {\n  outline: 0;\n}\n.navbar-toggle .icon-bar {\n  display: block;\n  width: 22px;\n  height: 2px;\n  border-radius: 1px;\n}\n.navbar-toggle .icon-bar + .icon-bar {\n  margin-top: 4px;\n}\n@media (min-width: 768px) {\n  .navbar-toggle {\n    display: none;\n  }\n}\n.navbar-nav {\n  margin: 7.5px -15px;\n}\n.navbar-nav > li > a {\n  padding-top: 10px;\n  padding-bottom: 10px;\n  line-height: 20px;\n}\n@media (max-width: 767px) {\n  .navbar-nav .open .dropdown-menu {\n    position: static;\n    float: none;\n    width: auto;\n    margin-top: 0;\n    background-color: transparent;\n    border: 0;\n    -webkit-box-shadow: none;\n            box-shadow: none;\n  }\n  .navbar-nav .open .dropdown-menu > li > a,\n  .navbar-nav .open .dropdown-menu .dropdown-header {\n    padding: 5px 15px 5px 25px;\n  }\n  .navbar-nav .open .dropdown-menu > li > a {\n    line-height: 20px;\n  }\n  .navbar-nav .open .dropdown-menu > li > a:hover,\n  .navbar-nav .open .dropdown-menu > li > a:focus {\n    background-image: none;\n  }\n}\n@media (min-width: 768px) {\n  .navbar-nav {\n    float: left;\n    margin: 0;\n  }\n  .navbar-nav > li {\n    float: left;\n  }\n  .navbar-nav > li > a {\n    padding-top: 15px;\n    padding-bottom: 15px;\n  }\n}\n.navbar-form {\n  padding: 10px 15px;\n  margin-top: 8px;\n  margin-right: -15px;\n  margin-bottom: 8px;\n  margin-left: -15px;\n  border-top: 1px solid transparent;\n  border-bottom: 1px solid transparent;\n  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, .1), 0 1px 0 rgba(255, 255, 255, .1);\n          box-shadow: inset 0 1px 0 rgba(255, 255, 255, .1), 0 1px 0 rgba(255, 255, 255, .1);\n}\n@media (min-width: 768px) {\n  .navbar-form .form-group {\n    display: inline-block;\n    margin-bottom: 0;\n    vertical-align: middle;\n  }\n  .navbar-form .form-control {\n    display: inline-block;\n    width: auto;\n    vertical-align: middle;\n  }\n  .navbar-form .form-control-static {\n    display: inline-block;\n  }\n  .navbar-form .input-group {\n    display: inline-table;\n    vertical-align: middle;\n  }\n  .navbar-form .input-group .input-group-addon,\n  .navbar-form .input-group .input-group-btn,\n  .navbar-form .input-group .form-control {\n    width: auto;\n  }\n  .navbar-form .input-group > .form-control {\n    width: 100%;\n  }\n  .navbar-form .control-label {\n    margin-bottom: 0;\n    vertical-align: middle;\n  }\n  .navbar-form .radio,\n  .navbar-form .checkbox {\n    display: inline-block;\n    margin-top: 0;\n    margin-bottom: 0;\n    vertical-align: middle;\n  }\n  .navbar-form .radio label,\n  .navbar-form .checkbox label {\n    padding-left: 0;\n  }\n  .navbar-form .radio input[type=\"radio\"],\n  .navbar-form .checkbox input[type=\"checkbox\"] {\n    position: relative;\n    margin-left: 0;\n  }\n  .navbar-form .has-feedback .form-control-feedback {\n    top: 0;\n  }\n}\n@media (max-width: 767px) {\n  .navbar-form .form-group {\n    margin-bottom: 5px;\n  }\n  .navbar-form .form-group:last-child {\n    margin-bottom: 0;\n  }\n}\n@media (min-width: 768px) {\n  .navbar-form {\n    width: auto;\n    padding-top: 0;\n    padding-bottom: 0;\n    margin-right: 0;\n    margin-left: 0;\n    border: 0;\n    -webkit-box-shadow: none;\n            box-shadow: none;\n  }\n}\n.navbar-nav > li > .dropdown-menu {\n  margin-top: 0;\n  border-top-left-radius: 0;\n  border-top-right-radius: 0;\n}\n.navbar-fixed-bottom .navbar-nav > li > .dropdown-menu {\n  margin-bottom: 0;\n  border-top-left-radius: 4px;\n  border-top-right-radius: 4px;\n  border-bottom-right-radius: 0;\n  border-bottom-left-radius: 0;\n}\n.navbar-btn {\n  margin-top: 8px;\n  margin-bottom: 8px;\n}\n.navbar-btn.btn-sm {\n  margin-top: 10px;\n  margin-bottom: 10px;\n}\n.navbar-btn.btn-xs {\n  margin-top: 14px;\n  margin-bottom: 14px;\n}\n.navbar-text {\n  margin-top: 15px;\n  margin-bottom: 15px;\n}\n@media (min-width: 768px) {\n  .navbar-text {\n    float: left;\n    margin-right: 15px;\n    margin-left: 15px;\n  }\n}\n@media (min-width: 768px) {\n  .navbar-left {\n    float: left !important;\n  }\n  .navbar-right {\n    float: right !important;\n    margin-right: -15px;\n  }\n  .navbar-right ~ .navbar-right {\n    margin-right: 0;\n  }\n}\n.navbar-default {\n  background-color: #f8f8f8;\n  border-color: #e7e7e7;\n}\n.navbar-default .navbar-brand {\n  color: #777;\n}\n.navbar-default .navbar-brand:hover,\n.navbar-default .navbar-brand:focus {\n  color: #5e5e5e;\n  background-color: transparent;\n}\n.navbar-default .navbar-text {\n  color: #777;\n}\n.navbar-default .navbar-nav > li > a {\n  color: #777;\n}\n.navbar-default .navbar-nav > li > a:hover,\n.navbar-default .navbar-nav > li > a:focus {\n  color: #333;\n  background-color: transparent;\n}\n.navbar-default .navbar-nav > .active > a,\n.navbar-default .navbar-nav > .active > a:hover,\n.navbar-default .navbar-nav > .active > a:focus {\n  color: #555;\n  background-color: #e7e7e7;\n}\n.navbar-default .navbar-nav > .disabled > a,\n.navbar-default .navbar-nav > .disabled > a:hover,\n.navbar-default .navbar-nav > .disabled > a:focus {\n  color: #ccc;\n  background-color: transparent;\n}\n.navbar-default .navbar-toggle {\n  border-color: #ddd;\n}\n.navbar-default .navbar-toggle:hover,\n.navbar-default .navbar-toggle:focus {\n  background-color: #ddd;\n}\n.navbar-default .navbar-toggle .icon-bar {\n  background-color: #888;\n}\n.navbar-default .navbar-collapse,\n.navbar-default .navbar-form {\n  border-color: #e7e7e7;\n}\n.navbar-default .navbar-nav > .open > a,\n.navbar-default .navbar-nav > .open > a:hover,\n.navbar-default .navbar-nav > .open > a:focus {\n  color: #555;\n  background-color: #e7e7e7;\n}\n@media (max-width: 767px) {\n  .navbar-default .navbar-nav .open .dropdown-menu > li > a {\n    color: #777;\n  }\n  .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,\n  .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {\n    color: #333;\n    background-color: transparent;\n  }\n  .navbar-default .navbar-nav .open .dropdown-menu > .active > a,\n  .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover,\n  .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {\n    color: #555;\n    background-color: #e7e7e7;\n  }\n  .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a,\n  .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a:hover,\n  .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a:focus {\n    color: #ccc;\n    background-color: transparent;\n  }\n}\n.navbar-default .navbar-link {\n  color: #777;\n}\n.navbar-default .navbar-link:hover {\n  color: #333;\n}\n.navbar-default .btn-link {\n  color: #777;\n}\n.navbar-default .btn-link:hover,\n.navbar-default .btn-link:focus {\n  color: #333;\n}\n.navbar-default .btn-link[disabled]:hover,\nfieldset[disabled] .navbar-default .btn-link:hover,\n.navbar-default .btn-link[disabled]:focus,\nfieldset[disabled] .navbar-default .btn-link:focus {\n  color: #ccc;\n}\n.navbar-inverse {\n  background-color: #222;\n  border-color: #080808;\n}\n.navbar-inverse .navbar-brand {\n  color: #9d9d9d;\n}\n.navbar-inverse .navbar-brand:hover,\n.navbar-inverse .navbar-brand:focus {\n  color: #fff;\n  background-color: transparent;\n}\n.navbar-inverse .navbar-text {\n  color: #9d9d9d;\n}\n.navbar-inverse .navbar-nav > li > a {\n  color: #9d9d9d;\n}\n.navbar-inverse .navbar-nav > li > a:hover,\n.navbar-inverse .navbar-nav > li > a:focus {\n  color: #fff;\n  background-color: transparent;\n}\n.navbar-inverse .navbar-nav > .active > a,\n.navbar-inverse .navbar-nav > .active > a:hover,\n.navbar-inverse .navbar-nav > .active > a:focus {\n  color: #fff;\n  background-color: #080808;\n}\n.navbar-inverse .navbar-nav > .disabled > a,\n.navbar-inverse .navbar-nav > .disabled > a:hover,\n.navbar-inverse .navbar-nav > .disabled > a:focus {\n  color: #444;\n  background-color: transparent;\n}\n.navbar-inverse .navbar-toggle {\n  border-color: #333;\n}\n.navbar-inverse .navbar-toggle:hover,\n.navbar-inverse .navbar-toggle:focus {\n  background-color: #333;\n}\n.navbar-inverse .navbar-toggle .icon-bar {\n  background-color: #fff;\n}\n.navbar-inverse .navbar-collapse,\n.navbar-inverse .navbar-form {\n  border-color: #101010;\n}\n.navbar-inverse .navbar-nav > .open > a,\n.navbar-inverse .navbar-nav > .open > a:hover,\n.navbar-inverse .navbar-nav > .open > a:focus {\n  color: #fff;\n  background-color: #080808;\n}\n@media (max-width: 767px) {\n  .navbar-inverse .navbar-nav .open .dropdown-menu > .dropdown-header {\n    border-color: #080808;\n  }\n  .navbar-inverse .navbar-nav .open .dropdown-menu .divider {\n    background-color: #080808;\n  }\n  .navbar-inverse .navbar-nav .open .dropdown-menu > li > a {\n    color: #9d9d9d;\n  }\n  .navbar-inverse .navbar-nav .open .dropdown-menu > li > a:hover,\n  .navbar-inverse .navbar-nav .open .dropdown-menu > li > a:focus {\n    color: #fff;\n    background-color: transparent;\n  }\n  .navbar-inverse .navbar-nav .open .dropdown-menu > .active > a,\n  .navbar-inverse .navbar-nav .open .dropdown-menu > .active > a:hover,\n  .navbar-inverse .navbar-nav .open .dropdown-menu > .active > a:focus {\n    color: #fff;\n    background-color: #080808;\n  }\n  .navbar-inverse .navbar-nav .open .dropdown-menu > .disabled > a,\n  .navbar-inverse .navbar-nav .open .dropdown-menu > .disabled > a:hover,\n  .navbar-inverse .navbar-nav .open .dropdown-menu > .disabled > a:focus {\n    color: #444;\n    background-color: transparent;\n  }\n}\n.navbar-inverse .navbar-link {\n  color: #9d9d9d;\n}\n.navbar-inverse .navbar-link:hover {\n  color: #fff;\n}\n.navbar-inverse .btn-link {\n  color: #9d9d9d;\n}\n.navbar-inverse .btn-link:hover,\n.navbar-inverse .btn-link:focus {\n  color: #fff;\n}\n.navbar-inverse .btn-link[disabled]:hover,\nfieldset[disabled] .navbar-inverse .btn-link:hover,\n.navbar-inverse .btn-link[disabled]:focus,\nfieldset[disabled] .navbar-inverse .btn-link:focus {\n  color: #444;\n}\n.breadcrumb {\n  padding: 8px 15px;\n  margin-bottom: 20px;\n  list-style: none;\n  background-color: #f5f5f5;\n  border-radius: 4px;\n}\n.breadcrumb > li {\n  display: inline-block;\n}\n.breadcrumb > li + li:before {\n  padding: 0 5px;\n  color: #ccc;\n  content: \"/\\A0\";\n}\n.breadcrumb > .active {\n  color: #777;\n}\n.pagination {\n  display: inline-block;\n  padding-left: 0;\n  margin: 20px 0;\n  border-radius: 4px;\n}\n.pagination > li {\n  display: inline;\n}\n.pagination > li > a,\n.pagination > li > span {\n  position: relative;\n  float: left;\n  padding: 6px 12px;\n  margin-left: -1px;\n  line-height: 1.42857143;\n  color: #337ab7;\n  text-decoration: none;\n  background-color: #fff;\n  border: 1px solid #ddd;\n}\n.pagination > li:first-child > a,\n.pagination > li:first-child > span {\n  margin-left: 0;\n  border-top-left-radius: 4px;\n  border-bottom-left-radius: 4px;\n}\n.pagination > li:last-child > a,\n.pagination > li:last-child > span {\n  border-top-right-radius: 4px;\n  border-bottom-right-radius: 4px;\n}\n.pagination > li > a:hover,\n.pagination > li > span:hover,\n.pagination > li > a:focus,\n.pagination > li > span:focus {\n  z-index: 2;\n  color: #23527c;\n  background-color: #eee;\n  border-color: #ddd;\n}\n.pagination > .active > a,\n.pagination > .active > span,\n.pagination > .active > a:hover,\n.pagination > .active > span:hover,\n.pagination > .active > a:focus,\n.pagination > .active > span:focus {\n  z-index: 3;\n  color: #fff;\n  cursor: default;\n  background-color: #337ab7;\n  border-color: #337ab7;\n}\n.pagination > .disabled > span,\n.pagination > .disabled > span:hover,\n.pagination > .disabled > span:focus,\n.pagination > .disabled > a,\n.pagination > .disabled > a:hover,\n.pagination > .disabled > a:focus {\n  color: #777;\n  cursor: not-allowed;\n  background-color: #fff;\n  border-color: #ddd;\n}\n.pagination-lg > li > a,\n.pagination-lg > li > span {\n  padding: 10px 16px;\n  font-size: 18px;\n  line-height: 1.3333333;\n}\n.pagination-lg > li:first-child > a,\n.pagination-lg > li:first-child > span {\n  border-top-left-radius: 6px;\n  border-bottom-left-radius: 6px;\n}\n.pagination-lg > li:last-child > a,\n.pagination-lg > li:last-child > span {\n  border-top-right-radius: 6px;\n  border-bottom-right-radius: 6px;\n}\n.pagination-sm > li > a,\n.pagination-sm > li > span {\n  padding: 5px 10px;\n  font-size: 12px;\n  line-height: 1.5;\n}\n.pagination-sm > li:first-child > a,\n.pagination-sm > li:first-child > span {\n  border-top-left-radius: 3px;\n  border-bottom-left-radius: 3px;\n}\n.pagination-sm > li:last-child > a,\n.pagination-sm > li:last-child > span {\n  border-top-right-radius: 3px;\n  border-bottom-right-radius: 3px;\n}\n.pager {\n  padding-left: 0;\n  margin: 20px 0;\n  text-align: center;\n  list-style: none;\n}\n.pager li {\n  display: inline;\n}\n.pager li > a,\n.pager li > span {\n  display: inline-block;\n  padding: 5px 14px;\n  background-color: #fff;\n  border: 1px solid #ddd;\n  border-radius: 15px;\n}\n.pager li > a:hover,\n.pager li > a:focus {\n  text-decoration: none;\n  background-color: #eee;\n}\n.pager .next > a,\n.pager .next > span {\n  float: right;\n}\n.pager .previous > a,\n.pager .previous > span {\n  float: left;\n}\n.pager .disabled > a,\n.pager .disabled > a:hover,\n.pager .disabled > a:focus,\n.pager .disabled > span {\n  color: #777;\n  cursor: not-allowed;\n  background-color: #fff;\n}\n.label {\n  display: inline;\n  padding: .2em .6em .3em;\n  font-size: 75%;\n  font-weight: bold;\n  line-height: 1;\n  color: #fff;\n  text-align: center;\n  white-space: nowrap;\n  vertical-align: baseline;\n  border-radius: .25em;\n}\na.label:hover,\na.label:focus {\n  color: #fff;\n  text-decoration: none;\n  cursor: pointer;\n}\n.label:empty {\n  display: none;\n}\n.btn .label {\n  position: relative;\n  top: -1px;\n}\n.label-default {\n  background-color: #777;\n}\n.label-default[href]:hover,\n.label-default[href]:focus {\n  background-color: #5e5e5e;\n}\n.label-primary {\n  background-color: #337ab7;\n}\n.label-primary[href]:hover,\n.label-primary[href]:focus {\n  background-color: #286090;\n}\n.label-success {\n  background-color: #5cb85c;\n}\n.label-success[href]:hover,\n.label-success[href]:focus {\n  background-color: #449d44;\n}\n.label-info {\n  background-color: #5bc0de;\n}\n.label-info[href]:hover,\n.label-info[href]:focus {\n  background-color: #31b0d5;\n}\n.label-warning {\n  background-color: #f0ad4e;\n}\n.label-warning[href]:hover,\n.label-warning[href]:focus {\n  background-color: #ec971f;\n}\n.label-danger {\n  background-color: #d9534f;\n}\n.label-danger[href]:hover,\n.label-danger[href]:focus {\n  background-color: #c9302c;\n}\n.badge {\n  display: inline-block;\n  min-width: 10px;\n  padding: 3px 7px;\n  font-size: 12px;\n  font-weight: bold;\n  line-height: 1;\n  color: #fff;\n  text-align: center;\n  white-space: nowrap;\n  vertical-align: middle;\n  background-color: #777;\n  border-radius: 10px;\n}\n.badge:empty {\n  display: none;\n}\n.btn .badge {\n  position: relative;\n  top: -1px;\n}\n.btn-xs .badge,\n.btn-group-xs > .btn .badge {\n  top: 0;\n  padding: 1px 5px;\n}\na.badge:hover,\na.badge:focus {\n  color: #fff;\n  text-decoration: none;\n  cursor: pointer;\n}\n.list-group-item.active > .badge,\n.nav-pills > .active > a > .badge {\n  color: #337ab7;\n  background-color: #fff;\n}\n.list-group-item > .badge {\n  float: right;\n}\n.list-group-item > .badge + .badge {\n  margin-right: 5px;\n}\n.nav-pills > li > a > .badge {\n  margin-left: 3px;\n}\n.jumbotron {\n  padding-top: 30px;\n  padding-bottom: 30px;\n  margin-bottom: 30px;\n  color: inherit;\n  background-color: #eee;\n}\n.jumbotron h1,\n.jumbotron .h1 {\n  color: inherit;\n}\n.jumbotron p {\n  margin-bottom: 15px;\n  font-size: 21px;\n  font-weight: 200;\n}\n.jumbotron > hr {\n  border-top-color: #d5d5d5;\n}\n.container .jumbotron,\n.container-fluid .jumbotron {\n  padding-right: 15px;\n  padding-left: 15px;\n  border-radius: 6px;\n}\n.jumbotron .container {\n  max-width: 100%;\n}\n@media screen and (min-width: 768px) {\n  .jumbotron {\n    padding-top: 48px;\n    padding-bottom: 48px;\n  }\n  .container .jumbotron,\n  .container-fluid .jumbotron {\n    padding-right: 60px;\n    padding-left: 60px;\n  }\n  .jumbotron h1,\n  .jumbotron .h1 {\n    font-size: 63px;\n  }\n}\n.thumbnail {\n  display: block;\n  padding: 4px;\n  margin-bottom: 20px;\n  line-height: 1.42857143;\n  background-color: #fff;\n  border: 1px solid #ddd;\n  border-radius: 4px;\n  -webkit-transition: border .2s ease-in-out;\n       -o-transition: border .2s ease-in-out;\n          transition: border .2s ease-in-out;\n}\n.thumbnail > img,\n.thumbnail a > img {\n  margin-right: auto;\n  margin-left: auto;\n}\na.thumbnail:hover,\na.thumbnail:focus,\na.thumbnail.active {\n  border-color: #337ab7;\n}\n.thumbnail .caption {\n  padding: 9px;\n  color: #333;\n}\n.alert {\n  padding: 15px;\n  margin-bottom: 20px;\n  border: 1px solid transparent;\n  border-radius: 4px;\n}\n.alert h4 {\n  margin-top: 0;\n  color: inherit;\n}\n.alert .alert-link {\n  font-weight: bold;\n}\n.alert > p,\n.alert > ul {\n  margin-bottom: 0;\n}\n.alert > p + p {\n  margin-top: 5px;\n}\n.alert-dismissable,\n.alert-dismissible {\n  padding-right: 35px;\n}\n.alert-dismissable .close,\n.alert-dismissible .close {\n  position: relative;\n  top: -2px;\n  right: -21px;\n  color: inherit;\n}\n.alert-success {\n  color: #3c763d;\n  background-color: #dff0d8;\n  border-color: #d6e9c6;\n}\n.alert-success hr {\n  border-top-color: #c9e2b3;\n}\n.alert-success .alert-link {\n  color: #2b542c;\n}\n.alert-info {\n  color: #31708f;\n  background-color: #d9edf7;\n  border-color: #bce8f1;\n}\n.alert-info hr {\n  border-top-color: #a6e1ec;\n}\n.alert-info .alert-link {\n  color: #245269;\n}\n.alert-warning {\n  color: #8a6d3b;\n  background-color: #fcf8e3;\n  border-color: #faebcc;\n}\n.alert-warning hr {\n  border-top-color: #f7e1b5;\n}\n.alert-warning .alert-link {\n  color: #66512c;\n}\n.alert-danger {\n  color: #a94442;\n  background-color: #f2dede;\n  border-color: #ebccd1;\n}\n.alert-danger hr {\n  border-top-color: #e4b9c0;\n}\n.alert-danger .alert-link {\n  color: #843534;\n}\n@-webkit-keyframes progress-bar-stripes {\n  from {\n    background-position: 40px 0;\n  }\n  to {\n    background-position: 0 0;\n  }\n}\n@-o-keyframes progress-bar-stripes {\n  from {\n    background-position: 40px 0;\n  }\n  to {\n    background-position: 0 0;\n  }\n}\n@keyframes progress-bar-stripes {\n  from {\n    background-position: 40px 0;\n  }\n  to {\n    background-position: 0 0;\n  }\n}\n.progress {\n  height: 20px;\n  margin-bottom: 20px;\n  overflow: hidden;\n  background-color: #f5f5f5;\n  border-radius: 4px;\n  -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, .1);\n          box-shadow: inset 0 1px 2px rgba(0, 0, 0, .1);\n}\n.progress-bar {\n  float: left;\n  width: 0;\n  height: 100%;\n  font-size: 12px;\n  line-height: 20px;\n  color: #fff;\n  text-align: center;\n  background-color: #337ab7;\n  -webkit-box-shadow: inset 0 -1px 0 rgba(0, 0, 0, .15);\n          box-shadow: inset 0 -1px 0 rgba(0, 0, 0, .15);\n  -webkit-transition: width .6s ease;\n       -o-transition: width .6s ease;\n          transition: width .6s ease;\n}\n.progress-striped .progress-bar,\n.progress-bar-striped {\n  background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, .15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%, transparent 75%, transparent);\n  background-image:      -o-linear-gradient(45deg, rgba(255, 255, 255, .15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%, transparent 75%, transparent);\n  background-image:         linear-gradient(45deg, rgba(255, 255, 255, .15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%, transparent 75%, transparent);\n  -webkit-background-size: 40px 40px;\n          background-size: 40px 40px;\n}\n.progress.active .progress-bar,\n.progress-bar.active {\n  -webkit-animation: progress-bar-stripes 2s linear infinite;\n       -o-animation: progress-bar-stripes 2s linear infinite;\n          animation: progress-bar-stripes 2s linear infinite;\n}\n.progress-bar-success {\n  background-color: #5cb85c;\n}\n.progress-striped .progress-bar-success {\n  background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, .15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%, transparent 75%, transparent);\n  background-image:      -o-linear-gradient(45deg, rgba(255, 255, 255, .15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%, transparent 75%, transparent);\n  background-image:         linear-gradient(45deg, rgba(255, 255, 255, .15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%, transparent 75%, transparent);\n}\n.progress-bar-info {\n  background-color: #5bc0de;\n}\n.progress-striped .progress-bar-info {\n  background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, .15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%, transparent 75%, transparent);\n  background-image:      -o-linear-gradient(45deg, rgba(255, 255, 255, .15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%, transparent 75%, transparent);\n  background-image:         linear-gradient(45deg, rgba(255, 255, 255, .15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%, transparent 75%, transparent);\n}\n.progress-bar-warning {\n  background-color: #f0ad4e;\n}\n.progress-striped .progress-bar-warning {\n  background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, .15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%, transparent 75%, transparent);\n  background-image:      -o-linear-gradient(45deg, rgba(255, 255, 255, .15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%, transparent 75%, transparent);\n  background-image:         linear-gradient(45deg, rgba(255, 255, 255, .15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%, transparent 75%, transparent);\n}\n.progress-bar-danger {\n  background-color: #d9534f;\n}\n.progress-striped .progress-bar-danger {\n  background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, .15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%, transparent 75%, transparent);\n  background-image:      -o-linear-gradient(45deg, rgba(255, 255, 255, .15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%, transparent 75%, transparent);\n  background-image:         linear-gradient(45deg, rgba(255, 255, 255, .15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%, transparent 75%, transparent);\n}\n.media {\n  margin-top: 15px;\n}\n.media:first-child {\n  margin-top: 0;\n}\n.media,\n.media-body {\n  overflow: hidden;\n  zoom: 1;\n}\n.media-body {\n  width: 10000px;\n}\n.media-object {\n  display: block;\n}\n.media-object.img-thumbnail {\n  max-width: none;\n}\n.media-right,\n.media > .pull-right {\n  padding-left: 10px;\n}\n.media-left,\n.media > .pull-left {\n  padding-right: 10px;\n}\n.media-left,\n.media-right,\n.media-body {\n  display: table-cell;\n  vertical-align: top;\n}\n.media-middle {\n  vertical-align: middle;\n}\n.media-bottom {\n  vertical-align: bottom;\n}\n.media-heading {\n  margin-top: 0;\n  margin-bottom: 5px;\n}\n.media-list {\n  padding-left: 0;\n  list-style: none;\n}\n.list-group {\n  padding-left: 0;\n  margin-bottom: 20px;\n}\n.list-group-item {\n  position: relative;\n  display: block;\n  padding: 10px 15px;\n  margin-bottom: -1px;\n  background-color: #fff;\n  border: 1px solid #ddd;\n}\n.list-group-item:first-child {\n  border-top-left-radius: 4px;\n  border-top-right-radius: 4px;\n}\n.list-group-item:last-child {\n  margin-bottom: 0;\n  border-bottom-right-radius: 4px;\n  border-bottom-left-radius: 4px;\n}\na.list-group-item,\nbutton.list-group-item {\n  color: #555;\n}\na.list-group-item .list-group-item-heading,\nbutton.list-group-item .list-group-item-heading {\n  color: #333;\n}\na.list-group-item:hover,\nbutton.list-group-item:hover,\na.list-group-item:focus,\nbutton.list-group-item:focus {\n  color: #555;\n  text-decoration: none;\n  background-color: #f5f5f5;\n}\nbutton.list-group-item {\n  width: 100%;\n  text-align: left;\n}\n.list-group-item.disabled,\n.list-group-item.disabled:hover,\n.list-group-item.disabled:focus {\n  color: #777;\n  cursor: not-allowed;\n  background-color: #eee;\n}\n.list-group-item.disabled .list-group-item-heading,\n.list-group-item.disabled:hover .list-group-item-heading,\n.list-group-item.disabled:focus .list-group-item-heading {\n  color: inherit;\n}\n.list-group-item.disabled .list-group-item-text,\n.list-group-item.disabled:hover .list-group-item-text,\n.list-group-item.disabled:focus .list-group-item-text {\n  color: #777;\n}\n.list-group-item.active,\n.list-group-item.active:hover,\n.list-group-item.active:focus {\n  z-index: 2;\n  color: #fff;\n  background-color: #337ab7;\n  border-color: #337ab7;\n}\n.list-group-item.active .list-group-item-heading,\n.list-group-item.active:hover .list-group-item-heading,\n.list-group-item.active:focus .list-group-item-heading,\n.list-group-item.active .list-group-item-heading > small,\n.list-group-item.active:hover .list-group-item-heading > small,\n.list-group-item.active:focus .list-group-item-heading > small,\n.list-group-item.active .list-group-item-heading > .small,\n.list-group-item.active:hover .list-group-item-heading > .small,\n.list-group-item.active:focus .list-group-item-heading > .small {\n  color: inherit;\n}\n.list-group-item.active .list-group-item-text,\n.list-group-item.active:hover .list-group-item-text,\n.list-group-item.active:focus .list-group-item-text {\n  color: #c7ddef;\n}\n.list-group-item-success {\n  color: #3c763d;\n  background-color: #dff0d8;\n}\na.list-group-item-success,\nbutton.list-group-item-success {\n  color: #3c763d;\n}\na.list-group-item-success .list-group-item-heading,\nbutton.list-group-item-success .list-group-item-heading {\n  color: inherit;\n}\na.list-group-item-success:hover,\nbutton.list-group-item-success:hover,\na.list-group-item-success:focus,\nbutton.list-group-item-success:focus {\n  color: #3c763d;\n  background-color: #d0e9c6;\n}\na.list-group-item-success.active,\nbutton.list-group-item-success.active,\na.list-group-item-success.active:hover,\nbutton.list-group-item-success.active:hover,\na.list-group-item-success.active:focus,\nbutton.list-group-item-success.active:focus {\n  color: #fff;\n  background-color: #3c763d;\n  border-color: #3c763d;\n}\n.list-group-item-info {\n  color: #31708f;\n  background-color: #d9edf7;\n}\na.list-group-item-info,\nbutton.list-group-item-info {\n  color: #31708f;\n}\na.list-group-item-info .list-group-item-heading,\nbutton.list-group-item-info .list-group-item-heading {\n  color: inherit;\n}\na.list-group-item-info:hover,\nbutton.list-group-item-info:hover,\na.list-group-item-info:focus,\nbutton.list-group-item-info:focus {\n  color: #31708f;\n  background-color: #c4e3f3;\n}\na.list-group-item-info.active,\nbutton.list-group-item-info.active,\na.list-group-item-info.active:hover,\nbutton.list-group-item-info.active:hover,\na.list-group-item-info.active:focus,\nbutton.list-group-item-info.active:focus {\n  color: #fff;\n  background-color: #31708f;\n  border-color: #31708f;\n}\n.list-group-item-warning {\n  color: #8a6d3b;\n  background-color: #fcf8e3;\n}\na.list-group-item-warning,\nbutton.list-group-item-warning {\n  color: #8a6d3b;\n}\na.list-group-item-warning .list-group-item-heading,\nbutton.list-group-item-warning .list-group-item-heading {\n  color: inherit;\n}\na.list-group-item-warning:hover,\nbutton.list-group-item-warning:hover,\na.list-group-item-warning:focus,\nbutton.list-group-item-warning:focus {\n  color: #8a6d3b;\n  background-color: #faf2cc;\n}\na.list-group-item-warning.active,\nbutton.list-group-item-warning.active,\na.list-group-item-warning.active:hover,\nbutton.list-group-item-warning.active:hover,\na.list-group-item-warning.active:focus,\nbutton.list-group-item-warning.active:focus {\n  color: #fff;\n  background-color: #8a6d3b;\n  border-color: #8a6d3b;\n}\n.list-group-item-danger {\n  color: #a94442;\n  background-color: #f2dede;\n}\na.list-group-item-danger,\nbutton.list-group-item-danger {\n  color: #a94442;\n}\na.list-group-item-danger .list-group-item-heading,\nbutton.list-group-item-danger .list-group-item-heading {\n  color: inherit;\n}\na.list-group-item-danger:hover,\nbutton.list-group-item-danger:hover,\na.list-group-item-danger:focus,\nbutton.list-group-item-danger:focus {\n  color: #a94442;\n  background-color: #ebcccc;\n}\na.list-group-item-danger.active,\nbutton.list-group-item-danger.active,\na.list-group-item-danger.active:hover,\nbutton.list-group-item-danger.active:hover,\na.list-group-item-danger.active:focus,\nbutton.list-group-item-danger.active:focus {\n  color: #fff;\n  background-color: #a94442;\n  border-color: #a94442;\n}\n.list-group-item-heading {\n  margin-top: 0;\n  margin-bottom: 5px;\n}\n.list-group-item-text {\n  margin-bottom: 0;\n  line-height: 1.3;\n}\n.panel {\n  margin-bottom: 20px;\n  background-color: #fff;\n  border: 1px solid transparent;\n  border-radius: 4px;\n  -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, .05);\n          box-shadow: 0 1px 1px rgba(0, 0, 0, .05);\n}\n.panel-body {\n  padding: 15px;\n}\n.panel-heading {\n  padding: 10px 15px;\n  border-bottom: 1px solid transparent;\n  border-top-left-radius: 3px;\n  border-top-right-radius: 3px;\n}\n.panel-heading > .dropdown .dropdown-toggle {\n  color: inherit;\n}\n.panel-title {\n  margin-top: 0;\n  margin-bottom: 0;\n  font-size: 16px;\n  color: inherit;\n}\n.panel-title > a,\n.panel-title > small,\n.panel-title > .small,\n.panel-title > small > a,\n.panel-title > .small > a {\n  color: inherit;\n}\n.panel-footer {\n  padding: 10px 15px;\n  background-color: #f5f5f5;\n  border-top: 1px solid #ddd;\n  border-bottom-right-radius: 3px;\n  border-bottom-left-radius: 3px;\n}\n.panel > .list-group,\n.panel > .panel-collapse > .list-group {\n  margin-bottom: 0;\n}\n.panel > .list-group .list-group-item,\n.panel > .panel-collapse > .list-group .list-group-item {\n  border-width: 1px 0;\n  border-radius: 0;\n}\n.panel > .list-group:first-child .list-group-item:first-child,\n.panel > .panel-collapse > .list-group:first-child .list-group-item:first-child {\n  border-top: 0;\n  border-top-left-radius: 3px;\n  border-top-right-radius: 3px;\n}\n.panel > .list-group:last-child .list-group-item:last-child,\n.panel > .panel-collapse > .list-group:last-child .list-group-item:last-child {\n  border-bottom: 0;\n  border-bottom-right-radius: 3px;\n  border-bottom-left-radius: 3px;\n}\n.panel > .panel-heading + .panel-collapse > .list-group .list-group-item:first-child {\n  border-top-left-radius: 0;\n  border-top-right-radius: 0;\n}\n.panel-heading + .list-group .list-group-item:first-child {\n  border-top-width: 0;\n}\n.list-group + .panel-footer {\n  border-top-width: 0;\n}\n.panel > .table,\n.panel > .table-responsive > .table,\n.panel > .panel-collapse > .table {\n  margin-bottom: 0;\n}\n.panel > .table caption,\n.panel > .table-responsive > .table caption,\n.panel > .panel-collapse > .table caption {\n  padding-right: 15px;\n  padding-left: 15px;\n}\n.panel > .table:first-child,\n.panel > .table-responsive:first-child > .table:first-child {\n  border-top-left-radius: 3px;\n  border-top-right-radius: 3px;\n}\n.panel > .table:first-child > thead:first-child > tr:first-child,\n.panel > .table-responsive:first-child > .table:first-child > thead:first-child > tr:first-child,\n.panel > .table:first-child > tbody:first-child > tr:first-child,\n.panel > .table-responsive:first-child > .table:first-child > tbody:first-child > tr:first-child {\n  border-top-left-radius: 3px;\n  border-top-right-radius: 3px;\n}\n.panel > .table:first-child > thead:first-child > tr:first-child td:first-child,\n.panel > .table-responsive:first-child > .table:first-child > thead:first-child > tr:first-child td:first-child,\n.panel > .table:first-child > tbody:first-child > tr:first-child td:first-child,\n.panel > .table-responsive:first-child > .table:first-child > tbody:first-child > tr:first-child td:first-child,\n.panel > .table:first-child > thead:first-child > tr:first-child th:first-child,\n.panel > .table-responsive:first-child > .table:first-child > thead:first-child > tr:first-child th:first-child,\n.panel > .table:first-child > tbody:first-child > tr:first-child th:first-child,\n.panel > .table-responsive:first-child > .table:first-child > tbody:first-child > tr:first-child th:first-child {\n  border-top-left-radius: 3px;\n}\n.panel > .table:first-child > thead:first-child > tr:first-child td:last-child,\n.panel > .table-responsive:first-child > .table:first-child > thead:first-child > tr:first-child td:last-child,\n.panel > .table:first-child > tbody:first-child > tr:first-child td:last-child,\n.panel > .table-responsive:first-child > .table:first-child > tbody:first-child > tr:first-child td:last-child,\n.panel > .table:first-child > thead:first-child > tr:first-child th:last-child,\n.panel > .table-responsive:first-child > .table:first-child > thead:first-child > tr:first-child th:last-child,\n.panel > .table:first-child > tbody:first-child > tr:first-child th:last-child,\n.panel > .table-responsive:first-child > .table:first-child > tbody:first-child > tr:first-child th:last-child {\n  border-top-right-radius: 3px;\n}\n.panel > .table:last-child,\n.panel > .table-responsive:last-child > .table:last-child {\n  border-bottom-right-radius: 3px;\n  border-bottom-left-radius: 3px;\n}\n.panel > .table:last-child > tbody:last-child > tr:last-child,\n.panel > .table-responsive:last-child > .table:last-child > tbody:last-child > tr:last-child,\n.panel > .table:last-child > tfoot:last-child > tr:last-child,\n.panel > .table-responsive:last-child > .table:last-child > tfoot:last-child > tr:last-child {\n  border-bottom-right-radius: 3px;\n  border-bottom-left-radius: 3px;\n}\n.panel > .table:last-child > tbody:last-child > tr:last-child td:first-child,\n.panel > .table-responsive:last-child > .table:last-child > tbody:last-child > tr:last-child td:first-child,\n.panel > .table:last-child > tfoot:last-child > tr:last-child td:first-child,\n.panel > .table-responsive:last-child > .table:last-child > tfoot:last-child > tr:last-child td:first-child,\n.panel > .table:last-child > tbody:last-child > tr:last-child th:first-child,\n.panel > .table-responsive:last-child > .table:last-child > tbody:last-child > tr:last-child th:first-child,\n.panel > .table:last-child > tfoot:last-child > tr:last-child th:first-child,\n.panel > .table-responsive:last-child > .table:last-child > tfoot:last-child > tr:last-child th:first-child {\n  border-bottom-left-radius: 3px;\n}\n.panel > .table:last-child > tbody:last-child > tr:last-child td:last-child,\n.panel > .table-responsive:last-child > .table:last-child > tbody:last-child > tr:last-child td:last-child,\n.panel > .table:last-child > tfoot:last-child > tr:last-child td:last-child,\n.panel > .table-responsive:last-child > .table:last-child > tfoot:last-child > tr:last-child td:last-child,\n.panel > .table:last-child > tbody:last-child > tr:last-child th:last-child,\n.panel > .table-responsive:last-child > .table:last-child > tbody:last-child > tr:last-child th:last-child,\n.panel > .table:last-child > tfoot:last-child > tr:last-child th:last-child,\n.panel > .table-responsive:last-child > .table:last-child > tfoot:last-child > tr:last-child th:last-child {\n  border-bottom-right-radius: 3px;\n}\n.panel > .panel-body + .table,\n.panel > .panel-body + .table-responsive,\n.panel > .table + .panel-body,\n.panel > .table-responsive + .panel-body {\n  border-top: 1px solid #ddd;\n}\n.panel > .table > tbody:first-child > tr:first-child th,\n.panel > .table > tbody:first-child > tr:first-child td {\n  border-top: 0;\n}\n.panel > .table-bordered,\n.panel > .table-responsive > .table-bordered {\n  border: 0;\n}\n.panel > .table-bordered > thead > tr > th:first-child,\n.panel > .table-responsive > .table-bordered > thead > tr > th:first-child,\n.panel > .table-bordered > tbody > tr > th:first-child,\n.panel > .table-responsive > .table-bordered > tbody > tr > th:first-child,\n.panel > .table-bordered > tfoot > tr > th:first-child,\n.panel > .table-responsive > .table-bordered > tfoot > tr > th:first-child,\n.panel > .table-bordered > thead > tr > td:first-child,\n.panel > .table-responsive > .table-bordered > thead > tr > td:first-child,\n.panel > .table-bordered > tbody > tr > td:first-child,\n.panel > .table-responsive > .table-bordered > tbody > tr > td:first-child,\n.panel > .table-bordered > tfoot > tr > td:first-child,\n.panel > .table-responsive > .table-bordered > tfoot > tr > td:first-child {\n  border-left: 0;\n}\n.panel > .table-bordered > thead > tr > th:last-child,\n.panel > .table-responsive > .table-bordered > thead > tr > th:last-child,\n.panel > .table-bordered > tbody > tr > th:last-child,\n.panel > .table-responsive > .table-bordered > tbody > tr > th:last-child,\n.panel > .table-bordered > tfoot > tr > th:last-child,\n.panel > .table-responsive > .table-bordered > tfoot > tr > th:last-child,\n.panel > .table-bordered > thead > tr > td:last-child,\n.panel > .table-responsive > .table-bordered > thead > tr > td:last-child,\n.panel > .table-bordered > tbody > tr > td:last-child,\n.panel > .table-responsive > .table-bordered > tbody > tr > td:last-child,\n.panel > .table-bordered > tfoot > tr > td:last-child,\n.panel > .table-responsive > .table-bordered > tfoot > tr > td:last-child {\n  border-right: 0;\n}\n.panel > .table-bordered > thead > tr:first-child > td,\n.panel > .table-responsive > .table-bordered > thead > tr:first-child > td,\n.panel > .table-bordered > tbody > tr:first-child > td,\n.panel > .table-responsive > .table-bordered > tbody > tr:first-child > td,\n.panel > .table-bordered > thead > tr:first-child > th,\n.panel > .table-responsive > .table-bordered > thead > tr:first-child > th,\n.panel > .table-bordered > tbody > tr:first-child > th,\n.panel > .table-responsive > .table-bordered > tbody > tr:first-child > th {\n  border-bottom: 0;\n}\n.panel > .table-bordered > tbody > tr:last-child > td,\n.panel > .table-responsive > .table-bordered > tbody > tr:last-child > td,\n.panel > .table-bordered > tfoot > tr:last-child > td,\n.panel > .table-responsive > .table-bordered > tfoot > tr:last-child > td,\n.panel > .table-bordered > tbody > tr:last-child > th,\n.panel > .table-responsive > .table-bordered > tbody > tr:last-child > th,\n.panel > .table-bordered > tfoot > tr:last-child > th,\n.panel > .table-responsive > .table-bordered > tfoot > tr:last-child > th {\n  border-bottom: 0;\n}\n.panel > .table-responsive {\n  margin-bottom: 0;\n  border: 0;\n}\n.panel-group {\n  margin-bottom: 20px;\n}\n.panel-group .panel {\n  margin-bottom: 0;\n  border-radius: 4px;\n}\n.panel-group .panel + .panel {\n  margin-top: 5px;\n}\n.panel-group .panel-heading {\n  border-bottom: 0;\n}\n.panel-group .panel-heading + .panel-collapse > .panel-body,\n.panel-group .panel-heading + .panel-collapse > .list-group {\n  border-top: 1px solid #ddd;\n}\n.panel-group .panel-footer {\n  border-top: 0;\n}\n.panel-group .panel-footer + .panel-collapse .panel-body {\n  border-bottom: 1px solid #ddd;\n}\n.panel-default {\n  border-color: #ddd;\n}\n.panel-default > .panel-heading {\n  color: #333;\n  background-color: #f5f5f5;\n  border-color: #ddd;\n}\n.panel-default > .panel-heading + .panel-collapse > .panel-body {\n  border-top-color: #ddd;\n}\n.panel-default > .panel-heading .badge {\n  color: #f5f5f5;\n  background-color: #333;\n}\n.panel-default > .panel-footer + .panel-collapse > .panel-body {\n  border-bottom-color: #ddd;\n}\n.panel-primary {\n  border-color: #337ab7;\n}\n.panel-primary > .panel-heading {\n  color: #fff;\n  background-color: #337ab7;\n  border-color: #337ab7;\n}\n.panel-primary > .panel-heading + .panel-collapse > .panel-body {\n  border-top-color: #337ab7;\n}\n.panel-primary > .panel-heading .badge {\n  color: #337ab7;\n  background-color: #fff;\n}\n.panel-primary > .panel-footer + .panel-collapse > .panel-body {\n  border-bottom-color: #337ab7;\n}\n.panel-success {\n  border-color: #d6e9c6;\n}\n.panel-success > .panel-heading {\n  color: #3c763d;\n  background-color: #dff0d8;\n  border-color: #d6e9c6;\n}\n.panel-success > .panel-heading + .panel-collapse > .panel-body {\n  border-top-color: #d6e9c6;\n}\n.panel-success > .panel-heading .badge {\n  color: #dff0d8;\n  background-color: #3c763d;\n}\n.panel-success > .panel-footer + .panel-collapse > .panel-body {\n  border-bottom-color: #d6e9c6;\n}\n.panel-info {\n  border-color: #bce8f1;\n}\n.panel-info > .panel-heading {\n  color: #31708f;\n  background-color: #d9edf7;\n  border-color: #bce8f1;\n}\n.panel-info > .panel-heading + .panel-collapse > .panel-body {\n  border-top-color: #bce8f1;\n}\n.panel-info > .panel-heading .badge {\n  color: #d9edf7;\n  background-color: #31708f;\n}\n.panel-info > .panel-footer + .panel-collapse > .panel-body {\n  border-bottom-color: #bce8f1;\n}\n.panel-warning {\n  border-color: #faebcc;\n}\n.panel-warning > .panel-heading {\n  color: #8a6d3b;\n  background-color: #fcf8e3;\n  border-color: #faebcc;\n}\n.panel-warning > .panel-heading + .panel-collapse > .panel-body {\n  border-top-color: #faebcc;\n}\n.panel-warning > .panel-heading .badge {\n  color: #fcf8e3;\n  background-color: #8a6d3b;\n}\n.panel-warning > .panel-footer + .panel-collapse > .panel-body {\n  border-bottom-color: #faebcc;\n}\n.panel-danger {\n  border-color: #ebccd1;\n}\n.panel-danger > .panel-heading {\n  color: #a94442;\n  background-color: #f2dede;\n  border-color: #ebccd1;\n}\n.panel-danger > .panel-heading + .panel-collapse > .panel-body {\n  border-top-color: #ebccd1;\n}\n.panel-danger > .panel-heading .badge {\n  color: #f2dede;\n  background-color: #a94442;\n}\n.panel-danger > .panel-footer + .panel-collapse > .panel-body {\n  border-bottom-color: #ebccd1;\n}\n.embed-responsive {\n  position: relative;\n  display: block;\n  height: 0;\n  padding: 0;\n  overflow: hidden;\n}\n.embed-responsive .embed-responsive-item,\n.embed-responsive iframe,\n.embed-responsive embed,\n.embed-responsive object,\n.embed-responsive video {\n  position: absolute;\n  top: 0;\n  bottom: 0;\n  left: 0;\n  width: 100%;\n  height: 100%;\n  border: 0;\n}\n.embed-responsive-16by9 {\n  padding-bottom: 56.25%;\n}\n.embed-responsive-4by3 {\n  padding-bottom: 75%;\n}\n.well {\n  min-height: 20px;\n  padding: 19px;\n  margin-bottom: 20px;\n  background-color: #f5f5f5;\n  border: 1px solid #e3e3e3;\n  border-radius: 4px;\n  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .05);\n          box-shadow: inset 0 1px 1px rgba(0, 0, 0, .05);\n}\n.well blockquote {\n  border-color: #ddd;\n  border-color: rgba(0, 0, 0, .15);\n}\n.well-lg {\n  padding: 24px;\n  border-radius: 6px;\n}\n.well-sm {\n  padding: 9px;\n  border-radius: 3px;\n}\n.close {\n  float: right;\n  font-size: 21px;\n  font-weight: bold;\n  line-height: 1;\n  color: #000;\n  text-shadow: 0 1px 0 #fff;\n  filter: alpha(opacity=20);\n  opacity: .2;\n}\n.close:hover,\n.close:focus {\n  color: #000;\n  text-decoration: none;\n  cursor: pointer;\n  filter: alpha(opacity=50);\n  opacity: .5;\n}\nbutton.close {\n  -webkit-appearance: none;\n  padding: 0;\n  cursor: pointer;\n  background: transparent;\n  border: 0;\n}\n.modal-open {\n  overflow: hidden;\n}\n.modal {\n  position: fixed;\n  top: 0;\n  right: 0;\n  bottom: 0;\n  left: 0;\n  z-index: 1050;\n  display: none;\n  overflow: hidden;\n  -webkit-overflow-scrolling: touch;\n  outline: 0;\n}\n.modal.fade .modal-dialog {\n  -webkit-transition: -webkit-transform .3s ease-out;\n       -o-transition:      -o-transform .3s ease-out;\n          transition:         transform .3s ease-out;\n  -webkit-transform: translate(0, -25%);\n      -ms-transform: translate(0, -25%);\n       -o-transform: translate(0, -25%);\n          transform: translate(0, -25%);\n}\n.modal.in .modal-dialog {\n  -webkit-transform: translate(0, 0);\n      -ms-transform: translate(0, 0);\n       -o-transform: translate(0, 0);\n          transform: translate(0, 0);\n}\n.modal-open .modal {\n  overflow-x: hidden;\n  overflow-y: auto;\n}\n.modal-dialog {\n  position: relative;\n  width: auto;\n  margin: 10px;\n}\n.modal-content {\n  position: relative;\n  background-color: #fff;\n  -webkit-background-clip: padding-box;\n          background-clip: padding-box;\n  border: 1px solid #999;\n  border: 1px solid rgba(0, 0, 0, .2);\n  border-radius: 6px;\n  outline: 0;\n  -webkit-box-shadow: 0 3px 9px rgba(0, 0, 0, .5);\n          box-shadow: 0 3px 9px rgba(0, 0, 0, .5);\n}\n.modal-backdrop {\n  position: fixed;\n  top: 0;\n  right: 0;\n  bottom: 0;\n  left: 0;\n  z-index: 1040;\n  background-color: #000;\n}\n.modal-backdrop.fade {\n  filter: alpha(opacity=0);\n  opacity: 0;\n}\n.modal-backdrop.in {\n  filter: alpha(opacity=50);\n  opacity: .5;\n}\n.modal-header {\n  padding: 15px;\n  border-bottom: 1px solid #e5e5e5;\n}\n.modal-header .close {\n  margin-top: -2px;\n}\n.modal-title {\n  margin: 0;\n  line-height: 1.42857143;\n}\n.modal-body {\n  position: relative;\n  padding: 15px;\n}\n.modal-footer {\n  padding: 15px;\n  text-align: right;\n  border-top: 1px solid #e5e5e5;\n}\n.modal-footer .btn + .btn {\n  margin-bottom: 0;\n  margin-left: 5px;\n}\n.modal-footer .btn-group .btn + .btn {\n  margin-left: -1px;\n}\n.modal-footer .btn-block + .btn-block {\n  margin-left: 0;\n}\n.modal-scrollbar-measure {\n  position: absolute;\n  top: -9999px;\n  width: 50px;\n  height: 50px;\n  overflow: scroll;\n}\n@media (min-width: 768px) {\n  .modal-dialog {\n    width: 600px;\n    margin: 30px auto;\n  }\n  .modal-content {\n    -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, .5);\n            box-shadow: 0 5px 15px rgba(0, 0, 0, .5);\n  }\n  .modal-sm {\n    width: 300px;\n  }\n}\n@media (min-width: 992px) {\n  .modal-lg {\n    width: 900px;\n  }\n}\n.tooltip {\n  position: absolute;\n  z-index: 1070;\n  display: block;\n  font-family: \"Helvetica Neue\", Helvetica, Arial, sans-serif;\n  font-size: 12px;\n  font-style: normal;\n  font-weight: normal;\n  line-height: 1.42857143;\n  text-align: left;\n  text-align: start;\n  text-decoration: none;\n  text-shadow: none;\n  text-transform: none;\n  letter-spacing: normal;\n  word-break: normal;\n  word-spacing: normal;\n  word-wrap: normal;\n  white-space: normal;\n  filter: alpha(opacity=0);\n  opacity: 0;\n\n  line-break: auto;\n}\n.tooltip.in {\n  filter: alpha(opacity=90);\n  opacity: .9;\n}\n.tooltip.top {\n  padding: 5px 0;\n  margin-top: -3px;\n}\n.tooltip.right {\n  padding: 0 5px;\n  margin-left: 3px;\n}\n.tooltip.bottom {\n  padding: 5px 0;\n  margin-top: 3px;\n}\n.tooltip.left {\n  padding: 0 5px;\n  margin-left: -3px;\n}\n.tooltip-inner {\n  max-width: 200px;\n  padding: 3px 8px;\n  color: #fff;\n  text-align: center;\n  background-color: #000;\n  border-radius: 4px;\n}\n.tooltip-arrow {\n  position: absolute;\n  width: 0;\n  height: 0;\n  border-color: transparent;\n  border-style: solid;\n}\n.tooltip.top .tooltip-arrow {\n  bottom: 0;\n  left: 50%;\n  margin-left: -5px;\n  border-width: 5px 5px 0;\n  border-top-color: #000;\n}\n.tooltip.top-left .tooltip-arrow {\n  right: 5px;\n  bottom: 0;\n  margin-bottom: -5px;\n  border-width: 5px 5px 0;\n  border-top-color: #000;\n}\n.tooltip.top-right .tooltip-arrow {\n  bottom: 0;\n  left: 5px;\n  margin-bottom: -5px;\n  border-width: 5px 5px 0;\n  border-top-color: #000;\n}\n.tooltip.right .tooltip-arrow {\n  top: 50%;\n  left: 0;\n  margin-top: -5px;\n  border-width: 5px 5px 5px 0;\n  border-right-color: #000;\n}\n.tooltip.left .tooltip-arrow {\n  top: 50%;\n  right: 0;\n  margin-top: -5px;\n  border-width: 5px 0 5px 5px;\n  border-left-color: #000;\n}\n.tooltip.bottom .tooltip-arrow {\n  top: 0;\n  left: 50%;\n  margin-left: -5px;\n  border-width: 0 5px 5px;\n  border-bottom-color: #000;\n}\n.tooltip.bottom-left .tooltip-arrow {\n  top: 0;\n  right: 5px;\n  margin-top: -5px;\n  border-width: 0 5px 5px;\n  border-bottom-color: #000;\n}\n.tooltip.bottom-right .tooltip-arrow {\n  top: 0;\n  left: 5px;\n  margin-top: -5px;\n  border-width: 0 5px 5px;\n  border-bottom-color: #000;\n}\n.popover {\n  position: absolute;\n  top: 0;\n  left: 0;\n  z-index: 1060;\n  display: none;\n  max-width: 276px;\n  padding: 1px;\n  font-family: \"Helvetica Neue\", Helvetica, Arial, sans-serif;\n  font-size: 14px;\n  font-style: normal;\n  font-weight: normal;\n  line-height: 1.42857143;\n  text-align: left;\n  text-align: start;\n  text-decoration: none;\n  text-shadow: none;\n  text-transform: none;\n  letter-spacing: normal;\n  word-break: normal;\n  word-spacing: normal;\n  word-wrap: normal;\n  white-space: normal;\n  background-color: #fff;\n  -webkit-background-clip: padding-box;\n          background-clip: padding-box;\n  border: 1px solid #ccc;\n  border: 1px solid rgba(0, 0, 0, .2);\n  border-radius: 6px;\n  -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, .2);\n          box-shadow: 0 5px 10px rgba(0, 0, 0, .2);\n\n  line-break: auto;\n}\n.popover.top {\n  margin-top: -10px;\n}\n.popover.right {\n  margin-left: 10px;\n}\n.popover.bottom {\n  margin-top: 10px;\n}\n.popover.left {\n  margin-left: -10px;\n}\n.popover-title {\n  padding: 8px 14px;\n  margin: 0;\n  font-size: 14px;\n  background-color: #f7f7f7;\n  border-bottom: 1px solid #ebebeb;\n  border-radius: 5px 5px 0 0;\n}\n.popover-content {\n  padding: 9px 14px;\n}\n.popover > .arrow,\n.popover > .arrow:after {\n  position: absolute;\n  display: block;\n  width: 0;\n  height: 0;\n  border-color: transparent;\n  border-style: solid;\n}\n.popover > .arrow {\n  border-width: 11px;\n}\n.popover > .arrow:after {\n  content: \"\";\n  border-width: 10px;\n}\n.popover.top > .arrow {\n  bottom: -11px;\n  left: 50%;\n  margin-left: -11px;\n  border-top-color: #999;\n  border-top-color: rgba(0, 0, 0, .25);\n  border-bottom-width: 0;\n}\n.popover.top > .arrow:after {\n  bottom: 1px;\n  margin-left: -10px;\n  content: \" \";\n  border-top-color: #fff;\n  border-bottom-width: 0;\n}\n.popover.right > .arrow {\n  top: 50%;\n  left: -11px;\n  margin-top: -11px;\n  border-right-color: #999;\n  border-right-color: rgba(0, 0, 0, .25);\n  border-left-width: 0;\n}\n.popover.right > .arrow:after {\n  bottom: -10px;\n  left: 1px;\n  content: \" \";\n  border-right-color: #fff;\n  border-left-width: 0;\n}\n.popover.bottom > .arrow {\n  top: -11px;\n  left: 50%;\n  margin-left: -11px;\n  border-top-width: 0;\n  border-bottom-color: #999;\n  border-bottom-color: rgba(0, 0, 0, .25);\n}\n.popover.bottom > .arrow:after {\n  top: 1px;\n  margin-left: -10px;\n  content: \" \";\n  border-top-width: 0;\n  border-bottom-color: #fff;\n}\n.popover.left > .arrow {\n  top: 50%;\n  right: -11px;\n  margin-top: -11px;\n  border-right-width: 0;\n  border-left-color: #999;\n  border-left-color: rgba(0, 0, 0, .25);\n}\n.popover.left > .arrow:after {\n  right: 1px;\n  bottom: -10px;\n  content: \" \";\n  border-right-width: 0;\n  border-left-color: #fff;\n}\n.carousel {\n  position: relative;\n}\n.carousel-inner {\n  position: relative;\n  width: 100%;\n  overflow: hidden;\n}\n.carousel-inner > .item {\n  position: relative;\n  display: none;\n  -webkit-transition: .6s ease-in-out left;\n       -o-transition: .6s ease-in-out left;\n          transition: .6s ease-in-out left;\n}\n.carousel-inner > .item > img,\n.carousel-inner > .item > a > img {\n  line-height: 1;\n}\n@media all and (transform-3d), (-webkit-transform-3d) {\n  .carousel-inner > .item {\n    -webkit-transition: -webkit-transform .6s ease-in-out;\n         -o-transition:      -o-transform .6s ease-in-out;\n            transition:         transform .6s ease-in-out;\n\n    -webkit-backface-visibility: hidden;\n            backface-visibility: hidden;\n    -webkit-perspective: 1000px;\n            perspective: 1000px;\n  }\n  .carousel-inner > .item.next,\n  .carousel-inner > .item.active.right {\n    left: 0;\n    -webkit-transform: translate3d(100%, 0, 0);\n            transform: translate3d(100%, 0, 0);\n  }\n  .carousel-inner > .item.prev,\n  .carousel-inner > .item.active.left {\n    left: 0;\n    -webkit-transform: translate3d(-100%, 0, 0);\n            transform: translate3d(-100%, 0, 0);\n  }\n  .carousel-inner > .item.next.left,\n  .carousel-inner > .item.prev.right,\n  .carousel-inner > .item.active {\n    left: 0;\n    -webkit-transform: translate3d(0, 0, 0);\n            transform: translate3d(0, 0, 0);\n  }\n}\n.carousel-inner > .active,\n.carousel-inner > .next,\n.carousel-inner > .prev {\n  display: block;\n}\n.carousel-inner > .active {\n  left: 0;\n}\n.carousel-inner > .next,\n.carousel-inner > .prev {\n  position: absolute;\n  top: 0;\n  width: 100%;\n}\n.carousel-inner > .next {\n  left: 100%;\n}\n.carousel-inner > .prev {\n  left: -100%;\n}\n.carousel-inner > .next.left,\n.carousel-inner > .prev.right {\n  left: 0;\n}\n.carousel-inner > .active.left {\n  left: -100%;\n}\n.carousel-inner > .active.right {\n  left: 100%;\n}\n.carousel-control {\n  position: absolute;\n  top: 0;\n  bottom: 0;\n  left: 0;\n  width: 15%;\n  font-size: 20px;\n  color: #fff;\n  text-align: center;\n  text-shadow: 0 1px 2px rgba(0, 0, 0, .6);\n  background-color: rgba(0, 0, 0, 0);\n  filter: alpha(opacity=50);\n  opacity: .5;\n}\n.carousel-control.left {\n  background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, .5) 0%, rgba(0, 0, 0, .0001) 100%);\n  background-image:      -o-linear-gradient(left, rgba(0, 0, 0, .5) 0%, rgba(0, 0, 0, .0001) 100%);\n  background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, .5)), to(rgba(0, 0, 0, .0001)));\n  background-image:         linear-gradient(to right, rgba(0, 0, 0, .5) 0%, rgba(0, 0, 0, .0001) 100%);\n  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#80000000', endColorstr='#00000000', GradientType=1);\n  background-repeat: repeat-x;\n}\n.carousel-control.right {\n  right: 0;\n  left: auto;\n  background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, .0001) 0%, rgba(0, 0, 0, .5) 100%);\n  background-image:      -o-linear-gradient(left, rgba(0, 0, 0, .0001) 0%, rgba(0, 0, 0, .5) 100%);\n  background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, .0001)), to(rgba(0, 0, 0, .5)));\n  background-image:         linear-gradient(to right, rgba(0, 0, 0, .0001) 0%, rgba(0, 0, 0, .5) 100%);\n  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#80000000', GradientType=1);\n  background-repeat: repeat-x;\n}\n.carousel-control:hover,\n.carousel-control:focus {\n  color: #fff;\n  text-decoration: none;\n  filter: alpha(opacity=90);\n  outline: 0;\n  opacity: .9;\n}\n.carousel-control .icon-prev,\n.carousel-control .icon-next,\n.carousel-control .glyphicon-chevron-left,\n.carousel-control .glyphicon-chevron-right {\n  position: absolute;\n  top: 50%;\n  z-index: 5;\n  display: inline-block;\n  margin-top: -10px;\n}\n.carousel-control .icon-prev,\n.carousel-control .glyphicon-chevron-left {\n  left: 50%;\n  margin-left: -10px;\n}\n.carousel-control .icon-next,\n.carousel-control .glyphicon-chevron-right {\n  right: 50%;\n  margin-right: -10px;\n}\n.carousel-control .icon-prev,\n.carousel-control .icon-next {\n  width: 20px;\n  height: 20px;\n  font-family: serif;\n  line-height: 1;\n}\n.carousel-control .icon-prev:before {\n  content: '\\2039';\n}\n.carousel-control .icon-next:before {\n  content: '\\203A';\n}\n.carousel-indicators {\n  position: absolute;\n  bottom: 10px;\n  left: 50%;\n  z-index: 15;\n  width: 60%;\n  padding-left: 0;\n  margin-left: -30%;\n  text-align: center;\n  list-style: none;\n}\n.carousel-indicators li {\n  display: inline-block;\n  width: 10px;\n  height: 10px;\n  margin: 1px;\n  text-indent: -999px;\n  cursor: pointer;\n  background-color: #000 \\9;\n  background-color: rgba(0, 0, 0, 0);\n  border: 1px solid #fff;\n  border-radius: 10px;\n}\n.carousel-indicators .active {\n  width: 12px;\n  height: 12px;\n  margin: 0;\n  background-color: #fff;\n}\n.carousel-caption {\n  position: absolute;\n  right: 15%;\n  bottom: 20px;\n  left: 15%;\n  z-index: 10;\n  padding-top: 20px;\n  padding-bottom: 20px;\n  color: #fff;\n  text-align: center;\n  text-shadow: 0 1px 2px rgba(0, 0, 0, .6);\n}\n.carousel-caption .btn {\n  text-shadow: none;\n}\n@media screen and (min-width: 768px) {\n  .carousel-control .glyphicon-chevron-left,\n  .carousel-control .glyphicon-chevron-right,\n  .carousel-control .icon-prev,\n  .carousel-control .icon-next {\n    width: 30px;\n    height: 30px;\n    margin-top: -10px;\n    font-size: 30px;\n  }\n  .carousel-control .glyphicon-chevron-left,\n  .carousel-control .icon-prev {\n    margin-left: -10px;\n  }\n  .carousel-control .glyphicon-chevron-right,\n  .carousel-control .icon-next {\n    margin-right: -10px;\n  }\n  .carousel-caption {\n    right: 20%;\n    left: 20%;\n    padding-bottom: 30px;\n  }\n  .carousel-indicators {\n    bottom: 20px;\n  }\n}\n.clearfix:before,\n.clearfix:after,\n.dl-horizontal dd:before,\n.dl-horizontal dd:after,\n.container:before,\n.container:after,\n.container-fluid:before,\n.container-fluid:after,\n.row:before,\n.row:after,\n.form-horizontal .form-group:before,\n.form-horizontal .form-group:after,\n.btn-toolbar:before,\n.btn-toolbar:after,\n.btn-group-vertical > .btn-group:before,\n.btn-group-vertical > .btn-group:after,\n.nav:before,\n.nav:after,\n.navbar:before,\n.navbar:after,\n.navbar-header:before,\n.navbar-header:after,\n.navbar-collapse:before,\n.navbar-collapse:after,\n.pager:before,\n.pager:after,\n.panel-body:before,\n.panel-body:after,\n.modal-header:before,\n.modal-header:after,\n.modal-footer:before,\n.modal-footer:after {\n  display: table;\n  content: \" \";\n}\n.clearfix:after,\n.dl-horizontal dd:after,\n.container:after,\n.container-fluid:after,\n.row:after,\n.form-horizontal .form-group:after,\n.btn-toolbar:after,\n.btn-group-vertical > .btn-group:after,\n.nav:after,\n.navbar:after,\n.navbar-header:after,\n.navbar-collapse:after,\n.pager:after,\n.panel-body:after,\n.modal-header:after,\n.modal-footer:after {\n  clear: both;\n}\n.center-block {\n  display: block;\n  margin-right: auto;\n  margin-left: auto;\n}\n.pull-right {\n  float: right !important;\n}\n.pull-left {\n  float: left !important;\n}\n.hide {\n  display: none !important;\n}\n.show {\n  display: block !important;\n}\n.invisible {\n  visibility: hidden;\n}\n.text-hide {\n  font: 0/0 a;\n  color: transparent;\n  text-shadow: none;\n  background-color: transparent;\n  border: 0;\n}\n.hidden {\n  display: none !important;\n}\n.affix {\n  position: fixed;\n}\n@-ms-viewport {\n  width: device-width;\n}\n.visible-xs,\n.visible-sm,\n.visible-md,\n.visible-lg {\n  display: none !important;\n}\n.visible-xs-block,\n.visible-xs-inline,\n.visible-xs-inline-block,\n.visible-sm-block,\n.visible-sm-inline,\n.visible-sm-inline-block,\n.visible-md-block,\n.visible-md-inline,\n.visible-md-inline-block,\n.visible-lg-block,\n.visible-lg-inline,\n.visible-lg-inline-block {\n  display: none !important;\n}\n@media (max-width: 767px) {\n  .visible-xs {\n    display: block !important;\n  }\n  table.visible-xs {\n    display: table !important;\n  }\n  tr.visible-xs {\n    display: table-row !important;\n  }\n  th.visible-xs,\n  td.visible-xs {\n    display: table-cell !important;\n  }\n}\n@media (max-width: 767px) {\n  .visible-xs-block {\n    display: block !important;\n  }\n}\n@media (max-width: 767px) {\n  .visible-xs-inline {\n    display: inline !important;\n  }\n}\n@media (max-width: 767px) {\n  .visible-xs-inline-block {\n    display: inline-block !important;\n  }\n}\n@media (min-width: 768px) and (max-width: 991px) {\n  .visible-sm {\n    display: block !important;\n  }\n  table.visible-sm {\n    display: table !important;\n  }\n  tr.visible-sm {\n    display: table-row !important;\n  }\n  th.visible-sm,\n  td.visible-sm {\n    display: table-cell !important;\n  }\n}\n@media (min-width: 768px) and (max-width: 991px) {\n  .visible-sm-block {\n    display: block !important;\n  }\n}\n@media (min-width: 768px) and (max-width: 991px) {\n  .visible-sm-inline {\n    display: inline !important;\n  }\n}\n@media (min-width: 768px) and (max-width: 991px) {\n  .visible-sm-inline-block {\n    display: inline-block !important;\n  }\n}\n@media (min-width: 992px) and (max-width: 1199px) {\n  .visible-md {\n    display: block !important;\n  }\n  table.visible-md {\n    display: table !important;\n  }\n  tr.visible-md {\n    display: table-row !important;\n  }\n  th.visible-md,\n  td.visible-md {\n    display: table-cell !important;\n  }\n}\n@media (min-width: 992px) and (max-width: 1199px) {\n  .visible-md-block {\n    display: block !important;\n  }\n}\n@media (min-width: 992px) and (max-width: 1199px) {\n  .visible-md-inline {\n    display: inline !important;\n  }\n}\n@media (min-width: 992px) and (max-width: 1199px) {\n  .visible-md-inline-block {\n    display: inline-block !important;\n  }\n}\n@media (min-width: 1200px) {\n  .visible-lg {\n    display: block !important;\n  }\n  table.visible-lg {\n    display: table !important;\n  }\n  tr.visible-lg {\n    display: table-row !important;\n  }\n  th.visible-lg,\n  td.visible-lg {\n    display: table-cell !important;\n  }\n}\n@media (min-width: 1200px) {\n  .visible-lg-block {\n    display: block !important;\n  }\n}\n@media (min-width: 1200px) {\n  .visible-lg-inline {\n    display: inline !important;\n  }\n}\n@media (min-width: 1200px) {\n  .visible-lg-inline-block {\n    display: inline-block !important;\n  }\n}\n@media (max-width: 767px) {\n  .hidden-xs {\n    display: none !important;\n  }\n}\n@media (min-width: 768px) and (max-width: 991px) {\n  .hidden-sm {\n    display: none !important;\n  }\n}\n@media (min-width: 992px) and (max-width: 1199px) {\n  .hidden-md {\n    display: none !important;\n  }\n}\n@media (min-width: 1200px) {\n  .hidden-lg {\n    display: none !important;\n  }\n}\n.visible-print {\n  display: none !important;\n}\n@media print {\n  .visible-print {\n    display: block !important;\n  }\n  table.visible-print {\n    display: table !important;\n  }\n  tr.visible-print {\n    display: table-row !important;\n  }\n  th.visible-print,\n  td.visible-print {\n    display: table-cell !important;\n  }\n}\n.visible-print-block {\n  display: none !important;\n}\n@media print {\n  .visible-print-block {\n    display: block !important;\n  }\n}\n.visible-print-inline {\n  display: none !important;\n}\n@media print {\n  .visible-print-inline {\n    display: inline !important;\n  }\n}\n.visible-print-inline-block {\n  display: none !important;\n}\n@media print {\n  .visible-print-inline-block {\n    display: inline-block !important;\n  }\n}\n@media print {\n  .hidden-print {\n    display: none !important;\n  }\n}\n/*# sourceMappingURL=bootstrap.css.map */\n", ""]);
 
 	// exports
 
 
 /***/ },
-/* 103 */
+/* 104 */
 /***/ function(module, exports, __webpack_require__) {
 
-	/* WEBPACK VAR INJECTION */(function(global) {module.exports = global["jQuery"] = __webpack_require__(99);
+	/* WEBPACK VAR INJECTION */(function(global) {module.exports = global["jQuery"] = __webpack_require__(101);
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(53)))
 
 /***/ },
-/* 104 */
+/* 105 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -13686,7 +14128,7 @@ var App =
 	module.exports = camelize;
 
 /***/ },
-/* 105 */
+/* 106 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -13703,7 +14145,7 @@ var App =
 
 	'use strict';
 
-	var camelize = __webpack_require__(104);
+	var camelize = __webpack_require__(105);
 
 	var msPattern = /^-ms-/;
 
@@ -13731,7 +14173,7 @@ var App =
 	module.exports = camelizeStyleName;
 
 /***/ },
-/* 106 */
+/* 107 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -13748,7 +14190,7 @@ var App =
 	 * @typechecks
 	 */
 
-	var isTextNode = __webpack_require__(113);
+	var isTextNode = __webpack_require__(114);
 
 	/*eslint-disable no-bitwise */
 
@@ -13780,7 +14222,7 @@ var App =
 	module.exports = containsNode;
 
 /***/ },
-/* 107 */
+/* 108 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -13913,7 +14355,7 @@ var App =
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ },
-/* 108 */
+/* 109 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -13934,8 +14376,8 @@ var App =
 
 	var ExecutionEnvironment = __webpack_require__(5);
 
-	var createArrayFromMixed = __webpack_require__(107);
-	var getMarkupWrap = __webpack_require__(58);
+	var createArrayFromMixed = __webpack_require__(108);
+	var getMarkupWrap = __webpack_require__(59);
 	var invariant = __webpack_require__(1);
 
 	/**
@@ -14003,7 +14445,7 @@ var App =
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ },
-/* 109 */
+/* 110 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -14047,7 +14489,7 @@ var App =
 	module.exports = getUnboundedScrollPosition;
 
 /***/ },
-/* 110 */
+/* 111 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -14085,7 +14527,7 @@ var App =
 	module.exports = hyphenate;
 
 /***/ },
-/* 111 */
+/* 112 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -14102,7 +14544,7 @@ var App =
 
 	'use strict';
 
-	var hyphenate = __webpack_require__(110);
+	var hyphenate = __webpack_require__(111);
 
 	var msPattern = /^ms-/;
 
@@ -14129,7 +14571,7 @@ var App =
 	module.exports = hyphenateStyleName;
 
 /***/ },
-/* 112 */
+/* 113 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -14157,7 +14599,7 @@ var App =
 	module.exports = isNode;
 
 /***/ },
-/* 113 */
+/* 114 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -14174,7 +14616,7 @@ var App =
 	 * @typechecks
 	 */
 
-	var isNode = __webpack_require__(112);
+	var isNode = __webpack_require__(113);
 
 	/**
 	 * @param {*} object The object to check.
@@ -14187,7 +14629,7 @@ var App =
 	module.exports = isTextNode;
 
 /***/ },
-/* 114 */
+/* 115 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -14243,7 +14685,7 @@ var App =
 	module.exports = mapObject;
 
 /***/ },
-/* 115 */
+/* 116 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -14280,7 +14722,7 @@ var App =
 	module.exports = memoizeStringOnly;
 
 /***/ },
-/* 116 */
+/* 117 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -14308,7 +14750,7 @@ var App =
 	module.exports = performance || {};
 
 /***/ },
-/* 117 */
+/* 118 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -14325,7 +14767,7 @@ var App =
 	 * @typechecks
 	 */
 
-	var performance = __webpack_require__(116);
+	var performance = __webpack_require__(117);
 
 	var performanceNow;
 
@@ -14347,19 +14789,19 @@ var App =
 	module.exports = performanceNow;
 
 /***/ },
-/* 118 */
+/* 119 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "89889688147bd7575d6327160d64e760.svg";
 
 /***/ },
-/* 119 */
+/* 120 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "e18bbf611f2a2e43afc071aa2f4e1512.ttf";
 
 /***/ },
-/* 120 */
+/* 121 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -14378,7 +14820,7 @@ var App =
 
 	var ReactDOMComponentTree = __webpack_require__(4);
 
-	var focusNode = __webpack_require__(56);
+	var focusNode = __webpack_require__(57);
 
 	var AutoFocusUtils = {
 	  focusDOMComponent: function () {
@@ -14389,7 +14831,7 @@ var App =
 	module.exports = AutoFocusUtils;
 
 /***/ },
-/* 121 */
+/* 122 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -14407,11 +14849,11 @@ var App =
 	'use strict';
 
 	var EventConstants = __webpack_require__(10);
-	var EventPropagators = __webpack_require__(19);
+	var EventPropagators = __webpack_require__(20);
 	var ExecutionEnvironment = __webpack_require__(5);
-	var FallbackCompositionState = __webpack_require__(128);
-	var SyntheticCompositionEvent = __webpack_require__(169);
-	var SyntheticInputEvent = __webpack_require__(172);
+	var FallbackCompositionState = __webpack_require__(129);
+	var SyntheticCompositionEvent = __webpack_require__(170);
+	var SyntheticInputEvent = __webpack_require__(173);
 
 	var keyOf = __webpack_require__(12);
 
@@ -14783,7 +15225,7 @@ var App =
 	module.exports = BeforeInputEventPlugin;
 
 /***/ },
-/* 122 */
+/* 123 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -14800,14 +15242,14 @@ var App =
 
 	'use strict';
 
-	var CSSProperty = __webpack_require__(61);
+	var CSSProperty = __webpack_require__(62);
 	var ExecutionEnvironment = __webpack_require__(5);
 	var ReactPerf = __webpack_require__(6);
 
-	var camelizeStyleName = __webpack_require__(105);
-	var dangerousStyleValue = __webpack_require__(178);
-	var hyphenateStyleName = __webpack_require__(111);
-	var memoizeStringOnly = __webpack_require__(115);
+	var camelizeStyleName = __webpack_require__(106);
+	var dangerousStyleValue = __webpack_require__(179);
+	var hyphenateStyleName = __webpack_require__(112);
+	var memoizeStringOnly = __webpack_require__(116);
 	var warning = __webpack_require__(2);
 
 	var processStyleName = memoizeStringOnly(function (styleName) {
@@ -14995,7 +15437,7 @@ var App =
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ },
-/* 123 */
+/* 124 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -15013,8 +15455,8 @@ var App =
 	'use strict';
 
 	var EventConstants = __webpack_require__(10);
-	var EventPluginHub = __webpack_require__(18);
-	var EventPropagators = __webpack_require__(19);
+	var EventPluginHub = __webpack_require__(19);
+	var EventPropagators = __webpack_require__(20);
 	var ExecutionEnvironment = __webpack_require__(5);
 	var ReactDOMComponentTree = __webpack_require__(4);
 	var ReactUpdates = __webpack_require__(9);
@@ -15022,7 +15464,7 @@ var App =
 
 	var getEventTarget = __webpack_require__(46);
 	var isEventSupported = __webpack_require__(48);
-	var isTextInputElement = __webpack_require__(86);
+	var isTextInputElement = __webpack_require__(87);
 	var keyOf = __webpack_require__(12);
 
 	var topLevelTypes = EventConstants.topLevelTypes;
@@ -15326,7 +15768,7 @@ var App =
 	module.exports = ChangeEventPlugin;
 
 /***/ },
-/* 124 */
+/* 125 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -15352,7 +15794,7 @@ var App =
 	module.exports = DOMNamespaces;
 
 /***/ },
-/* 125 */
+/* 126 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -15372,9 +15814,9 @@ var App =
 	var DOMLazyTree = __webpack_require__(16);
 	var ExecutionEnvironment = __webpack_require__(5);
 
-	var createNodesFromMarkup = __webpack_require__(108);
+	var createNodesFromMarkup = __webpack_require__(109);
 	var emptyFunction = __webpack_require__(8);
-	var getMarkupWrap = __webpack_require__(58);
+	var getMarkupWrap = __webpack_require__(59);
 	var invariant = __webpack_require__(1);
 
 	var OPEN_TAG_NAME_EXP = /^(<[^ \/>]+)/;
@@ -15503,7 +15945,7 @@ var App =
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ },
-/* 126 */
+/* 127 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -15536,7 +15978,7 @@ var App =
 	module.exports = DefaultEventPluginOrder;
 
 /***/ },
-/* 127 */
+/* 128 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -15554,7 +15996,7 @@ var App =
 	'use strict';
 
 	var EventConstants = __webpack_require__(10);
-	var EventPropagators = __webpack_require__(19);
+	var EventPropagators = __webpack_require__(20);
 	var ReactDOMComponentTree = __webpack_require__(4);
 	var SyntheticMouseEvent = __webpack_require__(30);
 
@@ -15647,7 +16089,7 @@ var App =
 	module.exports = EnterLeaveEventPlugin;
 
 /***/ },
-/* 128 */
+/* 129 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -15668,7 +16110,7 @@ var App =
 
 	var PooledClass = __webpack_require__(15);
 
-	var getTextContentAccessor = __webpack_require__(84);
+	var getTextContentAccessor = __webpack_require__(85);
 
 	/**
 	 * This helper class stores information about text content of a target node,
@@ -15748,7 +16190,7 @@ var App =
 	module.exports = FallbackCompositionState;
 
 /***/ },
-/* 129 */
+/* 130 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -15963,7 +16405,7 @@ var App =
 	module.exports = HTMLDOMPropertyConfig;
 
 /***/ },
-/* 130 */
+/* 131 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -15982,16 +16424,16 @@ var App =
 
 	var _assign = __webpack_require__(3);
 
-	var ReactChildren = __webpack_require__(63);
-	var ReactComponent = __webpack_require__(65);
-	var ReactClass = __webpack_require__(64);
-	var ReactDOMFactories = __webpack_require__(139);
+	var ReactChildren = __webpack_require__(64);
+	var ReactComponent = __webpack_require__(66);
+	var ReactClass = __webpack_require__(65);
+	var ReactDOMFactories = __webpack_require__(140);
 	var ReactElement = __webpack_require__(7);
-	var ReactElementValidator = __webpack_require__(69);
-	var ReactPropTypes = __webpack_require__(77);
-	var ReactVersion = __webpack_require__(79);
+	var ReactElementValidator = __webpack_require__(70);
+	var ReactPropTypes = __webpack_require__(78);
+	var ReactVersion = __webpack_require__(80);
 
-	var onlyChild = __webpack_require__(184);
+	var onlyChild = __webpack_require__(185);
 	var warning = __webpack_require__(2);
 
 	var createElement = ReactElement.createElement;
@@ -16057,7 +16499,7 @@ var App =
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ },
-/* 131 */
+/* 132 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -16076,7 +16518,7 @@ var App =
 
 	var ReactReconciler = __webpack_require__(17);
 
-	var instantiateReactComponent = __webpack_require__(85);
+	var instantiateReactComponent = __webpack_require__(86);
 	var KeyEscapeUtils = __webpack_require__(35);
 	var shouldUpdateReactComponent = __webpack_require__(50);
 	var traverseAllChildren = __webpack_require__(51);
@@ -16189,7 +16631,7 @@ var App =
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ },
-/* 132 */
+/* 133 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -16214,12 +16656,12 @@ var App =
 	var ReactErrorUtils = __webpack_require__(38);
 	var ReactInstanceMap = __webpack_require__(39);
 	var ReactInstrumentation = __webpack_require__(27);
-	var ReactNodeTypes = __webpack_require__(75);
+	var ReactNodeTypes = __webpack_require__(76);
 	var ReactPerf = __webpack_require__(6);
 	var ReactPropTypeLocations = __webpack_require__(29);
 	var ReactPropTypeLocationNames = __webpack_require__(28);
 	var ReactReconciler = __webpack_require__(17);
-	var ReactUpdateQueue = __webpack_require__(78);
+	var ReactUpdateQueue = __webpack_require__(79);
 
 	var emptyObject = __webpack_require__(22);
 	var invariant = __webpack_require__(1);
@@ -16990,7 +17432,7 @@ var App =
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ },
-/* 133 */
+/* 134 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -17010,16 +17452,16 @@ var App =
 	'use strict';
 
 	var ReactDOMComponentTree = __webpack_require__(4);
-	var ReactDefaultInjection = __webpack_require__(152);
+	var ReactDefaultInjection = __webpack_require__(153);
 	var ReactMount = __webpack_require__(40);
 	var ReactPerf = __webpack_require__(6);
 	var ReactReconciler = __webpack_require__(17);
 	var ReactUpdates = __webpack_require__(9);
-	var ReactVersion = __webpack_require__(79);
+	var ReactVersion = __webpack_require__(80);
 
-	var findDOMNode = __webpack_require__(179);
-	var getNativeComponentFromComposite = __webpack_require__(83);
-	var renderSubtreeIntoContainer = __webpack_require__(186);
+	var findDOMNode = __webpack_require__(180);
+	var getNativeComponentFromComposite = __webpack_require__(84);
+	var renderSubtreeIntoContainer = __webpack_require__(187);
 	var warning = __webpack_require__(2);
 
 	ReactDefaultInjection.inject();
@@ -17101,7 +17543,7 @@ var App =
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ },
-/* 134 */
+/* 135 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -17131,7 +17573,7 @@ var App =
 	module.exports = ReactDOMButton;
 
 /***/ },
-/* 135 */
+/* 136 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -17152,32 +17594,32 @@ var App =
 
 	var _assign = __webpack_require__(3);
 
-	var AutoFocusUtils = __webpack_require__(120);
-	var CSSPropertyOperations = __webpack_require__(122);
+	var AutoFocusUtils = __webpack_require__(121);
+	var CSSPropertyOperations = __webpack_require__(123);
 	var DOMLazyTree = __webpack_require__(16);
-	var DOMNamespaces = __webpack_require__(124);
+	var DOMNamespaces = __webpack_require__(125);
 	var DOMProperty = __webpack_require__(13);
 	var DOMPropertyOperations = __webpack_require__(33);
 	var EventConstants = __webpack_require__(10);
-	var EventPluginHub = __webpack_require__(18);
+	var EventPluginHub = __webpack_require__(19);
 	var EventPluginRegistry = __webpack_require__(25);
 	var ReactBrowserEventEmitter = __webpack_require__(26);
-	var ReactComponentBrowserEnvironment = __webpack_require__(66);
-	var ReactDOMButton = __webpack_require__(134);
-	var ReactDOMComponentFlags = __webpack_require__(67);
+	var ReactComponentBrowserEnvironment = __webpack_require__(67);
+	var ReactDOMButton = __webpack_require__(135);
+	var ReactDOMComponentFlags = __webpack_require__(68);
 	var ReactDOMComponentTree = __webpack_require__(4);
-	var ReactDOMInput = __webpack_require__(142);
-	var ReactDOMOption = __webpack_require__(144);
-	var ReactDOMSelect = __webpack_require__(68);
-	var ReactDOMTextarea = __webpack_require__(147);
-	var ReactMultiChild = __webpack_require__(160);
+	var ReactDOMInput = __webpack_require__(143);
+	var ReactDOMOption = __webpack_require__(145);
+	var ReactDOMSelect = __webpack_require__(69);
+	var ReactDOMTextarea = __webpack_require__(148);
+	var ReactMultiChild = __webpack_require__(161);
 	var ReactPerf = __webpack_require__(6);
 
 	var escapeTextContentForBrowser = __webpack_require__(31);
 	var invariant = __webpack_require__(1);
 	var isEventSupported = __webpack_require__(48);
 	var keyOf = __webpack_require__(12);
-	var shallowEqual = __webpack_require__(59);
+	var shallowEqual = __webpack_require__(60);
 	var validateDOMNesting = __webpack_require__(52);
 	var warning = __webpack_require__(2);
 
@@ -18047,7 +18489,7 @@ var App =
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ },
-/* 136 */
+/* 137 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -18087,7 +18529,7 @@ var App =
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ },
-/* 137 */
+/* 138 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -18104,7 +18546,7 @@ var App =
 
 	'use strict';
 
-	var ReactDOMUnknownPropertyDevtool = __webpack_require__(149);
+	var ReactDOMUnknownPropertyDevtool = __webpack_require__(150);
 
 	var warning = __webpack_require__(2);
 
@@ -18155,7 +18597,7 @@ var App =
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ },
-/* 138 */
+/* 139 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -18221,7 +18663,7 @@ var App =
 	module.exports = ReactDOMEmptyComponent;
 
 /***/ },
-/* 139 */
+/* 140 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -18239,9 +18681,9 @@ var App =
 	'use strict';
 
 	var ReactElement = __webpack_require__(7);
-	var ReactElementValidator = __webpack_require__(69);
+	var ReactElementValidator = __webpack_require__(70);
 
-	var mapObject = __webpack_require__(114);
+	var mapObject = __webpack_require__(115);
 
 	/**
 	 * Create a factory that creates HTML tag elements.
@@ -18404,7 +18846,7 @@ var App =
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ },
-/* 140 */
+/* 141 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -18428,7 +18870,7 @@ var App =
 	module.exports = ReactDOMFeatureFlags;
 
 /***/ },
-/* 141 */
+/* 142 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -18473,7 +18915,7 @@ var App =
 	module.exports = ReactDOMIDOperations;
 
 /***/ },
-/* 142 */
+/* 143 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -18684,7 +19126,7 @@ var App =
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ },
-/* 143 */
+/* 144 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -18701,12 +19143,12 @@ var App =
 
 	'use strict';
 
-	var ReactDOMDebugTool = __webpack_require__(137);
+	var ReactDOMDebugTool = __webpack_require__(138);
 
 	module.exports = { debugTool: ReactDOMDebugTool };
 
 /***/ },
-/* 144 */
+/* 145 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -18725,9 +19167,9 @@ var App =
 
 	var _assign = __webpack_require__(3);
 
-	var ReactChildren = __webpack_require__(63);
+	var ReactChildren = __webpack_require__(64);
 	var ReactDOMComponentTree = __webpack_require__(4);
-	var ReactDOMSelect = __webpack_require__(68);
+	var ReactDOMSelect = __webpack_require__(69);
 
 	var warning = __webpack_require__(2);
 
@@ -18822,7 +19264,7 @@ var App =
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ },
-/* 145 */
+/* 146 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -18841,8 +19283,8 @@ var App =
 
 	var ExecutionEnvironment = __webpack_require__(5);
 
-	var getNodeForCharacterOffset = __webpack_require__(182);
-	var getTextContentAccessor = __webpack_require__(84);
+	var getNodeForCharacterOffset = __webpack_require__(183);
+	var getTextContentAccessor = __webpack_require__(85);
 
 	/**
 	 * While `isCollapsed` is available on the Selection object and `collapsed`
@@ -19040,7 +19482,7 @@ var App =
 	module.exports = ReactDOMSelection;
 
 /***/ },
-/* 146 */
+/* 147 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -19216,7 +19658,7 @@ var App =
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ },
-/* 147 */
+/* 148 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -19365,7 +19807,7 @@ var App =
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ },
-/* 148 */
+/* 149 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -19506,7 +19948,7 @@ var App =
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ },
-/* 149 */
+/* 150 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -19577,7 +20019,7 @@ var App =
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ },
-/* 150 */
+/* 151 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -19594,7 +20036,7 @@ var App =
 
 	'use strict';
 
-	var ReactInvalidSetStateWarningDevTool = __webpack_require__(158);
+	var ReactInvalidSetStateWarningDevTool = __webpack_require__(159);
 	var warning = __webpack_require__(2);
 
 	var eventHandlers = [];
@@ -19656,7 +20098,7 @@ var App =
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ },
-/* 151 */
+/* 152 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -19730,7 +20172,7 @@ var App =
 	module.exports = ReactDefaultBatchingStrategy;
 
 /***/ },
-/* 152 */
+/* 153 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -19747,25 +20189,25 @@ var App =
 
 	'use strict';
 
-	var BeforeInputEventPlugin = __webpack_require__(121);
-	var ChangeEventPlugin = __webpack_require__(123);
-	var DefaultEventPluginOrder = __webpack_require__(126);
-	var EnterLeaveEventPlugin = __webpack_require__(127);
+	var BeforeInputEventPlugin = __webpack_require__(122);
+	var ChangeEventPlugin = __webpack_require__(124);
+	var DefaultEventPluginOrder = __webpack_require__(127);
+	var EnterLeaveEventPlugin = __webpack_require__(128);
 	var ExecutionEnvironment = __webpack_require__(5);
-	var HTMLDOMPropertyConfig = __webpack_require__(129);
-	var ReactComponentBrowserEnvironment = __webpack_require__(66);
-	var ReactDOMComponent = __webpack_require__(135);
+	var HTMLDOMPropertyConfig = __webpack_require__(130);
+	var ReactComponentBrowserEnvironment = __webpack_require__(67);
+	var ReactDOMComponent = __webpack_require__(136);
 	var ReactDOMComponentTree = __webpack_require__(4);
-	var ReactDOMEmptyComponent = __webpack_require__(138);
-	var ReactDOMTreeTraversal = __webpack_require__(148);
-	var ReactDOMTextComponent = __webpack_require__(146);
-	var ReactDefaultBatchingStrategy = __webpack_require__(151);
-	var ReactEventListener = __webpack_require__(156);
-	var ReactInjection = __webpack_require__(157);
-	var ReactReconcileTransaction = __webpack_require__(162);
-	var SVGDOMPropertyConfig = __webpack_require__(164);
-	var SelectEventPlugin = __webpack_require__(165);
-	var SimpleEventPlugin = __webpack_require__(166);
+	var ReactDOMEmptyComponent = __webpack_require__(139);
+	var ReactDOMTreeTraversal = __webpack_require__(149);
+	var ReactDOMTextComponent = __webpack_require__(147);
+	var ReactDefaultBatchingStrategy = __webpack_require__(152);
+	var ReactEventListener = __webpack_require__(157);
+	var ReactInjection = __webpack_require__(158);
+	var ReactReconcileTransaction = __webpack_require__(163);
+	var SVGDOMPropertyConfig = __webpack_require__(165);
+	var SelectEventPlugin = __webpack_require__(166);
+	var SimpleEventPlugin = __webpack_require__(167);
 
 	var alreadyInjected = false;
 
@@ -19818,7 +20260,7 @@ var App =
 	  if (process.env.NODE_ENV !== 'production') {
 	    var url = ExecutionEnvironment.canUseDOM && window.location.href || '';
 	    if (/[?&]react_perf\b/.test(url)) {
-	      var ReactDefaultPerf = __webpack_require__(153);
+	      var ReactDefaultPerf = __webpack_require__(154);
 	      ReactDefaultPerf.start();
 	    }
 	  }
@@ -19830,7 +20272,7 @@ var App =
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ },
-/* 153 */
+/* 154 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -19849,11 +20291,11 @@ var App =
 
 	var DOMProperty = __webpack_require__(13);
 	var ReactDOMComponentTree = __webpack_require__(4);
-	var ReactDefaultPerfAnalysis = __webpack_require__(154);
+	var ReactDefaultPerfAnalysis = __webpack_require__(155);
 	var ReactMount = __webpack_require__(40);
 	var ReactPerf = __webpack_require__(6);
 
-	var performanceNow = __webpack_require__(117);
+	var performanceNow = __webpack_require__(118);
 	var warning = __webpack_require__(2);
 
 	function roundFloat(val) {
@@ -20153,7 +20595,7 @@ var App =
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ },
-/* 154 */
+/* 155 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -20369,7 +20811,7 @@ var App =
 	module.exports = ReactDefaultPerfAnalysis;
 
 /***/ },
-/* 155 */
+/* 156 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -20386,7 +20828,7 @@ var App =
 
 	'use strict';
 
-	var EventPluginHub = __webpack_require__(18);
+	var EventPluginHub = __webpack_require__(19);
 
 	function runEventQueueInBatch(events) {
 	  EventPluginHub.enqueueEvents(events);
@@ -20408,7 +20850,7 @@ var App =
 	module.exports = ReactEventEmitterMixin;
 
 /***/ },
-/* 156 */
+/* 157 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -20427,14 +20869,14 @@ var App =
 
 	var _assign = __webpack_require__(3);
 
-	var EventListener = __webpack_require__(55);
+	var EventListener = __webpack_require__(56);
 	var ExecutionEnvironment = __webpack_require__(5);
 	var PooledClass = __webpack_require__(15);
 	var ReactDOMComponentTree = __webpack_require__(4);
 	var ReactUpdates = __webpack_require__(9);
 
 	var getEventTarget = __webpack_require__(46);
-	var getUnboundedScrollPosition = __webpack_require__(109);
+	var getUnboundedScrollPosition = __webpack_require__(110);
 
 	/**
 	 * Find the deepest React component completely containing the root of the
@@ -20571,7 +21013,7 @@ var App =
 	module.exports = ReactEventListener;
 
 /***/ },
-/* 157 */
+/* 158 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -20589,13 +21031,13 @@ var App =
 	'use strict';
 
 	var DOMProperty = __webpack_require__(13);
-	var EventPluginHub = __webpack_require__(18);
+	var EventPluginHub = __webpack_require__(19);
 	var EventPluginUtils = __webpack_require__(34);
 	var ReactComponentEnvironment = __webpack_require__(37);
-	var ReactClass = __webpack_require__(64);
-	var ReactEmptyComponent = __webpack_require__(70);
+	var ReactClass = __webpack_require__(65);
+	var ReactEmptyComponent = __webpack_require__(71);
 	var ReactBrowserEventEmitter = __webpack_require__(26);
-	var ReactNativeComponent = __webpack_require__(74);
+	var ReactNativeComponent = __webpack_require__(75);
 	var ReactPerf = __webpack_require__(6);
 	var ReactUpdates = __webpack_require__(9);
 
@@ -20615,7 +21057,7 @@ var App =
 	module.exports = ReactInjection;
 
 /***/ },
-/* 158 */
+/* 159 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -20658,7 +21100,7 @@ var App =
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ },
-/* 159 */
+/* 160 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -20675,7 +21117,7 @@ var App =
 
 	'use strict';
 
-	var adler32 = __webpack_require__(177);
+	var adler32 = __webpack_require__(178);
 
 	var TAG_END = /\/?>/;
 	var COMMENT_START = /^<\!\-\-/;
@@ -20714,7 +21156,7 @@ var App =
 	module.exports = ReactMarkupChecksum;
 
 /***/ },
-/* 160 */
+/* 161 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -20732,13 +21174,13 @@ var App =
 	'use strict';
 
 	var ReactComponentEnvironment = __webpack_require__(37);
-	var ReactMultiChildUpdateTypes = __webpack_require__(73);
+	var ReactMultiChildUpdateTypes = __webpack_require__(74);
 
 	var ReactCurrentOwner = __webpack_require__(14);
 	var ReactReconciler = __webpack_require__(17);
-	var ReactChildReconciler = __webpack_require__(131);
+	var ReactChildReconciler = __webpack_require__(132);
 
-	var flattenChildren = __webpack_require__(180);
+	var flattenChildren = __webpack_require__(181);
 	var invariant = __webpack_require__(1);
 
 	/**
@@ -21123,7 +21565,7 @@ var App =
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ },
-/* 161 */
+/* 162 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -21222,7 +21664,7 @@ var App =
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ },
-/* 162 */
+/* 163 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -21241,10 +21683,10 @@ var App =
 
 	var _assign = __webpack_require__(3);
 
-	var CallbackQueue = __webpack_require__(62);
+	var CallbackQueue = __webpack_require__(63);
 	var PooledClass = __webpack_require__(15);
 	var ReactBrowserEventEmitter = __webpack_require__(26);
-	var ReactInputSelection = __webpack_require__(72);
+	var ReactInputSelection = __webpack_require__(73);
 	var Transaction = __webpack_require__(41);
 
 	/**
@@ -21390,7 +21832,7 @@ var App =
 	module.exports = ReactReconcileTransaction;
 
 /***/ },
-/* 163 */
+/* 164 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -21407,7 +21849,7 @@ var App =
 
 	'use strict';
 
-	var ReactOwner = __webpack_require__(161);
+	var ReactOwner = __webpack_require__(162);
 
 	var ReactRef = {};
 
@@ -21474,7 +21916,7 @@ var App =
 	module.exports = ReactRef;
 
 /***/ },
-/* 164 */
+/* 165 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -21780,7 +22222,7 @@ var App =
 	module.exports = SVGDOMPropertyConfig;
 
 /***/ },
-/* 165 */
+/* 166 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -21798,16 +22240,16 @@ var App =
 	'use strict';
 
 	var EventConstants = __webpack_require__(10);
-	var EventPropagators = __webpack_require__(19);
+	var EventPropagators = __webpack_require__(20);
 	var ExecutionEnvironment = __webpack_require__(5);
 	var ReactDOMComponentTree = __webpack_require__(4);
-	var ReactInputSelection = __webpack_require__(72);
+	var ReactInputSelection = __webpack_require__(73);
 	var SyntheticEvent = __webpack_require__(11);
 
-	var getActiveElement = __webpack_require__(57);
-	var isTextInputElement = __webpack_require__(86);
+	var getActiveElement = __webpack_require__(58);
+	var isTextInputElement = __webpack_require__(87);
 	var keyOf = __webpack_require__(12);
-	var shallowEqual = __webpack_require__(59);
+	var shallowEqual = __webpack_require__(60);
 
 	var topLevelTypes = EventConstants.topLevelTypes;
 
@@ -21982,7 +22424,7 @@ var App =
 	module.exports = SelectEventPlugin;
 
 /***/ },
-/* 166 */
+/* 167 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -22000,20 +22442,20 @@ var App =
 	'use strict';
 
 	var EventConstants = __webpack_require__(10);
-	var EventListener = __webpack_require__(55);
-	var EventPropagators = __webpack_require__(19);
+	var EventListener = __webpack_require__(56);
+	var EventPropagators = __webpack_require__(20);
 	var ReactDOMComponentTree = __webpack_require__(4);
-	var SyntheticAnimationEvent = __webpack_require__(167);
-	var SyntheticClipboardEvent = __webpack_require__(168);
+	var SyntheticAnimationEvent = __webpack_require__(168);
+	var SyntheticClipboardEvent = __webpack_require__(169);
 	var SyntheticEvent = __webpack_require__(11);
-	var SyntheticFocusEvent = __webpack_require__(171);
-	var SyntheticKeyboardEvent = __webpack_require__(173);
+	var SyntheticFocusEvent = __webpack_require__(172);
+	var SyntheticKeyboardEvent = __webpack_require__(174);
 	var SyntheticMouseEvent = __webpack_require__(30);
-	var SyntheticDragEvent = __webpack_require__(170);
-	var SyntheticTouchEvent = __webpack_require__(174);
-	var SyntheticTransitionEvent = __webpack_require__(175);
-	var SyntheticUIEvent = __webpack_require__(20);
-	var SyntheticWheelEvent = __webpack_require__(176);
+	var SyntheticDragEvent = __webpack_require__(171);
+	var SyntheticTouchEvent = __webpack_require__(175);
+	var SyntheticTransitionEvent = __webpack_require__(176);
+	var SyntheticUIEvent = __webpack_require__(21);
+	var SyntheticWheelEvent = __webpack_require__(177);
 
 	var emptyFunction = __webpack_require__(8);
 	var getEventCharCode = __webpack_require__(44);
@@ -22616,7 +23058,7 @@ var App =
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ },
-/* 167 */
+/* 168 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -22661,7 +23103,7 @@ var App =
 	module.exports = SyntheticAnimationEvent;
 
 /***/ },
-/* 168 */
+/* 169 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -22705,7 +23147,7 @@ var App =
 	module.exports = SyntheticClipboardEvent;
 
 /***/ },
-/* 169 */
+/* 170 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -22747,7 +23189,7 @@ var App =
 	module.exports = SyntheticCompositionEvent;
 
 /***/ },
-/* 170 */
+/* 171 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -22789,7 +23231,7 @@ var App =
 	module.exports = SyntheticDragEvent;
 
 /***/ },
-/* 171 */
+/* 172 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -22806,7 +23248,7 @@ var App =
 
 	'use strict';
 
-	var SyntheticUIEvent = __webpack_require__(20);
+	var SyntheticUIEvent = __webpack_require__(21);
 
 	/**
 	 * @interface FocusEvent
@@ -22831,7 +23273,7 @@ var App =
 	module.exports = SyntheticFocusEvent;
 
 /***/ },
-/* 172 */
+/* 173 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -22874,7 +23316,7 @@ var App =
 	module.exports = SyntheticInputEvent;
 
 /***/ },
-/* 173 */
+/* 174 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -22891,10 +23333,10 @@ var App =
 
 	'use strict';
 
-	var SyntheticUIEvent = __webpack_require__(20);
+	var SyntheticUIEvent = __webpack_require__(21);
 
 	var getEventCharCode = __webpack_require__(44);
-	var getEventKey = __webpack_require__(181);
+	var getEventKey = __webpack_require__(182);
 	var getEventModifierState = __webpack_require__(45);
 
 	/**
@@ -22964,7 +23406,7 @@ var App =
 	module.exports = SyntheticKeyboardEvent;
 
 /***/ },
-/* 174 */
+/* 175 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -22981,7 +23423,7 @@ var App =
 
 	'use strict';
 
-	var SyntheticUIEvent = __webpack_require__(20);
+	var SyntheticUIEvent = __webpack_require__(21);
 
 	var getEventModifierState = __webpack_require__(45);
 
@@ -23015,7 +23457,7 @@ var App =
 	module.exports = SyntheticTouchEvent;
 
 /***/ },
-/* 175 */
+/* 176 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -23060,7 +23502,7 @@ var App =
 	module.exports = SyntheticTransitionEvent;
 
 /***/ },
-/* 176 */
+/* 177 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -23120,7 +23562,7 @@ var App =
 	module.exports = SyntheticWheelEvent;
 
 /***/ },
-/* 177 */
+/* 178 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -23169,7 +23611,7 @@ var App =
 	module.exports = adler32;
 
 /***/ },
-/* 178 */
+/* 179 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -23186,7 +23628,7 @@ var App =
 
 	'use strict';
 
-	var CSSProperty = __webpack_require__(61);
+	var CSSProperty = __webpack_require__(62);
 	var warning = __webpack_require__(2);
 
 	var isUnitlessNumber = CSSProperty.isUnitlessNumber;
@@ -23253,7 +23695,7 @@ var App =
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ },
-/* 179 */
+/* 180 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -23274,7 +23716,7 @@ var App =
 	var ReactDOMComponentTree = __webpack_require__(4);
 	var ReactInstanceMap = __webpack_require__(39);
 
-	var getNativeComponentFromComposite = __webpack_require__(83);
+	var getNativeComponentFromComposite = __webpack_require__(84);
 	var invariant = __webpack_require__(1);
 	var warning = __webpack_require__(2);
 
@@ -23316,7 +23758,7 @@ var App =
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ },
-/* 180 */
+/* 181 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -23372,7 +23814,7 @@ var App =
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ },
-/* 181 */
+/* 182 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -23480,7 +23922,7 @@ var App =
 	module.exports = getEventKey;
 
 /***/ },
-/* 182 */
+/* 183 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -23560,7 +24002,7 @@ var App =
 	module.exports = getNodeForCharacterOffset;
 
 /***/ },
-/* 183 */
+/* 184 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -23667,7 +24109,7 @@ var App =
 	module.exports = getVendorPrefixedEventName;
 
 /***/ },
-/* 184 */
+/* 185 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -23707,7 +24149,7 @@ var App =
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ },
-/* 185 */
+/* 186 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -23739,7 +24181,7 @@ var App =
 	module.exports = quoteAttributeValueForBrowser;
 
 /***/ },
-/* 186 */
+/* 187 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -23761,19 +24203,19 @@ var App =
 	module.exports = ReactMount.renderSubtreeIntoContainer;
 
 /***/ },
-/* 187 */
+/* 188 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "fa2772327f55d8198301fdb8bcfc8158.woff";
 
 /***/ },
-/* 188 */
+/* 189 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "448c34a56d699c29117adc64c43affeb.woff2";
 
 /***/ },
-/* 189 */
+/* 190 */
 /***/ function(module, exports) {
 
 	module.exports = function(module) {

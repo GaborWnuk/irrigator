@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { Skycons } from '../../vendors/skycons.js'
+//import { Skycons } from '../../vendors/skycons.js'
 
 export default class SkyconsIcon extends React.Component {
     getInitialState() {

@@ -7,21 +7,15 @@ require("expose?$!./vendors/jquery.flot.js");
 import bootstrap from '../css/vendors/bootstrap.css'
 import styles from '../css/s.css'
 
-
 import { Weather } from './components/weather'
-console.log(Weather)
-
-/*
 import { Plants } from './components/plants'
-console.log(Plants);
 
-React.render(
+ReactDOM.render(
   <Weather />,
   document.getElementById('weather')
 );
 
-React.render(
+ReactDOM.render(
   <Plants />,
   document.getElementById('plants')
 );
-*/

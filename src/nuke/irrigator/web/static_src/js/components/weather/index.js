@@ -1,7 +1,7 @@
 import React from 'react'
 
 import { SinglePanel } from '../single-panel'
-//import { SkyconsIcon } from '../skycons'
+import { SkyconsIcon } from '../skycons'
 
 export class WeatherDay extends React.Component {
     render() {
@@ -26,12 +26,13 @@ export class WeatherDay extends React.Component {
 }
 
 export class Weather extends React.Component {
-    getInitialState() {
-        return { weather: [] };
+    constructor() {
+      super();
+      this.state = { weather: [] };
     }
 
     componentDidMount() {
-        $.ajax({
+        jQuery.ajax({
             url: 'api/weather',
             dataType: 'json',
             cache: false,
@@ -45,6 +46,7 @@ export class Weather extends React.Component {
     }
 
     render() {
+        console.log("Ble")
         var weather = this.state.weather;
         var date = new Date();
         const days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];

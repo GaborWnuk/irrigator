@@ -15,12 +15,13 @@ export class PlantRow extends React.Component {
 }
 
 export class Plants extends React.Component {
-    getInitialState() {
-        return { plants: [] };
+    constructor() {
+      super();
+      this.state = { plants: [] };
     }
 
     componentDidMount() {
-        $.ajax({
+        jQuery.ajax({
             url: 'api/plants',
             dataType: 'json',
             cache: false,
