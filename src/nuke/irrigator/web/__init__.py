@@ -35,9 +35,7 @@ WEB_DIRECTORY = os.path.join(os.path.dirname(os.path.abspath(__file__)))
 WEBSRC_DIRECTORY = "%s/static_src" % WEB_DIRECTORY
 DB_SCHEMA = os.path.join(os.path.dirname(os.path.abspath(__file__))) + '/../../../../irrigator.sql'
 
-DEPENDENCIES = {'https://fb.me/react-15.0.2.js': '%s/js/vendors/react.js' % WEBSRC_DIRECTORY,
-                'https://fb.me/react-dom-15.0.2.js': '%s/js/vendors/react.dom.js' % WEBSRC_DIRECTORY,
-                'https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.23/browser.js': '%s/js/vendors/babel.js' % WEBSRC_DIRECTORY,
+DEPENDENCIES = {'https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.23/browser.js': '%s/js/vendors/babel.js' % WEBSRC_DIRECTORY,
                 'https://use.fontawesome.com/588e87d716.js': '%s/js/vendors/fontawesome.js' % WEBSRC_DIRECTORY,
                 'https://code.jquery.com/jquery-2.2.3.js': '%s/js/vendors/jquery.js' % WEBSRC_DIRECTORY,
                 'http://omnipotent.net/jquery.sparkline/2.1.2/jquery.sparkline.js': '%s/js/vendors/jquery.sparkline.js' % WEBSRC_DIRECTORY,
