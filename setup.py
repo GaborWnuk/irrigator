@@ -2,16 +2,17 @@ from setuptools import setup, find_packages
 import sys, os
 
 here = os.path.abspath(os.path.dirname(__file__))
-README = open(os.path.join(here, 'README.rst')).read()
+README = open(os.path.join(here, 'README.md')).read()
 NEWS = open(os.path.join(here, 'NEWS.txt')).read()
 
 version = '0.0.1'
 
 install_requires = [
-    # List your project dependencies here.
-    # For more details, see:
-    # http://packages.python.org/distribute/setuptools.html#declaring-dependencies
-    'flask'
+    'click',
+    'flask',
+    #'mcp3008',
+    'requests',
+    #'RPi.GPIO',
 ]
 
 setup(name='nuke.irrigator',
