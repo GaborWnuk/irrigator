@@ -5,7 +5,7 @@ Simple irrigation system for your Raspberry Pi (and clones).
 ```
 $ git clone git@github.com:GaborWnuk/nuke.irrigator.git
 $ cd nuke.irrigator
-$ python setup.py devel
+$ python setup.py develop
 (...)
 $ npm install
 (...)
