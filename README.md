@@ -9,6 +9,8 @@ $ python setup.py devel
 (...)
 $ npm install
 (...)
+$ webpack
+(...)
 $ nuke.irrigator build
 (...)
 $ nuke.irrigator weatherservice
